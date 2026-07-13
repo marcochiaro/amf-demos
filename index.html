@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMF Studio — Demos de landing pages</title>
+<meta name="description" content="Portfolio de demos de landing pages creadas por AMF Studio para negocios de Buenos Aires.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0E1116;--panel:#171C24;--txt:#E8ECF1;--mut:#8B97A5;--acc:#5EE1A0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:80px 24px}
+h1{font-family:'Sora',sans-serif;font-size:2.2rem;margin-bottom:8px}
+h1 span{color:var(--acc)}
+.sub{color:var(--mut);margin-bottom:48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+a.card{display:block;background:var(--panel);border:1px solid #222A35;border-radius:14px;padding:24px;text-decoration:none;color:var(--txt);transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.card .rubro{font-size:.75rem;color:var(--acc);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.card h2{font-family:'Sora',sans-serif;font-size:1.15rem;margin:8px 0 4px}
+.card p{font-size:.85rem;color:var(--mut)}
+footer{margin-top:70px;color:var(--mut);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AMF <span>Studio</span></h1>
+  <p class="sub">Demos de landing pages para negocios locales · Buenos Aires</p>
+  <div class="grid">
+    <a class="card" href="cafe-aurora/">
+      <div class="rubro">Gastronomía · Demo de muestra</div>
+      <h2>Café Aurora</h2>
+      <p>Café de especialidad en Palermo</p>
+    </a>
+  </div>
+  <footer>© AMF Studio — Marco Chiaro · mchiaro79@gmail.com</footer>
+</div>
+</body>
+</html>
