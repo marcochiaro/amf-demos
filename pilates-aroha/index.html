@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilates Aroha — Estudio de Pilates Reformer en Núñez | Turnos</title>
+<meta name="description" content="Pilates Aroha, estudio de Pilates Reformer en Núñez (Av. Cabildo 3546) y Villa del Parque. Fuerza, control, respiración y fluidez en grupos reducidos. Reservá tu clase.">
+<meta property="og:title" content="Pilates Aroha — Pilates Reformer en Núñez">
+<meta property="og:description" content="Reconectá con tu cuerpo: Pilates Reformer en grupos reducidos, para todos los niveles. Sedes en Núñez y Villa del Parque.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --niebla:#F6F4FA; --panelv:#ECE8F4; --violeta:#4B3F6B; --violeta-osc:#362D52;
+  --lila:#8E7CC3; --tinta:#2E2843; --blanco:#FFFFFF; --linea:rgba(75,63,107,.15);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--niebla);color:var(--tinta);line-height:1.65}
+h1,h2,h3,.logo{font-family:'Cormorant Garamond',serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;background:rgba(246,244,250,.92);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid var(--linea)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.5rem;font-weight:700;color:var(--violeta);text-decoration:none}
+.logo span{color:var(--lila)}
+nav ul{display:flex;gap:24px;list-style:none}
+nav ul a{color:var(--tinta);text-decoration:none;font-size:.9rem;font-weight:500}
+nav ul a:hover{color:var(--lila)}
+.nav-cta{background:var(--violeta);color:var(--blanco)!important;padding:9px 20px;border-radius:999px;font-weight:600}
+@media(max-width:760px){nav ul li:not(:last-child){display:none}}
+/* HERO */
+header{padding:150px 0 90px;background:
+  radial-gradient(700px 380px at 0% 100%,rgba(142,124,195,.16),transparent 60%),
+  linear-gradient(180deg,#EFEBF6 0%,var(--niebla) 80%)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center}
+@media(max-width:820px){.hero{grid-template-columns:1fr}}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--blanco);color:var(--violeta);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:20px;border:1px solid var(--linea)}
+h1{font-size:clamp(2.6rem,6vw,4.1rem);line-height:1.04;color:var(--violeta);margin-bottom:18px;font-weight:700}
+h1 em{font-style:italic;color:var(--lila)}
+.hero p{font-size:1.06rem;color:#554d75;max-width:48ch;margin-bottom:30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primario{background:var(--violeta);color:var(--blanco)}
+.btn-linea{border:1.5px solid var(--violeta);color:var(--violeta)}
+.hero-card{background:var(--violeta);color:#DDD6EE;border-radius:22px;padding:32px;box-shadow:0 26px 60px -26px rgba(54,45,82,.6)}
+.hero-card h3{color:var(--blanco);font-size:1.5rem;margin-bottom:4px}
+.hero-card .sub{color:#B7A9DC;font-size:.9rem;margin-bottom:8px}
+.hero-card .stat{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-size:.93rem}
+.hero-card .stat:last-child{border:none}
+.hero-card .stat b{color:var(--blanco);text-align:right}
+/* SECCIONES */
+section{padding:84px 0}
+.sec-label{color:var(--lila);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(2rem,3.6vw,2.7rem);color:var(--violeta);margin-bottom:16px;font-weight:700}
+.lead{max-width:62ch;color:#554d75;font-size:1.04rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tag{background:var(--blanco);border:1px solid var(--linea);padding:8px 17px;border-radius:999px;font-size:.85rem;font-weight:500;color:var(--violeta)}
+/* SERVICIOS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:40px}
+.card{background:var(--blanco);border-radius:18px;padding:28px;border:1px solid var(--linea);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -20px rgba(75,63,107,.4)}
+.card .ico{font-size:1.6rem;margin-bottom:12px}
+.card h3{font-size:1.35rem;color:var(--violeta);margin-bottom:8px;font-weight:600}
+.card p{font-size:.92rem;color:#554d75}
+/* METODO */
+.metodo{background:var(--violeta);color:#DDD6EE}
+.metodo h2{color:var(--blanco)}
+.metodo .sec-label{color:#C4B5E8}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px;margin-top:44px}
+.paso .num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--lila)}
+.paso h3{font-size:1.25rem;margin:10px 0 6px;color:var(--blanco);font-weight:600}
+.paso p{font-size:.9rem;color:#C3B8E0}
+/* RESEÑAS / COMUNIDAD */
+.comunidad .panel{background:var(--panelv);border:1px solid var(--linea);border-radius:22px;padding:40px;margin-top:36px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+@media(max-width:760px){.comunidad .panel{grid-template-columns:1fr}}
+.comunidad .panel p{color:#554d75}
+.comunidad .panel .btn{margin-top:20px}
+.ig-chip{display:inline-flex;align-items:center;gap:10px;background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:16px 22px;font-weight:600;color:var(--violeta);text-decoration:none;font-size:1rem}
+.ig-chip:hover{border-color:var(--lila)}
+/* CONTACTO */
+.contacto{background:#EFEBF6}
+.con-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:38px}
+@media(max-width:760px){.con-grid{grid-template-columns:1fr}}
+.con-item{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--linea);font-size:.96rem}
+.con-item strong{color:var(--violeta);display:block}
+.con-item span{color:#554d75}
+.con-item a{color:var(--violeta)}
+.mapa{border-radius:18px;overflow:hidden;border:1px solid var(--linea);min-height:320px;background:var(--blanco)}
+.mapa iframe{width:100%;height:100%;min-height:320px;border:0}
+/* FOOTER */
+footer{background:var(--violeta-osc);color:#C3B8E0;padding:50px 0 38px}
+.f-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:center}
+footer .logo{color:var(--blanco);font-size:1.4rem}
+footer ul{list-style:none;display:flex;gap:20px;flex-wrap:wrap}
+footer ul a{color:#C3B8E0;text-decoration:none;font-size:.88rem}
+footer ul a:hover{color:var(--blanco)}
+.credito{margin-top:30px;font-size:.78rem;color:#9282BF}
+.credito a{color:#B7A9DC}
+/* BOTÓN FLOTANTE (Instagram — canal principal de turnos del estudio) */
+.ig-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;background:linear-gradient(45deg,#7B5BC7,#B75BC7);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:120;box-shadow:0 10px 26px rgba(54,45,82,.4);animation:ring 2.4s ease-out infinite}
+.ig-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(54,45,82,.4),0 0 0 0 rgba(142,124,195,.55)}70%{box-shadow:0 10px 26px rgba(54,45,82,.4),0 0 0 18px rgba(142,124,195,0)}100%{box-shadow:0 10px 26px rgba(54,45,82,.4),0 0 0 0 rgba(142,124,195,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">Pilates <span>Aroha</span></a>
+    <ul>
+      <li><a href="#nosotros">El estudio</a></li>
+      <li><a href="#clases">Clases</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener">Reservar clase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <span class="kicker">Pilates Reformer · Núñez &amp; Villa del Parque</span>
+      <h1>Fuerza, control y <em>fluidez</em>, en cada movimiento.</h1>
+      <p>Reconectá con tu cuerpo en camas reformer: grupos reducidos, atención profesional y clases para todos los niveles, a metros de Av. Cabildo. Tu primera clase está a un mensaje de distancia.</p>
+      <div class="btns">
+        <a class="btn btn-primario" href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener">Reservar por Instagram</a>
+        <a class="btn btn-linea" href="tel:+541144481880">Llamar al estudio</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Pilates Aroha</h3>
+      <div class="sub">Sede Núñez</div>
+      <div class="stat"><span>Modalidad</span><b>Reformer en grupos reducidos</b></div>
+      <div class="stat"><span>Niveles</span><b>Inicial a avanzado</b></div>
+      <div class="stat"><span>Horarios</span><b>L a V 8–21 · Sáb 9–13</b></div>
+      <div class="stat"><span>Ubicación</span><b>Av. Cabildo 3546, CABA</b></div>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="wrap">
+    <div class="sec-label">El estudio</div>
+    <h2>Un espacio para moverte distinto</h2>
+    <p class="lead">Aroha significa “amor” en maorí, y esa es la idea del estudio: que entrenar no sea una obligación sino un rato para vos. Con el método Pilates sobre camas reformer trabajás fuerza, postura y estabilidad del centro, guiada por instructores que corrigen cada movimiento. Con sedes en Núñez y Villa del Parque, y acceso también con Wellhub.</p>
+    <div class="tags">
+      <span class="tag">Pilates Reformer</span>
+      <span class="tag">Grupos reducidos</span>
+      <span class="tag">Todos los niveles</span>
+      <span class="tag">Postura &amp; core</span>
+      <span class="tag">Respiración</span>
+      <span class="tag">Acceso con Wellhub</span>
+    </div>
+  </div>
+</section>
+
+<section id="clases">
+  <div class="wrap">
+    <div class="sec-label">Clases</div>
+    <h2>Lo que trabajás en Aroha</h2>
+    <p class="lead">Clases en camas reformer pensadas para que progreses a tu ritmo. <!-- EDITABLE: agregar aquí tipos de clase específicos, aranceles y promociones vigentes --></p>
+    <div class="grid">
+      <div class="card"><div class="ico">🌀</div><h3>Reformer integral</h3><p>Trabajo de cuerpo completo sobre camas reformer: fuerza, control, respiración y fluidez en cada serie.</p></div>
+      <div class="card"><div class="ico">🧍</div><h3>Postura &amp; core</h3><p>Fortalecé el centro y mejorá tu postura frente al escritorio, el celular y el día a día.</p></div>
+      <div class="card"><div class="ico">🤸</div><h3>Movilidad &amp; flexibilidad</h3><p>Ganá rango de movimiento y soltura con ejercicios guiados y progresivos.</p></div>
+      <div class="card"><div class="ico">🌱</div><h3>Para todos los niveles</h3><p>¿Nunca hiciste pilates? Empezás desde cero con seguimiento cercano del instructor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo" class="metodo">
+  <div class="wrap">
+    <div class="sec-label">El método</div>
+    <h2>Así es tu primera clase</h2>
+    <div class="pasos">
+      <div class="paso"><div class="num">01</div><h3>Escribinos</h3><p>Mandanos un DM por Instagram o llamá al estudio y coordinamos día y horario.</p></div>
+      <div class="paso"><div class="num">02</div><h3>Te conocemos</h3><p>Nos contás tu punto de partida: lesiones, objetivos y experiencia previa.</p></div>
+      <div class="paso"><div class="num">03</div><h3>A la cama reformer</h3><p>Clase guiada en grupo reducido, con correcciones en cada ejercicio.</p></div>
+      <div class="paso"><div class="num">04</div><h3>Progresás</h3><p>Subimos la intensidad a tu ritmo: más fuerza, mejor postura, más energía.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="comunidad" class="comunidad">
+  <div class="wrap">
+    <div class="sec-label">Comunidad</div>
+    <h2>Mirá el estudio por dentro</h2>
+    <div class="panel">
+      <div>
+        <p>Las clases, las camas reformer, los desafíos del mes y la comunidad Aroha están en Instagram. Pasate a ver cómo se entrena en el estudio y escribinos por DM para sumarte.</p>
+        <a class="btn btn-primario" href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener">Seguir a @pilatesaroha</a>
+      </div>
+      <div>
+        <a class="ig-chip" href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener">📷 @pilatesaroha</a>
+        <p style="margin-top:14px;font-size:.88rem">También en <a href="https://www.facebook.com/Pilatesaroha/" target="_blank" rel="noopener" style="color:var(--violeta)">Facebook</a> y <a href="https://www.youtube.com/@PilatesAroha" target="_blank" rel="noopener" style="color:var(--violeta)">YouTube</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <div class="wrap">
+    <div class="sec-label">Contacto</div>
+    <h2>Vení a conocer el estudio</h2>
+    <div class="con-grid">
+      <div>
+        <div class="con-item">📍<div><strong>Sede Núñez</strong><span>Av. Cabildo 3546, CABA</span></div></div>
+        <div class="con-item">🏠<div><strong>Sede Villa del Parque</strong><span>Consultá dirección por Instagram <!-- EDITABLE: dirección exacta de la sede Villa del Parque --></span></div></div>
+        <div class="con-item">🕑<div><strong>Horarios (Núñez)</strong><span>Lunes a viernes 8:00–21:00 · Sábados 9:00–13:00</span></div></div>
+        <div class="con-item">📞<div><strong>Teléfono</strong><span><a href="tel:+541144481880">011 4448-1880</a></span></div></div>
+        <div class="con-item">📷<div><strong>Instagram</strong><span><a href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener">@pilatesaroha</a> — turnos por DM</span></div></div>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av.%20Cabildo%203546%2C%20N%C3%BA%C3%B1ez%2C%20Buenos%20Aires&output=embed" loading="lazy" title="Mapa Pilates Aroha Núñez" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <a class="logo" href="#">Pilates <span>Aroha</span></a>
+      <ul>
+        <li><a href="#nosotros">El estudio</a></li>
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="credito">© Pilates Aroha — Av. Cabildo 3546, Núñez, CABA · Demo diseñada por <a href="https://marcochiaro.github.io/amf-demos/">AMF Studio</a></div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/pilatesaroha/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.2-8.3a1.1 1.1 0 11-2.3 0 1.1 1.1 0 012.3 0z"/></svg>
+</a>
+
+</body>
+</html>
