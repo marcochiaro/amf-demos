@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confitería Dulcis — Pastelería artesanal desde 1978 | Villa Devoto</title>
+<meta name="description" content="Confitería Dulcis, pastelería artesanal de Villa Devoto desde 1978. Masas finas, tortas personalizadas, macarons, bombones y opciones sin TACC, de la mano del maestro pastelero premiado Jorge García. Vallejos 4322, CABA.">
+<meta property="og:title" content="Confitería Dulcis — Pastelería artesanal desde 1978">
+<meta property="og:description" content="Casi medio siglo de oficio pastelero en Villa Devoto. Masas finas, tortas personalizadas y chocolatería. Vallejos 4322, todos los días de 8 a 19 hs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/dulcis/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--papel:#F8F3E8;--panel:#EFE6D2;--grafito:#23262E;--gris:#5D5A50;--oro:#B8892F;--oro-osc:#93691C;--blanco:#FFFDF8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;color:var(--grafito);background:var(--papel);line-height:1.65}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:rgba(248,243,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid #E2D6BC;z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;color:var(--grafito);text-decoration:none}
+.logo span{color:var(--oro)}
+.nav-links{display:flex;gap:22px}
+.nav-links a{text-decoration:none;color:var(--grafito);font-size:.92rem;font-weight:600}
+.nav-links a:hover{color:var(--oro-osc)}
+@media(max-width:760px){.nav-links{display:none}}
+.hero{padding:90px 0 76px;text-align:center;background:
+ radial-gradient(ellipse at 50% -20%,rgba(184,137,47,.16),transparent 60%),var(--papel)}
+.est{display:inline-block;border:1px solid var(--oro);color:var(--oro-osc);border-radius:999px;padding:7px 18px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:22px}
+.hero h1{font-size:clamp(2.5rem,6vw,4.1rem);line-height:1.1;max-width:820px;margin:0 auto 18px}
+.hero h1 em{font-style:italic;color:var(--oro-osc)}
+.hero p.lead{font-size:1.14rem;color:var(--gris);max-width:600px;margin:0 auto 30px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:6px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .15s}
+.btn-main{background:var(--grafito);color:var(--papel);box-shadow:0 8px 22px rgba(35,38,46,.25)}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-sec{background:transparent;color:var(--grafito);border:1.5px solid var(--grafito)}
+.hero .hours{margin-top:18px;font-size:.9rem;color:var(--gris)}
+section{padding:76px 0}
+.sec-head{max-width:660px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin-bottom:12px}
+.sec-head h2 em{font-style:italic;color:var(--oro-osc)}
+.sec-head p{color:var(--gris)}
+#nosotros{background:var(--blanco)}
+.nos-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.nos-grid .txt p{margin-bottom:16px}
+.nos-grid .txt p:first-of-type{font-size:1.18rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{background:var(--panel);color:var(--oro-osc);border:1px solid #DCCBA4;border-radius:4px;padding:8px 14px;font-size:.84rem;font-weight:600}
+.premios{background:var(--panel);border:1px solid #DCCBA4;border-radius:10px;padding:24px;margin-top:22px}
+.premios h3{font-size:1.15rem;margin-bottom:12px}
+.premios ul{list-style:none}
+.premios li{padding:7px 0;border-bottom:1px dashed #D5C49C;font-size:.92rem;color:var(--gris)}
+.premios li:last-child{border-bottom:0}
+.premios li::before{content:"🏅 ";margin-right:4px}
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}
+.serv{background:var(--blanco);border:1px solid #E2D6BC;border-radius:10px;padding:26px;border-top:3px solid var(--oro)}
+.serv .ico{font-size:1.6rem;display:block;margin-bottom:12px}
+.serv h3{font-size:1.25rem;margin-bottom:8px}
+.serv p{font-size:.93rem;color:var(--gris)}
+#metodo{background:var(--grafito);color:var(--papel)}
+#metodo .sec-head h2,#metodo .sec-head h2 em{color:var(--papel)}
+#metodo .sec-head h2 em{color:#D9B25F}
+#metodo .sec-head p{color:#B9B49F}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}
+.paso{border-top:2px solid rgba(184,137,47,.55);padding-top:18px}
+.paso .num{font-family:'Playfair Display',serif;font-size:2rem;color:#D9B25F;display:block;margin-bottom:6px}
+.paso h3{font-size:1.18rem;margin-bottom:6px}
+.paso p{font-size:.9rem;color:#C9C4AE}
+#prensa{background:var(--papel)}
+.prensa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.pr{background:var(--blanco);border:1px solid #E2D6BC;border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.pr .q{font-family:'Playfair Display',serif;font-style:italic;font-size:1.12rem;line-height:1.45}
+.pr .who{font-size:.83rem;color:var(--gris);margin-top:auto}
+.pr.ig{background:var(--panel);border-style:dashed}
+.pr.ig a{color:var(--oro-osc);font-weight:700;text-decoration:none}
+#contacto{background:var(--blanco)}
+.cont-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:38px;align-items:start}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.cont-item{margin-bottom:20px}
+.cont-item h3{font-size:1.12rem;margin-bottom:4px}
+.cont-item p,.cont-item a{color:var(--gris);text-decoration:none;font-size:.97rem}
+.cont-item a:hover{color:var(--oro-osc)}
+.map{border-radius:10px;overflow:hidden;border:1px solid #E2D6BC;min-height:340px}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--grafito);color:#C9C4AE;padding:44px 0}
+.foot{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:center}
+.foot .logo{color:var(--papel)}
+.foot-nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot-nav a{color:#C9C4AE;text-decoration:none;font-size:.9rem}
+.foot-nav a:hover{color:#fff}
+.credit{font-size:.78rem;color:#8A8672;width:100%;text-align:center;margin-top:10px}
+.wa-float{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:60}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid #25D366;animation:ring 1.8s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.65);opacity:0}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#top">Confitería <span>Dulcis</span></a>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a><a href="#especialidades">Especialidades</a><a href="#metodo">El oficio</a><a href="#prensa">Prensa</a><a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="est">Villa Devoto · Desde 1978</span>
+    <h1>Casi medio siglo de <em>pastelería artesanal</em> en el corazón de Devoto</h1>
+    <p class="lead">Masas finas, tortas personalizadas, bombones y helado artesanal, de la mano de Jorge García: maestro pastelero premiado en la Argentina y el mundo.</p>
+    <div class="cta-row">
+      <a class="btn btn-main" href="https://wa.me/5491130846200" target="_blank" rel="noopener">Encargá por WhatsApp</a>
+      <a class="btn btn-sec" href="https://www.instagram.com/dulcis.pasteleria/" target="_blank" rel="noopener">Ver en Instagram</a>
+    </div>
+    <p class="hours">Todos los días · 8:00 a 19:00 hs · Vallejos 4322, CABA</p>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="wrap">
+    <div class="sec-head"><h2>Un oficio que se hereda, <em>una vitrina que es historia</em></h2></div>
+    <div class="nos-grid">
+      <div class="txt">
+        <p>Dulcis abrió sus puertas en junio de 1978 en Vallejos y Av. Lincoln. Años después, Jorge García —que había entrado como aprendiz a los 13 años— se puso la confitería al hombro y la convirtió en una referencia de la pastelería artesanal porteña.</p>
+        <p>La receta no cambió en más de cuatro décadas: la más alta calidad en los productos y un lazo de fidelidad con los clientes que se construyó bocado a bocado.</p>
+        <p>Hoy la vitrina combina los clásicos de siempre con pastelería actual: macarons, cheesecakes, croissants de pistacho y opciones sin TACC.</p>
+      </div>
+      <div>
+        <div class="tags">
+          <span class="tag">Masas finas</span><span class="tag">Tortas personalizadas</span><span class="tag">Bombones</span><span class="tag">Macarons</span><span class="tag">Sin TACC</span><span class="tag">Helado artesanal</span>
+        </div>
+        <div class="premios">
+          <h3>Palmarés de Jorge García</h3>
+          <ul>
+            <li>1º puesto: Mejor Maestro Pastelero Artesanal de Argentina</li>
+            <li>Bicampeón nacional de pastelería</li>
+            <li>1º puesto en el campeonato latinoamericano más importante</li>
+            <li>3º puesto en el Mundial del Helado (Italia)</li>
+            <li>4 veces representante argentino en el Mundial de Pastelería de Lyon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="especialidades">
+  <div class="wrap">
+    <div class="sec-head"><h2>Nuestras <em>especialidades</em></h2><p>Todo se elabora de forma artesanal, todos los días.</p></div>
+    <div class="serv-grid">
+      <div class="serv"><span class="ico">🥐</span><h3>Panadería dulce</h3><p>Masas finas, croissants y el celebrado croissant de pistacho, recién salidos del horno.</p></div>
+      <div class="serv"><span class="ico">🎂</span><h3>Tortas &amp; eventos</h3><p>Tortas personalizadas, mini gâteaux y postres para cumpleaños, casamientos y celebraciones.</p></div>
+      <div class="serv"><span class="ico">🍫</span><h3>Chocolatería</h3><p>Bombones y chocolates propios, más macarons y cheesecakes de elaboración diaria.</p></div>
+      <div class="serv"><span class="ico">🌾</span><h3>Sin TACC &amp; catering</h3><p>Línea de pastelería sin TACC, servicio de lunch y catering, con delivery y takeaway.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="sec-head"><h2>El oficio, <em>en cuatro pasos</em></h2><p>Así trabaja un campeón de la pastelería artesanal.</p></div>
+    <div class="pasos">
+      <div class="paso"><span class="num">01</span><h3>Materia prima</h3><p>Selección rigurosa de ingredientes: la calidad del producto empieza mucho antes del horno.</p></div>
+      <div class="paso"><span class="num">02</span><h3>Elaboración diaria</h3><p>Producción artesanal todos los días, con las técnicas que Jorge perfeccionó durante décadas de oficio.</p></div>
+      <div class="paso"><span class="num">03</span><h3>La vitrina</h3><p>Cada mañana a las 8, la vitrina de Vallejos 4322 se llena de clásicos y novedades de estación.</p></div>
+      <div class="paso"><span class="num">04</span><h3>Tu pedido</h3><p>Tortas y mesas dulces personalizadas: contanos qué festejás y lo diseñamos juntos por WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="prensa">
+  <div class="wrap">
+    <div class="sec-head"><h2>Lo que se dice <em>de Dulcis</em></h2></div>
+    <div class="prensa-grid">
+      <div class="pr"><p class="q">"Un deleite artesanal en cada bocado."</p><span class="who">Devoto Magazine</span></div>
+      <div class="pr"><p class="q">"La emblemática pastelería artesanal de Villa Devoto."</p><span class="who">Devoto Magazine, nota por los 40 años</span></div>
+      <div class="pr ig"><p class="q">¿Querés ver la vitrina de hoy y las opiniones de los vecinos?</p><span class="who">Encontranos en Instagram → <a href="https://www.instagram.com/dulcis.pasteleria/" target="_blank" rel="noopener">@dulcis.pasteleria</a></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="sec-head"><h2>Pasá por <em>la confitería</em></h2></div>
+    <div class="cont-grid">
+      <div>
+        <div class="cont-item"><h3>📍 Dirección</h3><p>Vallejos 4322 (a metros de Av. Lincoln), Villa Devoto, CABA</p></div>
+        <div class="cont-item"><h3>🕐 Horarios</h3><p>Todos los días · 8:00 a 19:00 hs</p></div>
+        <div class="cont-item"><h3>💬 WhatsApp</h3><a href="https://wa.me/5491130846200" target="_blank" rel="noopener">+54 9 11 3084-6200</a></div>
+        <div class="cont-item"><h3>📞 Teléfono</h3><a href="tel:+541145041570">4504-1570</a></div>
+        <div class="cont-item"><h3>📷 Instagram</h3><a href="https://www.instagram.com/dulcis.pasteleria/" target="_blank" rel="noopener">@dulcis.pasteleria</a></div>
+      </div>
+      <div class="map">
+        <iframe title="Mapa Confitería Dulcis" src="https://www.google.com/maps?q=Vallejos%204322%2C%20CABA&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top">Confitería <span style="color:#D9B25F">Dulcis</span></a>
+    <div class="foot-nav">
+      <a href="#nosotros">Nosotros</a><a href="#especialidades">Especialidades</a><a href="#metodo">El oficio</a><a href="#prensa">Prensa</a><a href="#contacto">Contacto</a>
+    </div>
+    <p class="credit">Demo creada por AMF Studio · Marco Chiaro — mchiaro79@gmail.com</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491130846200" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.6.8 5 2.1 7L2.7 29.3l6.6-2.1c1.9 1.2 4.2 1.8 6.7 1.8 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24.1c-2.2 0-4.3-.6-6-1.7l-.4-.3-3.9 1.2 1.3-3.8-.3-.4c-1.3-1.8-2-4-2-6.2C4.7 9.7 9.8 4.7 16 4.7s11.3 5.1 11.3 11.3S22.2 26.8 16 26.8zm6.2-8.5c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.4-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2.1-.4 0-.6-.1-.2-.8-1.9-1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+</body>
+</html>
