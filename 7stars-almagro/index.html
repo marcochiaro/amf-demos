@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbers7stars Almagro — Barbería urbana con 5.0★ en Google</title>
+<meta name="description" content="Barbers7stars Almagro: barbería urbana en Mario Bravo, Almagro, CABA. Fades, cortes y barba con calificación perfecta 5.0★ en Google. Turnos por WhatsApp.">
+<meta property="og:title" content="Barbers7stars Almagro — Barbería urbana 5.0★">
+<meta property="og:description" content="Fades, cortes y barba en Almagro. 5.0★ en Google. Turnos por WhatsApp o Instagram.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#101012;
+  --panel:#1A1A1E;
+  --volt:#D7F94B;
+  --volt-dim:#A8C43A;
+  --white:#F5F5F2;
+  --gray:#8E8E96;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+h1,h2,h3{font-family:'Syne',sans-serif}
+.container{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(16,16,18,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(215,249,75,.18)}
+nav .inner{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;color:var(--white);text-decoration:none}
+.logo span{color:var(--volt)}
+nav ul{display:none;list-style:none;gap:24px}
+nav ul a{color:var(--gray);text-decoration:none;font-size:.9rem;font-weight:600}
+nav ul a:hover{color:var(--volt)}
+.nav-cta{background:var(--volt);color:var(--black);text-decoration:none;font-weight:800;font-size:.85rem;padding:9px 16px;border-radius:100px}
+@media(min-width:860px){nav ul{display:flex}}
+/* HERO */
+header{padding:150px 0 90px;background:
+  radial-gradient(ellipse at 85% 10%, rgba(215,249,75,.12), transparent 50%),
+  var(--black)}
+.kicker{color:var(--volt);text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.05;max-width:680px;font-weight:800}
+h1 span{color:var(--volt)}
+.hero-sub{margin:22px 0 32px;color:var(--gray);max-width:520px;font-size:1.06rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.badge{border:1px solid rgba(215,249,75,.4);border-radius:100px;padding:7px 15px;font-size:.8rem;color:var(--volt);font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;padding:15px 28px;border-radius:100px;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-volt{background:var(--volt);color:var(--black)}
+.btn-ghost{border:1.5px solid var(--volt);color:var(--volt)}
+/* SECTIONS */
+section{padding:84px 0}
+.sec-kicker{color:var(--volt);text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;font-weight:700;margin-bottom:12px}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin-bottom:18px;font-weight:800}
+/* NOSOTROS */
+#nosotros{background:var(--panel)}
+.lead{font-size:1.2rem;line-height:1.7;max-width:720px;color:var(--white)}
+.lead strong{color:var(--volt)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tag{background:rgba(215,249,75,.08);border:1px solid rgba(215,249,75,.3);color:var(--volt);padding:8px 16px;border-radius:100px;font-size:.82rem;font-weight:600}
+/* SERVICIOS */
+.grid{display:grid;gap:18px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--panel);border:1px solid rgba(215,249,75,.16);border-radius:16px;padding:28px;transition:border-color .2s}
+.card:hover{border-color:rgba(215,249,75,.5)}
+.card h3{color:var(--volt);font-size:1.08rem;margin-bottom:10px}
+.card p{color:var(--gray);font-size:.94rem}
+.card .num{font-family:'Syne',sans-serif;font-weight:800;color:rgba(215,249,75,.35);font-size:1.5rem;display:block;margin-bottom:10px}
+/* METODO */
+#metodo{background:var(--panel)}
+.steps{display:grid;gap:22px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{border-top:3px solid var(--volt);padding-top:18px}
+.step .n{font-family:'Syne',sans-serif;font-weight:800;color:var(--volt);font-size:.95rem}
+.step h3{font-size:1.02rem;margin:8px 0}
+.step p{color:var(--gray);font-size:.9rem}
+/* RESEÑAS */
+.rating-box{display:flex;flex-wrap:wrap;align-items:center;gap:26px;background:var(--panel);border:1px solid rgba(215,249,75,.25);border-radius:20px;padding:36px;margin-top:34px}
+.rating-num{font-family:'Syne',sans-serif;font-weight:800;font-size:4rem;color:var(--volt);line-height:1}
+.stars{color:var(--volt);letter-spacing:4px;font-size:1.3rem}
+.rating-meta{color:var(--gray);font-size:.95rem;max-width:420px}
+.rating-meta a{color:var(--volt);text-decoration:none;font-weight:700}
+/* CONTACTO */
+#contacto{background:var(--panel)}
+.contact-grid{display:grid;gap:34px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr}}
+.c-item{margin-bottom:22px}
+.c-item .lbl{color:var(--volt);text-transform:uppercase;font-size:.7rem;letter-spacing:.18em;font-weight:700;margin-bottom:5px}
+.c-item p,.c-item a{color:var(--white);font-size:1.02rem;text-decoration:none}
+.c-item a:hover{color:var(--volt)}
+.map-wrap{border-radius:16px;overflow:hidden;border:1px solid rgba(215,249,75,.3);min-height:320px}
+.map-wrap iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+/* FOOTER */
+footer{background:#0b0b0d;padding:54px 0 40px;border-top:1px solid rgba(215,249,75,.15)}
+.f-grid{display:flex;flex-wrap:wrap;gap:34px;justify-content:space-between}
+footer h4{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;margin-bottom:12px}
+footer h4 span{color:var(--volt)}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{color:var(--gray);text-decoration:none;font-size:.9rem}
+footer a:hover{color:var(--volt)}
+.f-note{margin-top:38px;color:#55555c;font-size:.78rem}
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(0,0,0,.45);animation:ring 2.4s ease-out infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="logo" href="#">Barbers<span>7stars</span></a>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#metodo">Método</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/5491164909371" target="_blank" rel="noopener">Turnos</a>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <p class="kicker">Barbería urbana · Almagro</p>
+    <h1>Tu corte no es un trámite. <span>Es tu firma.</span></h1>
+    <p class="hero-sub">Fades, cortes y barba con calificación perfecta en Google. En Mario Bravo, Almagro — turnos por WhatsApp, sin vueltas.</p>
+    <div class="hero-badges">
+      <span class="badge">★ 5.0 en Google</span>
+      <span class="badge">Calificación perfecta</span>
+      <span class="badge">Turnos por WhatsApp</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/5491164909371?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20Barbers7stars" target="_blank" rel="noopener">Pedir turno por WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/7stars_almagro/" target="_blank" rel="noopener">Ver trabajos en Instagram</a>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="container">
+    <p class="sec-kicker">Nosotros</p>
+    <h2>Barberos que viven el oficio</h2>
+    <p class="lead">En <strong>Barbers7stars</strong> el corte es cultura: seguimos las tendencias, las adaptamos a tu estilo y no te dejamos ir hasta que el espejo diga lo que tiene que decir. Por eso los vecinos de Almagro nos bancan con una calificación perfecta en Google.</p>
+    <div class="tags">
+      <span class="tag">Fades y diseños</span>
+      <span class="tag">Cortes clásicos</span>
+      <span class="tag">Barba y perfilado</span>
+      <span class="tag">Estilo urbano</span>
+      <span class="tag">Buena música, buena charla</span>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <p class="sec-kicker">Servicios</p>
+    <h2>Lo nuestro</h2>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Corte urbano</h3><p>Fades, taper, texturizados y diseños: el corte que se lleva, hecho con precisión.</p></div>
+      <div class="card"><span class="num">02</span><h3>Corte clásico</h3><p>Tijera y máquina para un estilo prolijo y atemporal, asesorado según tu tipo de pelo.</p></div>
+      <div class="card"><span class="num">03</span><h3>Barba y perfilado</h3><p>Definición de líneas, volumen y terminación para que la barba acompañe el corte.</p></div>
+      <div class="card"><span class="num">04</span><h3>Combo corte + barba</h3><p>El servicio completo en un solo turno: salís listo para la semana.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="container">
+    <p class="sec-kicker">El método</p>
+    <h2>Cuatro pasos, cero vueltas</h2>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Escribinos</h3><p>Mandanos WhatsApp y coordinamos día y horario que te quede cómodo.</p></div>
+      <div class="step"><span class="n">02</span><h3>Contanos tu idea</h3><p>Traé una foto de referencia o dejate asesorar por el equipo.</p></div>
+      <div class="step"><span class="n">03</span><h3>Manos a la obra</h3><p>Corte con dedicación real: acá nadie sale con un trabajo a medias.</p></div>
+      <div class="step"><span class="n">04</span><h3>Foto final</h3><p>Chequeás el resultado por delante y por detrás. Si querés, queda para el feed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="container">
+    <p class="sec-kicker">Reseñas</p>
+    <h2>Calificación perfecta en Google</h2>
+    <div class="rating-box">
+      <span class="rating-num">5.0</span>
+      <div>
+        <div class="stars">★★★★★</div>
+        <p class="rating-meta">Los clientes de Barbers7stars en Almagro nos calificaron con 5.0 estrellas en Google. Mirá los trabajos reales y lo que dice la gente en nuestro <a href="https://www.instagram.com/7stars_almagro/" target="_blank" rel="noopener">Instagram @7stars_almagro</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <p class="sec-kicker">Contacto</p>
+    <h2>Estamos en Almagro</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><p class="lbl">Dirección</p><p>Mario Bravo, Almagro, CABA <!-- EDITABLE: completar altura de la calle --></p></div>
+        <div class="c-item"><p class="lbl">WhatsApp</p><a href="https://wa.me/5491164909371" target="_blank" rel="noopener">+54 9 11 6490-9371</a></div>
+        <div class="c-item"><p class="lbl">Instagram</p><a href="https://www.instagram.com/7stars_almagro/" target="_blank" rel="noopener">@7stars_almagro</a></div>
+        <div class="c-item"><p class="lbl">Horarios</p><p>Consultá disponibilidad por WhatsApp. <!-- EDITABLE: completar horarios --></p></div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Barbers7stars,+Mario+Bravo,+Almagro,+Buenos+Aires&output=embed" loading="lazy" title="Mapa — Barbers7stars Almagro" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <h4>Barbers<span>7stars</span></h4>
+        <p style="color:var(--gray);font-size:.9rem;max-width:280px">Barbería urbana en Almagro. Fades, cortes y barba con calificación perfecta en Google.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#metodo">Método</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5491164909371" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/7stars_almagro/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.google.com/maps?q=Barbers7stars,+Mario+Bravo,+Almagro,+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="f-note">© Barbers7stars Almagro — Demo de sitio web creada por AMF Studio.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491164909371?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20Barbers7stars" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.4c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.3-3.2-1.3-4.9 0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.4-9.6 9.4zm5.3-7c-.3-.1-1.7-.8-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1c-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.5-1.7-1.6-2s0-.4.1-.6c.1-.1.3-.3.4-.5s.2-.3.3-.5 0-.4 0-.5c-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+</body>
+</html>

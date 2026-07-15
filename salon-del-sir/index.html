@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Salón del Sir — Barbería tradicional en Parque Chacabuco</title>
+<meta name="description" content="Barbería tradicional en Parque Chacabuco, CABA. Corte, afeitado tradicional y barba con toalla a vapor. 4.9★ en Google. Atención con turno.">
+<meta property="og:title" content="El Salón del Sir — Barbería tradicional en Parque Chacabuco">
+<meta property="og:description" content="Corte, afeitado tradicional y barba con toalla a vapor. 4.9★ en Google con más de 70 reseñas. Av. Asamblea 390, CABA.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#10352A;
+  --green-deep:#0B261E;
+  --brass:#C08A3E;
+  --brass-soft:#D9AC6B;
+  --cream:#F4EFE4;
+  --cream-dim:#CBC4B2;
+  --ink:#0E1A16;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',sans-serif;background:var(--green-deep);color:var(--cream);line-height:1.6}
+h1,h2,h3,.serif{font-family:'Libre Caslon Text',serif}
+img{max-width:100%}
+.container{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,38,30,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(192,138,62,.25)}
+nav .inner{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Libre Caslon Text',serif;font-size:1.15rem;color:var(--cream);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--brass)}
+nav ul{display:none;list-style:none;gap:26px}
+nav ul a{color:var(--cream-dim);text-decoration:none;font-size:.9rem;font-weight:500}
+nav ul a:hover{color:var(--brass-soft)}
+.nav-cta{background:var(--brass);color:var(--ink);text-decoration:none;font-weight:700;font-size:.85rem;padding:9px 16px;border-radius:6px}
+@media(min-width:860px){nav ul{display:flex}}
+/* HERO */
+header{padding:150px 0 90px;background:
+  radial-gradient(ellipse at 75% 15%, rgba(192,138,62,.16), transparent 55%),
+  linear-gradient(180deg, var(--green-deep) 0%, var(--green) 100%)}
+.kicker{color:var(--brass-soft);text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.15;max-width:640px;font-weight:700}
+h1 em{color:var(--brass-soft);font-style:italic}
+.hero-sub{margin:22px 0 32px;color:var(--cream-dim);max-width:520px;font-size:1.05rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.badge{border:1px solid rgba(192,138,62,.45);border-radius:100px;padding:7px 15px;font-size:.82rem;color:var(--brass-soft)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;padding:15px 26px;border-radius:8px;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:1.5px solid var(--brass);color:var(--brass-soft)}
+/* SECTIONS */
+section{padding:84px 0}
+.sec-kicker{color:var(--brass);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:700;margin-bottom:12px}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:18px;font-weight:700}
+/* NOSOTROS */
+#nosotros{background:var(--green)}
+.lead{font-family:'Libre Caslon Text',serif;font-size:1.25rem;line-height:1.65;color:var(--cream);max-width:720px}
+.lead strong{color:var(--brass-soft);font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tag{background:rgba(192,138,62,.12);border:1px solid rgba(192,138,62,.35);color:var(--brass-soft);padding:8px 16px;border-radius:100px;font-size:.85rem;font-weight:600}
+/* SERVICIOS */
+.grid{display:grid;gap:18px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:rgba(244,239,228,.04);border:1px solid rgba(192,138,62,.22);border-radius:12px;padding:28px}
+.card h3{color:var(--brass-soft);font-size:1.1rem;margin-bottom:10px}
+.card p{color:var(--cream-dim);font-size:.94rem}
+.card .num{font-family:'Libre Caslon Text',serif;color:rgba(192,138,62,.5);font-size:1.6rem;display:block;margin-bottom:12px}
+/* EXPERIENCIA */
+#experiencia{background:var(--green)}
+.steps{display:grid;gap:22px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{border-top:2px solid var(--brass);padding-top:18px}
+.step .n{font-family:'Libre Caslon Text',serif;font-style:italic;color:var(--brass-soft);font-size:1.05rem}
+.step h3{font-size:1.02rem;margin:8px 0}
+.step p{color:var(--cream-dim);font-size:.9rem}
+/* RESEÑAS */
+.rating-line{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.rating-num{font-family:'Libre Caslon Text',serif;font-size:3rem;color:var(--brass-soft)}
+.stars{color:var(--brass);letter-spacing:3px;font-size:1.1rem}
+.rating-meta{color:var(--cream-dim);font-size:.9rem}
+.reviews{display:grid;gap:18px;margin-top:34px;grid-template-columns:1fr}
+@media(min-width:700px){.reviews{grid-template-columns:repeat(2,1fr)}}
+.review{background:rgba(244,239,228,.04);border:1px solid rgba(192,138,62,.22);border-radius:12px;padding:26px}
+.review p{font-family:'Libre Caslon Text',serif;font-style:italic;font-size:1.02rem;color:var(--cream)}
+.review .who{margin-top:16px;color:var(--brass-soft);font-size:.85rem;font-weight:600;font-family:'Figtree',sans-serif;font-style:normal}
+.review .src{color:var(--cream-dim);font-weight:400}
+/* CONTACTO */
+#contacto{background:var(--green)}
+.contact-grid{display:grid;gap:34px;margin-top:36px;grid-template-columns:1fr}
+@media(min-width:860px){.contact-grid{grid-template-columns:1fr 1fr}}
+.c-item{margin-bottom:22px}
+.c-item .lbl{color:var(--brass);text-transform:uppercase;font-size:.72rem;letter-spacing:.18em;font-weight:700;margin-bottom:5px}
+.c-item p,.c-item a{color:var(--cream);font-size:1.02rem;text-decoration:none}
+.c-item a:hover{color:var(--brass-soft)}
+.map-wrap{border-radius:14px;overflow:hidden;border:1px solid rgba(192,138,62,.3);min-height:320px}
+.map-wrap iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+/* FOOTER */
+footer{background:var(--ink);padding:54px 0 40px;border-top:1px solid rgba(192,138,62,.25)}
+.f-grid{display:flex;flex-wrap:wrap;gap:34px;justify-content:space-between}
+footer h4{font-family:'Libre Caslon Text',serif;font-size:1.1rem;margin-bottom:12px}
+footer h4 span{color:var(--brass)}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{color:var(--cream-dim);text-decoration:none;font-size:.9rem}
+footer a:hover{color:var(--brass-soft)}
+.f-note{margin-top:38px;color:rgba(203,196,178,.55);font-size:.78rem}
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(0,0,0,.35);animation:ring 2.4s ease-out infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="logo" href="#">El Salón <span>del Sir</span></a>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/5491163545312" target="_blank" rel="noopener">Pedir turno</a>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <p class="kicker">Barbería tradicional · Parque Chacabuco</p>
+    <h1>El ritual del buen corte, <em>como se hacía antes.</em></h1>
+    <p class="hero-sub">Corte a medida, afeitado tradicional a navaja y barba con toalla a vapor. Atención personalizada, siempre con turno.</p>
+    <div class="hero-badges">
+      <span class="badge">★ 4.9 en Google</span>
+      <span class="badge">+70 reseñas</span>
+      <span class="badge">Solo con turno</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/5491163545312?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20El%20Sal%C3%B3n%20del%20Sir" target="_blank" rel="noopener">Pedir turno por WhatsApp</a>
+      <a class="btn btn-ghost" href="https://booksy.com/es-ar/3572_el-salon-del-sir_barberia_82522_ciudad-autonoma-de-buenos-aires" target="_blank" rel="noopener">Reservar por Booksy</a>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="container">
+    <p class="sec-kicker">Nosotros</p>
+    <h2>Una barbería de barrio con oficio de caballeros</h2>
+    <p class="lead">En Av. Asamblea 390, frente al corazón de Parque Chacabuco, <strong>El Salón del Sir</strong> recupera el ritual de la barbería clásica: tiempo para cada cliente, toalla caliente, navaja y conversación. Nada de cortes apurados — acá cada turno tiene nombre y apellido.</p>
+    <div class="tags">
+      <span class="tag">Afeitado a navaja</span>
+      <span class="tag">Toalla a vapor</span>
+      <span class="tag">Cortes clásicos y actuales</span>
+      <span class="tag">Atención personalizada</span>
+      <span class="tag">Ambiente relajado</span>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <p class="sec-kicker">Servicios</p>
+    <h2>Lo que hacemos, y lo hacemos bien</h2>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Corte</h3><p>Corte a medida con asesoramiento previo: clásico, moderno o a tijera, según tu estilo y tu tipo de pelo.</p></div>
+      <div class="card"><span class="num">02</span><h3>Corte y barba con toalla a vapor</h3><p>El servicio completo del Sir: corte más perfilado de barba con toalla caliente, el ritual insignia de la casa.</p></div>
+      <div class="card"><span class="num">03</span><h3>Afeitado tradicional</h3><p>Afeitado a navaja con espuma caliente y cuidado de la piel, como en las barberías de siempre.</p></div>
+      <div class="card"><span class="num">04</span><h3>Arreglo de barba</h3><p>Perfilado, prolijado e hidratación para mantener la barba en su mejor forma entre visita y visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <p class="sec-kicker">La experiencia</p>
+    <h2>Así funciona tu visita</h2>
+    <div class="steps">
+      <div class="step"><span class="n">Paso i</span><h3>Reservá tu turno</h3><p>Por WhatsApp o Booksy, elegís día y horario. Sin esperas ni filas.</p></div>
+      <div class="step"><span class="n">Paso ii</span><h3>Te escuchamos</h3><p>Antes de tocar la tijera, charlamos: qué buscás, qué te queda bien, qué mantenimiento querés.</p></div>
+      <div class="step"><span class="n">Paso iii</span><h3>El ritual</h3><p>Corte, navaja y toalla a vapor con tiempo real dedicado — nunca más de un cliente a la vez.</p></div>
+      <div class="step"><span class="n">Paso iv</span><h3>Salís impecable</h3><p>Terminación prolija, consejos de cuidado y tu próximo turno agendado si querés.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="container">
+    <p class="sec-kicker">Reseñas</p>
+    <h2>Lo que dicen los clientes</h2>
+    <div class="rating-line">
+      <span class="rating-num">4.9</span>
+      <div>
+        <div class="stars">★★★★★</div>
+        <p class="rating-meta">en Google (más de 70 reseñas) · 5.0 en Booksy (más de 450 reseñas verificadas)</p>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="review"><p>“Excelente calidad, atención personalizada y un equipo comprometido.”</p><div class="who">Gustavo · <span class="src">reseña verificada en Booksy</span></div></div>
+      <div class="review"><p>“Muy buena la atención de Juan y Mariano… ambiente muy agradable.”</p><div class="who">Fernando · <span class="src">reseña verificada en Booksy</span></div></div>
+      <div class="review"><p>“Buena onda y excelente atención.”</p><div class="who">Santiago · <span class="src">reseña verificada en Booksy</span></div></div>
+      <div class="review"><p>“Cinco palabras: CRACK!!”</p><div class="who">Gonzalo · <span class="src">reseña verificada en Booksy</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <p class="sec-kicker">Contacto</p>
+    <h2>Vení a conocernos</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><p class="lbl">Dirección</p><p>Av. Asamblea 390, Parque Chacabuco, CABA</p></div>
+        <div class="c-item"><p class="lbl">WhatsApp</p><a href="https://wa.me/5491163545312" target="_blank" rel="noopener">+54 9 11 6354-5312</a></div>
+        <div class="c-item"><p class="lbl">Turnos</p><a href="https://booksy.com/es-ar/3572_el-salon-del-sir_barberia_82522_ciudad-autonoma-de-buenos-aires" target="_blank" rel="noopener">Reservá online por Booksy</a></div>
+        <div class="c-item"><p class="lbl">Horarios</p><p>Atención con turno programado.<br>Consultá disponibilidad por WhatsApp.</p></div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Av.+Asamblea+390,+Parque+Chacabuco,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa — El Salón del Sir" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <h4>El Salón <span>del Sir</span></h4>
+        <p style="color:var(--cream-dim);font-size:.9rem;max-width:280px">Barbería tradicional en Parque Chacabuco. El ritual del buen corte, con turno y sin apuro.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5491163545312" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://booksy.com/es-ar/3572_el-salon-del-sir_barberia_82522_ciudad-autonoma-de-buenos-aires" target="_blank" rel="noopener">Turnos por Booksy</a></li>
+          <li><a href="https://www.google.com/maps?q=Av.+Asamblea+390,+CABA" target="_blank" rel="noopener">Cómo llegar</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="f-note">© El Salón del Sir · Av. Asamblea 390, CABA — Demo de sitio web creada por AMF Studio.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491163545312?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20El%20Sal%C3%B3n%20del%20Sir" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.4c-1.2 0-2.4-.3-3.4-.8l-.6-.3-4.9.9 1-4.7-.4-.6c-.9-1.5-1.3-3.2-1.3-4.9 0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6-4.3 9.4-9.6 9.4zm5.3-7c-.3-.1-1.7-.8-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1c-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.5-1.7-1.6-2s0-.4.1-.6c.1-.1.3-.3.4-.5s.2-.3.3-.5 0-.4 0-.5c-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+</body>
+</html>
