@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nocciole Almacén Natural — Parque Chas | Av. Gral. Benjamín Victorica 2324</title>
+<meta name="description" content="Nocciole Almacén Natural en Parque Chas: frutos secos, especias, productos frescos, opciones veganas y keto. 5.0★ en Google. Av. Gral. Benjamín Victorica 2324, CABA.">
+<meta property="og:title" content="Nocciole Almacén Natural — Parque Chas">
+<meta property="og:description" content="El almacén natural del barrio: calidad elegida a mano, frescos difíciles de conseguir y atención con calidez. 5.0★ en Google.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --avellana:#6B4A2F; --avellana-osc:#4E3521; --crema:#FBF6EF; --papel:#F3EADD;
+  --musgo:#7A8450; --musgo-osc:#5C6539; --tinta:#31261C; --mut:#8A7B6B; --blanco:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;color:var(--tinta);background:var(--crema);line-height:1.65}
+h1,h2,h3{font-family:'Young Serif',serif;font-weight:400;line-height:1.18}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+.btn{display:inline-block;padding:15px 30px;border-radius:12px;font-weight:700;text-decoration:none;transition:transform .15s;font-size:1rem}
+.btn:hover{transform:translateY(-2px)}
+.btn-ig{background:var(--avellana);color:var(--crema);box-shadow:0 8px 22px rgba(107,74,47,.3)}
+.btn-ghost{border:2px solid var(--avellana);color:var(--avellana)}
+.kicker{display:inline-block;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--musgo-osc);margin-bottom:14px}
+section{padding:86px 0}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,246,239,.93);backdrop-filter:blur(10px);border-bottom:1px solid rgba(107,74,47,.14)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:'Young Serif',serif;font-size:1.35rem;color:var(--avellana);text-decoration:none}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{color:var(--tinta);text-decoration:none;font-size:.92rem;font-weight:600}
+nav ul a:hover{color:var(--avellana)}
+@media(max-width:760px){nav ul{display:none}}
+/* HERO */
+.hero{background:var(--papel);padding:104px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(122,132,80,.16),transparent 70%);top:-160px;right:-160px}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.5rem);max-width:680px;color:var(--avellana-osc);margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--musgo-osc)}
+.hero p.lead{font-size:1.15rem;max-width:560px;color:#5E5142;margin-bottom:34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.badges{display:flex;gap:24px;margin-top:46px;flex-wrap:wrap}
+.badge{font-size:.88rem;color:#5E5142;display:flex;align-items:center;gap:8px}
+.badge b{color:var(--avellana-osc)}
+.star-pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(107,74,47,.18);padding:8px 16px;border-radius:100px;font-weight:800;color:var(--avellana-osc);font-size:.9rem;margin-bottom:22px}
+.star-pill span{color:#D9A441;letter-spacing:2px}
+/* NOSOTROS */
+.nosotros .grid2{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+@media(max-width:820px){.nosotros .grid2{grid-template-columns:1fr}}
+.foto-card{background:var(--avellana);border-radius:24px 90px 24px 24px;min-height:340px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--crema);text-align:center;padding:30px}
+.foto-card .emoji{font-size:4rem;margin-bottom:12px}
+.foto-card small{opacity:.72}
+.nosotros h2{font-size:clamp(1.7rem,3.6vw,2.35rem);margin-bottom:18px;color:var(--avellana-osc)}
+.nosotros p{color:#5E5142;margin-bottom:14px}
+.nosotros p.editorial{font-size:1.12rem;color:var(--tinta)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{background:#fff;border:1px solid rgba(107,74,47,.2);color:var(--avellana-osc);font-size:.83rem;font-weight:700;padding:8px 16px;border-radius:10px}
+/* SERVICIOS */
+.servicios{background:#fff}
+.servicios h2{font-size:clamp(1.7rem,3.6vw,2.35rem);color:var(--avellana-osc);margin-bottom:10px}
+.servicios .sub{color:var(--mut);margin-bottom:44px;max-width:580px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.serv-grid{grid-template-columns:1fr}}
+.serv{background:var(--crema);border-radius:16px;padding:28px;border:1px solid rgba(107,74,47,.12);transition:transform .15s}
+.serv:hover{transform:translateY(-4px)}
+.serv .ico{font-size:1.9rem;margin-bottom:14px}
+.serv h3{font-size:1.1rem;margin-bottom:8px;color:var(--avellana-osc)}
+.serv p{font-size:.92rem;color:#6E6152}
+/* METODO */
+.metodo h2{font-size:clamp(1.7rem,3.6vw,2.35rem);color:var(--avellana-osc);margin-bottom:44px}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:900px){.pasos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+.paso{background:#fff;border-radius:16px;padding:30px 24px 26px;border:1px solid rgba(107,74,47,.12)}
+.paso .num{font-family:'Young Serif',serif;font-size:2.3rem;color:var(--musgo);display:block;margin-bottom:10px}
+.paso h3{font-size:1.04rem;margin-bottom:8px;color:var(--avellana-osc)}
+.paso p{font-size:.9rem;color:#6E6152}
+/* RESEÑAS */
+.resenas{background:var(--avellana-osc);color:var(--crema)}
+.resenas h2{font-size:clamp(1.7rem,3.6vw,2.35rem);margin-bottom:8px}
+.resenas .sub{color:#C9B8A6;margin-bottom:44px}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:860px){.res-grid{grid-template-columns:1fr}}
+.res{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:28px}
+.res .stars{color:#E4B65C;letter-spacing:2px;margin-bottom:14px}
+.res p{font-size:.97rem;color:#F2EAE0}
+.res footer{margin-top:16px;font-size:.82rem;color:#C9B8A6}
+/* CONTACTO */
+.contacto .grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+@media(max-width:820px){.contacto .grid2{grid-template-columns:1fr}}
+.contacto h2{font-size:clamp(1.7rem,3.6vw,2.35rem);color:var(--avellana-osc);margin-bottom:24px}
+.dato{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.dato .ico{font-size:1.3rem;line-height:1.4}
+.dato b{display:block;color:var(--avellana-osc)}
+.dato span{color:#6E6152;font-size:.95rem}
+.dato a{color:var(--musgo-osc)}
+.mapa{border-radius:18px;overflow:hidden;min-height:340px;border:1px solid rgba(107,74,47,.18)}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0}
+/* FOOTER */
+footer.site{background:var(--tinta);color:#BFB2A2;padding:54px 0 40px;font-size:.9rem}
+footer.site .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+footer.site .logo{color:var(--crema)}
+footer.site ul{list-style:none}
+footer.site ul a{color:#BFB2A2;text-decoration:none;line-height:2}
+footer.site ul a:hover{color:#fff}
+footer.site .fin{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:.8rem}
+/* IG FLOAT (canal principal del negocio) */
+.ig-float{position:fixed;right:22px;bottom:22px;z-index:99;width:62px;height:62px;border-radius:50%;background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.3);animation:ring 2.4s infinite}
+.ig-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(221,42,123,.5)}70%{box-shadow:0 0 0 18px rgba(221,42,123,0)}100%{box-shadow:0 0 0 0 rgba(221,42,123,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">nocciole</a>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Qué encontrás</a></li>
+      <li><a href="#experiencia">Cómo comprar</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="star-pill"><span>★★★★★</span> 5.0 en Google</div>
+    <h1>“El mejor almacén del barrio, <em>lejos.</em>”</h1>
+    <p class="lead">Lo dicen nuestros clientes en Google, no nosotros. Almacén natural en Parque Chas: productos elegidos por su calidad, frescos difíciles de conseguir y atención con una calidez que no se encuentra en cualquier lado.</p>
+    <div class="cta-row">
+      <a class="btn btn-ig" href="https://www.instagram.com/nocciole.almacen.natural/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+      <a class="btn btn-ghost" href="tel:+541147907293">Llamanos: 011 4790-7293</a>
+    </div>
+    <div class="badges">
+      <div class="badge">🕘 Lun a Sáb · <b>9 a 19 h</b></div>
+      <div class="badge">💳 <b>Aceptamos tarjeta</b></div>
+      <div class="badge">📍 <b>Av. Gral. B. Victorica 2324</b>, Parque Chas</div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap grid2">
+    <div class="foto-card">
+      <div class="emoji">🌰</div>
+      <b>nocciole · almacén natural</b>
+      <small>[Espacio editable para foto real del local]</small>
+    </div>
+    <div>
+      <span class="kicker">Nosotros</span>
+      <h2>Elegimos priorizar la calidad</h2>
+      <p class="editorial">Nocciole es un almacén natural de barrio donde cada producto está elegido a mano. No trabajamos con cualquier marca: buscamos ingredientes reales, frescos que no se consiguen en cualquier lado y ese asesoramiento profesional que hace la diferencia.</p>
+      <p>Nuestros clientes nos describen como “un lugar mágico”: venís por un producto y te vas con una recomendación, una receta y ganas de volver.</p>
+      <div class="tags">
+        <span class="tag">Frutos secos</span>
+        <span class="tag">Especias y condimentos</span>
+        <span class="tag">Frescos</span>
+        <span class="tag">Vegetariano y vegano</span>
+        <span class="tag">Pedidos keto</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <span class="kicker">Qué encontrás</span>
+    <h2>Variedad de verdad, calidad de siempre</h2>
+    <p class="sub">Lo que nuestros clientes destacan una y otra vez en sus reseñas.</p>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🥜</div><h3>Frutos secos y semillas</h3><p>La base de todo buen almacén natural: frescos y de primera calidad.</p></div>
+      <div class="serv"><div class="ico">🧂</div><h3>Especias y condimentos</h3><p>Extensa variedad para cocinar con sabor de verdad.</p></div>
+      <div class="serv"><div class="ico">🥛</div><h3>Productos frescos</h3><p>Frescos difíciles de conseguir, como los yogures artesanales que nuestros clientes vienen a buscar especialmente.</p></div>
+      <div class="serv"><div class="ico">🥗</div><h3>Vegetariano y vegano</h3><p>Muy buena variedad para quienes comen a base de plantas, o quieren empezar.</p></div>
+      <div class="serv"><div class="ico">🥑</div><h3>Pedidos keto</h3><p>Armamos pedidos especiales para dieta keto: consultanos por Instagram.</p></div>
+      <div class="serv"><div class="ico">🤝</div><h3>Asesoramiento</h3><p>Atención profesional y personalizada: te ayudamos a elegir lo que necesitás.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <span class="kicker">Cómo comprar</span>
+    <h2>Simple, como debe ser</h2>
+    <div class="pasos">
+      <div class="paso"><span class="num">1</span><h3>Acercate o escribinos</h3><p>Vení al local en Parque Chas o mandanos mensaje por Instagram.</p></div>
+      <div class="paso"><span class="num">2</span><h3>Contanos qué necesitás</h3><p>¿Keto, vegano, un fresco difícil de conseguir? Te asesoramos.</p></div>
+      <div class="paso"><span class="num">3</span><h3>Armamos tu pedido</h3><p>Elegimos lo mejor de cada góndola, con la calidad de siempre.</p></div>
+      <div class="paso"><span class="num">4</span><h3>Pagás como te quede cómodo</h3><p>Efectivo o tarjeta, sin drama.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="resenas" id="resenas">
+  <div class="wrap">
+    <span class="kicker" style="color:#E4B65C">Reseñas</span>
+    <h2>5.0 estrellas en Google</h2>
+    <p class="sub">Opiniones reales de nuestros clientes.</p>
+    <div class="res-grid">
+      <div class="res"><div class="stars">★★★★★</div><p>“Excelente atención! Un lugar mágico, me encanta ir a comprar a Nocciole.”</p><footer>María · Google</footer></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“La calidad de los productos es excelente, pero sobre todo, cada vez que voy me atienden con una calidez que no se encuentra en cualquier lado.”</p><footer>Michelle · Google</footer></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“El mejor almacén del barrio LEJOS. No solo excelente calidad y variedad de productos, también muy bien atendido.”</p><footer>Mateo · Google</footer></div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2>Estamos en Parque Chas</h2>
+    <div class="grid2">
+      <div>
+        <div class="dato"><div class="ico">📍</div><div><b>Dirección</b><span>Av. Gral. Benjamín Victorica 2324, Parque Chas, CABA</span></div></div>
+        <div class="dato"><div class="ico">🕘</div><div><b>Horarios</b><span>Lunes a sábado de 9 a 19 h · Domingo cerrado</span></div></div>
+        <div class="dato"><div class="ico">📞</div><div><b>Teléfono</b><span><a href="tel:+541147907293">011 4790-7293</a></span></div></div>
+        <div class="dato"><div class="ico">📸</div><div><b>Instagram</b><span><a href="https://www.instagram.com/nocciole.almacen.natural/" target="_blank" rel="noopener">@nocciole.almacen.natural</a></span></div></div>
+        <a class="btn btn-ig" href="https://www.instagram.com/nocciole.almacen.natural/" target="_blank" rel="noopener" style="margin-top:8px">Hacé tu pedido por Instagram</a>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av.+Gral.+Benjam%C3%ADn+Victorica+2324,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa: Nocciole Almacén Natural"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#">nocciole</a>
+        <p style="max-width:270px;margin-top:10px">Almacén natural en Parque Chas. Calidad elegida a mano y atención con calidez, desde el barrio.</p>
+      </div>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Qué encontrás</a></li>
+        <li><a href="#experiencia">Cómo comprar</a></li>
+      </ul>
+      <ul>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.instagram.com/nocciole.almacen.natural/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="fin">© Nocciole Almacén Natural · Av. Gral. Benjamín Victorica 2324, CABA — Demo de sitio creada por AMF Studio</div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/nocciole.almacen.natural/" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.3.6-.3 1.7-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.6.3 1.7.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.3-.6.3-1.7.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.4-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.3-.1-.6-.3-1.7-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.4a4.4 4.4 0 110 8.8 4.4 4.4 0 010-8.8zm0 7.2a2.9 2.9 0 100-5.7 2.9 2.9 0 000 5.7zm5.6-7.4a1 1 0 11-2.1 0 1 1 0 012.1 0z"/></svg>
+</a>
+
+</body>
+</html>

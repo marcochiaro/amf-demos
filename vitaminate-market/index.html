@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitaminate — Mercado Natural en Colegiales | Av. Álvarez Thomas 837</title>
+<meta name="description" content="Vitaminate, tu mercado natural entre Colegiales y Chacarita. Dietética, alimentos naturales y pedidos por WhatsApp o Rappi. Av. Álvarez Thomas 837, CABA.">
+<meta property="og:title" content="Vitaminate — Mercado Natural en Colegiales">
+<meta property="og:description" content="Tu mercado natural de barrio: alimentos saludables, pedidos por WhatsApp y delivery por Rappi.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800;900&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lima:#8DC63F; --lima-osc:#5E8C25; --bosque:#1F3312; --menta:#EFF7E6;
+  --naranja:#F58220; --tinta:#22291B; --mut:#71806A; --blanco:#FFFFFF; --hueso:#FAFBF7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Albert Sans',sans-serif;color:var(--tinta);background:var(--hueso);line-height:1.6}
+h1,h2,h3{font-family:'Gabarito',sans-serif;line-height:1.12}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.btn{display:inline-block;padding:15px 32px;border-radius:14px;font-weight:700;text-decoration:none;transition:transform .15s;font-size:1rem;font-family:'Gabarito',sans-serif}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--lima);color:var(--bosque);box-shadow:0 8px 24px rgba(141,198,63,.4)}
+.btn-ghost{border:2px solid var(--bosque);color:var(--bosque)}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--lima-osc);margin-bottom:14px}
+section{padding:84px 0}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,251,247,.93);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,51,18,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:'Gabarito',sans-serif;font-weight:900;font-size:1.35rem;color:var(--bosque);text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--lima-osc)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{color:var(--tinta);text-decoration:none;font-size:.92rem;font-weight:600}
+nav ul a:hover{color:var(--lima-osc)}
+@media(max-width:760px){nav ul{display:none}}
+/* HERO */
+.hero{background:var(--bosque);color:#fff;padding:110px 0 96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(141,198,63,.22),transparent 65%);bottom:-300px;left:-200px}
+.hero::after{content:"🌱";position:absolute;font-size:13rem;opacity:.1;right:-20px;bottom:-30px;transform:rotate(12deg)}
+.hero .kicker{color:var(--lima)}
+.hero h1{font-size:clamp(2.3rem,5.6vw,3.7rem);font-weight:900;max-width:660px;margin-bottom:20px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--lima)}
+.hero p.lead{font-size:1.15rem;max-width:540px;color:#C6D6B8;margin-bottom:34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:2}
+.hero .btn-ghost{border-color:#C6D6B8;color:#C6D6B8}
+.badges{display:flex;gap:24px;margin-top:46px;flex-wrap:wrap;position:relative;z-index:2}
+.badge{font-size:.88rem;color:#C6D6B8;display:flex;align-items:center;gap:8px}
+.badge b{color:#fff}
+/* NOSOTROS */
+.nosotros .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+@media(max-width:820px){.nosotros .grid2{grid-template-columns:1fr}}
+.nosotros h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:18px;color:var(--bosque)}
+.nosotros p{color:var(--mut);margin-bottom:14px}
+.nosotros p.editorial{font-size:1.12rem;color:var(--tinta)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{background:var(--menta);border:1px solid rgba(94,140,37,.25);color:var(--bosque);font-size:.83rem;font-weight:700;padding:8px 16px;border-radius:12px}
+.foto-card{background:linear-gradient(150deg,var(--lima) 0%,var(--lima-osc) 100%);border-radius:26px;min-height:340px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--bosque);text-align:center;padding:30px}
+.foto-card .emoji{font-size:4rem;margin-bottom:12px}
+.foto-card b{font-family:'Gabarito',sans-serif;font-size:1.2rem}
+.foto-card small{opacity:.8;color:var(--bosque)}
+/* SERVICIOS */
+.servicios{background:#fff}
+.servicios h2{font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--bosque);margin-bottom:10px}
+.servicios .sub{color:var(--mut);margin-bottom:44px;max-width:560px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.serv-grid{grid-template-columns:1fr}}
+.serv{background:var(--hueso);border-radius:20px;padding:28px;border:1px solid rgba(31,51,18,.1);transition:transform .15s}
+.serv:hover{transform:translateY(-4px);border-color:var(--lima)}
+.serv .ico{width:52px;height:52px;border-radius:14px;background:var(--menta);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px}
+.serv h3{font-size:1.08rem;margin-bottom:8px;color:var(--bosque)}
+.serv p{font-size:.92rem;color:var(--mut)}
+/* METODO */
+.metodo h2{font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--bosque);margin-bottom:44px}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:900px){.pasos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+.paso{background:#fff;border-radius:20px;padding:30px 24px 26px;border:1px solid rgba(31,51,18,.1)}
+.paso .num{font-family:'Gabarito',sans-serif;font-weight:900;font-size:2.4rem;color:var(--lima);display:block;margin-bottom:10px;-webkit-text-stroke:1px var(--lima-osc)}
+.paso h3{font-size:1.02rem;margin-bottom:8px;color:var(--bosque)}
+.paso p{font-size:.9rem;color:var(--mut)}
+/* COMUNIDAD (reseñas honestas) */
+.comunidad{background:var(--menta)}
+.comunidad .inner{max-width:720px;margin:0 auto;text-align:center}
+.comunidad h2{font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--bosque);margin-bottom:16px}
+.comunidad p{color:#4A5A3D;margin-bottom:14px;font-size:1.05rem}
+.comunidad .btn{margin-top:14px}
+/* CONTACTO */
+.contacto .grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+@media(max-width:820px){.contacto .grid2{grid-template-columns:1fr}}
+.contacto h2{font-size:clamp(1.7rem,3.6vw,2.4rem);color:var(--bosque);margin-bottom:24px}
+.dato{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.dato .ico{font-size:1.3rem;line-height:1.4}
+.dato b{display:block;color:var(--bosque)}
+.dato span{color:var(--mut);font-size:.95rem}
+.dato a{color:var(--lima-osc);font-weight:600}
+.mapa{border-radius:22px;overflow:hidden;min-height:340px;border:1px solid rgba(31,51,18,.15)}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0}
+/* FOOTER */
+footer.site{background:var(--bosque);color:#A8BC97;padding:54px 0 40px;font-size:.9rem}
+footer.site .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+footer.site .logo{color:#fff}
+footer.site ul{list-style:none}
+footer.site ul a{color:#A8BC97;text-decoration:none;line-height:2}
+footer.site ul a:hover{color:#fff}
+footer.site .fin{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:.8rem}
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:99;width:62px;height:62px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.3);animation:ring 2.4s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">vitaminate<span>.</span></a>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Qué encontrás</a></li>
+      <li><a href="#experiencia">Cómo pedir</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Mercado natural · Colegiales / Chacarita</span>
+    <h1>Vitaminate: el mercado natural <em>de tu barrio.</em></h1>
+    <p class="lead">En Av. Álvarez Thomas 837 encontrás alimentos naturales y saludables, con pedidos por WhatsApp y delivery por Rappi. Comé mejor sin cruzar la ciudad.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/5491173561134?text=Hola%20Vitaminate!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">Pedí por WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/vitaminate.market/" target="_blank" rel="noopener">Seguinos en Instagram</a>
+    </div>
+    <div class="badges">
+      <div class="badge">🛵 Delivery por <b>Rappi</b></div>
+      <div class="badge">📍 <b>Av. Álvarez Thomas 837</b>, CABA</div>
+      <div class="badge">🌱 <b>Mercado natural</b> de barrio</div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap grid2">
+    <div>
+      <span class="kicker">Nosotros</span>
+      <h2>Un mercado natural, en serio</h2>
+      <p class="editorial">Vitaminate es el mercado natural que le faltaba a la zona de Álvarez Thomas: un lugar donde comprar saludable es fácil, rápido y de confianza, atendido por gente que conoce lo que vende.</p>
+      <p>Estamos en el límite de Colegiales y Chacarita, a pasos de Av. Federico Lacroze. Vení a descubrir el local o pedí desde tu casa: estamos en Rappi y respondemos por WhatsApp e Instagram.</p>
+      <div class="tags">
+        <span class="tag">Alimentos naturales</span>
+        <span class="tag">Dietética</span>
+        <span class="tag">Snacks saludables</span>
+        <span class="tag">Pedidos por WhatsApp</span>
+        <span class="tag">Delivery por Rappi</span>
+      </div>
+    </div>
+    <div class="foto-card">
+      <div class="emoji">🌱</div>
+      <b>VITAMINATE mercado natural</b>
+      <small>[Espacio editable para foto real del local]</small>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <span class="kicker">Qué encontrás</span>
+    <h2>Tu compra saludable, resuelta</h2>
+    <p class="sub">Un mercado natural pensado para el día a día. <em>[Categorías editables según el surtido real del local]</em></p>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🥜</div><h3>Almacén natural</h3><p>Alimentos naturales para tu despensa de todos los días.</p></div>
+      <div class="serv"><div class="ico">🌾</div><h3>Dietética</h3><p>Productos de dietética clásica: lo que buscás, cerca de casa.</p></div>
+      <div class="serv"><div class="ico">🍫</div><h3>Snacks saludables</h3><p>Opciones ricas para picar sin culpa, en el trabajo o en casa.</p></div>
+      <div class="serv"><div class="ico">🧃</div><h3>Bebidas y más</h3><p>Alternativas naturales para acompañar tus comidas.</p></div>
+      <div class="serv"><div class="ico">💬</div><h3>Pedidos por WhatsApp</h3><p>Escribinos, armamos tu pedido y coordinamos la entrega.</p></div>
+      <div class="serv"><div class="ico">🛵</div><h3>Rappi</h3><p>¿No llegás al local? Pedinos por Rappi y recibilo en tu casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <span class="kicker">Cómo pedir</span>
+    <h2>De la góndola a tu mesa, en 4 pasos</h2>
+    <div class="pasos">
+      <div class="paso"><span class="num">1</span><h3>Elegí tu canal</h3><p>WhatsApp, Instagram, Rappi o directamente en el local.</p></div>
+      <div class="paso"><span class="num">2</span><h3>Contanos qué buscás</h3><p>Te respondemos con lo que hay y te sugerimos alternativas.</p></div>
+      <div class="paso"><span class="num">3</span><h3>Confirmá tu pedido</h3><p>Armamos todo y te avisamos cuando está listo.</p></div>
+      <div class="paso"><span class="num">4</span><h3>Retiralo o recibilo</h3><p>Pasá por Álvarez Thomas 837 o recibilo por delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="comunidad" id="comunidad">
+  <div class="wrap inner">
+    <span class="kicker">Comunidad</span>
+    <h2>Sumate a la comunidad Vitaminate</h2>
+    <p>Todos los días compartimos novedades, productos nuevos y recomendaciones en nuestro Instagram. Si ya nos conocés, dejanos tu reseña en Google: ayudás a que más vecinos coman mejor.</p>
+    <a class="btn btn-wa" href="https://www.instagram.com/vitaminate.market/" target="_blank" rel="noopener">Ver @vitaminate.market</a>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2>Pasá cuando quieras</h2>
+    <div class="grid2">
+      <div>
+        <div class="dato"><div class="ico">📍</div><div><b>Dirección</b><span>Av. Álvarez Thomas 837, Colegiales/Chacarita, CABA</span></div></div>
+        <div class="dato"><div class="ico">🕙</div><div><b>Horarios</b><span>[Horario editable — consultanos por WhatsApp o Instagram]</span></div></div>
+        <div class="dato"><div class="ico">💬</div><div><b>WhatsApp</b><span><a href="https://wa.me/5491173561134" target="_blank" rel="noopener">011 7356-1134</a></span></div></div>
+        <div class="dato"><div class="ico">📸</div><div><b>Instagram</b><span><a href="https://www.instagram.com/vitaminate.market/" target="_blank" rel="noopener">@vitaminate.market</a></span></div></div>
+        <a class="btn btn-wa" href="https://wa.me/5491173561134?text=Hola%20Vitaminate!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" style="margin-top:8px">Escribinos por WhatsApp</a>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av.+%C3%81lvarez+Thomas+837,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa: Vitaminate Market"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#">vitaminate<span style="color:var(--lima)">.</span></a>
+        <p style="max-width:270px;margin-top:10px">Mercado natural en Av. Álvarez Thomas 837, entre Colegiales y Chacarita.</p>
+      </div>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Qué encontrás</a></li>
+        <li><a href="#experiencia">Cómo pedir</a></li>
+      </ul>
+      <ul>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.instagram.com/vitaminate.market/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="fin">© Vitaminate Mercado Natural · Av. Álvarez Thomas 837, CABA — Demo de sitio creada por AMF Studio</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491173561134?text=Hola%20Vitaminate!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.7-6.7-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5c-1.3-2-2-4.4-2-6.7C3.1 8.9 8.9 3.1 16 3.1S28.9 8.9 28.9 16 23.1 28.5 16 28.5zm7.1-9.3c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 3.9 1.7 4.2c.2.3 2.9 4.5 7.1 6.3 1 .4 1.8.7 2.4.9 1 .3 1.9.3 2.6.2.8-.1 2.3-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg>
+</a>
+
+</body>
+</html>
