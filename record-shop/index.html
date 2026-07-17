@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disquería Record Shop — Vinilos en Villa Crespo</title>
+<meta name="description" content="Disquería Record Shop: vinilos nuevos y usados en pleno Villa Crespo. Visitá el showroom en Padilla 645, CABA, o pedí por Instagram.">
+<meta property="og:title" content="Disquería Record Shop — Vinilos en Villa Crespo">
+<meta property="og:description" content="El showroom de vinilos de Padilla 645, Villa Crespo. Ediciones nacionales e importadas, clásicos y rarezas.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kraft:#F1E7D6;
+  --ink:#1E1710;
+  --blu:#2456E6;
+  --mut:#77685A;
+  --card:#FBF6EC;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--kraft);color:var(--ink);line-height:1.65}
+h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em;line-height:1.08;text-transform:uppercase}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:var(--ink)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1060px;margin:0 auto}
+.logo{font-family:'Anton',sans-serif;font-size:1.25rem;color:var(--kraft);text-decoration:none;text-transform:uppercase;letter-spacing:.04em}
+.logo span{color:var(--blu)}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:#cfc3b2;text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--blu);color:#fff!important;padding:9px 16px;border-radius:6px;font-weight:600}
+@media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+/* HERO */
+.hero{background:var(--ink);color:var(--kraft);overflow:hidden;position:relative}
+.hero-in{padding:88px 0 84px;position:relative;z-index:2}
+.vinyl{position:absolute;right:-140px;top:50%;transform:translateY(-50%);width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#0c0906 0%,#0c0906 18%,#241c12 19%,#0f0b07 20%,#241c12 21%,#0f0b07 40%,#241c12 41%,#0f0b07 60%,#241c12 61%,#0f0b07 78%,var(--blu) 79%,var(--blu) 88%,#0c0906 89%);opacity:.85;z-index:1;animation:spin 24s linear infinite}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+@media(max-width:820px){.vinyl{width:340px;height:340px;right:-160px;opacity:.5}}
+.kicker{display:inline-block;font-family:'IBM Plex Mono',monospace;color:var(--blu);background:rgba(36,86,230,.12);border:1px solid rgba(36,86,230,.5);padding:6px 14px;border-radius:4px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:24px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);max-width:15ch;color:#fff}
+.hero h1 em{font-style:normal;color:var(--blu)}
+.hero p.lead{margin:22px 0 32px;font-size:1.1rem;color:#c9bcab;max-width:50ch}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;padding:14px 24px;border-radius:8px;transition:transform .12s,opacity .12s}
+.btn:hover{transform:translateY(-2px);opacity:.92}
+.btn-p{background:var(--blu);color:#fff}
+.btn-s{background:transparent;color:var(--kraft);border:1.5px solid #5a4d3c}
+.hero-meta{margin-top:40px;display:flex;gap:26px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:#a4967f}
+.hero-meta b{color:var(--kraft)}
+/* SECTIONS */
+section{padding:78px 0}
+.sec-tag{font-family:'IBM Plex Mono',monospace;color:var(--blu);text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;margin-bottom:12px}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin-bottom:16px}
+/* NOSOTROS */
+.nos{background:var(--card);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+.nos-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.nos p{color:#4a4136;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.tag{font-family:'IBM Plex Mono',monospace;background:var(--kraft);border:1.5px solid var(--ink);padding:7px 13px;border-radius:4px;font-size:.8rem}
+.sleeve{background:var(--ink);border-radius:10px;padding:30px;color:var(--kraft);box-shadow:10px 10px 0 var(--blu)}
+.sleeve h3{color:#fff;font-size:1.3rem;margin-bottom:12px}
+.sleeve p{color:#c9bcab;font-size:.95rem;margin-bottom:10px}
+.sleeve .mono{color:var(--blu);font-size:.8rem}
+/* BATEAS */
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:34px}
+.serv{background:var(--card);border:1.5px solid var(--ink);border-radius:10px;padding:26px;position:relative;transition:transform .12s,box-shadow .12s}
+.serv:hover{transform:translateY(-4px);box-shadow:6px 6px 0 var(--ink)}
+.serv .lbl{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--blu);letter-spacing:.12em;text-transform:uppercase}
+.serv h3{font-size:1.1rem;margin:8px 0 10px}
+.serv p{font-size:.92rem;color:var(--mut)}
+/* EXPERIENCIA */
+.metodo{background:var(--ink);color:var(--kraft)}
+.metodo h2{color:#fff}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:38px}
+.paso{border:1px solid #3d3121;border-radius:10px;padding:26px;background:#282014}
+.paso .num{font-family:'Anton',sans-serif;font-size:2rem;color:var(--blu)}
+.paso h3{margin:10px 0 8px;font-size:1rem;color:#fff}
+.paso p{font-size:.9rem;color:#b3a48d}
+/* COMUNIDAD (sin reseñas) */
+.rev-cta{margin-top:30px;background:var(--card);border:1.5px solid var(--ink);border-left:8px solid var(--blu);border-radius:10px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.rev-cta p{color:#4a4136;max-width:52ch}
+/* CONTACTO */
+.cont{background:var(--card);border-top:4px solid var(--ink)}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:30px}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.cont-card{background:var(--kraft);border:1.5px solid var(--ink);border-radius:10px;padding:28px}
+.cont-item{display:flex;gap:12px;margin-bottom:16px;align-items:start}
+.cont-item .ci{width:38px;height:38px;flex:none;border-radius:8px;background:var(--ink);color:var(--kraft);display:flex;align-items:center;justify-content:center}
+.cont-item a{color:var(--blu);font-weight:600;text-decoration:none}
+.cont-item small{color:var(--mut);display:block}
+.map{border:3px solid var(--ink);border-radius:10px;overflow:hidden;min-height:340px;box-shadow:8px 8px 0 var(--blu)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* FOOTER */
+footer{background:var(--ink);color:#a4967f;padding:54px 0 92px}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.foot-logo{font-family:'Anton',sans-serif;color:#fff;font-size:1.3rem;text-transform:uppercase}
+.foot-nav{display:flex;flex-direction:column;gap:8px}
+.foot-nav a{color:#a4967f;text-decoration:none;font-size:.92rem}
+.foot-nav a:hover{color:var(--kraft)}
+.foot-base{margin-top:38px;padding-top:20px;border-top:1px solid #3d3121;font-size:.8rem}
+/* FLOAT (Instagram — canal principal del negocio) */
+.ig-float{position:fixed;right:20px;bottom:20px;z-index:90;width:60px;height:60px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:ring 2.4s infinite}
+.ig-float svg{width:28px;height:28px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(220,39,67,.5)}70%{box-shadow:0 0 0 18px rgba(220,39,67,0)}100%{box-shadow:0 0 0 0 rgba(220,39,67,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Record<span>Shop</span></a>
+    <div class="nav-links">
+      <a href="#nosotros">El showroom</a>
+      <a href="#bateas">Las bateas</a>
+      <a href="#experiencia">Cómo comprar</a>
+      <a href="#comunidad">Comunidad</a>
+      <a class="nav-cta" href="#contacto">Visitanos</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="vinyl" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <span class="kicker">Disquería · Villa Crespo</span>
+    <h1>El vinilo que buscás <em>gira acá</em></h1>
+    <p class="lead">Un showroom de discos en plena calle Padilla, Villa Crespo. Vinilos para revolver batea por batea, encontrar ese disco que se te escapó y volver a casa con música de verdad.</p>
+    <div class="btn-row">
+      <a class="btn btn-p" href="https://www.instagram.com/disqueriarecordshop/" target="_blank" rel="noopener">📸 Escribinos por Instagram</a>
+      <a class="btn btn-s" href="#contacto">Cómo llegar</a>
+    </div>
+    <div class="hero-meta">
+      <span>📍 <b>Padilla 645</b> · Villa Crespo</span>
+      <span>☎ <b>011 4644-5803</b></span>
+      <span>△ Venta por IG y en tienda</span>
+    </div>
+  </div>
+</header>
+
+<section class="nos" id="nosotros">
+  <div class="wrap nos-grid">
+    <div>
+      <div class="sec-tag">El showroom</div>
+      <h2>Una disquería de barrio, como las de antes</h2>
+      <p>Disquería Record Shop es un clásico moderno de Villa Crespo: un showroom en Padilla 645 donde el vinilo se elige con las manos, mirando tapas, leyendo créditos y charlando de música. Nada de algoritmos: acá el descubrimiento es analógico.</p>
+      <p>Publicamos los ingresos y las ofertas en Instagram todos los días, y lo que ves en el feed lo podés reservar por mensaje o venir a buscarlo directamente al local.</p>
+      <div class="tags">
+        <span class="tag">Vinilos</span>
+        <span class="tag">Nacionales e importados</span>
+        <span class="tag">Clásicos y rarezas</span>
+        <span class="tag">Ingresos semanales</span>
+      </div>
+    </div>
+    <div class="sleeve">
+      <h3>Lado A · La visita</h3>
+      <p>Vení a revolver bateas al showroom, sin apuro y con buena música de fondo.</p>
+      <h3 style="margin-top:20px">Lado B · El feed</h3>
+      <p>Seguí los ingresos en Instagram y reservá tu disco antes de que vuele.</p>
+      <p class="mono" style="margin-top:16px">33⅓ RPM · PADILLA 645 · CABA</p>
+    </div>
+  </div>
+</section>
+
+<section id="bateas">
+  <div class="wrap">
+    <div class="sec-tag">Las bateas</div>
+    <h2>Qué vas a encontrar</h2>
+    <div class="serv-grid">
+      <div class="serv">
+        <span class="lbl">Batea 01</span>
+        <h3>Vinilos usados</h3>
+        <p>Discos elegidos y revisados, con historia y a precio de disquería de barrio.</p>
+      </div>
+      <div class="serv">
+        <span class="lbl">Batea 02</span>
+        <h3>Ediciones nuevas</h3>
+        <p>Novedades y reediciones que van entrando al showroom semana a semana.</p>
+      </div>
+      <div class="serv">
+        <span class="lbl">Batea 03</span>
+        <h3>Clásicos y rarezas</h3>
+        <p>[EDITABLE: géneros fuertes del local — rock nacional, jazz, soul, cumbia…]</p>
+      </div>
+      <div class="serv">
+        <span class="lbl">Batea 04</span>
+        <h3>Reservas por Instagram</h3>
+        <p>¿Viste un disco en el feed? Escribinos y te lo guardamos hasta que pases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <div class="sec-tag">Cómo comprar</div>
+    <h2>Del feed a tu bandeja en 4 pasos</h2>
+    <div class="pasos">
+      <div class="paso">
+        <div class="num">01</div>
+        <h3>Mirá los ingresos</h3>
+        <p>Seguinos en Instagram: publicamos los discos que entran al showroom.</p>
+      </div>
+      <div class="paso">
+        <div class="num">02</div>
+        <h3>Consultá o reservá</h3>
+        <p>Mandanos mensaje por el disco que te interesa y te confirmamos disponibilidad.</p>
+      </div>
+      <div class="paso">
+        <div class="num">03</div>
+        <h3>Pasá por Padilla 645</h3>
+        <p>Retiralo en el showroom y aprovechá para revolver las bateas.</p>
+      </div>
+      <div class="paso">
+        <div class="num">04</div>
+        <h3>A girar</h3>
+        <p>Llegás a casa, bajás la púa y listo: música como se escuchaba antes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comunidad">
+  <div class="wrap">
+    <div class="sec-tag">Comunidad</div>
+    <h2>Los que saben de vinilo, nos siguen</h2>
+    <div class="rev-cta">
+      <p>La historia de esta disquería se cuenta todos los días en Instagram: ingresos, ofertas y el movimiento del showroom. Sumate a la comunidad y contanos qué disco estás buscando — y si ya viniste, dejanos tu reseña en Google para que más melómanos nos encuentren.</p>
+      <a class="btn btn-p" style="background:var(--blu);color:#fff" href="https://www.instagram.com/disqueriarecordshop/" target="_blank" rel="noopener">Seguir @disqueriarecordshop</a>
+    </div>
+  </div>
+</section>
+
+<section class="cont" id="contacto">
+  <div class="wrap">
+    <div class="sec-tag">Contacto</div>
+    <h2>Vení al showroom</h2>
+    <div class="cont-grid">
+      <div class="cont-card">
+        <div class="cont-item"><div class="ci">📍</div><div>Padilla 645<br><small>Villa Crespo, CABA</small></div></div>
+        <div class="cont-item"><div class="ci">☎</div><div><a href="tel:+541146445803">011 4644-5803</a><small>Teléfono del local</small></div></div>
+        <div class="cont-item"><div class="ci">📸</div><div><a href="https://www.instagram.com/disqueriarecordshop/" target="_blank" rel="noopener">@disqueriarecordshop</a><small>Ingresos, ofertas y reservas</small></div></div>
+        <div class="cont-item"><div class="ci">🕐</div><div>[EDITABLE: horarios de atención]<small>Consultá por Instagram antes de venir</small></div></div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Padilla+645,+Villa+Crespo,+Buenos+Aires&output=embed" loading="lazy" title="Mapa de Disquería Record Shop" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Disquería Record Shop</div>
+        <p style="max-width:36ch;font-size:.9rem;margin-top:10px">Vinilos en Villa Crespo. Showroom en Padilla 645, Buenos Aires.</p>
+      </div>
+      <div class="foot-nav">
+        <a href="#nosotros">El showroom</a>
+        <a href="#bateas">Las bateas</a>
+        <a href="#experiencia">Cómo comprar</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="foot-nav">
+        <a href="https://www.instagram.com/disqueriarecordshop/" target="_blank" rel="noopener">Instagram</a>
+        <a href="tel:+541146445803">Llamanos</a>
+      </div>
+    </div>
+    <div class="foot-base">© Disquería Record Shop · Villa Crespo, Buenos Aires — Demo diseñada por AMF Studio</div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/disqueriarecordshop/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.4.2-1.7.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.6-.3 1.7-.1 1.3-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.4.3 1.7.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.6.3 1.7.3 1.3.1 1.6.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.4-.2 1.7-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.6.3-1.7.1-1.3.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.4-.3-1.7-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.6-.3-1.7-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 8.9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm6.9-9.1a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0z"/></svg>
+</a>
+
+</body>
+</html>
