@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satyam Yoga Caballito — Yoga para la mujer en grupos reducidos</title>
+<meta name="description" content="Satyam Yoga Caballito para la Mujer: clases de yoga en grupos de hasta 4 alumnas, yoga prenatal, yoga en silla, meditación con sonido y terapias holísticas. Con Geraldine Costa, desde 2012.">
+<meta property="og:title" content="Satyam Yoga Caballito — Un espacio para volver a vos">
+<meta property="og:description" content="Yoga para la mujer en Caballito: grupos íntimos de hasta 4 alumnas, prenatal, meditación y retiros. Reservá tu clase por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Albert+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#FAF4EE;
+  --arena:#F3E6D8;
+  --azafran:#C97F2C;
+  --noche:#35304D;
+  --noche-osc:#26223A;
+  --tinta:#2E2837;
+  --gris:#7C7386;
+  --blanco:#FFFFFF;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Albert Sans',sans-serif;background:var(--crema);color:var(--tinta);line-height:1.65}
+h1,h2,h3{font-family:'Gloock',serif;font-weight:400}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,244,238,.93);backdrop-filter:blur(10px);border-bottom:1px solid #EBDCC9}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1060px;margin:0 auto}
+.logo{font-family:'Gloock',serif;font-size:1.45rem;color:var(--noche);text-decoration:none}
+.logo em{font-style:italic;color:var(--azafran)}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--azafran)}
+.nav-cta{background:var(--noche);color:#fff !important;padding:9px 20px;border-radius:100px;font-weight:600}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(760px 400px at 90% -5%, #F0DFC8 0%, transparent 60%),
+  radial-gradient(600px 380px at 0% 105%, #EADFEF 0%, transparent 55%),
+  var(--crema)}
+.hero-in{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center;padding:86px 22px 92px;max-width:1060px;margin:0 auto}
+.kicker{display:inline-block;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--azafran);font-weight:700;margin-bottom:18px}
+.hero h1{font-size:clamp(2.5rem,5.6vw,3.9rem);line-height:1.1;color:var(--noche);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--azafran)}
+.hero p.lead{font-size:1.08rem;color:var(--gris);max-width:46ch;margin-bottom:30px}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;border-radius:100px;padding:14px 26px;font-size:.96rem;transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.28)}
+.btn-ghost{border:1.5px solid var(--noche);color:var(--noche)}
+.hero-card{background:var(--noche);color:#EDE6F2;border-radius:24px 24px 24px 90px;padding:36px 30px;box-shadow:0 24px 60px rgba(38,34,58,.25)}
+.hero-card h3{color:#fff;font-size:1.3rem;margin-bottom:16px}
+.hero-card ul{list-style:none;display:grid;gap:12px}
+.hero-card li{display:flex;gap:10px;align-items:flex-start;font-size:.94rem}
+.luna{color:var(--azafran);flex:none}
+.hero-card .dir{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16);font-size:.85rem;color:#B7AECB}
+@media(max-width:820px){.hero-in{grid-template-columns:1fr;padding:58px 22px}}
+
+/* NOSOTROS */
+section{padding:78px 0}
+.sec-head{margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.6rem);color:var(--noche)}
+.about{background:var(--blanco)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:start}
+.about p.editorial{font-size:1.17rem;line-height:1.8}
+.about p.editorial + p{margin-top:16px;color:var(--gris)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--arena);color:#8A5B1F;padding:8px 16px;border-radius:100px;font-size:.82rem;font-weight:600}
+.about-side{background:var(--crema);border:1px solid #EBDCC9;border-radius:20px;padding:30px}
+.about-side h3{font-size:1.25rem;color:var(--noche);margin-bottom:10px}
+.about-side p{font-size:.93rem;color:var(--gris);margin-bottom:16px}
+.about-side .num{font-family:'Gloock',serif;font-size:2.3rem;color:var(--azafran);line-height:1.1}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+
+/* CLASES */
+.servicios{background:linear-gradient(180deg,var(--crema),#F6EBDD)}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.serv{background:var(--blanco);border:1px solid #EBDCC9;border-radius:18px;padding:28px 24px;transition:transform .18s ease, box-shadow .18s ease}
+.serv:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(53,48,77,.10)}
+.serv .ico{width:46px;height:46px;border-radius:50%;background:var(--arena);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.2rem}
+.serv h3{font-size:1.2rem;color:var(--noche);margin-bottom:8px}
+.serv p{font-size:.9rem;color:var(--gris)}
+@media(max-width:860px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
+
+/* METODO */
+.metodo .pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:paso}
+.paso{background:var(--blanco);border:1px solid #EBDCC9;border-radius:18px;padding:30px 22px}
+.paso::before{counter-increment:paso;content:"0" counter(paso);font-family:'Gloock',serif;font-size:1.9rem;color:var(--azafran);display:block;margin-bottom:12px}
+.paso h3{font-size:1.1rem;color:var(--noche);margin-bottom:8px}
+.paso p{font-size:.88rem;color:var(--gris)}
+@media(max-width:860px){.metodo .pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.metodo .pasos{grid-template-columns:1fr}}
+
+/* OPINIONES */
+.opiniones{background:var(--noche-osc);color:#E4DDEA}
+.opiniones h2{color:#fff}
+.opiniones .kicker{color:var(--azafran)}
+.op-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:38px 34px;max-width:720px}
+.op-card p{font-size:1.05rem;line-height:1.8}
+.op-card .btn{margin-top:24px;background:#fff;color:var(--noche-osc)}
+
+/* CONTACTO */
+.contacto .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.c-item{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start}
+.c-item .ico{width:42px;height:42px;flex:none;border-radius:50%;background:var(--arena);display:flex;align-items:center;justify-content:center}
+.c-item h4{font-size:.94rem;color:var(--noche);margin-bottom:2px}
+.c-item p,.c-item a{font-size:.92rem;color:var(--gris);text-decoration:none}
+.c-item a:hover{color:var(--azafran)}
+.map{border-radius:20px;overflow:hidden;border:1px solid #EBDCC9;box-shadow:0 16px 40px rgba(53,48,77,.10)}
+.map iframe{width:100%;height:420px;border:0;display:block}
+@media(max-width:820px){.contacto .grid{grid-template-columns:1fr}}
+
+/* FOOTER */
+footer{background:var(--noche-osc);color:#B7AECB;padding:54px 0 34px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.f-grid .logo{color:#fff;font-size:1.5rem}
+.f-grid p{font-size:.88rem;margin-top:10px;max-width:34ch}
+.f-grid h4{color:#fff;font-size:.83rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px}
+.f-grid ul{list-style:none;display:grid;gap:9px}
+.f-grid a{color:#B7AECB;text-decoration:none;font-size:.9rem}
+.f-grid a:hover{color:#fff}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr}}
+
+/* WHATSAPP FLOTANTE */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:ring 2.6s ease-out infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{
+  0%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 0 rgba(37,211,102,.45)}
+  60%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 18px rgba(37,211,102,0)}
+  100%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 0 rgba(37,211,102,0)}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#inicio">Satyam <em>Yoga</em></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">El espacio</a></li>
+      <li><a href="#clases">Clases</a></li>
+      <li><a href="#metodo">Tu camino</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="https://wa.me/5491131537036?text=Hola%20Geraldine!%20Quiero%20consultar%20por%20las%20clases%20de%20yoga" target="_blank" rel="noopener">Reservar clase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="hero-in">
+    <div>
+      <span class="kicker">Yoga para la mujer · Caballito</span>
+      <h1>Un espacio para <em>volver a vos</em></h1>
+      <p class="lead">Clases de yoga en grupos íntimos de hasta 4 alumnas, en un espacio pensado exclusivamente para mujeres. Asanas, respiración y meditación, guiadas por Geraldine Costa.</p>
+      <div class="btn-row">
+        <a class="btn btn-wa" href="https://wa.me/5491131537036?text=Hola%20Geraldine!%20Quiero%20consultar%20por%20las%20clases%20de%20yoga" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.05 2a9.9 9.9 0 0 0-8.4 15.2L2.1 22l4.9-1.5A9.9 9.9 0 1 0 12.05 2zm0 18.1c-1.5 0-2.97-.4-4.25-1.15l-.3-.18-3.13.96.97-3.05-.2-.31a8.24 8.24 0 1 1 6.91 3.73z"/></svg>
+          Reservar por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#clases">Ver clases</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Un yoga distinto</h3>
+      <ul>
+        <li><span class="luna">☾</span>Grupos reducidos: máximo 4 alumnas por clase</li>
+        <li><span class="luna">☾</span>Yoga prenatal individual y ceremonias blessingway</li>
+        <li><span class="luna">☾</span>Meditación con sonido y terapias holísticas</li>
+        <li><span class="luna">☾</span>Presencial en Caballito, o en vivo online</li>
+      </ul>
+      <p class="dir">📍 Av. Rivadavia 6124, Caballito — Lun a Vie, 8 a 20 h</p>
+    </aside>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">El espacio</span>
+      <h2>Yoga pensado para la mujer, desde 2012</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p class="editorial">Satyam es un espacio de bienestar femenino en el corazón de Caballito. Acá el yoga no es una clase multitudinaria: es un encuentro íntimo donde cada mujer es vista, escuchada y acompañada en su propio proceso.</p>
+        <p>Geraldine Costa acompaña a mujeres desde 2012 a través del yoga, la meditación y las terapias holísticas. Cada práctica combina asanas, técnicas de respiración y meditación, en un ambiente cálido y contenedor.</p>
+        <div class="tags">
+          <span class="tag">Grupos de 4</span>
+          <span class="tag">Yoga prenatal</span>
+          <span class="tag">Yoga en silla</span>
+          <span class="tag">Meditación con sonido</span>
+          <span class="tag">Retiros</span>
+          <span class="tag">Terapias holísticas</span>
+        </div>
+      </div>
+      <div class="about-side">
+        <h3>La guía</h3>
+        <p>Geraldine Costa — profesora de yoga y terapeuta holística, en el camino del bienestar desde 2012.</p>
+        <div><span class="num">4</span><p>alumnas como máximo por clase, para una práctica realmente personalizada.</p></div>
+        <p style="margin-top:14px">🎧 Escuchá sus meditaciones guiadas en Spotify.<!-- EDITABLE: enlazar playlist/canal de Spotify --></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="clases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Clases y propuestas</span>
+      <h2>Encontrá tu práctica</h2>
+    </div>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🧘‍♀️</div><h3>Yoga en grupos reducidos</h3><p>Clases grupales de hasta 4 alumnas: atención real de la profesora en cada postura.</p></div>
+      <div class="serv"><div class="ico">🤰</div><h3>Yoga prenatal</h3><p>Encuentros individuales para transitar el embarazo con cuerpo fuerte y mente en calma. Incluye ceremonias blessingway.</p></div>
+      <div class="serv"><div class="ico">🪑</div><h3>Yoga en silla</h3><p>Práctica accesible y amable para quienes necesitan una alternativa de bajo impacto.</p></div>
+      <div class="serv"><div class="ico">💼</div><h3>Yoga empresarial</h3><p>Clases para equipos de trabajo: pausas conscientes que bajan el estrés y mejoran el clima.</p></div>
+      <div class="serv"><div class="ico">🎶</div><h3>Meditación con sonido</h3><p>Encuentros de meditación guiada y baños sonoros para soltar la semana.</p></div>
+      <div class="serv"><div class="ico">🌄</div><h3>Retiros y formaciones</h3><p>Experiencias inmersivas para profundizar tu práctica, más terapias holísticas individuales.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Tu camino</span>
+      <h2>Empezar es simple</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso"><h3>Escribinos</h3><p>Contanos por WhatsApp qué buscás: movimiento, calma, acompañar tu embarazo o simplemente empezar.</p></div>
+      <div class="paso"><h3>Encontrá tu horario</h3><p>Coordinamos juntas el grupo y horario que mejor se adapte a tu semana, de lunes a viernes.</p></div>
+      <div class="paso"><h3>Tu primera práctica</h3><p>Llegás, respirás y practicás a tu ritmo: los grupos de 4 hacen que nadie quede afuera.</p></div>
+      <div class="paso"><h3>Hacela tu ritual</h3><p>La constancia transforma: la práctica se vuelve tu espacio semanal para volver a vos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">La comunidad</span>
+      <h2>Mujeres que ya hicieron de Satyam su lugar</h2>
+    </div>
+    <div class="op-card">
+      <p>Lo que pasa adentro de una clase de 4 se cuenta mejor en primera persona. En nuestro Instagram vas a encontrar la voz de la comunidad Satyam: prácticas, encuentros, retiros y lo que las alumnas comparten sobre su experiencia.</p>
+      <a class="btn" href="https://www.instagram.com/satyam.yoga.caballito/" target="_blank" rel="noopener">Conocé @satyam.yoga.caballito →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Contacto</span>
+      <h2>Reservá tu clase</h2>
+    </div>
+    <div class="grid">
+      <div>
+        <div class="c-item"><div class="ico">📍</div><div><h4>Dirección</h4><p>Av. Rivadavia 6124, Caballito — CABA<!-- EDITABLE: confirmar altura exacta de la dirección --></p></div></div>
+        <div class="c-item"><div class="ico">💬</div><div><h4>WhatsApp</h4><a href="https://wa.me/5491131537036" target="_blank" rel="noopener">+54 9 11 3153-7036</a></div></div>
+        <div class="c-item"><div class="ico">📷</div><div><h4>Instagram</h4><a href="https://www.instagram.com/satyam.yoga.caballito/" target="_blank" rel="noopener">@satyam.yoga.caballito</a></div></div>
+        <div class="c-item"><div class="ico">🕗</div><div><h4>Horarios</h4><p>Lunes a viernes, 8:00 a 20:00 h</p></div></div>
+        <div class="c-item"><div class="ico">🚇</div><div><h4>Cómo llegar</h4><p>Subte A (Primera Junta) · Tren Sarmiento (Caballito) · Colectivos por Av. Rivadavia</p></div></div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Av.+Rivadavia+6124,+CABA&output=embed" loading="lazy" title="Mapa Satyam Yoga Caballito" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo" href="#inicio">Satyam <em>Yoga</em></a>
+        <p>Yoga para la mujer en Caballito: grupos íntimos, prenatal, meditación y retiros. Un espacio para volver a vos.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">El espacio</a></li>
+          <li><a href="#clases">Clases</a></li>
+          <li><a href="#metodo">Tu camino</a></li>
+          <li><a href="#opiniones">La comunidad</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5491131537036" target="_blank" rel="noopener">WhatsApp +54 9 11 3153-7036</a></li>
+          <li><a href="https://www.instagram.com/satyam.yoga.caballito/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linktr.ee/satyam.yoga.caballito" target="_blank" rel="noopener">Linktree</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Satyam Yoga Caballito para la Mujer</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491131537036?text=Hola%20Geraldine!%20Quiero%20consultar%20por%20las%20clases%20de%20yoga" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.05 2a9.9 9.9 0 0 0-8.4 15.2L2.1 22l4.9-1.5A9.9 9.9 0 1 0 12.05 2zm0 18.1c-1.5 0-2.97-.4-4.25-1.15l-.3-.18-3.13.96.97-3.05-.2-.31a8.24 8.24 0 1 1 6.91 3.73z"/></svg>
+</a>
+
+</body>
+</html>

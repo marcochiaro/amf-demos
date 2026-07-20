@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MVS — Kinesiología, RPG y Osteopatía en Caballito</title>
+<meta name="description" content="MVS: consultorio de kinesiología, RPG (Reeducación Postural Global) y osteopatía en Caballito, Av. Rivadavia 6127. Rehabilitación y tratamiento personalizado. Cuidamos tu salud.">
+<meta property="og:title" content="MVS — Kinesiología · RPG · Osteopatía | Caballito">
+<meta property="og:description" content="Consultorio de kinesiología, RPG y osteopatía en pleno Caballito. Tratamientos personalizados, turnos por Instagram o teléfono.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --niebla:#F2F7F7;
+  --hielo:#E3EEEE;
+  --petrol:#0F4C5C;
+  --petrol-osc:#0A3540;
+  --coral:#E4572E;
+  --tinta:#122A30;
+  --gris:#5D7378;
+  --blanco:#FFFFFF;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',sans-serif;background:var(--niebla);color:var(--tinta);line-height:1.6}
+h1,h2,h3{font-family:'Unbounded',sans-serif;font-weight:600}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(242,247,247,.93);backdrop-filter:blur(10px);border-bottom:1px solid #D8E6E6}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Unbounded',sans-serif;font-weight:700;font-size:1.25rem;color:var(--petrol);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--coral)}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem;font-weight:600}
+.nav-links a:hover{color:var(--petrol)}
+.nav-cta{background:var(--coral);color:#fff !important;padding:9px 18px;border-radius:10px}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* HERO */
+.hero{position:relative;background:
+  linear-gradient(120deg, rgba(15,76,92,.04), transparent 40%),
+  radial-gradient(800px 400px at 100% 0%, #DDEBEB 0%, transparent 60%),
+  var(--niebla);
+  overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding:80px 22px 88px;max-width:1080px;margin:0 auto}
+.kicker{display:inline-block;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--coral);font-weight:700;margin-bottom:16px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.12;color:var(--petrol-osc);margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero p.lead{font-size:1.06rem;color:var(--gris);max-width:48ch;margin-bottom:30px}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;border-radius:12px;padding:14px 24px;font-size:.95rem;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;box-shadow:0 10px 26px rgba(204,35,102,.28)}
+.btn-tel{border:2px solid var(--petrol);color:var(--petrol)}
+.hero-card{background:var(--petrol-osc);color:#DDEBEB;border-radius:20px;padding:32px 28px;box-shadow:0 24px 60px rgba(10,53,64,.28)}
+.hero-card h3{color:#fff;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+.hero-card ul{list-style:none;display:grid;gap:14px}
+.hero-card li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+.tick{width:22px;height:22px;flex:none;border-radius:7px;background:rgba(228,87,46,.2);color:var(--coral);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.8rem}
+.hero-card .dir{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem;color:#9FC0C6}
+@media(max-width:820px){.hero-in{grid-template-columns:1fr;padding:56px 22px}}
+
+/* NOSOTROS */
+section{padding:76px 0}
+.sec-head{margin-bottom:42px}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.3rem);color:var(--petrol-osc)}
+.about{background:var(--blanco)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.about p.editorial{font-size:1.15rem;line-height:1.75}
+.about p.editorial + p{margin-top:16px;color:var(--gris)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tag{background:var(--hielo);color:var(--petrol);padding:8px 16px;border-radius:10px;font-size:.82rem;font-weight:700}
+.about-side{background:var(--niebla);border:1px solid #D8E6E6;border-radius:18px;padding:28px}
+.about-side h3{font-size:1.05rem;color:var(--petrol);margin-bottom:12px}
+.about-side p{font-size:.92rem;color:var(--gris);margin-bottom:14px}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+
+/* SERVICIOS */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.serv{background:var(--blanco);border:1px solid #D8E6E6;border-radius:16px;padding:30px 24px;transition:transform .18s ease, box-shadow .18s ease}
+.serv:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,76,92,.12)}
+.serv .ico{width:48px;height:48px;border-radius:12px;background:var(--hielo);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.3rem}
+.serv h3{font-size:1.05rem;color:var(--petrol-osc);margin-bottom:8px}
+.serv p{font-size:.9rem;color:var(--gris)}
+.serv.destacado{background:var(--petrol);border-color:var(--petrol)}
+.serv.destacado h3{color:#fff}
+.serv.destacado p{color:#C9DEE2}
+.serv.destacado .ico{background:rgba(255,255,255,.12)}
+@media(max-width:860px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
+
+/* METODO */
+.metodo{background:var(--blanco)}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:paso}
+.paso{position:relative;background:var(--niebla);border:1px solid #D8E6E6;border-radius:16px;padding:28px 22px}
+.paso::before{counter-increment:paso;content:counter(paso);font-family:'Unbounded',sans-serif;font-weight:700;width:38px;height:38px;border-radius:11px;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1rem}
+.paso h3{font-size:1rem;color:var(--petrol-osc);margin-bottom:8px}
+.paso p{font-size:.87rem;color:var(--gris)}
+@media(max-width:860px){.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+
+/* OPINIONES */
+.opiniones{background:var(--petrol-osc);color:#DDEBEB}
+.opiniones h2{color:#fff}
+.opiniones .kicker{color:var(--coral)}
+.op-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:36px 32px;max-width:720px}
+.op-card p{font-size:1.03rem;line-height:1.75}
+.op-card .btn{margin-top:22px;background:#fff;color:var(--petrol-osc)}
+
+/* CONTACTO */
+.contacto .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.c-item{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start}
+.c-item .ico{width:42px;height:42px;flex:none;border-radius:11px;background:var(--hielo);display:flex;align-items:center;justify-content:center}
+.c-item h4{font-size:.92rem;color:var(--petrol);margin-bottom:2px}
+.c-item p,.c-item a{font-size:.92rem;color:var(--gris);text-decoration:none}
+.c-item a:hover{color:var(--petrol)}
+.map{border-radius:18px;overflow:hidden;border:1px solid #D8E6E6;box-shadow:0 16px 40px rgba(15,76,92,.10)}
+.map iframe{width:100%;height:420px;border:0;display:block}
+@media(max-width:820px){.contacto .grid{grid-template-columns:1fr}}
+
+/* FOOTER */
+footer{background:var(--tinta);color:#9FB8BD;padding:52px 0 32px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:34px}
+.f-grid .logo{color:#fff}
+.f-grid p{font-size:.88rem;margin-top:10px;max-width:34ch}
+.f-grid h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px}
+.f-grid ul{list-style:none;display:grid;gap:9px}
+.f-grid a{color:#9FB8BD;text-decoration:none;font-size:.9rem}
+.f-grid a:hover{color:#fff}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr}}
+
+/* BOTON FLOTANTE (Instagram: canal principal del consultorio) */
+.ig-float{position:fixed;right:22px;bottom:22px;z-index:80;width:60px;height:60px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:ring 2.6s ease-out infinite}
+.ig-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{
+  0%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 0 rgba(220,39,67,.4)}
+  60%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 18px rgba(220,39,67,0)}
+  100%{box-shadow:0 10px 30px rgba(0,0,0,.25),0 0 0 0 rgba(220,39,67,0)}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#inicio">MVS<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">El consultorio</a></li>
+      <li><a href="#servicios">Tratamientos</a></li>
+      <li><a href="#metodo">Cómo trabajamos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener">Pedir turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="hero-in">
+    <div>
+      <span class="kicker">Kinesiología · RPG · Osteopatía — Caballito</span>
+      <h1>Movete mejor. <em>Vivé sin dolor.</em></h1>
+      <p class="lead">MVS es un consultorio de kinesiología en pleno Caballito donde el tratamiento se arma alrededor de tu cuerpo: evaluación, manos expertas y un plan de recuperación a tu medida.</p>
+      <div class="btn-row">
+        <a class="btn btn-ig" href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.4-.3.8-.3 1.9-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.1.8.3 1.9.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.4.3-.8.3-1.9.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.1-.8-.3-1.9-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+          Turnos por Instagram
+        </a>
+        <a class="btn btn-tel" href="tel:+541125827127">📞 011 2582-7127</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Por qué MVS</h3>
+      <ul>
+        <li><span class="tick">✓</span>Kinesiología y rehabilitación con seguimiento real</li>
+        <li><span class="tick">✓</span>RPG: Reeducación Postural Global</li>
+        <li><span class="tick">✓</span>Osteopatía para tratar la causa, no solo el síntoma</li>
+        <li><span class="tick">✓</span>Atención personalizada, en consultorio de barrio</li>
+      </ul>
+      <p class="dir">📍 Av. Rivadavia 6127, PB "C" — Caballito, CABA</p>
+    </aside>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">El consultorio</span>
+      <h2>Un espacio de rehabilitación a escala humana</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p class="editorial">En MVS creemos que la rehabilitación funciona cuando el profesional conoce tu caso, tu historia y tus objetivos. Por eso trabajamos en formato consultorio — no en una fábrica de camillas — combinando kinesiología, RPG y osteopatía según lo que tu cuerpo necesita.</p>
+        <p>Estamos sobre Av. Rivadavia, a pasos del corazón de Caballito, con fácil acceso en subte, colectivo y tren. Cuidamos tu salud, sesión a sesión.</p>
+        <div class="tags">
+          <span class="tag">Kinesiología</span>
+          <span class="tag">RPG</span>
+          <span class="tag">Osteopatía</span>
+          <span class="tag">Rehabilitación</span>
+          <span class="tag">Atención personalizada</span>
+        </div>
+      </div>
+      <div class="about-side">
+        <h3>Ubicación estratégica</h3>
+        <p>Av. Rivadavia 6127, PB "C". A metros de la estación Primera Junta (Línea A) y del tren Sarmiento (Caballito).</p>
+        <h3>Turnos</h3>
+        <p>Escribinos por Instagram o llamanos por teléfono y coordinamos horario. <!-- EDITABLE: agregar WhatsApp y obras sociales aceptadas --></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Tratamientos</span>
+      <h2>Tres disciplinas, un objetivo: que te muevas bien</h2>
+    </div>
+    <div class="serv-grid">
+      <div class="serv destacado"><div class="ico">🦴</div><h3>Kinesiología y rehabilitación</h3><p>Recuperación de lesiones, dolores musculares y articulares, con plan de ejercicios y seguimiento en cada sesión.</p></div>
+      <div class="serv"><div class="ico">🧍</div><h3>RPG — Reeducación Postural Global</h3><p>Método global para corregir postura y tratar dolores crónicos de columna trabajando las cadenas musculares.</p></div>
+      <div class="serv"><div class="ico">🤲</div><h3>Osteopatía</h3><p>Terapia manual que busca el origen del dolor para recuperar movilidad y equilibrio del cuerpo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Cómo trabajamos</span>
+      <h2>Tu recuperación, paso a paso</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso"><h3>Contanos tu caso</h3><p>Escribinos por Instagram o llamanos: qué te duele, desde cuándo y qué estudios tenés.</p></div>
+      <div class="paso"><h3>Evaluación inicial</h3><p>En la primera consulta evaluamos tu postura, movilidad y antecedentes para entender la causa.</p></div>
+      <div class="paso"><h3>Plan de tratamiento</h3><p>Combinamos kinesiología, RPG u osteopatía según tu caso, con objetivos claros por etapa.</p></div>
+      <div class="paso"><h3>Alta con herramientas</h3><p>Te vas con ejercicios y pautas para que la mejora se sostenga en el tiempo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Pacientes</span>
+      <h2>Los resultados se cuentan solos</h2>
+    </div>
+    <div class="op-card">
+      <p>Nada habla mejor de un consultorio que sus pacientes recuperados. En nuestro Instagram y Facebook compartimos el día a día del consultorio, consejos de salud postural y las historias de quienes ya volvieron a moverse sin dolor.</p>
+      <a class="btn" href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener">Seguinos en @mvsconsultoriokinesiologia →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Contacto</span>
+      <h2>Pedí tu turno</h2>
+    </div>
+    <div class="grid">
+      <div>
+        <div class="c-item"><div class="ico">📍</div><div><h4>Dirección</h4><p>Av. Rivadavia 6127, PB "C" — Caballito, CABA</p></div></div>
+        <div class="c-item"><div class="ico">📞</div><div><h4>Teléfono</h4><a href="tel:+541125827127">011 2582-7127</a></div></div>
+        <div class="c-item"><div class="ico">📷</div><div><h4>Instagram</h4><a href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener">@mvsconsultoriokinesiologia</a></div></div>
+        <div class="c-item"><div class="ico">👍</div><div><h4>Facebook</h4><a href="https://www.facebook.com/mvs.kinesiologia/" target="_blank" rel="noopener">Mvs Kinesiología</a></div></div>
+        <div class="c-item"><div class="ico">🚇</div><div><h4>Cómo llegar</h4><p>Subte A (Primera Junta) · Tren Sarmiento (Caballito) · Líneas de colectivo por Av. Rivadavia</p></div></div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Av.+Rivadavia+6127,+CABA&output=embed" loading="lazy" title="Mapa MVS Kinesiología Caballito" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="logo" href="#inicio">MVS<span>.</span></a>
+        <p>Consultorio de Kinesiología, RPG y Osteopatía en Caballito. Cuidamos tu salud.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">El consultorio</a></li>
+          <li><a href="#servicios">Tratamientos</a></li>
+          <li><a href="#metodo">Cómo trabajamos</a></li>
+          <li><a href="#opiniones">Pacientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+541125827127">011 2582-7127</a></li>
+          <li><a href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/mvs.kinesiologia/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 MVS — Consultorio de Kinesiología · Caballito, CABA</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/mvsconsultoriokinesiologia/" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.4-.3.8-.3 1.9-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.1.8.3 1.9.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.4.3-.8.3-1.9.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.1-.8-.3-1.9-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+</a>
+
+</body>
+</html>
