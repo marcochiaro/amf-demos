@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferretería Don Fierro — Ferretería y cerrajería en Villa Urquiza</title>
+<meta name="description" content="Ferretería Don Fierro, en Villa Urquiza (CABA): ferretería general y cerrajería en Pedro Ignacio Rivera 4724. Abierto de lunes a viernes de 10 a 19 y sábados hasta las 17. 'Tiene de todo', dicen los vecinos.">
+<meta property="og:title" content="Ferretería Don Fierro — Ferretería y cerrajería en Villa Urquiza">
+<meta property="og:description" content="La ferretería del barrio que además tiene cerrajería. Pedro Ignacio Rivera 4724, Villa Urquiza. Sábados abierto hasta las 17 hs.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700&family=Saira:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --claro:#F1F2F4; --blanco:#FFFFFF; --zinc:#23272B; --zinc-2:#31363C;
+  --rojo:#D62831; --rojo-osc:#AC1B23; --tinta:#22252A; --mut:#6A7078;
+  --linea:rgba(35,39,43,.12); --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Saira',sans-serif;background:var(--claro);color:var(--tinta);line-height:1.6}
+h1,h2,h3,.logo{font-family:'Saira Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--zinc);border-bottom:3px solid var(--rojo)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none}
+.logo span{color:var(--rojo);}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:#C9CED4;text-decoration:none;font-size:.95rem;font-weight:500}
+.nav-links a:hover{color:#fff}
+@media(max-width:760px){.nav-links{display:none}}
+/* HERO */
+.hero{background:var(--zinc);color:#fff;padding:88px 0 70px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -60px -90px auto;width:340px;height:340px;border:26px solid rgba(214,40,49,.18);border-radius:50%}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rojo);font-weight:600;margin-bottom:18px}
+.kicker::before{content:"";width:26px;height:3px;background:var(--rojo)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;font-weight:700;max-width:780px}
+.hero h1 em{font-style:normal;color:var(--rojo)}
+.hero p.lead{margin:20px 0 30px;color:#B8BEC6;font-size:1.15rem;max-width:580px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;position:relative;z-index:2}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:8px;padding:15px 26px;font-weight:600;text-decoration:none;font-size:1.02rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rojo{background:var(--rojo);color:#fff}
+.btn-ghost{border:1.5px solid #4A5057;color:#fff;background:transparent}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.hero-strip{display:flex;flex-wrap:wrap;gap:26px;margin-top:46px;padding-top:26px;border-top:1px solid #3A4046;position:relative;z-index:2}
+.hs-item b{display:block;font-family:'Saira Condensed',sans-serif;font-size:1.25rem;text-transform:uppercase}
+.hs-item span{color:#9AA1A9;font-size:.9rem}
+/* SECTIONS */
+section{padding:78px 0}
+.sec-head{margin-bottom:42px}
+.sec-head .mini{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rojo);font-weight:600}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:700;margin-top:6px}
+/* NOSOTROS */
+.nos{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:start}
+.nos .txt p{color:#4C5158;margin-bottom:16px;font-size:1.05rem}
+.nos .txt p strong{color:var(--tinta)}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.tag{font-size:.82rem;border:1px solid rgba(214,40,49,.4);color:var(--rojo-osc);border-radius:4px;padding:6px 13px;background:var(--blanco);font-weight:500}
+.quote-card{background:var(--zinc);color:#fff;border-radius:14px;padding:30px;border-left:6px solid var(--rojo)}
+.quote-card .stars{color:#F5B301;letter-spacing:2px;margin-bottom:12px}
+.quote-card p{font-size:1.15rem;line-height:1.5}
+.quote-card .who{margin-top:14px;color:#9AA1A9;font-size:.9rem}
+@media(max-width:820px){.nos{grid-template-columns:1fr}}
+/* SERVICIOS */
+.grid-serv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.serv{background:var(--blanco);border:1px solid var(--linea);border-top:4px solid var(--zinc);border-radius:10px;padding:26px;transition:border-color .15s,transform .15s}
+.serv:hover{border-top-color:var(--rojo);transform:translateY(-3px)}
+.serv .ico{width:44px;height:44px;border-radius:8px;background:rgba(214,40,49,.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.3rem}
+.serv h3{font-size:1.2rem;margin-bottom:8px}
+.serv p{color:var(--mut);font-size:.95rem}
+/* METODO */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:paso}
+.paso{background:var(--blanco);border:1px solid var(--linea);border-radius:10px;padding:26px}
+.paso::before{counter-increment:paso;content:"0" counter(paso);font-family:'Saira Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:var(--rojo);display:block;margin-bottom:10px}
+.paso h3{font-size:1.12rem;margin-bottom:6px}
+.paso p{color:var(--mut);font-size:.92rem}
+/* CONTACTO */
+.contacto{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.c-item{display:flex;gap:14px;margin-bottom:22px}
+.c-item .ic{width:42px;height:42px;flex:none;border-radius:8px;background:rgba(35,39,43,.08);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.c-item h3{font-size:1.05rem;margin-bottom:2px}
+.c-item p,.c-item a{color:var(--mut);text-decoration:none;font-size:.98rem}
+.c-item a:hover{color:var(--rojo)}
+.mapa{border:1px solid var(--linea);border-radius:12px;overflow:hidden;min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+@media(max-width:820px){.contacto{grid-template-columns:1fr}}
+/* FOOTER */
+footer{padding:44px 0 90px;background:var(--zinc);color:#C9CED4}
+.f-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px}
+.f-links{display:flex;flex-wrap:wrap;gap:18px;list-style:none}
+.f-links a{color:#9AA1A9;text-decoration:none;font-size:.92rem}
+.f-links a:hover{color:#fff}
+.f-note{margin-top:26px;color:#6A7078;font-size:.82rem}
+/* CALL FLOAT — EDITAR: si el negocio tiene WhatsApp, reemplazar href por https://wa.me/NUMERO */
+.call-float{position:fixed;right:22px;bottom:22px;width:60px;height:60px;background:var(--rojo);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:120;box-shadow:0 10px 26px rgba(0,0,0,.35);animation:ring 2.4s ease-out infinite}
+.call-float svg{width:28px;height:28px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 0 rgba(214,40,49,.5)}70%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 18px rgba(214,40,49,0)}100%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 0 rgba(214,40,49,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#">Don <span>Fierro</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#metodo">Experiencia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Ferretería + Cerrajería · Villa Urquiza</div>
+    <h1>La ferretería del barrio que <em>tiene de todo</em>.</h1>
+    <p class="lead">Ferretería general y cerrajería en un solo local, con atención de las de antes: te escuchamos, te aconsejamos y te llevás lo que de verdad necesitás.</p>
+    <div class="cta-row">
+      <a class="btn btn-rojo" href="tel:+541141699420">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+        Llamanos: 11 4169-9420
+      </a>
+      <a class="btn btn-ghost" href="#contacto">Cómo llegar</a>
+    </div>
+    <div class="hero-strip">
+      <div class="hs-item"><b>Rivera 4724</b><span>Villa Urquiza, CABA</span></div>
+      <div class="hs-item"><b>Sábados hasta las 17</b><span>cuando otras ya cerraron</span></div>
+      <div class="hs-item"><b>Ferretería + cerrajería</b><span>dos rubros, un local</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mini">Nosotros</div>
+      <h2>Atención de mostrador, consejo de oficio</h2>
+    </div>
+    <div class="nos">
+      <div class="txt">
+        <p><strong>En una buena ferretería no se compra: se consulta.</strong> En Don Fierro te atendemos de frente, te preguntamos qué estás por hacer y te aconsejamos qué te conviene, aunque sea la opción más barata. Por eso los vecinos de Villa Urquiza vuelven.</p>
+        <p>Además de la ferretería completa, tenemos <strong>cerrajería en el mismo local</strong>: copias de llaves y soluciones de cerrajería sin tener que cruzar medio barrio. Y un detalle que los vecinos valoran: <strong>los sábados a la tarde estamos abiertos</strong>.</p>
+        <div class="tags">
+          <span class="tag">Ferretería general</span>
+          <span class="tag">Cerrajería</span>
+          <span class="tag">Asesoramiento honesto</span>
+          <span class="tag">Sábados a la tarde</span>
+        </div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>“Excelente servicio. Además de ferretería tienen cerrajería, saben aconsejar y el sábado a la tarde está abierto. ¡Tiene de todo!”</p>
+        <div class="who">Ariel A. — reseña real en Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" style="background:var(--blanco);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mini">Servicios</div>
+      <h2>Qué encontrás en Don Fierro</h2>
+    </div>
+    <div class="grid-serv">
+      <div class="serv" style="background:var(--claro)"><div class="ico">🔨</div><h3>Ferretería general</h3><p>Herramientas, tornillería, fijaciones, adhesivos y todo lo que pide una casa o una obra chica.</p></div>
+      <div class="serv" style="background:var(--claro)"><div class="ico">🔑</div><h3>Cerrajería</h3><p>Copias de llaves y soluciones de cerrajería en el mismo local, con consejo de gente que sabe.</p></div>
+      <div class="serv" style="background:var(--claro)"><div class="ico">💡</div><h3>Electricidad y plomería</h3><p>Materiales y repuestos para las reparaciones de todos los días del hogar.</p></div>
+      <div class="serv" style="background:var(--claro)"><div class="ico">🗣️</div><h3>Asesoramiento</h3><p>Contanos qué querés arreglar y te decimos qué necesitás, cómo se usa y qué conviene.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mini">Experiencia</div>
+      <h2>Comprar en el barrio, sin vueltas</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso"><h3>Acercate o llamá</h3><p>Vení al local de Rivera 4724 o llamanos antes para consultar si tenemos lo que buscás.</p></div>
+      <div class="paso"><h3>Contanos tu problema</h3><p>No hace falta saber el nombre técnico: describinos qué querés arreglar y listo.</p></div>
+      <div class="paso"><h3>Te aconsejamos</h3><p>Te mostramos las opciones y te decimos con honestidad cuál conviene para tu caso.</p></div>
+      <div class="paso"><h3>Resolvé en el día</h3><p>Te llevás el material o la copia de llaves en el momento, sin esperas ni envíos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="background:var(--blanco);border-top:1px solid var(--linea)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mini">Contacto</div>
+      <h2>Estamos en Rivera 4724</h2>
+    </div>
+    <div class="contacto">
+      <div>
+        <div class="c-item"><div class="ic">📞</div><div><h3>Teléfono</h3><a href="tel:+541141699420">11 4169-9420</a></div></div>
+        <div class="c-item"><div class="ic">📍</div><div><h3>Local</h3><p>Dr. Pedro Ignacio Rivera 4724, Villa Urquiza, CABA</p></div></div>
+        <div class="c-item"><div class="ic">🕐</div><div><h3>Horarios</h3><p>Lunes a viernes, 10 a 19 hs<br>Sábados, 10 a 17 hs</p></div></div>
+      </div>
+      <div class="mapa">
+        <iframe loading="lazy" title="Mapa Ferretería Don Fierro" src="https://www.google.com/maps?q=Pedro+Ignacio+Rivera+4724,+CABA,+Argentina&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <a class="logo" href="#" style="font-size:1.3rem">Don <span style="color:var(--rojo)">Fierro</span></a>
+      <ul class="f-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#metodo">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="f-note">© Ferretería Don Fierro · Dr. Pedro Ignacio Rivera 4724, Villa Urquiza, CABA · Demo diseñada por AMF Studio</div>
+  </div>
+</footer>
+
+<!-- EDITAR: si Don Fierro confirma número de WhatsApp, cambiar este botón por https://wa.me/NUMERO con el ícono de WhatsApp -->
+<a class="call-float" href="tel:+541141699420" aria-label="Llamanos">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+</a>
+
+</body>
+</html>
