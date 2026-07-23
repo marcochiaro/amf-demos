@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PG Refrigeración — Insumos y repuestos de aire acondicionado y refrigeración en Vicente López</title>
+<meta name="description" content="PG Refrigeración: insumos y repuestos para instalación de aire acondicionado, refrigeración comercial, heladeras y lavarropas. Av. Bartolomé Mitre 1686, Vicente López. Estacionamiento propio.">
+<meta property="og:title" content="PG Refrigeración — Repuestos de aire, heladeras y lavarropas">
+<meta property="og:description" content="Insumos y repuestos para aire acondicionado, refrigeración comercial, heladeras y lavarropas en Vicente López. Consultá por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grafito:#10171D;   /* fondo técnico */
+  --panel:#1A242C;
+  --borde:#27343E;
+  --cian:#3DC9E6;      /* frío */
+  --calor:#F2803B;     /* calor */
+  --claro:#EAF1F5;
+  --mut:#8FA1AD;
+  --wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Albert Sans',sans-serif;background:var(--grafito);color:var(--claro);line-height:1.65}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.15}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;background:rgba(16,23,29,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;color:var(--claro);text-decoration:none}
+.logo span{color:var(--cian)}
+.nav-links{display:flex;gap:22px}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--cian)}
+@media(max-width:720px){.nav-links{display:none}}
+/* HERO */
+.hero{padding:88px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-120px;right:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(61,201,230,.14),transparent 65%)}
+.hero::after{content:"";position:absolute;bottom:-140px;left:-100px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(242,128,59,.10),transparent 65%)}
+.hero-in{position:relative;z-index:1;max-width:680px}
+.kicker{display:inline-block;border:1px solid var(--cian);color:var(--cian);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:22px;font-weight:600}
+.hero h1{font-size:clamp(2.2rem,5.8vw,3.5rem);font-weight:700;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--cian)}
+.hero p{font-size:1.12rem;color:var(--mut);margin-bottom:30px;max-width:560px}
+.btn{display:inline-block;padding:15px 30px;border-radius:100px;font-weight:600;text-decoration:none;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ig{background:transparent;color:var(--claro);border:2px solid var(--borde);margin-left:10px}
+/* SELLOS */
+.sellos{background:var(--panel);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);padding:18px 0}
+.sellos .wrap{display:flex;flex-wrap:wrap;gap:10px 40px;justify-content:center;font-size:.93rem;color:var(--mut)}
+.sellos b{color:var(--cian)}
+/* SECCIONES */
+section{padding:72px 0}
+.sec-k{color:var(--calor);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:22px}
+/* NOSOTROS */
+.nosotros .lead{font-size:1.24rem;max-width:740px;margin-bottom:24px;font-weight:500}
+.nosotros p.sub{color:var(--mut);max-width:700px;margin-bottom:28px}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{background:var(--panel);border:1px solid var(--borde);color:var(--cian);padding:8px 16px;border-radius:100px;font-size:.88rem;font-weight:500}
+/* RUBROS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--borde);border-radius:18px;padding:26px;border-top:3px solid var(--cian)}
+.card.calor{border-top-color:var(--calor)}
+.card .ico{font-size:1.7rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.08rem;margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--mut)}
+/* METODO */
+.metodo{background:var(--panel);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:8px}
+.paso{background:var(--grafito);border:1px solid var(--borde);border-radius:18px;padding:24px}
+.paso .num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2rem;color:var(--calor)}
+.paso h3{font-size:1.05rem;margin:10px 0 6px}
+.paso p{font-size:.9rem;color:var(--mut)}
+/* COMUNIDAD */
+.comunidad .box{border:2px dashed var(--borde);border-radius:22px;padding:38px;text-align:center;max-width:680px;margin:0 auto}
+.comunidad .box p{color:var(--mut);max-width:520px;margin:0 auto 22px}
+/* CONTACTO */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:start}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
+.dato{margin-bottom:20px}
+.dato b{display:block;color:var(--cian);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.dato a{color:var(--calor);text-decoration:none;font-weight:600}
+.mapa{border-radius:18px;overflow:hidden;border:1px solid var(--borde);min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;filter:grayscale(.15)}
+/* FOOTER */
+footer{background:var(--panel);border-top:1px solid var(--borde);padding:42px 0 30px}
+.foot{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot a{color:var(--mut);text-decoration:none;font-size:.9rem}
+.foot a:hover{color:var(--cian)}
+.credito{margin-top:26px;font-size:.78rem;color:#5C6E7A;border-top:1px solid var(--borde);padding-top:18px}
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:22px;right:22px;width:60px;height:60px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:99;box-shadow:0 6px 18px rgba(0,0,0,.35);animation:ring 2.4s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">PG<span>·</span>Refrigeración</a>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#rubros">Qué vendemos</a>
+      <a href="#metodo">Cómo comprar</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <span class="kicker">Insumos y repuestos · Vicente López</span>
+    <h1>El repuesto justo, <em>cuando lo necesitás</em>.</h1>
+    <p>Insumos y repuestos para instalación de aire acondicionado, refrigeración comercial, heladeras y lavarropas — con estacionamiento propio para que entres, cargues y sigas trabajando.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491166437186?text=Hola%20PG%20Refrigeraci%C3%B3n!%20Necesito%20un%20repuesto.">Consultá por WhatsApp</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/pgrefrigeracion/">Ver Instagram</a>
+  </div>
+</header>
+
+<div class="sellos">
+  <div class="wrap">
+    <div><b>Estacionamiento propio</b> para clientes</div>
+    <div><b>Efectivo y tarjeta</b></div>
+    <div><b>Av. B. Mitre 1686</b> · Vicente López</div>
+  </div>
+</div>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap">
+    <div class="sec-k">Nosotros</div>
+    <h2>La casa de repuestos del frío en zona norte</h2>
+    <p class="lead">En PG Refrigeración encontrás lo que hace falta para que un equipo vuelva a funcionar: desde los insumos para instalar un split hasta el repuesto puntual de una heladera comercial o un lavarropas.</p>
+    <p class="sub">Atendemos a técnicos, instaladores y vecinos por igual, sobre Av. Bartolomé Mitre, con estacionamiento exclusivo para que la compra sea rápida. Si no sabés qué repuesto es, mandanos una foto por WhatsApp y lo vemos juntos.</p>
+    <div class="tags">
+      <span class="tag">Aire acondicionado</span>
+      <span class="tag">Refrigeración comercial</span>
+      <span class="tag">Heladeras</span>
+      <span class="tag">Lavarropas</span>
+      <span class="tag">Insumos de instalación</span>
+    </div>
+  </div>
+</section>
+
+<section id="rubros">
+  <div class="wrap">
+    <div class="sec-k">Qué vendemos</div>
+    <h2>Repuestos e insumos para cada equipo</h2>
+    <div class="grid">
+      <div class="card"><span class="ico">❄️</span><h3>Aire acondicionado</h3><p>Insumos y repuestos para instalación y reparación de equipos de aire.</p></div>
+      <div class="card"><span class="ico">🧊</span><h3>Refrigeración comercial</h3><p>Repuestos para heladeras exhibidoras, cámaras y equipos de comercio.</p></div>
+      <div class="card"><span class="ico">🥶</span><h3>Heladeras familiares</h3><p>Repuestos para que la heladera de casa vuelva a enfriar como el primer día.</p></div>
+      <div class="card calor"><span class="ico">🌀</span><h3>Lavarropas</h3><p>Repuestos para las fallas más comunes de lavarropas de todas las marcas.</p></div>
+      <div class="card calor"><span class="ico">🧰</span><h3>Insumos para instaladores</h3><p>Lo que el técnico necesita para trabajar, en un solo lugar.</p></div>
+      <div class="card calor"><span class="ico">💬</span><h3>¿No sabés qué repuesto es?</h3><p>Mandanos foto y modelo del equipo por WhatsApp y te orientamos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <div class="sec-k">Cómo comprar</div>
+    <h2>Rápido, como tiene que ser</h2>
+    <div class="pasos">
+      <div class="paso"><div class="num">1</div><h3>Escribinos</h3><p>Pasanos por WhatsApp el repuesto que buscás, o foto y modelo del equipo.</p></div>
+      <div class="paso"><div class="num">2</div><h3>Confirmamos stock</h3><p>Te decimos si está, cuánto sale y te lo reservamos.</p></div>
+      <div class="paso"><div class="num">3</div><h3>Pasás a retirar</h3><p>Estacionás en el lugar exclusivo para clientes, sobre Av. Mitre.</p></div>
+      <div class="paso"><div class="num">4</div><h3>Pagás como quieras</h3><p>Efectivo o tarjeta, y te llevás el repuesto en el momento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="comunidad" id="novedades">
+  <div class="wrap">
+    <div class="box">
+      <div class="sec-k">Novedades</div>
+      <h2>Seguinos en Instagram</h2>
+      <p>Ingresos de mercadería, insumos nuevos y datos útiles para técnicos e instaladores, en nuestro Instagram.</p>
+      <a class="btn btn-ig" href="https://www.instagram.com/pgrefrigeracion/" style="margin-left:0">@pgrefrigeracion</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="sec-k">Contacto</div>
+    <h2>Estamos sobre Av. Bartolomé Mitre</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="dato"><b>Dirección</b>Av. Bartolomé Mitre 1686, Vicente López</div>
+        <div class="dato"><b>WhatsApp</b><a href="https://wa.me/5491166437186">11 6643-7186</a></div>
+        <div class="dato"><b>Instagram</b><a href="https://www.instagram.com/pgrefrigeracion/">@pgrefrigeracion</a></div>
+        <div class="dato"><b>Horarios</b>[Completar horarios de atención]</div>
+        <div class="dato"><b>Extras</b>Estacionamiento exclusivo para clientes · Efectivo y tarjeta</div>
+      </div>
+      <div class="mapa">
+        <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Bartolom%C3%A9+Mitre+1686,+Vicente+L%C3%B3pez,+Buenos+Aires&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="#">PG<span>·</span>Refrigeración</a>
+      <div class="foot-links">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#rubros">Qué vendemos</a>
+        <a href="#metodo">Cómo comprar</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="credito">Demo diseñada por AMF Studio · Los datos marcados [así] se completan con la info del negocio.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491166437186?text=Hola%20PG%20Refrigeraci%C3%B3n!%20Necesito%20un%20repuesto." aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.6-.3-4.4.8.9-4.3-.3-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4-4.3 10.1-9.5 10.1zm5.2-7.1c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+</body>
+</html>
