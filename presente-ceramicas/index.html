@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presente Cerámicas — Tienda y taller de cerámica en Villa Ortúzar</title>
+<meta name="description" content="Presente Cerámicas: piezas de cerámica hechas a mano y talleres de cerámica y moldería en Av. Álvarez Thomas 1409, Villa Ortúzar, Buenos Aires.">
+<meta property="og:title" content="Presente Cerámicas — Tienda y taller en Villa Ortúzar">
+<meta property="og:description" content="Piezas hechas a mano, talleres de cerámica y moldería. Av. Álvarez Thomas 1409, CABA.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --arena:#EFE7DB;
+  --crudo:#F8F4ED;
+  --barro:#9A5B3E;
+  --celadon:#7C9885;
+  --carbon:#332B25;
+  --mut:#7C7166;
+  --blanco:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Karla',sans-serif;background:var(--crudo);color:var(--carbon);line-height:1.6}
+h1,h2,h3{font-family:'Newsreader',serif;font-weight:500;line-height:1.15}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;background:rgba(248,244,237,.94);backdrop-filter:blur(8px);border-bottom:1px solid #E4DACB;z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Newsreader',serif;font-size:1.3rem;letter-spacing:.02em;text-decoration:none;color:var(--carbon)}
+.logo span{color:var(--barro)}
+.nav-links{display:none;gap:26px}
+.nav-links a{text-decoration:none;color:var(--carbon);font-size:.92rem;font-weight:500}
+.nav-links a:hover{color:var(--barro)}
+.nav-cta{background:var(--barro);color:#fff;text-decoration:none;padding:9px 18px;border-radius:99px;font-size:.88rem;font-weight:700}
+@media(min-width:820px){.nav-links{display:flex}}
+/* HERO */
+header{background:var(--arena)}
+.hero{display:grid;gap:36px;padding:64px 0 70px}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--barro);margin-bottom:16px}
+.hero h1{font-size:clamp(2.3rem,6vw,3.6rem)}
+.hero h1 em{font-style:italic;color:var(--barro)}
+.hero p.lead{margin:18px 0 30px;font-size:1.08rem;color:var(--mut);max-width:34em}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;border-radius:99px;padding:14px 26px;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--carbon);color:#fff}
+.btn-ghost{border:1.5px solid var(--carbon);color:var(--carbon)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:26px;margin-top:38px}
+.fact strong{display:block;font-family:'Newsreader',serif;font-size:1.35rem;color:var(--barro)}
+.fact span{font-size:.82rem;color:var(--mut)}
+/* SECCIONES */
+section{padding:70px 0}
+.sec-k{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--celadon)}
+section h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:10px 0 22px}
+.nosotros-grid{display:grid;gap:34px}
+@media(min-width:820px){.nosotros-grid{grid-template-columns:1.2fr .8fr}}
+.nosotros p{color:#55483D;margin-bottom:14px;max-width:38em}
+.quote{background:var(--arena);border-left:4px solid var(--barro);padding:20px 22px;border-radius:0 14px 14px 0;font-family:'Newsreader',serif;font-style:italic;font-size:1.06rem;color:var(--carbon)}
+.quote small{display:block;font-family:'Karla',sans-serif;font-style:normal;color:var(--mut);margin-top:10px;font-size:.8rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{background:var(--blanco);border:1px solid #E2D8C8;color:var(--carbon);border-radius:99px;padding:7px 15px;font-size:.84rem;font-weight:500}
+/* SERVICIOS */
+#servicios{background:var(--arena)}
+.serv-grid{display:grid;gap:18px}
+@media(min-width:640px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.serv-grid{grid-template-columns:repeat(4,1fr)}}
+.serv{background:var(--crudo);border:1px solid #E4DACB;border-radius:16px;padding:26px 22px}
+.serv .ico{font-size:1.6rem}
+.serv h3{font-size:1.12rem;margin:12px 0 8px}
+.serv p{font-size:.9rem;color:var(--mut)}
+/* METODO */
+.pasos{display:grid;gap:18px;counter-reset:paso}
+@media(min-width:820px){.pasos{grid-template-columns:repeat(4,1fr)}}
+.paso{background:var(--blanco);border:1px solid #EAE1D3;border-radius:16px;padding:24px 20px;position:relative}
+.paso::before{counter-increment:paso;content:"0" counter(paso);font-family:'Newsreader',serif;font-size:1.9rem;color:var(--barro);display:block;margin-bottom:8px}
+.paso h3{font-size:1.05rem;margin-bottom:6px}
+.paso p{font-size:.88rem;color:var(--mut)}
+/* COMUNIDAD */
+#comunidad{background:var(--carbon);color:var(--crudo)}
+#comunidad .sec-k{color:var(--celadon)}
+#comunidad p{color:#CFC5B8;max-width:40em}
+#comunidad .btn{margin-top:24px;background:var(--crudo);color:var(--carbon)}
+/* CONTACTO */
+.contacto-grid{display:grid;gap:34px}
+@media(min-width:820px){.contacto-grid{grid-template-columns:1fr 1.1fr}}
+.dato{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.dato .ico{width:42px;height:42px;flex:none;background:var(--arena);border-radius:12px;display:grid;place-items:center;font-size:1.1rem}
+.dato h3{font-size:1rem;margin-bottom:3px}
+.dato p{font-size:.92rem;color:var(--mut)}
+.dato a{color:var(--barro);font-weight:700;text-decoration:none}
+iframe{width:100%;height:340px;border:0;border-radius:18px}
+/* FOOTER */
+footer{background:var(--arena);border-top:1px solid #E4DACB;padding:44px 0 90px}
+.foot{display:grid;gap:26px}
+@media(min-width:820px){.foot{grid-template-columns:1.4fr 1fr 1fr}}
+footer h3{font-size:1.05rem;margin-bottom:10px}
+footer a{display:block;color:var(--mut);text-decoration:none;font-size:.9rem;margin-bottom:7px}
+footer a:hover{color:var(--barro)}
+.credit{margin-top:34px;font-size:.78rem;color:var(--mut)}
+/* FLOTANTE IG */
+.float-ig{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);display:grid;place-items:center;z-index:80;box-shadow:0 8px 22px rgba(0,0,0,.25);animation:ring 2.4s ease-out infinite}
+.float-ig svg{width:28px;height:28px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(221,42,123,.45),0 8px 22px rgba(0,0,0,.25)}70%{box-shadow:0 0 0 18px rgba(221,42,123,0),0 8px 22px rgba(0,0,0,.25)}100%{box-shadow:0 0 0 0 rgba(221,42,123,0),0 8px 22px rgba(0,0,0,.25)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Presente <span>Cerámicas</span></a>
+    <div class="nav-links">
+      <a href="#nosotros">El taller</a>
+      <a href="#servicios">Qué hacemos</a>
+      <a href="#metodo">Cómo empezar</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <a class="nav-cta" href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <span class="kicker">Tienda &amp; taller · Villa Ortúzar</span>
+      <h1>Cerámica hecha a mano,<br><em>hecha presente</em>.</h1>
+      <p class="lead">Piezas únicas moldeadas en el barrio y talleres de cerámica y moldería con todos los materiales incluidos. Sobre Av. Álvarez Thomas, a pasos de todo Villa Ortúzar.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+        <a class="btn btn-ghost" href="#servicios">Ver qué hacemos</a>
+      </div>
+      <div class="hero-facts">
+        <div class="fact"><strong>100%</strong><span>piezas hechas a mano</span></div>
+        <div class="fact"><strong>Todo incluido</strong><span>materiales en cada curso</span></div>
+        <div class="fact"><strong>16 a 70+</strong><span>alumnos de todas las edades</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="wrap nosotros-grid nosotros">
+    <div>
+      <span class="sec-k">El taller</span>
+      <h2>Un espacio de barrio donde el barro se vuelve oficio</h2>
+      <p>Presente Cerámicas es la tienda y el taller de María José en Villa Ortúzar: un lugar donde se venden piezas hechas a mano y se enseña el oficio de la cerámica y la moldería, con cursos pensados para adultos desde los 16 hasta los 70 y pico.</p>
+      <p>Las clases incluyen todos los materiales, y los cupos vuelan: cuando se llenan, se abre lista de espera. Esa demanda dice más que cualquier publicidad.</p>
+      <div class="tags">
+        <span class="tag">Piezas únicas</span>
+        <span class="tag">Talleres de cerámica</span>
+        <span class="tag">Moldería</span>
+        <span class="tag">Materiales incluidos</span>
+        <span class="tag">Todas las edades</span>
+      </div>
+    </div>
+    <div>
+      <div class="quote">
+        “Piezas hechas a mano y talleres de cerámica y moldería.”
+        <small>— Así presentó al taller el Periódico de Villa Ortúzar</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="sec-k">Qué hacemos</span>
+    <h2>Tienda y escuela, bajo el mismo techo</h2>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🏺</div><h3>Tienda de piezas</h3><p>Cerámica artesanal hecha en el taller: objetos únicos para tu casa o para regalar.</p></div>
+      <div class="serv"><div class="ico">🤲</div><h3>Clases regulares</h3><p>Cursos de cerámica con cupos reducidos y todos los materiales incluidos.</p></div>
+      <div class="serv"><div class="ico">🧩</div><h3>Talleres de moldería</h3><p>Intensivos para aprender a crear y reproducir tus propios moldes.</p></div>
+      <div class="serv"><div class="ico">🎁</div><h3>Pedidos especiales</h3><p>Consultá por piezas o encargos particulares directamente por Instagram.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <span class="sec-k">Cómo empezar</span>
+    <h2>De la consulta a tu primera pieza</h2>
+    <div class="pasos">
+      <div class="paso"><h3>Escribinos</h3><p>Mandanos un mensaje por Instagram para consultar cupos y horarios disponibles.</p></div>
+      <div class="paso"><h3>Reservá tu lugar</h3><p>Los grupos son chicos y suelen llenarse; si no hay lugar, entrás en lista de espera.</p></div>
+      <div class="paso"><h3>Veni al taller</h3><p>Todos los materiales están incluidos: solo traé ganas de meter las manos en el barro.</p></div>
+      <div class="paso"><h3>Llevate tu pieza</h3><p>Modelás, esmaltás y horneás en el taller. Tu primera pieza se va con vos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="comunidad">
+  <div class="wrap">
+    <span class="sec-k">La comunidad</span>
+    <h2>Lo que pasa en el taller se ve mejor en fotos</h2>
+    <p>El día a día del taller —las piezas recién esmaltadas, las horneadas, los trabajos de los alumnos— está en nuestro Instagram. Pasá a ver por qué los cupos se llenan.</p>
+    <a class="btn" href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener">Ver @presenteceramicas</a>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap contacto-grid">
+    <div>
+      <span class="sec-k">Contacto</span>
+      <h2>Vení a conocer el taller</h2>
+      <div class="dato"><div class="ico">📍</div><div><h3>Dirección</h3><p>Av. Álvarez Thomas 1409, Villa Ortúzar, CABA</p></div></div>
+      <div class="dato"><div class="ico">🕑</div><div><h3>Horarios</h3><p>Martes a viernes de 11 a 20 h<br>Sábados de 11 a 15 h</p></div></div>
+      <div class="dato"><div class="ico">💬</div><div><h3>Consultas y cupos</h3><p><a href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener">@presenteceramicas</a> — respondemos por mensaje directo</p></div></div>
+    </div>
+    <iframe title="Mapa Presente Cerámicas" loading="lazy" src="https://www.google.com/maps?q=Av.+Alvarez+Thomas+1409,+Villa+Ortuzar,+CABA&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#">Presente <span>Cerámicas</span></a>
+      <p style="color:var(--mut);font-size:.9rem;margin-top:10px;max-width:26em">Tienda y taller de cerámica en Villa Ortúzar. Piezas hechas a mano y cursos con materiales incluidos.</p>
+    </div>
+    <div>
+      <h3>Secciones</h3>
+      <a href="#nosotros">El taller</a>
+      <a href="#servicios">Qué hacemos</a>
+      <a href="#metodo">Cómo empezar</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div>
+      <h3>Encontranos</h3>
+      <a href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://maps.google.com/?q=Av.+Alvarez+Thomas+1409,+CABA" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+  <div class="wrap credit">Demo diseñada por AMF Studio · Los datos se toman de información pública y son editables.</div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/presenteceramicas/" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0 2A5.8 5.8 0 1 0 17.8 10 5.8 5.8 0 0 0 12 4.2m0 9.6A3.8 3.8 0 1 1 15.8 10 3.8 3.8 0 0 1 12 13.8M18 4.6a1.4 1.4 0 1 0 1.4 1.4A1.4 1.4 0 0 0 18 4.6" transform="translate(0 2)"/></svg>
+</a>
+</body>
+</html>
