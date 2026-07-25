@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marrón Glacé — Pastelería artesanal y café de especialidad en Villa Real</title>
+<meta name="description" content="Marrón Glacé: café de especialidad y pastelería artesanal en Villa Real, CABA. Rolls de canela, croissants rellenos, tortas y pistacho latte. Av. Lope de Vega 2282. Take away y delivery.">
+<meta property="og:title" content="Marrón Glacé — Café de especialidad en Villa Real">
+<meta property="og:description" content="Pastelería artesanal, café de especialidad y brunch para llevar en Av. Lope de Vega 2282, CABA. Pedilo por Rappi o PedidosYa, o pasá por el local.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--crema:#F7F1E8;--blanco:#FFFDF8;--espresso:#3E2A20;--castana:#6B4226;--pistacho:#708C3F;--pist-osc:#54692E;--tinta:#2A1F18;--mut:#8A7A6C;--borde:#E7DCCC;--ig1:#F58529;--ig2:#DD2A7B;--ig3:#8134AF}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Schibsted Grotesk',sans-serif;background:var(--crema);color:var(--tinta);line-height:1.65}
+h1,h2,h3,.brand{font-family:'Gloock',serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:50;background:rgba(247,241,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.brand{font-size:1.3rem;color:var(--castana)}
+.brand small{display:block;font-family:'Schibsted Grotesk',sans-serif;font-size:.58rem;letter-spacing:.28em;color:var(--mut);text-transform:uppercase;font-weight:600}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--pist-osc)}
+@media(max-width:760px){.nav-links{display:none}}
+header.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#F7F1E8 45%,#EDE2CE 100%)}
+.blob{position:absolute;border-radius:50%;pointer-events:none}
+.b1{width:260px;height:260px;right:4%;top:40px;background:rgba(112,140,63,.12)}
+.b2{width:140px;height:140px;right:24%;top:240px;background:rgba(107,66,38,.10)}
+.hero-in{max-width:1080px;margin:0 auto;padding:88px 22px 78px;position:relative;z-index:1}
+.badge{display:inline-block;background:var(--pistacho);color:#fff;font-weight:600;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.7rem);line-height:1.1;max-width:700px;color:var(--espresso)}
+.hero h1 em{font-style:italic;color:var(--pist-osc)}
+.hero p.lead{margin:20px 0 30px;font-size:1.08rem;color:var(--mut);max-width:560px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-ig{background:linear-gradient(45deg,var(--ig1),var(--ig2) 55%,var(--ig3));color:#fff;box-shadow:0 8px 22px rgba(221,42,123,.28)}
+.btn-s{background:transparent;color:var(--castana);border:2px solid var(--castana)}
+.hero-stats{display:flex;gap:34px;margin-top:44px;flex-wrap:wrap}
+.stat b{display:block;font-family:'Gloock',serif;font-size:1.7rem;color:var(--pist-osc)}
+.stat span{font-size:.82rem;color:var(--mut)}
+section{padding:74px 0}
+.kicker{color:var(--pist-osc);font-weight:700;font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px}
+h2.title{font-size:clamp(1.8rem,3.8vw,2.5rem);color:var(--espresso);margin-bottom:16px}
+.nosotros{background:var(--blanco);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.nosotros p{color:#5C5044;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.tag{background:var(--crema);border:1px solid var(--borde);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:500;color:var(--castana)}
+.panelcard{background:linear-gradient(155deg,var(--espresso),var(--castana));border-radius:20px;color:#F3E9DC;padding:38px 32px}
+.panelcard .big{font-family:'Gloock',serif;font-size:2.4rem;color:#CBD9A8;line-height:1.15}
+.panelcard p{color:#E4D5C2;margin-top:12px;font-size:.95rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid3{grid-template-columns:1fr}}
+.svc{background:var(--blanco);border:1px solid var(--borde);border-radius:16px;padding:26px 22px}
+.svc .ico{font-size:1.6rem}
+.svc h3{font-size:1.12rem;color:var(--espresso);margin:12px 0 8px}
+.svc p{font-size:.9rem;color:var(--mut)}
+.metodo{background:var(--blanco);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+@media(max-width:820px){.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+.paso{background:var(--crema);border:1px solid var(--borde);border-radius:16px;padding:26px 20px}
+.paso .num{font-family:'Gloock',serif;font-size:2rem;color:var(--pistacho)}
+.paso h3{font-size:1.02rem;color:var(--espresso);margin:8px 0 6px}
+.paso p{font-size:.86rem;color:var(--mut)}
+.resenas .rbox{background:var(--blanco);border:1px solid var(--borde);border-radius:20px;padding:38px 32px;text-align:center;max-width:720px;margin:0 auto}
+.rbox .ico{font-size:2rem}
+.rbox h3{font-family:'Gloock',serif;font-size:1.5rem;color:var(--espresso);margin:12px 0}
+.rbox p{color:var(--mut);max-width:520px;margin:0 auto 22px}
+.contacto{background:var(--blanco);border-top:1px solid var(--borde)}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:820px){.c-grid{grid-template-columns:1fr}}
+.c-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.c-item .ic{font-size:1.3rem}
+.c-item b{display:block;color:var(--espresso);font-size:.95rem}
+.c-item span,.c-item a{color:var(--mut);font-size:.9rem;text-decoration:none}
+.c-item a:hover{color:var(--pist-osc)}
+.mapa{border-radius:20px;overflow:hidden;border:1px solid var(--borde);min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--espresso);color:#D8C9B8;padding:50px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px}
+@media(max-width:700px){.f-grid{grid-template-columns:1fr}}
+footer .brand{color:#F3E9DC;font-size:1.25rem}
+footer h4{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:#B9A48E;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{color:#D8C9B8;text-decoration:none;font-size:.92rem}
+footer a:hover{color:#fff}
+.f-bottom{border-top:1px solid rgba(216,201,184,.2);margin-top:38px;padding-top:20px;font-size:.8rem;color:#A8937D;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:linear-gradient(45deg,var(--ig1),var(--ig2) 55%,var(--ig3));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(221,42,123,.4);animation:ring 2.4s infinite}
+.float-ig svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(221,42,123,.4),0 0 0 0 rgba(221,42,123,.45)}70%{box-shadow:0 10px 26px rgba(221,42,123,.4),0 0 0 18px rgba(221,42,123,0)}100%{box-shadow:0 10px 26px rgba(221,42,123,.4),0 0 0 0 rgba(221,42,123,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <div class="brand">Marrón Glacé<small>Café de especialidad</small></div>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#carta">La carta</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#resenas">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-in">
+    <span class="badge">Villa Real · CABA</span>
+    <h1>Pastelería artesanal y café de especialidad, <em>a una cuadra de tu casa</em></h1>
+    <p class="lead">Rolls de canela, croissants rellenos y flat white con granos seleccionados. Todo hecho en el día, para disfrutar en el momento o llevar a donde quieras.</p>
+    <div class="cta-row">
+      <a class="btn btn-ig" href="https://www.instagram.com/marronglace.cafedeespecialidad/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+      <a class="btn btn-s" href="https://borders.bistrosoft.com/menu?commerceId=11111465&menuUUID=8e1ef076-35d6-42ff-b429-7afde21ac6c6" target="_blank" rel="noopener">Ver la carta</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>100%</b><span>pastelería artesanal</span></div>
+      <div class="stat"><b>8 a 20 h</b><span>de lunes a sábado</span></div>
+      <div class="stat"><b>Take away</b><span>y delivery por apps</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Nosotros</div>
+      <h2 class="title">El café de barrio que se toma el café en serio</h2>
+      <p>En Marrón Glacé creemos que Villa Real se merece el mismo café de especialidad que se sirve en Palermo: granos seleccionados, métodos cuidados y una vitrina de pastelería que cambia todos los días.</p>
+      <p>Cada roll de canela, cada cheesecake y cada budín sale de nuestra propia cocina. Y si estás apurado, todo está listo para take away: el desayuno te acompaña hasta la oficina o la plaza.</p>
+      <div class="tags">
+        <span class="tag">Café de especialidad</span>
+        <span class="tag">Pastelería propia</span>
+        <span class="tag">Brunch</span>
+        <span class="tag">Take away</span>
+        <span class="tag">Tortas por encargo</span>
+      </div>
+    </div>
+    <div class="panelcard">
+      <div class="big">Hecho en el día,<br>todos los días</div>
+      <p>Bollería, tortas y panificados salen de la cocina cada mañana. Lo que ves en la vitrina se horneó hoy — por eso, cuando se termina, se terminó.</p>
+    </div>
+  </div>
+</section>
+
+<section id="carta">
+  <div class="wrap">
+    <div class="kicker">La carta</div>
+    <h2 class="title">Un clásico para cada momento del día</h2>
+    <div class="grid3">
+      <div class="svc"><div class="ico">☕</div><h3>Café de especialidad</h3><p>Flat white, cappuccino, cortado, espresso y nuestro pistacho latte: granos seleccionados y leche texturizada al punto justo.</p></div>
+      <div class="svc"><div class="ico">🥐</div><h3>Bollería artesanal</h3><p>Croissants rellenos, rolls de canela, cookies y pan suizo recién horneados, ideales para acompañar el primer café.</p></div>
+      <div class="svc"><div class="ico">🍰</div><h3>Tortas y cheesecakes</h3><p>Cheesecake, budines y tortas enteras o por porción. También por encargo para cumpleaños y eventos.</p></div>
+      <div class="svc"><div class="ico">🥑</div><h3>Brunch y almuerzos</h3><p>Avocado toast, bagels, sándwiches y tostadas para un mediodía liviano en el barrio.</p></div>
+      <div class="svc"><div class="ico">🛵</div><h3>Delivery por apps</h3><p>Estamos en Rappi y PedidosYa: tu pedido llega a casa en unos 35 minutos.</p></div>
+      <div class="svc"><div class="ico">🎁</div><h3>Encargos especiales</h3><p>¿Una torta para sorprender a alguien? Escribinos por Instagram y la dejamos lista para retirar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <div class="kicker">La experiencia</div>
+    <h2 class="title">Así funciona Marrón Glacé</h2>
+    <div class="pasos">
+      <div class="paso"><div class="num">1</div><h3>Elegí en la vitrina</h3><p>Pasá por Av. Lope de Vega 2282 y mirá la pastelería del día antes de decidir.</p></div>
+      <div class="paso"><div class="num">2</div><h3>Tu café, al momento</h3><p>El barista prepara tu bebida cuando la pedís: nunca café recalentado.</p></div>
+      <div class="paso"><div class="num">3</div><h3>Acá o para llevar</h3><p>Disfrutalo en el local o llevátelo listo en take away para seguir tu día.</p></div>
+      <div class="paso"><div class="num">4</div><h3>O pedilo a casa</h3><p>Desde Rappi o PedidosYa, con la misma calidad que en el mostrador.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="resenas" id="resenas">
+  <div class="wrap">
+    <div class="kicker" style="text-align:center">Opiniones</div>
+    <h2 class="title" style="text-align:center">Lo que se dice del café</h2>
+    <div class="rbox">
+      <div class="ico">📸</div>
+      <h3>La vitrina habla por nosotros</h3>
+      <p>Somos un café joven del barrio y las mejores recomendaciones todavía se comparten en persona — y en nuestras redes. Mirá las fotos de la pastelería del día y lo que cuenta la comunidad en Instagram.</p>
+      <a class="btn btn-ig" href="https://www.instagram.com/marronglace.cafedeespecialidad/" target="_blank" rel="noopener">Ver @marronglace.cafedeespecialidad</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="kicker">Contacto</div>
+    <h2 class="title">Vení a conocernos</h2>
+    <div class="c-grid">
+      <div>
+        <div class="c-item"><div class="ic">📍</div><div><b>Dirección</b><span>Av. Lope de Vega 2282, Villa Real, CABA</span></div></div>
+        <div class="c-item"><div class="ic">🕗</div><div><b>Horarios</b><span>Lunes a sábado de 8 a 20 h · Domingos de 10 a 20 h</span></div></div>
+        <div class="c-item"><div class="ic">📷</div><div><b>Instagram</b><a href="https://www.instagram.com/marronglace.cafedeespecialidad/" target="_blank" rel="noopener">@marronglace.cafedeespecialidad</a></div></div>
+        <div class="c-item"><div class="ic">🛵</div><div><b>Delivery</b><span><a href="https://www.rappi.com.ar/restaurantes/213104-marron-glace-pasteleria-y-cafe-de-e" target="_blank" rel="noopener">Rappi</a> · <a href="https://linktr.ee/marronglace.cafe" target="_blank" rel="noopener">PedidosYa y más links</a></span></div></div>
+        <div class="c-item"><div class="ic">📋</div><div><b>Carta digital</b><a href="https://borders.bistrosoft.com/menu?commerceId=11111465&menuUUID=8e1ef076-35d6-42ff-b429-7afde21ac6c6" target="_blank" rel="noopener">Ver menú completo</a></div></div>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av.+Lope+de+Vega+2282,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa: Av. Lope de Vega 2282, CABA"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="brand">Marrón Glacé</div>
+        <p style="margin-top:12px;font-size:.9rem;max-width:280px">Pastelería artesanal y café de especialidad en Villa Real, CABA.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#carta">La carta</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#resenas">Opiniones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Seguinos</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/marronglace.cafedeespecialidad/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linktr.ee/marronglace.cafe" target="_blank" rel="noopener">Linktree</a></li>
+          <li><a href="https://www.rappi.com.ar/restaurantes/213104-marron-glace-pasteleria-y-cafe-de-e" target="_blank" rel="noopener">Rappi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Marrón Glacé · Villa Real, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/marronglace.cafedeespecialidad/" target="_blank" rel="noopener" aria-label="Instagram de Marrón Glacé">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1M12 0C8.7 0 8.3 0 7 .1 5.8.2 4.9.4 4.1.7c-.8.3-1.5.7-2.2 1.4C1.2 2.8.8 3.5.5 4.3.2 5.1 0 6 .1 7.2 0 8.3 0 8.7 0 12s0 3.7.1 4.8c.1 1.2.3 2.1.6 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.7.5 2.9.6 1.1.1 1.5.1 4.8.1s3.7 0 4.8-.1c1.2-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.7.6-2.9.1-1.1.1-1.5.1-4.8s0-3.7-.1-4.8c-.1-1.2-.3-2.1-.6-2.9-.3-.8-.7-1.5-1.4-2.2-.7-.7-1.4-1.1-2.2-1.4-.8-.3-1.7-.5-2.9-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.9-10.4a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/></svg>
+</a>
+</body>
+</html>
