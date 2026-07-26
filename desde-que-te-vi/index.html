@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desde Que Te Vi — Petshop & Peluquería Canina en Flores</title>
+<meta name="description" content="Desde Que Te Vi: petshop y peluquería canina en Quirno 32, Flores, CABA. Baño, corte y alimentos. Lunes a sábado. Beneficio 15% para socios SportClub.">
+<meta property="og:title" content="Desde Que Te Vi — Petshop & Peluquería Canina en Flores">
+<meta property="og:description" content="El petshop con peluquería canina de Quirno 32, Flores. Baño, corte y alimentos, de lunes a sábado.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--marfil:#FAF3EE;--blanco:#FFFFFF;--granate:#A62639;--oscuro:#7C1D2C;--durazno:#E8A87C;--tinta:#382125;--mut:#8A6E72;--borde:#EBDCD6;--fb:#1877F2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',sans-serif;background:var(--marfil);color:var(--tinta);line-height:1.65}
+h1,h2,h3,.logo{font-family:'Yeseva One',serif;font-weight:400;line-height:1.2}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-size:1.1rem;color:var(--granate);text-decoration:none}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:var(--tinta);text-decoration:none;font-weight:600;font-size:.92rem}
+.nav-links a:hover{color:var(--granate)}
+.nav-cta{background:var(--granate);color:#fff !important;padding:9px 18px;border-radius:999px}
+.nav-cta:hover{background:var(--oscuro)}
+@media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+/* HERO */
+.hero{padding:78px 0 66px;position:relative;overflow:hidden}
+.hero::after{content:"❤";position:absolute;font-size:12rem;color:var(--granate);opacity:.05;right:-30px;bottom:-50px;transform:rotate(-14deg)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
+.chip{display:inline-block;background:#F5E3DB;color:var(--oscuro);font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2rem,5vw,3.1rem);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--granate)}
+.hero p.lead{font-size:1.1rem;color:var(--mut);max-width:32rem;margin-bottom:26px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-tel{background:var(--granate);color:#fff}
+.btn-fb{border:2px solid var(--fb);color:var(--fb)}
+.hero-card{background:var(--blanco);border:1px solid var(--borde);border-radius:22px;padding:30px;box-shadow:0 18px 40px rgba(56,33,37,.09)}
+.hero-card h3{color:var(--granate);font-size:1.15rem;margin-bottom:6px}
+.hero-card p{color:var(--mut);font-size:.93rem}
+.hero-card hr{border:none;border-top:1px dashed var(--borde);margin:16px 0}
+.hero-card .dato{display:flex;gap:10px;align-items:center;font-size:.95rem;font-weight:600;margin-top:10px}
+.badge-sc{display:inline-block;background:#FFF2D9;border:1px solid #F0D9A6;color:#8A6A1F;border-radius:10px;padding:8px 12px;font-size:.85rem;font-weight:600;margin-top:14px}
+/* SECCIONES */
+section{padding:70px 0}
+.sec-head{max-width:38rem;margin-bottom:40px}
+.kicker{color:var(--durazno);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+.sec-head h2{font-size:clamp(1.5rem,3.2vw,2.2rem);margin-top:8px}
+.sec-head p{color:var(--mut);margin-top:12px}
+/* NOSOTROS */
+.nosotros{background:var(--blanco);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.nos-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.editorial{font-size:1.16rem;line-height:1.8}
+.editorial strong{color:var(--granate)}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{background:var(--marfil);border:1px solid var(--borde);border-radius:999px;padding:8px 16px;font-size:.88rem;font-weight:600}
+.nota-edit{margin-top:20px;color:var(--mut);font-size:.9rem}
+/* SERVICIOS */
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.serv{background:var(--blanco);border:1px solid var(--borde);border-radius:18px;padding:26px;border-top:4px solid var(--granate);transition:transform .15s,box-shadow .15s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(56,33,37,.09)}
+.serv .ico{font-size:1.8rem}
+.serv h3{font-size:1.05rem;margin:12px 0 8px}
+.serv p{color:var(--mut);font-size:.92rem}
+/* METODO */
+.metodo{background:var(--tinta);color:#F5EBE7}
+.metodo .kicker{color:var(--durazno)}
+.metodo h2{color:#fff}
+.metodo .sec-head p{color:#CBB3B0}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.paso{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:24px}
+.paso .num{font-family:'Yeseva One',serif;font-size:1.9rem;color:var(--durazno)}
+.paso h3{font-size:1rem;margin:10px 0 8px;color:#fff}
+.paso p{font-size:.9rem;color:#D9C5C1}
+/* BARRIO (sin reseñas indexadas) */
+.barrio .panel{background:var(--blanco);border:1px solid var(--borde);border-radius:24px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+@media(max-width:820px){.barrio .panel{grid-template-columns:1fr}}
+.barrio h2{font-size:clamp(1.4rem,3vw,2rem);margin-bottom:14px}
+.barrio p{color:var(--mut)}
+.fb-card{background:var(--fb);border-radius:20px;padding:30px;color:#fff;text-align:center}
+.fb-card .handle{font-family:'Yeseva One',serif;font-size:1.1rem;margin:10px 0}
+.fb-card a{display:inline-block;background:#fff;color:var(--fb);font-weight:700;text-decoration:none;padding:11px 24px;border-radius:999px;margin-top:12px}
+/* CONTACTO */
+.contacto{background:var(--blanco);border-top:1px solid var(--borde)}
+.con-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start}
+@media(max-width:820px){.con-grid{grid-template-columns:1fr}}
+.con-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.con-item .ico{font-size:1.25rem;background:#F5E3DB;border-radius:12px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.con-item h3{font-size:.96rem}
+.con-item p,.con-item a{color:var(--mut);font-size:.94rem;text-decoration:none}
+.con-item a:hover{color:var(--granate)}
+.mapa{border-radius:20px;overflow:hidden;border:1px solid var(--borde);min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* FOOTER */
+footer{background:var(--oscuro);color:#E8C9C0;padding:46px 0 30px}
+.foot-grid{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:26px}
+footer .logo{color:#fff}
+.foot-nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot-nav a{color:#E8C9C0;text-decoration:none;font-size:.9rem}
+.foot-nav a:hover{color:#fff}
+.credit{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;font-size:.8rem}
+/* FLOTANTE LLAMAR */
+.tel-float{position:fixed;right:20px;bottom:20px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--granate);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);animation:ring 2.4s infinite}
+.tel-float svg{width:28px;height:28px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(166,38,57,.45)}70%{box-shadow:0 0 0 18px rgba(166,38,57,0)}100%{box-shadow:0 0 0 0 rgba(166,38,57,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#">Desde Que Te Vi</a>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#visita">Tu visita</a>
+      <a href="#barrio">El barrio</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="tel:+541146134023">Llamar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="chip">Petshop & peluquería canina · Flores</span>
+      <h1>Amor a primera vista, <em>también para tu perro</em>.</h1>
+      <p class="lead">En Quirno 32, a pasos de Av. Rivadavia, tu mascota tiene su petshop y su peluquería de confianza: baño, corte y el alimento de siempre, atendido como en el barrio se atiende.</p>
+      <div class="btns">
+        <a class="btn btn-tel" href="tel:+541146134023">📞 Llamar al 4613-4023</a>
+        <a class="btn btn-fb" href="https://www.facebook.com/localdesdequetevi/" target="_blank" rel="noopener">Seguinos en Facebook</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Visitanos en Flores</h3>
+      <p>El local de Quirno 32, de lunes a sábado.</p>
+      <hr>
+      <div class="dato">📍 Quirno 32, Flores, CABA</div>
+      <div class="dato">🕙 Lu a Vi 10–20 h · Sá 10–18 h</div>
+      <div class="dato">📞 011 4613-4023</div>
+      <div class="badge-sc">🏅 15% de descuento para socios SportClub</div>
+    </aside>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap nos-grid">
+    <div>
+      <span class="kicker">Nosotros</span>
+      <h2 style="font-size:clamp(1.5rem,3.2vw,2.2rem);margin:8px 0 18px">La pelu canina con nombre de bolero</h2>
+      <p class="editorial">Hay negocios que se eligen por cercanía y otros que se eligen por cariño. <strong>Desde Que Te Vi</strong> es de los segundos: un petshop con peluquería canina en el corazón de Flores, donde a cada perro se lo llama por su nombre y se lo entrega mejor de lo que llegó.</p>
+      <p class="nota-edit">[Editable: historia del local — quiénes lo atienden, hace cuántos años está en Flores y qué lo distingue.]</p>
+    </div>
+    <div class="tags">
+      <span class="tag">🛁 Baño</span>
+      <span class="tag">✂️ Corte y deslanado</span>
+      <span class="tag">🦴 Alimentos y accesorios</span>
+      <span class="tag">🏅 Beneficio SportClub</span>
+      <span class="tag">🏡 Atención de barrio</span>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Servicios</span>
+      <h2>Peluquería y petshop, todo en Quirno 32</h2>
+      <p>[Editable: ajustar la lista según los servicios actuales del local.]</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🛁</div><h3>Baño completo</h3><p>Baño con productos acordes al pelaje y secado prolijo, para todas las razas.</p></div>
+      <div class="serv"><div class="ico">✂️</div><h3>Corte & peluquería</h3><p>Cortes higiénicos y de estilo, acordados con vos antes de empezar.</p></div>
+      <div class="serv"><div class="ico">🦴</div><h3>Alimentos</h3><p>Las marcas de siempre para perros y gatos, con el consejo justo para cada etapa.</p></div>
+      <div class="serv"><div class="ico">🎾</div><h3>Accesorios</h3><p>Correas, juguetes, camitas y todo lo que tu mascota necesita día a día.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="visita">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Tu visita</span>
+      <h2>Cómo es traer a tu perro por primera vez</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso"><div class="num">1</div><h3>Llamanos</h3><p>Coordinamos turno por teléfono: 4613-4023, de lunes a sábado.</p></div>
+      <div class="paso"><div class="num">2</div><h3>Lo conocemos</h3><p>Nos contás cómo es tu perro y qué corte querés; lo revisamos juntos.</p></div>
+      <div class="paso"><div class="num">3</div><h3>Manos a la obra</h3><p>Baño, corte y detalles finales, con paciencia y sin maltratar los tiempos del animal.</p></div>
+      <div class="paso"><div class="num">4</div><h3>Retiro feliz</h3><p>Pasás a buscarlo y, de paso, te llevás el alimento: todo en una sola visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="barrio" id="barrio">
+  <div class="wrap">
+    <div class="panel">
+      <div>
+        <span class="kicker">El barrio nos conoce</span>
+        <h2>Los vecinos de Flores ya saben dónde encontrarnos</h2>
+        <p>Nuestro día a día está en Facebook: los perros que pasan por la pelu, las novedades del local y los avisos de temporada. Entrá, mirá las fotos y escribinos por ahí si te queda más cómodo.</p>
+      </div>
+      <div class="fb-card">
+        <div style="font-size:2rem">👍</div>
+        <div class="handle">Desde que te vi. Peluquería Canina</div>
+        <p style="color:rgba(255,255,255,.9);font-size:.92rem">Fotos y novedades del local</p>
+        <a href="https://www.facebook.com/localdesdequetevi/" target="_blank" rel="noopener">Visitá nuestro Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Contacto</span>
+      <h2>Te esperamos en Flores</h2>
+    </div>
+    <div class="con-grid">
+      <div>
+        <div class="con-item"><div class="ico">📍</div><div><h3>Dirección</h3><p>Quirno 32, Flores, CABA (a pasos de Av. Rivadavia)</p></div></div>
+        <div class="con-item"><div class="ico">📞</div><div><h3>Teléfono</h3><a href="tel:+541146134023">011 4613-4023</a></div></div>
+        <div class="con-item"><div class="ico">🕙</div><div><h3>Horarios</h3><p>Lunes a viernes 10–20 h<br>Sábados 10–18 h</p></div></div>
+        <div class="con-item"><div class="ico">👍</div><div><h3>Facebook</h3><a href="https://www.facebook.com/localdesdequetevi/" target="_blank" rel="noopener">Desde que te vi. Peluquería Canina</a></div></div>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Quirno+32,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa Desde Que Te Vi" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">Desde Que Te Vi</div>
+        <p style="font-size:.88rem;margin-top:8px">Petshop & peluquería canina · Quirno 32, Flores, CABA</p>
+      </div>
+      <div class="foot-nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#visita">Tu visita</a>
+        <a href="#barrio">El barrio</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="credit">Demo diseñada por AMF Studio · Los datos se toman de información pública del negocio.</div>
+  </div>
+</footer>
+
+<a class="tel-float" href="tel:+541146134023" aria-label="Llamar">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+</a>
+</body>
+</html>

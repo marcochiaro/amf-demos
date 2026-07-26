@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Walking Pet — Peluquería Canina & Pet Shop en Villa Ortúzar</title>
+<meta name="description" content="The Walking Pet: peluquería canina y pet shop en Av. Álvarez Thomas 2795, Villa Ortúzar. Baño, corte según raza y mimos de verdad. Turnos por WhatsApp.">
+<meta property="og:title" content="The Walking Pet — Peluquería Canina & Pet Shop">
+<meta property="og:description" content="Salen lindos, coquetos y contentos. Baño y corte en Villa Ortúzar, CABA. Turnos por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#FBF9F4;--blanco:#FFFFFF;--turquesa:#2F9C95;--profundo:#1E6660;--durazno:#FF8552;--tinta:#23332F;--mut:#66756F;--borde:#E4E9E3;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Urbanist',sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.6}
+h1,h2,h3,.logo{font-family:'Righteous',cursive;font-weight:400;line-height:1.15}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-size:1.25rem;color:var(--tinta);text-decoration:none}
+.logo span{color:var(--turquesa)}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{color:var(--tinta);text-decoration:none;font-weight:600;font-size:.92rem}
+.nav-links a:hover{color:var(--turquesa)}
+.nav-cta{background:var(--turquesa);color:#fff !important;padding:9px 18px;border-radius:999px}
+.nav-cta:hover{background:var(--profundo);color:#fff !important}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+/* HERO */
+.hero{padding:74px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"🐾";position:absolute;font-size:11rem;opacity:.06;right:-20px;top:10px;transform:rotate(18deg)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
+.chip{display:inline-block;background:#E7F3F1;color:var(--profundo);font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2.1rem,5vw,3.3rem);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--turquesa)}
+.hero p.lead{font-size:1.12rem;color:var(--mut);max-width:32rem;margin-bottom:26px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:2px solid var(--tinta);color:var(--tinta)}
+.hero-card{background:var(--blanco);border:1px solid var(--borde);border-radius:22px;padding:30px;box-shadow:0 18px 40px rgba(35,51,47,.08)}
+.hero-card .big{font-family:'Righteous',cursive;font-size:2.6rem;color:var(--turquesa)}
+.hero-card .stars{color:#F5A623;font-size:1.15rem;letter-spacing:2px}
+.hero-card p{color:var(--mut);font-size:.92rem;margin-top:8px}
+.hero-card hr{border:none;border-top:1px dashed var(--borde);margin:18px 0}
+.hero-card .dato{display:flex;gap:10px;align-items:center;font-size:.95rem;font-weight:600;margin-top:10px}
+/* SECCIONES */
+section{padding:70px 0}
+.sec-head{max-width:38rem;margin-bottom:40px}
+.kicker{color:var(--durazno);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+.sec-head h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-top:8px}
+.sec-head p{color:var(--mut);margin-top:12px}
+/* NOSOTROS */
+.nosotros{background:var(--blanco);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.nos-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.nos-grid .editorial{font-size:1.18rem;line-height:1.75}
+.nos-grid .editorial strong{color:var(--turquesa)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{background:var(--fondo);border:1px solid var(--borde);border-radius:999px;padding:8px 16px;font-size:.88rem;font-weight:600}
+/* SERVICIOS */
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.serv{background:var(--blanco);border:1px solid var(--borde);border-radius:18px;padding:26px;transition:transform .15s,box-shadow .15s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,51,47,.09)}
+.serv .ico{font-size:1.9rem}
+.serv h3{font-size:1.08rem;margin:12px 0 8px}
+.serv p{color:var(--mut);font-size:.92rem}
+/* METODO */
+.metodo{background:var(--profundo);color:#F2F7F5}
+.metodo .kicker{color:var(--durazno)}
+.metodo h2{color:#fff}
+.metodo .sec-head p{color:#B9CFCB}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.paso{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px}
+.paso .num{font-family:'Righteous',cursive;font-size:1.9rem;color:var(--durazno)}
+.paso h3{font-size:1.02rem;margin:10px 0 8px;color:#fff}
+.paso p{font-size:.9rem;color:#C4D6D2}
+/* RESEÑAS */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.res{background:var(--blanco);border:1px solid var(--borde);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.res .stars{color:#F5A623;letter-spacing:2px}
+.res p{font-size:.98rem}
+.res .autor{margin-top:auto;font-weight:700;font-size:.88rem;color:var(--mut)}
+.res-note{margin-top:22px;font-size:.85rem;color:var(--mut)}
+/* CONTACTO */
+.contacto{background:var(--blanco);border-top:1px solid var(--borde)}
+.con-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start}
+@media(max-width:820px){.con-grid{grid-template-columns:1fr}}
+.con-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+.con-item .ico{font-size:1.3rem;background:#E7F3F1;border-radius:12px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.con-item h3{font-size:.98rem}
+.con-item p,.con-item a{color:var(--mut);font-size:.94rem;text-decoration:none}
+.con-item a:hover{color:var(--turquesa)}
+.mapa{border-radius:20px;overflow:hidden;border:1px solid var(--borde);min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* FOOTER */
+footer{background:var(--tinta);color:#B9C6C1;padding:46px 0 30px}
+.foot-grid{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:26px}
+footer .logo{color:#fff;font-size:1.2rem}
+.foot-nav{display:flex;gap:18px;flex-wrap:wrap}
+.foot-nav a{color:#B9C6C1;text-decoration:none;font-size:.9rem}
+.foot-nav a:hover{color:#fff}
+.credit{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.8rem}
+/* WHATSAPP FLOTANTE */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.22);animation:ring 2.4s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#">The Walking <span>Pet</span></a>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#resenas">Reseñas</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="https://wa.me/5491131005001?text=Hola!%20Quiero%20un%20turno%20para%20mi%20mascota" target="_blank" rel="noopener">Pedir turno</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="chip">Peluquería canina & pet shop · Villa Ortúzar</span>
+      <h1>Salen lindos, coquetos y <em>contentos</em>.</h1>
+      <p class="lead">Así describen los vecinos a sus perros después de pasar por The Walking Pet. Baño, corte según raza y mucha paciencia, en plena Av. Álvarez Thomas.</p>
+      <div class="btns">
+        <a class="btn btn-wa" href="https://wa.me/5491131005001?text=Hola!%20Quiero%20un%20turno%20para%20mi%20mascota" target="_blank" rel="noopener">Pedir turno por WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/thewalkingpetshop/" target="_blank" rel="noopener">Ver Instagram</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="big">4,2★</div>
+      <div class="stars">★★★★☆</div>
+      <p>Calificación en Google Maps, con reseñas que hablan del trato y de los cortes.</p>
+      <hr>
+      <div class="dato">📍 Av. Álvarez Thomas 2795, CABA</div>
+      <div class="dato">🕙 Ma a Vi 10–20 h · Sá 10–14 h</div>
+      <div class="dato">💬 Turnos por WhatsApp</div>
+    </aside>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap nos-grid">
+    <div>
+      <span class="kicker">Nosotros</span>
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:8px 0 18px">Una pelu de barrio donde tu perro entra caminando y sale desfilando</h2>
+      <p class="editorial">En Villa Ortúzar hay una esquina donde los perros mueven la cola antes de entrar. <strong>The Walking Pet</strong> es peluquería canina y pet shop: acá cada mascota tiene su tiempo, su corte y su mimo. Los clientes lo dicen mejor que nosotros: <em>“la peluquera es muy copada y deja a los perros impecables”</em>.</p>
+    </div>
+    <div>
+      <div class="tags">
+        <span class="tag">🛁 Baño completo</span>
+        <span class="tag">✂️ Corte según raza</span>
+        <span class="tag">🐩 Especialistas en caniches</span>
+        <span class="tag">🐈 Atención felina</span>
+        <span class="tag">🦴 Pet shop</span>
+        <span class="tag">💚 Trato paciente</span>
+      </div>
+      <p style="margin-top:22px;color:var(--mut);font-size:.92rem">[Editable: acá va la historia del local — cuándo abrió, quiénes lo atienden y qué lo hace único.]</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Servicios</span>
+      <h2>Todo lo que tu mascota necesita, en un solo lugar</h2>
+      <p>Turnos programados por WhatsApp para que tu perro espere lo justo y necesario.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🛁</div><h3>Baño completo</h3><p>Shampoo acorde al pelaje, secado y perfumada final. Tu perro vuelve oliendo a nuevo.</p></div>
+      <div class="serv"><div class="ico">✂️</div><h3>Corte según raza</h3><p>Cortes prolijos respetando el estándar de cada raza — de caniches a mestizos con estilo propio.</p></div>
+      <div class="serv"><div class="ico">🐈</div><h3>Peluquería felina</h3><p>También atendemos gatos, con el cuidado extra que ellos exigen.</p></div>
+      <div class="serv"><div class="ico">🦴</div><h3>Pet shop</h3><p>Alimentos y accesorios seleccionados para que te lleves todo en una sola visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">La experiencia</span>
+      <h2>Así es un turno en The Walking Pet</h2>
+      <p>Sin apuro, sin estrés y con vuelta a casa desfilando por Álvarez Thomas.</p>
+    </div>
+    <div class="pasos">
+      <div class="paso"><div class="num">1</div><h3>Pedís turno</h3><p>Nos escribís por WhatsApp, nos contás raza y tamaño, y coordinamos día y hora.</p></div>
+      <div class="paso"><div class="num">2</div><h3>Lo recibimos</h3><p>Conocemos a tu mascota, revisamos el pelaje y acordamos con vos el corte.</p></div>
+      <div class="paso"><div class="num">3</div><h3>Baño y corte</h3><p>Trabajamos con paciencia y buen trato — la especialidad de la casa.</p></div>
+      <div class="paso"><div class="num">4</div><h3>Vuelve feliz</h3><p>Te avisamos cuando está listo: lindo, coqueto y contento, como dicen las reseñas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Reseñas reales</span>
+      <h2>Lo que dicen en Google</h2>
+    </div>
+    <div class="res-grid">
+      <div class="res"><div class="stars">★★★★★</div><p>“Excelente lugar para dejar a nuestros hijos perrunos. Salen lindos, coquetos y contentos.”</p><div class="autor">María · Google</div></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“El servicio y la atención es excelente. Siempre dejan hermosa a mi perrita.”</p><div class="autor">Gise · Google</div></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“Hace más de un año que llevo a mi caniche… siempre vuelven contentos y con los cortes más lindos.”</p><div class="autor">Jessmilena · Google</div></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“La peluquera es muy copada y deja a los perros impecables. Es más barata que otras peluquerías.”</p><div class="autor">Nathalie · Google</div></div>
+    </div>
+    <p class="res-note">Reseñas publicadas por clientes en Google Maps.</p>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Contacto</span>
+      <h2>Vení a conocernos</h2>
+    </div>
+    <div class="con-grid">
+      <div>
+        <div class="con-item"><div class="ico">📍</div><div><h3>Dirección</h3><p>Av. Álvarez Thomas 2795, Villa Ortúzar, CABA</p></div></div>
+        <div class="con-item"><div class="ico">💬</div><div><h3>WhatsApp</h3><a href="https://wa.me/5491131005001" target="_blank" rel="noopener">+54 9 11 3100-5001</a></div></div>
+        <div class="con-item"><div class="ico">🕙</div><div><h3>Horarios</h3><p>Martes a viernes 10–20 h<br>Sábados 10–14 h</p></div></div>
+        <div class="con-item"><div class="ico">📸</div><div><h3>Instagram</h3><a href="https://www.instagram.com/thewalkingpetshop/" target="_blank" rel="noopener">@thewalkingpetshop</a></div></div>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps?q=Av.+Alvarez+Thomas+2795,+CABA,+Argentina&output=embed" loading="lazy" title="Mapa The Walking Pet" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">The Walking <span style="color:var(--turquesa)">Pet</span></div>
+        <p style="font-size:.88rem;margin-top:8px">Peluquería canina & pet shop · Villa Ortúzar, CABA</p>
+      </div>
+      <div class="foot-nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="credit">Demo diseñada por AMF Studio · Los datos se toman de información pública del negocio.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491131005001?text=Hola!%20Quiero%20un%20turno%20para%20mi%20mascota" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.6-.3-4.9.9 1-4.7-.3-.6c-.9-1.5-1.4-3.2-1.4-4.9 0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.5 10.4-9.9 10.4zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.7-.4z"/></svg>
+</a>
+</body>
+</html>
