@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me Encanta Mi Dentista — Odontología en Villa Urquiza</title>
+<meta name="description" content="Consultorio odontológico en Villa Urquiza (Dr. Pedro Ignacio Rivera 4946): odontología general, implantes, ortodoncia, prótesis, coronas, extracciones y limpieza. Turnos por WhatsApp.">
+<meta property="og:title" content="Me Encanta Mi Dentista — Odontología en Villa Urquiza">
+<meta property="og:description" content="El consultorio de barrio que te reconcilia con el dentista. Implantes, ortodoncia, prótesis y más, en Villa Urquiza.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/me-encanta-mi-dentista/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{--nieve:#F6F9FF;--hielo:#EAF1FC;--cobalto:#2D6BE4;--profundo:#1E4CB0;--coral:#FF7A59;--menta:#DDF2EC;--tinta:#1A2440;--mut:#5D6880;--blanco:#FFFFFF;--borde:#DCE5F4;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--nieve);color:var(--tinta);line-height:1.65}
+h1,h2,h3{font-family:'Fredoka',sans-serif;font-weight:600;color:var(--tinta);line-height:1.15}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* Nav */
+nav{position:sticky;top:0;background:rgba(246,249,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.15rem;color:var(--cobalto);text-decoration:none}
+.logo span{color:var(--coral)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem}
+.nav-links a:hover{color:var(--cobalto)}
+@media(max-width:760px){.nav-links{display:none}}
+/* Hero */
+.hero{padding:90px 0 80px;position:relative;overflow:hidden;background:var(--nieve)}
+.hero::before{content:"";position:absolute;left:-140px;bottom:-180px;width:420px;height:420px;border-radius:50%;background:var(--hielo)}
+.hero::after{content:"";position:absolute;right:-100px;top:-100px;width:340px;height:340px;border-radius:50%;background:var(--menta)}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-block;background:var(--hielo);color:var(--cobalto);font-weight:500;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:40px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.6rem);max-width:680px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--cobalto)}
+.hero h1 .heart{color:var(--coral)}
+.hero p{max-width:540px;color:var(--mut);font-size:1.05rem;margin-bottom:34px}
+.btn{display:inline-block;padding:15px 30px;border-radius:60px;text-decoration:none;font-weight:500;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-line{border:1.5px solid var(--cobalto);color:var(--cobalto);margin-left:10px}
+.hero-meta{margin-top:38px;display:flex;gap:28px;flex-wrap:wrap;font-size:.85rem;color:var(--mut)}
+.hero-meta strong{color:var(--tinta)}
+/* Nosotros */
+section{padding:76px 0}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
+h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:18px}
+.lead{font-size:1.08rem}
+.about p+p{margin-top:14px;color:var(--mut)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--blanco);border:1px solid var(--borde);border-radius:40px;padding:8px 16px;font-size:.82rem;color:var(--cobalto);font-weight:500}
+.smile-card{background:linear-gradient(160deg,var(--cobalto),var(--profundo));border-radius:24px;padding:40px 34px;color:#fff}
+.smile-card h3{color:#fff;font-size:1.3rem;margin-bottom:12px}
+.smile-card p{color:#C9D8F6;font-size:.95rem}
+.smile-card .big{font-family:'Fredoka',sans-serif;font-size:2.6rem;color:#fff;margin:18px 0 4px}
+/* Servicios */
+.servicios{background:var(--blanco)}
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:38px}
+.serv{background:var(--nieve);border:1px solid var(--borde);border-radius:18px;padding:26px;transition:transform .15s}
+.serv:hover{transform:translateY(-3px)}
+.serv .ico{width:44px;height:44px;border-radius:12px;background:var(--hielo);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:14px}
+.serv:nth-child(even) .ico{background:var(--menta)}
+.serv h3{font-size:1.02rem;margin-bottom:8px}
+.serv p{font-size:.88rem;color:var(--mut)}
+/* Método */
+.metodo{background:var(--hielo)}
+.metodo .sub{color:var(--mut);max-width:560px}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:42px}
+.paso{background:var(--blanco);border-radius:18px;padding:26px;border-bottom:4px solid var(--coral)}
+.paso:nth-child(even){border-bottom-color:var(--cobalto)}
+.paso .num{font-family:'Fredoka',sans-serif;font-weight:600;font-size:.85rem;color:var(--coral);letter-spacing:.1em;text-transform:uppercase}
+.paso:nth-child(even) .num{color:var(--cobalto)}
+.paso h3{font-size:1.02rem;margin:8px 0}
+.paso p{font-size:.86rem;color:var(--mut)}
+/* Opiniones honesta */
+.opiniones{background:var(--nieve);text-align:center}
+.opiniones .box{max-width:640px;margin:0 auto;background:var(--blanco);border:1px solid var(--borde);border-radius:24px;padding:44px 34px}
+.opiniones p{color:var(--mut);margin:14px 0 24px}
+.btn-ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff}
+/* Contacto */
+.contacto{background:var(--blanco)}
+.cont-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;margin-top:34px;align-items:start}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.cont-card{background:var(--nieve);border:1px solid var(--borde);border-radius:18px;padding:28px}
+.cont-card h3{font-size:1.05rem;margin-bottom:12px}
+.cont-card p{font-size:.92rem;color:var(--mut);margin-bottom:8px}
+.cont-card a{color:var(--cobalto);font-weight:500;text-decoration:none}
+.mapa{border-radius:18px;overflow:hidden;border:1px solid var(--borde)}
+.mapa iframe{display:block;width:100%;height:320px;border:0}
+/* Footer */
+footer{background:var(--tinta);color:#9AA6C2;padding:44px 0;font-size:.85rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+.foot a{color:#fff;text-decoration:none;margin-left:18px}
+.foot a:hover{color:var(--coral)}
+/* WhatsApp float */
+.wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;z-index:90;box-shadow:0 8px 22px rgba(0,0,0,.25);animation:ring 2.4s infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Me Encanta <span>♥</span> Mi Dentista</a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">El consultorio</a></li>
+      <li><a href="#servicios">Tratamientos</a></li>
+      <li><a href="#metodo">Tu primera visita</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Turnos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Odontología · Villa Urquiza</span>
+    <h1>El dentista que <em>te va a encantar</em> <span class="heart">♥</span></h1>
+    <p>Sí, dijimos "encantar" y "dentista" en la misma frase. En nuestro consultorio de Villa Urquiza atendemos sin apuro, te explicamos todo y cuidamos tu sonrisa de punta a punta: de la limpieza al implante.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491160532880?text=Hola!%20Quiero%20pedir%20un%20turno%20odontol%C3%B3gico.">Pedir turno por WhatsApp</a>
+    <a class="btn btn-line" href="#servicios">Ver tratamientos</a>
+    <div class="hero-meta">
+      <div><strong>Dr. Pedro Ignacio Rivera 4946</strong><br>Villa Urquiza, CABA</div>
+      <div><strong>Lun a Vie 8–19 · Sáb 9–13</strong><br>Turnos programados</div>
+      <div><strong>011 4522-5265</strong><br>Teléfono fijo</div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap split">
+    <div>
+      <h2>Un consultorio de barrio con todas las especialidades</h2>
+      <p class="lead">A dos cuadras de tu casa, con la tranquilidad de que no hace falta recorrer media ciudad para resolver tu sonrisa.</p>
+      <p>En Rivera 4946 concentramos odontología general y especialidades: implantes, ortodoncia, prótesis, coronas y extracciones. Atendemos con turnos programados para que no pierdas la mañana en una sala de espera, y te contamos siempre qué vamos a hacer, por qué y cuánto va a llevar.</p>
+      <div class="tags">
+        <span class="tag">Implantes</span>
+        <span class="tag">Ortodoncia</span>
+        <span class="tag">Prótesis</span>
+        <span class="tag">Turnos programados</span>
+        <span class="tag">Atención sin apuro</span>
+      </div>
+    </div>
+    <div class="smile-card">
+      <h3>¿Hace cuánto no vas al dentista?</h3>
+      <p>Un control a tiempo es la diferencia entre una limpieza y un tratamiento largo. Vení a un chequeo: tu boca (y tu bolsillo) te lo van a agradecer.</p>
+      <div class="big">😁</div>
+      <p>Tu sonrisa, en manos de un equipo que la trata como propia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <h2>Tratamientos de la A a la Z</h2>
+    <div class="serv-grid">
+      <div class="serv"><div class="ico">🪥</div><h3>Odontología general y limpieza</h3><p>Controles, caries y limpiezas profundas. La base de una boca sana.</p></div>
+      <div class="serv"><div class="ico">🦷</div><h3>Implantes</h3><p>Recuperá piezas perdidas con implantes que se ven y se sienten naturales.</p></div>
+      <div class="serv"><div class="ico">😬</div><h3>Ortodoncia</h3><p>Alineá tu sonrisa a cualquier edad, con seguimiento cercano en cada control.</p></div>
+      <div class="serv"><div class="ico">👑</div><h3>Coronas y prótesis</h3><p>Soluciones fijas y removibles para que vuelvas a comer y sonreír tranquilo.</p></div>
+      <div class="serv"><div class="ico">🛠️</div><h3>Extracciones</h3><p>Cuando no queda otra, lo hacemos con cuidado, anestesia y buena información.</p></div>
+      <div class="serv"><div class="ico">📋</div><h3>Plan de tratamiento claro</h3><p>Diagnóstico completo y un plan por etapas, explicado antes de empezar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <h2>Tu primera visita, sin misterios</h2>
+    <p class="sub">Sabemos que ir al dentista genera dudas. Así funciona, paso a paso.</p>
+    <div class="pasos">
+      <div class="paso"><div class="num">Paso 1</div><h3>Escribinos</h3><p>Por WhatsApp o al fijo. Contanos qué te pasa y buscamos el turno que te quede cómodo.</p></div>
+      <div class="paso"><div class="num">Paso 2</div><h3>Chequeo completo</h3><p>Revisamos tu boca y te contamos qué encontramos, en criollo y sin vueltas.</p></div>
+      <div class="paso"><div class="num">Paso 3</div><h3>Plan a tu medida</h3><p>Definimos juntos el tratamiento, las etapas y los tiempos. Sin sorpresas.</p></div>
+      <div class="paso"><div class="num">Paso 4</div><h3>Sonrisa y seguimiento</h3><p>Terminamos el tratamiento y quedamos cerca para los controles. Somos del barrio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="box">
+      <h2>¿Nuestro nombre es una promesa? Comprobalo</h2>
+      <p>No vamos a inventar testimonios acá: preferimos que veas nuestro trabajo real y la palabra de nuestros pacientes en las redes del consultorio.</p>
+      <a class="btn btn-ig" href="https://www.instagram.com/meencantamidentista/" target="_blank" rel="noopener">Ver @meencantamidentista en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <h2>Pedí tu turno</h2>
+    <div class="cont-grid">
+      <div class="cont-card">
+        <h3>Consultorio Villa Urquiza</h3>
+        <p>📍 Dr. Pedro Ignacio Rivera 4946, CABA</p>
+        <p>📱 WhatsApp: <a href="https://wa.me/5491160532880">11 6053-2880</a></p>
+        <p>☎️ Fijo: 011 4522-5265</p>
+        <p>🕗 Lun a Vie 8–19 · Sáb 9–13</p>
+        <p>📷 <a href="https://www.instagram.com/meencantamidentista/" target="_blank" rel="noopener">@meencantamidentista</a></p>
+      </div>
+      <div class="mapa"><iframe title="Mapa del consultorio" loading="lazy" src="https://www.google.com/maps?q=Dr.+Pedro+Ignacio+Rivera+4946,+CABA&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© Me Encanta Mi Dentista · Villa Urquiza, CABA<br>Demo diseñada por AMF Studio</div>
+    <div>
+      <a href="#nosotros">El consultorio</a><a href="#servicios">Tratamientos</a><a href="#metodo">Primera visita</a><a href="#contacto">Turnos</a><a href="https://www.instagram.com/meencantamidentista/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491160532880?text=Hola!%20Quiero%20pedir%20un%20turno." aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.5-.3-4.9.9 1-4.7-.3-.5c-1-1.6-1.5-3.4-1.5-5.4 0-5.4 4.4-9.8 9.7-9.8 5.4 0 9.8 4.4 9.8 9.8s-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+</body>
+</html>

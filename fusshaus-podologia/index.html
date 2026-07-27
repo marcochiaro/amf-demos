@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fusshaus Podólogas — Podología U.B.A. en Villa del Parque y Villa Pueyrredón</title>
+<meta name="description" content="Fusshaus, la casa de tus pies. Podología U.B.A. en Villa del Parque (Cuenca 2539) y Villa Pueyrredón (Artigas 4652): uñas encarnadas, plantillas a medida, reflexología y más.">
+<meta property="og:title" content="Fusshaus Podólogas — La casa de tus pies">
+<meta property="og:description" content="Podología U.B.A. con dos gabinetes en Villa del Parque y Villa Pueyrredón. Turnos por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/fusshaus-podologia/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--marfil:#FAF7F1;--claro:#F1EBDF;--indigo:#274060;--noche:#1B2D45;--ambar:#E1962E;--tinta:#25303D;--mut:#68727E;--borde:#E3DCCC;--blanco:#FFFFFF;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Lexend',sans-serif;background:var(--marfil);color:var(--tinta);font-weight:300;line-height:1.65}
+h1,h2,h3{font-family:'Source Serif 4',serif;color:var(--indigo);line-height:1.15}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* Nav */
+nav{position:sticky;top:0;background:rgba(250,247,241,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Source Serif 4',serif;font-weight:700;font-size:1.25rem;color:var(--indigo);text-decoration:none}
+.logo span{color:var(--ambar)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem;font-weight:400}
+.nav-links a:hover{color:var(--ambar)}
+@media(max-width:760px){.nav-links{display:none}}
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--indigo),var(--noche));color:var(--marfil);padding:96px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(225,150,46,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ambar);font-weight:500;margin-bottom:18px}
+.hero h1{color:var(--blanco);font-size:clamp(2.1rem,5.4vw,3.4rem);max-width:660px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--ambar)}
+.hero p{max-width:540px;color:#C9D2DE;font-size:1.05rem;margin-bottom:34px}
+.btn{display:inline-block;padding:15px 30px;border-radius:60px;text-decoration:none;font-weight:500;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:1.5px solid rgba(250,247,241,.5);color:var(--marfil);margin-left:10px}
+.hero-meta{margin-top:38px;display:flex;gap:28px;flex-wrap:wrap;font-size:.85rem;color:#AEB9C7}
+.hero-meta strong{color:var(--blanco);font-weight:500}
+/* Nosotros */
+section{padding:76px 0}
+.about{background:var(--marfil)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:start}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
+h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:18px}
+.lead{font-size:1.08rem;color:var(--tinta)}
+.about p+p{margin-top:14px;color:var(--mut)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--blanco);border:1px solid var(--borde);border-radius:40px;padding:8px 16px;font-size:.82rem;color:var(--indigo);font-weight:400}
+.sede-card{background:var(--blanco);border:1px solid var(--borde);border-radius:16px;padding:26px;margin-bottom:16px}
+.sede-card h3{font-size:1.1rem;margin-bottom:6px}
+.sede-card p{font-size:.9rem;color:var(--mut)}
+.sede-card .dato{color:var(--tinta);margin-top:8px}
+/* Servicios */
+.servicios{background:var(--claro)}
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:38px}
+.serv{background:var(--blanco);border-radius:16px;padding:26px;border-top:4px solid var(--ambar)}
+.serv h3{font-size:1.05rem;margin-bottom:8px}
+.serv p{font-size:.88rem;color:var(--mut)}
+.serv .ico{font-size:1.5rem;display:block;margin-bottom:12px}
+/* Método */
+.metodo{background:var(--indigo);color:var(--marfil)}
+.metodo h2{color:var(--blanco)}
+.metodo .sub{color:#AEB9C7;max-width:560px}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;margin-top:42px}
+.paso{border-top:1px solid rgba(250,247,241,.25);padding-top:20px}
+.paso .num{font-family:'Source Serif 4',serif;font-size:2rem;color:var(--ambar)}
+.paso h3{color:var(--blanco);font-size:1.02rem;margin:10px 0 8px}
+.paso p{font-size:.86rem;color:#AEB9C7}
+/* Opiniones (honesta) */
+.opiniones{background:var(--marfil);text-align:center}
+.opiniones .box{max-width:640px;margin:0 auto;background:var(--blanco);border:1px solid var(--borde);border-radius:20px;padding:44px 34px}
+.opiniones p{color:var(--mut);margin:14px 0 24px}
+.btn-ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff}
+/* Contacto */
+.contacto{background:var(--claro)}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.cont-card{background:var(--blanco);border:1px solid var(--borde);border-radius:16px;padding:28px}
+.cont-card h3{font-size:1.05rem;margin-bottom:12px}
+.cont-card p{font-size:.92rem;color:var(--mut);margin-bottom:8px}
+.cont-card a{color:var(--indigo);font-weight:500;text-decoration:none}
+.mapa{border-radius:16px;overflow:hidden;border:1px solid var(--borde);margin-top:18px}
+.mapa iframe{display:block;width:100%;height:230px;border:0}
+/* Footer */
+footer{background:var(--noche);color:#AEB9C7;padding:44px 0;font-size:.85rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+.foot a{color:var(--marfil);text-decoration:none;margin-left:18px}
+.foot a:hover{color:var(--ambar)}
+/* WhatsApp float */
+.wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;z-index:90;box-shadow:0 8px 22px rgba(0,0,0,.25);animation:ring 2.4s infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Fuss<span>haus</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#metodo">Tu visita</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Turnos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Podología U.B.A. · Villa del Parque &amp; Villa Pueyrredón</span>
+    <h1>La casa de tus pies queda <em>a la vuelta de tu casa</em></h1>
+    <p>Fusshaus significa "casa de pies". Somos podólogas universitarias (U.B.A.) y atendemos en dos gabinetes de barrio: uñas encarnadas, plantillas a medida, reflexología y el cuidado que tus pies vienen pidiendo.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491156625254?text=Hola%20Fusshaus!%20Quiero%20pedir%20un%20turno%20de%20podolog%C3%ADa.">Pedir turno por WhatsApp</a>
+    <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+    <div class="hero-meta">
+      <div><strong>Cuenca 2539</strong><br>Villa del Parque</div>
+      <div><strong>Artigas 4652</strong><br>Villa Pueyrredón</div>
+      <div><strong>Lun a Vie 10–18 · Sáb 10–17</strong><br>Turnos por WhatsApp</div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap split">
+    <div>
+      <h2>Podología profesional, con calidez de barrio</h2>
+      <p class="lead">A media cuadra de la plaza de Villa del Parque y sobre Artigas en Villa Pueyrredón, Fusshaus atiende cada pie como si fuera único — porque lo es.</p>
+      <p>Somos podólogas formadas en la Universidad de Buenos Aires. Trabajamos con instrumental esterilizado, evaluamos antes de tratar y te explicamos cada paso. Del callo molesto a la uña encarnada que no te deja caminar, acá se resuelve.</p>
+      <div class="tags">
+        <span class="tag">Podólogas U.B.A.</span>
+        <span class="tag">Dos sedes</span>
+        <span class="tag">Plantillas a medida</span>
+        <span class="tag">Reflexología</span>
+        <span class="tag">Atención personalizada</span>
+      </div>
+    </div>
+    <div>
+      <div class="sede-card">
+        <h3>Sede Villa del Parque</h3>
+        <p>Cuenca 2539 — a media cuadra de la plaza y de la estación Villa del Parque.</p>
+        <p class="dato">Tel: 4502-7189 · WhatsApp: 11 5662-5254</p>
+      </div>
+      <div class="sede-card">
+        <h3>Sede Villa Pueyrredón</h3>
+        <p>Gral. José Gervasio Artigas 4652.</p>
+        <p class="dato">Tel: 4571-2791 · WhatsApp: 11 3898-6890</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <h2>Todo lo que tus pies necesitan, en un solo lugar</h2>
+    <div class="serv-grid">
+      <div class="serv"><span class="ico">🦶</span><h3>Tratamiento integral del pie</h3><p>Limpieza profunda, durezas, callosidades e hidratación. El "service" completo para tus pies.</p></div>
+      <div class="serv"><span class="ico">💅</span><h3>Uñas encarnadas</h3><p>Tratamiento profesional para resolver el dolor y evitar que vuelva, con técnica e instrumental adecuados.</p></div>
+      <div class="serv"><span class="ico">🩹</span><h3>Verrugas plantares</h3><p>Diagnóstico y tratamiento podológico de verrugas y lesiones de la planta del pie.</p></div>
+      <div class="serv"><span class="ico">👟</span><h3>Plantillas ortopédicas a medida</h3><p>Confección de plantillas personalizadas para caminar, trabajar y hacer deporte sin dolor.</p></div>
+      <div class="serv"><span class="ico">🙌</span><h3>Reflexología</h3><p>Sesiones de reflexología podal para aliviar tensiones — y cursos para quienes quieran aprender.</p></div>
+      <div class="serv"><span class="ico">✋</span><h3>Manicuría</h3><p>Cuidado de manos con la misma prolijidad e higiene con la que tratamos tus pies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <h2>Tu visita, paso a paso</h2>
+    <p class="sub">Sin vueltas y sin esperas eternas: así funciona un turno en Fusshaus.</p>
+    <div class="pasos">
+      <div class="paso"><div class="num">01</div><h3>Escribinos por WhatsApp</h3><p>Contanos qué te pasa y elegí sede: Villa del Parque o Villa Pueyrredón.</p></div>
+      <div class="paso"><div class="num">02</div><h3>Evaluamos tus pies</h3><p>Miramos piel, uñas y pisada antes de tocar nada. Cada pie es distinto.</p></div>
+      <div class="paso"><div class="num">03</div><h3>Tratamiento en gabinete</h3><p>Trabajamos con instrumental esterilizado y técnica universitaria, sin apuro.</p></div>
+      <div class="paso"><div class="num">04</div><h3>Plan de cuidado</h3><p>Te vas con indicaciones claras y, si hace falta, tu próximo turno agendado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="box">
+      <h2>La mejor reseña te la dan tus pies</h2>
+      <p>Preferimos no inventar testimonios: nuestras clientas nos recomiendan de boca en boca desde hace años en el barrio. Mirá nuestro trabajo día a día en Instagram y sacá tus propias conclusiones.</p>
+      <a class="btn btn-ig" href="https://www.instagram.com/fusshaus.ok/" target="_blank" rel="noopener">Ver @fusshaus.ok en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <h2>Pedí tu turno</h2>
+    <div class="cont-grid">
+      <div>
+        <div class="cont-card">
+          <h3>Villa del Parque · Cuenca 2539</h3>
+          <p>Tel: 4502-7189</p>
+          <p>WhatsApp: <a href="https://wa.me/5491156625254">11 5662-5254</a></p>
+          <p>Lun a Vie 10–18 · Sáb 10–17</p>
+        </div>
+        <div class="mapa"><iframe title="Mapa sede Cuenca" loading="lazy" src="https://www.google.com/maps?q=Cuenca+2539,+Villa+del+Parque,+CABA&output=embed"></iframe></div>
+      </div>
+      <div>
+        <div class="cont-card">
+          <h3>Villa Pueyrredón · Artigas 4652</h3>
+          <p>Tel: 4571-2791</p>
+          <p>WhatsApp: <a href="https://wa.me/5491138986890">11 3898-6890</a></p>
+          <p>Lun a Vie 10–18 · Sáb 10–17</p>
+        </div>
+        <div class="mapa"><iframe title="Mapa sede Artigas" loading="lazy" src="https://www.google.com/maps?q=Gral.+Jos%C3%A9+Gervasio+Artigas+4652,+CABA&output=embed"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© Fusshaus Podólogas · Villa del Parque &amp; Villa Pueyrredón, CABA<br>Demo diseñada por AMF Studio</div>
+    <div>
+      <a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#metodo">Tu visita</a><a href="#contacto">Turnos</a><a href="https://www.instagram.com/fusshaus.ok/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491156625254?text=Hola%20Fusshaus!%20Quiero%20pedir%20un%20turno." aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.5-.3-4.9.9 1-4.7-.3-.5c-1-1.6-1.5-3.4-1.5-5.4 0-5.4 4.4-9.8 9.7-9.8 5.4 0 9.8 4.4 9.8 9.8s-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+</body>
+</html>
