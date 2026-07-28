@@ -3,279 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMF Studio — Demos de landing pages</title>
-<meta name="description" content="Portfolio de demos de landing pages creadas por AMF Studio para negocios de Buenos Aires.">
+<title>AMF Studio — Diseño web para negocios locales de Buenos Aires</title>
+<meta name="description" content="AMF Studio diseña páginas web profesionales, mobile-first y optimizadas con SEO local para negocios de CABA y GBA. 49 proyectos publicados en más de 25 barrios.">
+<meta property="og:title" content="AMF Studio — Diseño web para negocios locales">
+<meta property="og:description" content="49 webs diseñadas para negocios reales de Buenos Aires. SEO local, mobile-first y WhatsApp directo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/">
+<meta property="og:locale" content="es_AR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0E1116;--panel:#171C24;--txt:#E8ECF1;--mut:#8B97A5;--acc:#5EE1A0}
+:root{--bg:#0A0C10;--panel:#12151C;--panel2:#171B24;--borde:#232935;--txt:#EDF1F6;--mut:#8B96A5;--acc:#5EE1A0;--acc2:#3FBF82;--wa:#25D366}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh}
-.wrap{max-width:900px;margin:0 auto;padding:80px 24px}
-h1{font-family:'Sora',sans-serif;font-size:2.2rem;margin-bottom:8px}
-h1 span{color:var(--acc)}
-.sub{color:var(--mut);margin-bottom:48px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
-a.card{display:block;background:var(--panel);border:1px solid #222A35;border-radius:14px;padding:24px;text-decoration:none;color:var(--txt);transition:transform .15s,border-color .15s}
-a.card:hover{transform:translateY(-3px);border-color:var(--acc)}
-.card .rubro{font-size:.75rem;color:var(--acc);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
-.card h2{font-family:'Sora',sans-serif;font-size:1.15rem;margin:8px 0 4px}
-.card p{font-size:.85rem;color:var(--mut)}
-footer{margin-top:70px;color:var(--mut);font-size:.8rem}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.08}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+/* Nav */
+nav{position:sticky;top:0;z-index:100;background:rgba(10,12,16,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.25rem;color:var(--txt);text-decoration:none;letter-spacing:-.02em}
+.logo span{color:var(--acc)}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--txt)}
+.nav-cta{background:var(--acc);color:#08110C!important;padding:10px 20px;border-radius:50px;font-weight:600!important}
+.nav-cta:hover{background:var(--acc2)}
+@media(max-width:820px){.nav-links a:not(.nav-cta){display:none}}
+/* Hero */
+.hero{position:relative;padding:110px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-240px;right:-160px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(94,225,160,.14),transparent 62%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-300px;left:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(94,225,160,.07),transparent 62%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--borde);background:var(--panel);border-radius:50px;padding:8px 18px;font-size:.8rem;color:var(--mut);margin-bottom:28px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(94,225,160,.5)}70%{box-shadow:0 0 0 9px rgba(94,225,160,0)}100%{box-shadow:0 0 0 0 rgba(94,225,160,0)}}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);font-weight:800;letter-spacing:-.03em;max-width:850px;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.sub{font-size:1.15rem;color:var(--mut);max-width:600px;margin-bottom:38px}
+.btn{display:inline-block;padding:16px 32px;border-radius:50px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-acc{background:var(--acc);color:#08110C}
+.btn-acc:hover{background:var(--acc2)}
+.btn-line{border:1px solid var(--borde);color:var(--txt);margin-left:12px;background:var(--panel)}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:70px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--panel);border:1px solid var(--borde);border-radius:18px;padding:26px 24px}
+.stat .n{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.3rem;color:var(--acc);letter-spacing:-.02em}
+.stat .l{font-size:.85rem;color:var(--mut);margin-top:4px}
+/* Marquee */
+.marquee{border-top:1px solid var(--borde);border-bottom:1px solid var(--borde);padding:18px 0;overflow:hidden;white-space:nowrap;background:var(--panel)}
+.marquee-track{display:inline-block;animation:scroll 36s linear infinite}
+.marquee span{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1rem;color:var(--mut);margin:0 26px;letter-spacing:.02em}
+.marquee span i{font-style:normal;color:var(--acc);margin-right:26px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* Sections */
+section{padding:90px 0}
+.sec-head{margin-bottom:46px;max-width:640px}
+.sec-head .tag{color:var(--acc);font-weight:600;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800;letter-spacing:-.02em;margin-top:12px}
+.sec-head p{color:var(--mut);margin-top:14px}
+/* Filters + grid */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.chip{border:1px solid var(--borde);background:var(--panel);color:var(--mut);border-radius:50px;padding:9px 18px;font-size:.85rem;font-weight:500;cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif}
+.chip:hover{color:var(--txt);border-color:#3A4354}
+.chip.on{background:var(--acc);border-color:var(--acc);color:#08110C;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.proj{background:var(--panel);border:1px solid var(--borde);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--txt);transition:transform .18s,border-color .18s;display:block}
+.proj:hover{transform:translateY(-5px);border-color:var(--acc)}
+.thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--panel2)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .35s ease;display:block}
+.proj:hover .thumb img{transform:scale(1.045)}
+.thumb .view{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,12,16,.55);opacity:0;transition:opacity .2s;font-weight:600;color:var(--acc);font-size:.95rem}
+.proj:hover .view{opacity:1}
+.proj-body{padding:18px 20px 20px}
+.proj-body .r{font-size:.74rem;color:var(--acc);text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+.proj-body h3{font-size:1.12rem;font-weight:700;margin:6px 0 4px;letter-spacing:-.01em}
+.proj-body p{font-size:.85rem;color:var(--mut)}
+.hidden{display:none}
+/* Servicios */
+.servicios{background:var(--panel);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.feat{background:var(--bg);border:1px solid var(--borde);border-radius:18px;padding:30px 26px}
+.feat .ico{width:46px;height:46px;border-radius:13px;background:rgba(94,225,160,.12);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px}
+.feat h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.feat p{font-size:.88rem;color:var(--mut)}
+/* Proceso */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.paso{border-top:2px solid var(--borde);padding-top:22px;position:relative}
+.paso .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:.85rem;color:var(--acc);letter-spacing:.12em}
+.paso h3{font-size:1.08rem;font-weight:700;margin:10px 0 8px}
+.paso p{font-size:.87rem;color:var(--mut)}
+/* CTA */
+.cta{text-align:center}
+.cta .box{background:linear-gradient(160deg,var(--panel),var(--panel2));border:1px solid var(--borde);border-radius:26px;padding:70px 30px;position:relative;overflow:hidden}
+.cta .box::before{content:"";position:absolute;top:-160px;left:50%;transform:translateX(-50%);width:520px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(94,225,160,.13),transparent 65%)}
+.cta h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.02em;position:relative}
+.cta p{color:var(--mut);margin:16px auto 34px;max-width:480px;position:relative}
+.cta .row{position:relative}
+/* Footer */
+footer{border-top:1px solid var(--borde);padding:40px 0;color:var(--mut);font-size:.85rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.foot a{color:var(--txt);text-decoration:none}
+.foot a:hover{color:var(--acc)}
+/* Reveal */
+.rev{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>AMF <span>Studio</span></h1>
-  <p class="sub">Demos de landing pages para negocios locales · Buenos Aires</p>
-  <div class="grid">
-    <a class="card" href="cafe-aurora/">
-      <div class="rubro">Gastronomía · Demo de muestra</div>
-      <h2>Café Aurora</h2>
-      <p>Café de especialidad en Palermo</p>
-    </a>
-    <a class="card" href="studio-11/">
-      <div class="rubro">Peluquería · Villa Urquiza</div>
-      <h2>Studio 11</h2>
-      <p>Hair designers: colorimetría, cortes y tratamientos</p>
-    </a>
-    <a class="card" href="salon-360/">
-      <div class="rubro">Peluquería · Villa Urquiza</div>
-      <h2>Salón 360</h2>
-      <p>Color de autor, alisados y cortes con 5.0★ en Google</p>
-    </a>
-    <a class="card" href="aime-studio/">
-      <div class="rubro">Nails &amp; Beauty · Villa Urquiza</div>
-      <h2>AiméStudio</h2>
-      <p>Estudio boutique de uñas y belleza</p>
-    </a>
-    <a class="card" href="vet-guayaquil/">
-      <div class="rubro">Veterinaria · Caballito</div>
-      <h2>Clínica Veterinaria Guayaquil</h2>
-      <p>Medicina veterinaria integral con especialistas</p>
-    </a>
-    <a class="card" href="vet-rojas/">
-      <div class="rubro">Veterinaria · Caballito</div>
-      <h2>Veterinaria Rojas</h2>
-      <p>La veterinaria de cabecera del barrio, 4.7★ en Google</p>
-    </a>
-    <a class="card" href="pilates-aroha/">
-      <div class="rubro">Pilates · Núñez</div>
-      <h2>Pilates Aroha</h2>
-      <p>Pilates Reformer en grupos reducidos, sedes Núñez y Villa del Parque</p>
-    </a>
-    <a class="card" href="alma-pilates/">
-      <div class="rubro">Pilates · Núñez</div>
-      <h2>Alma Pilates</h2>
-      <p>Estudio de pilates de barrio en plena Av. Cabildo</p>
-    </a>
-    <a class="card" href="casa-musgo/">
-      <div class="rubro">Yoga · Saavedra</div>
-      <h2>Casa Musgo</h2>
-      <p>Shala de yoga en una casona restaurada de 1920</p>
-    </a>
-    <a class="card" href="don-gato/">
-      <div class="rubro">Pet shop · Caballito</div>
-      <h2>Don Gato y Su Pandilla</h2>
-      <p>Pet shop de barrio: alimentos, accesorios y pedidos especiales</p>
-    </a>
-    <a class="card" href="lautentica/">
-      <div class="rubro">Gastronomía · Villa Devoto</div>
-      <h2>L'Autentica</h2>
-      <p>Café &amp; pastelería "Lo Mejor de Devoto", frente al Devoto Shopping</p>
-    </a>
-    <a class="card" href="dulcis/">
-      <div class="rubro">Gastronomía · Villa Devoto</div>
-      <h2>Confitería Dulcis</h2>
-      <p>Pastelería artesanal desde 1978, del maestro pastelero Jorge García</p>
-    </a>
-    <a class="card" href="salon-del-sir/">
-      <div class="rubro">Barbería · Parque Chacabuco</div>
-      <h2>El Salón del Sir</h2>
-      <p>Barbería tradicional: navaja, toalla a vapor y 4.9★ en Google</p>
-    </a>
-    <a class="card" href="house-of-cut/">
-      <div class="rubro">Barbería · Boedo</div>
-      <h2>House of Cut Boedo</h2>
-      <p>Barbería old school en Av. San Juan, 5.0★ con +380 reseñas</p>
-    </a>
-    <a class="card" href="7stars-almagro/">
-      <div class="rubro">Barbería · Almagro</div>
-      <h2>Barbers7stars</h2>
-      <p>Barbería urbana con calificación perfecta 5.0★ en Google</p>
-    </a>
-    <a class="card" href="tentate/">
-      <div class="rubro">Gastronomía · Villa Devoto</div>
-      <h2>Tentate Más</h2>
-      <p>Cafetería y pastelería artesanal, tortas y mesas dulces por encargo</p>
-    </a>
-    <a class="card" href="prona-saludable/">
-      <div class="rubro">Dietética · Chacarita</div>
-      <h2>Prona Boutique Saludable</h2>
-      <p>Granel, sin TACC, vegano y suplementos con delivery a domicilio</p>
-    </a>
-    <a class="card" href="vitaminate-market/">
-      <div class="rubro">Dietética · Colegiales</div>
-      <h2>Vitaminate Market</h2>
-      <p>Mercado natural de barrio en Av. Álvarez Thomas, pedidos por WhatsApp y Rappi</p>
-    </a>
-    <a class="card" href="punc-libreria/">
-      <div class="rubro">Comiquería · Villa Crespo</div>
-      <h2>Punc</h2>
-      <p>Cómics, novela gráfica y fanzines con 4.8★ en Google</p>
-    </a>
-    <a class="card" href="record-shop/">
-      <div class="rubro">Disquería · Villa Crespo</div>
-      <h2>Disquería Record Shop</h2>
-      <p>Showroom de vinilos en Padilla 645, ventas por Instagram</p>
-    </a>
-    <a class="card" href="garito-loyola/">
-      <div class="rubro">Pizzería &amp; bar · Villa Crespo</div>
-      <h2>Garito Loyola</h2>
-      <p>Pizza a la piedra y vermú en un ex taller mecánico, 4.5★ con +890 reseñas</p>
-    </a>
-    <a class="card" href="mb-artenflores/">
-      <div class="rubro">Florería · Vélez Sársfield</div>
-      <h2>Mb.artenflores</h2>
-      <p>Ramos de autor hechos en el momento, 4.9★ en Google</p>
-    </a>
-    <a class="card" href="santa-teresita/">
-      <div class="rubro">Florería · Villa Luro</div>
-      <h2>Florería Santa Teresita</h2>
-      <p>La florería tradicional de Av. Rivadavia, 4.7★ con 99 reseñas</p>
-    </a>
-    <a class="card" href="flores-gissara/">
-      <div class="rubro">Florería · Villa Devoto</div>
-      <h2>Flores Gissara</h2>
-      <p>Cuatro generaciones de floristas desde 1930, 4.6★ con +150 reseñas</p>
-    </a>
-    <a class="card" href="eme-estetica/">
-      <div class="rubro">Estética · Almagro &amp; Lanús</div>
-      <h2>Eme.Estética</h2>
-      <p>Dermatocosmiatría: láser, HIFU 12D, microneedling y radiofrecuencia en dos sedes</p>
-    </a>
-    <a class="card" href="mvs-kinesiologia/">
-      <div class="rubro">Kinesiología · Caballito</div>
-      <h2>MVS Kinesiología</h2>
-      <p>Consultorio de kinesiología, RPG y osteopatía sobre Av. Rivadavia</p>
-    </a>
-    <a class="card" href="satyam-yoga/">
-      <div class="rubro">Yoga · Caballito</div>
-      <h2>Satyam Yoga</h2>
-      <p>Yoga para la mujer en grupos de hasta 4 alumnas, prenatal y meditación</p>
-    </a>
-    <a class="card" href="nocciole-natural/">
-      <div class="rubro">Almacén natural · Parque Chas</div>
-      <h2>Nocciole Almacén Natural</h2>
-      <p>Calidad elegida a mano y 5.0★ en Google, frescos y pedidos keto</p>
-    </a>
-    <a class="card" href="casa-magnifico/">
-      <div class="rubro">Cerrajería · Villa Urquiza</div>
-      <h2>Cerrajería Casa Magnifico</h2>
-      <p>31 años de oficio, urgencias 24 hs y garantía de 30 días en mano de obra</p>
-    </a>
-    <a class="card" href="tapiceria-alpa/">
-      <div class="rubro">Tapicería · Núñez</div>
-      <h2>Tapicería Alpa</h2>
-      <p>Retapizados que quedan "como nuevos", en Manuela Pedraza 2290</p>
-    </a>
-    <a class="card" href="don-fierro/">
-      <div class="rubro">Ferretería · Villa Urquiza</div>
-      <h2>Ferretería Don Fierro</h2>
-      <p>Ferretería + cerrajería de barrio, abierta los sábados a la tarde</p>
-    </a>
-    <a class="card" href="el-parque-pastas/">
-      <div class="rubro">Pastas frescas · Villa del Parque</div>
-      <h2>El Parque</h2>
-      <p>Fábrica de pastas artesanales desde 1954, 4.7★ en Google</p>
-    </a>
-    <a class="card" href="la-praderita/">
-      <div class="rubro">Pastas frescas · Villa del Parque</div>
-      <h2>La Praderita</h2>
-      <p>Pastas, tartas y empanadas "de las de antaño", hechas a la vista</p>
-    </a>
-    <a class="card" href="bien-etre-cafe/">
-      <div class="rubro">Café de especialidad · Villa del Parque</div>
-      <h2>Bien Être Café</h2>
-      <p>Casona de 1945 con jardín, cascada y brunch — destacado por Canal 26</p>
-    </a>
-    <a class="card" href="brote-vivero/">
-      <div class="rubro">Vivero · Florida (Vicente López)</div>
-      <h2>Brote Vivero</h2>
-      <p>Plantas, árboles y frutales con envíos y estacionamiento propio</p>
-    </a>
-    <a class="card" href="vivero-el-alamo/">
-      <div class="rubro">Vivero · Olivos</div>
-      <h2>Vivero El Álamo</h2>
-      <p>El vivero clásico del barrio, atención personalizada de lunes a sábado</p>
-    </a>
-    <a class="card" href="presente-ceramicas/">
-      <div class="rubro">Cerámica · Villa Ortúzar</div>
-      <h2>Presente Cerámicas</h2>
-      <p>Tienda y taller: piezas hechas a mano, cursos con lista de espera</p>
-    </a>
-    <a class="card" href="luna-serena/">
-      <div class="rubro">Cerámica · Floresta</div>
-      <h2>Luna Serena</h2>
-      <p>Alfarería en torno, modelado, escultura y horneadas a terceros</p>
-    </a>
-    <a class="card" href="barro-y-arte/">
-      <div class="rubro">Cerámica · Floresta</div>
-      <h2>Barro y Arte</h2>
-      <p>Cerámica prehispánica y urbana, presencial y online</p>
-    </a>
-    <a class="card" href="pg-refrigeracion/">
-      <div class="rubro">Refrigeración · Vicente López</div>
-      <h2>PG Refrigeración</h2>
-      <p>Insumos y repuestos para aire, heladeras y lavarropas, con estacionamiento propio</p>
-    </a>
-    <a class="card" href="marron-glace/">
-      <div class="rubro">Café de especialidad · Villa Real</div>
-      <h2>Marrón Glacé</h2>
-      <p>Pastelería artesanal y café de especialidad en Av. Lope de Vega, take away y delivery</p>
-    </a>
-    <a class="card" href="sweet-todo-sweet/">
-      <div class="rubro">Cafetería · Villa Crespo</div>
-      <h2>Sweet Todo Sweet</h2>
-      <p>Waffles, tortas caseras y un patio luminoso para la merienda en Av. Warnes 376</p>
-    </a>
-    <a class="card" href="mucky-helados/">
-      <div class="rubro">Heladería · Monte Castro</div>
-      <h2>Mucky Helados &amp; Café</h2>
-      <p>Helado artesanal de barrio con 4.6★ y +900 reseñas en Google, en Jonte y Gualeguaychú</p>
-    </a>
-    <a class="card" href="walking-pet/">
-      <div class="rubro">Peluquería canina · Villa Ortúzar</div>
-      <h2>The Walking Pet</h2>
-      <p>Peluquería canina &amp; pet shop en Av. Álvarez Thomas: "salen lindos, coquetos y contentos"</p>
-    </a>
-    <a class="card" href="spa-de-snoopy/">
-      <div class="rubro">Spa de mascotas · Palermo</div>
-      <h2>El Spa de Snoopy</h2>
-      <p>Baño, peluquería y mimos en Emilio Ravignani 2376, con turnos por Instagram</p>
-    </a>
-    <a class="card" href="desde-que-te-vi/">
-      <div class="rubro">Peluquería canina · Flores</div>
-      <h2>Desde Que Te Vi</h2>
-      <p>Petshop y pelu canina en Quirno 32, con beneficio SportClub del 15%</p>
-    </a>
-    <a class="card" href="fusshaus-podologia/">
-      <div class="rubro">Podología · Villa del Parque</div>
-      <h2>Fusshaus Podólogas</h2>
-      <p>Podología U.B.A. con dos sedes: Cuenca 2539 y Artigas 4652</p>
-    </a>
-    <a class="card" href="me-encanta-mi-dentista/">
-      <div class="rubro">Odontología · Villa Urquiza</div>
-      <h2>Me Encanta Mi Dentista</h2>
-      <p>Consultorio integral en Rivera 4946: implantes, ortodoncia y prótesis</p>
-    </a>
-    <a class="card" href="sparcirte-masajes/">
-      <div class="rubro">Masajes &amp; Reiki · Villa del Parque</div>
-      <h2>Sparcirte</h2>
-      <p>Masajes descontracturantes y Reiki en Nazarre 3325, 4.9★ en Google</p>
-    </a>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">AMF<span>·</span>Studio</a>
+    <ul class="nav-links">
+      <li><a href="#trabajos">Trabajos</a></li>
+      <li><a href="#servicios">Qué hacemos</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a class="nav-cta" href="#contacto">Pedí tu web</a></li>
+    </ul>
   </div>
-  <footer>© AMF Studio — Marco Chiaro · mchiaro79@gmail.com</footer>
-</div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>Diseño web · Buenos Aires, Argentina</span>
+    <h1>Webs que ponen a tu negocio <em>donde te buscan:</em> en Google.</h1>
+    <p class="sub">Diseñamos páginas profesionales, mobile-first y con SEO local para negocios reales de CABA y GBA. Tu vidriera abierta las 24 hs, con WhatsApp a un toque.</p>
+    <a class="btn btn-acc" href="#trabajos">Ver los trabajos</a>
+    <a class="btn btn-line" href="#contacto">Escribime</a>
+    <div class="stats">
+      <div class="stat rev"><div class="n" data-count="49">0</div><div class="l">webs publicadas</div></div>
+      <div class="stat rev"><div class="n" data-count="31">0</div><div class="l">rubros distintos</div></div>
+      <div class="stat rev"><div class="n" data-count="26">0</div><div class="l">barrios de CABA y GBA</div></div>
+      <div class="stat rev"><div class="n">100<small style="font-size:1.2rem">%</small></div><div class="l">a medida, cero plantillas</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee"><div class="marquee-track" id="mq"></div></div>
+
+<section id="trabajos">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Portfolio</span>
+      <h2>Cada negocio con su propia identidad</h2>
+      <p>Paleta, tipografía y estructura únicas para cada proyecto. Filtrá por rubro y entrá a las demos: todas son reales y están en línea.</p>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Qué hacemos</span>
+      <h2>Una web que trabaja sola</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat rev"><div class="ico">🔍</div><h3>SEO local</h3><p>Optimizada para que Google te muestre bien arriba cuando buscan tu rubro en tu barrio. Ahí es donde se gana el cliente nuevo.</p></div>
+      <div class="feat rev"><div class="ico">📱</div><h3>Mobile-first</h3><p>Diseñada primero para el celular, que es donde te va a ver el 90% de la gente. Rápida, liviana y sin vueltas.</p></div>
+      <div class="feat rev"><div class="ico">💬</div><h3>WhatsApp directo</h3><p>Botón flotante y CTAs que llevan la consulta directo a tu WhatsApp. Del Google al chat en dos toques.</p></div>
+      <div class="feat rev"><div class="ico">🎨</div><h3>Identidad propia</h3><p>Nada de plantillas: cada web tiene su paleta, su tipografía y su tono. Tu negocio no es igual a otro; tu web tampoco.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Proceso</span>
+      <h2>De la charla a estar en línea</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso rev"><div class="num">PASO 01</div><h3>Charlamos</h3><p>Me contás de tu negocio: qué hacés, quiénes te compran, qué te diferencia. Sin tecnicismos.</p></div>
+      <div class="paso rev"><div class="num">PASO 02</div><h3>Diseño a medida</h3><p>Armo una propuesta con tu identidad: colores, tipografía y estructura pensadas para tu rubro.</p></div>
+      <div class="paso rev"><div class="num">PASO 03</div><h3>Ajustamos juntos</h3><p>La revisás, le cambiamos lo que quieras, le sumamos tus fotos y tus textos hasta que quede tuya.</p></div>
+      <div class="paso rev"><div class="num">PASO 04</div><h3>En línea y creciendo</h3><p>La publicamos con tu dominio y queda trabajando 24/7. Después la actualizamos cuando lo necesites.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contacto">
+  <div class="wrap">
+    <div class="box rev">
+      <h2>¿Tu negocio todavía no aparece en Google?</h2>
+      <p>Escribime y te muestro cómo se vería tu web. Sin compromiso, precios accesibles y trato directo.</p>
+      <div class="row">
+        <a class="btn btn-acc" href="mailto:mchiaro79@gmail.com?subject=Quiero%20mi%20web%20—%20AMF%20Studio">mchiaro79@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© AMF Studio — Marco Chiaro · Buenos Aires, Argentina</div>
+    <div><a href="https://github.com/marcochiaro" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:mchiaro79@gmail.com">mchiaro79@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+const DATA = [{"slug": "cafe-aurora", "rubro": "Gastronomía · Demo de muestra", "name": "Café Aurora", "desc": "Café de especialidad en Palermo", "cat": "Gastronomía"}, {"slug": "studio-11", "rubro": "Peluquería · Villa Urquiza", "name": "Studio 11", "desc": "Hair designers: colorimetría, cortes y tratamientos", "cat": "Estética & Belleza"}, {"slug": "salon-360", "rubro": "Peluquería · Villa Urquiza", "name": "Salón 360", "desc": "Color de autor, alisados y cortes con 5.0★ en Google", "cat": "Estética & Belleza"}, {"slug": "aime-studio", "rubro": "Nails & Beauty · Villa Urquiza", "name": "AiméStudio", "desc": "Estudio boutique de uñas y belleza", "cat": "Estética & Belleza"}, {"slug": "vet-guayaquil", "rubro": "Veterinaria · Caballito", "name": "Clínica Veterinaria Guayaquil", "desc": "Medicina veterinaria integral con especialistas", "cat": "Mascotas"}, {"slug": "vet-rojas", "rubro": "Veterinaria · Caballito", "name": "Veterinaria Rojas", "desc": "La veterinaria de cabecera del barrio, 4.7★ en Google", "cat": "Mascotas"}, {"slug": "pilates-aroha", "rubro": "Pilates · Núñez", "name": "Pilates Aroha", "desc": "Pilates Reformer en grupos reducidos, sedes Núñez y Villa del Parque", "cat": "Salud & Bienestar"}, {"slug": "alma-pilates", "rubro": "Pilates · Núñez", "name": "Alma Pilates", "desc": "Estudio de pilates de barrio en plena Av. Cabildo", "cat": "Salud & Bienestar"}, {"slug": "casa-musgo", "rubro": "Yoga · Saavedra", "name": "Casa Musgo", "desc": "Shala de yoga en una casona restaurada de 1920", "cat": "Salud & Bienestar"}, {"slug": "don-gato", "rubro": "Pet shop · Caballito", "name": "Don Gato y Su Pandilla", "desc": "Pet shop de barrio: alimentos, accesorios y pedidos especiales", "cat": "Mascotas"}, {"slug": "lautentica", "rubro": "Gastronomía · Villa Devoto", "name": "L'Autentica", "desc": "Café & pastelería \"Lo Mejor de Devoto\", frente al Devoto Shopping", "cat": "Gastronomía"}, {"slug": "dulcis", "rubro": "Gastronomía · Villa Devoto", "name": "Confitería Dulcis", "desc": "Pastelería artesanal desde 1978, del maestro pastelero Jorge García", "cat": "Gastronomía"}, {"slug": "salon-del-sir", "rubro": "Barbería · Parque Chacabuco", "name": "El Salón del Sir", "desc": "Barbería tradicional: navaja, toalla a vapor y 4.9★ en Google", "cat": "Estética & Belleza"}, {"slug": "house-of-cut", "rubro": "Barbería · Boedo", "name": "House of Cut Boedo", "desc": "Barbería old school en Av. San Juan, 5.0★ con +380 reseñas", "cat": "Estética & Belleza"}, {"slug": "7stars-almagro", "rubro": "Barbería · Almagro", "name": "Barbers7stars", "desc": "Barbería urbana con calificación perfecta 5.0★ en Google", "cat": "Estética & Belleza"}, {"slug": "tentate", "rubro": "Gastronomía · Villa Devoto", "name": "Tentate Más", "desc": "Cafetería y pastelería artesanal, tortas y mesas dulces por encargo", "cat": "Gastronomía"}, {"slug": "prona-saludable", "rubro": "Dietética · Chacarita", "name": "Prona Boutique Saludable", "desc": "Granel, sin TACC, vegano y suplementos con delivery a domicilio", "cat": "Comercios de barrio"}, {"slug": "vitaminate-market", "rubro": "Dietética · Colegiales", "name": "Vitaminate Market", "desc": "Mercado natural de barrio en Av. Álvarez Thomas, pedidos por WhatsApp y Rappi", "cat": "Comercios de barrio"}, {"slug": "punc-libreria", "rubro": "Comiquería · Villa Crespo", "name": "Punc", "desc": "Cómics, novela gráfica y fanzines con 4.8★ en Google", "cat": "Comercios de barrio"}, {"slug": "record-shop", "rubro": "Disquería · Villa Crespo", "name": "Disquería Record Shop", "desc": "Showroom de vinilos en Padilla 645, ventas por Instagram", "cat": "Comercios de barrio"}, {"slug": "garito-loyola", "rubro": "Pizzería & bar · Villa Crespo", "name": "Garito Loyola", "desc": "Pizza a la piedra y vermú en un ex taller mecánico, 4.5★ con +890 reseñas", "cat": "Gastronomía"}, {"slug": "mb-artenflores", "rubro": "Florería · Vélez Sársfield", "name": "Mb.artenflores", "desc": "Ramos de autor hechos en el momento, 4.9★ en Google", "cat": "Deco & Verde"}, {"slug": "santa-teresita", "rubro": "Florería · Villa Luro", "name": "Florería Santa Teresita", "desc": "La florería tradicional de Av. Rivadavia, 4.7★ con 99 reseñas", "cat": "Deco & Verde"}, {"slug": "flores-gissara", "rubro": "Florería · Villa Devoto", "name": "Flores Gissara", "desc": "Cuatro generaciones de floristas desde 1930, 4.6★ con +150 reseñas", "cat": "Deco & Verde"}, {"slug": "eme-estetica", "rubro": "Estética · Almagro & Lanús", "name": "Eme.Estética", "desc": "Dermatocosmiatría: láser, HIFU 12D, microneedling y radiofrecuencia en dos sedes", "cat": "Estética & Belleza"}, {"slug": "mvs-kinesiologia", "rubro": "Kinesiología · Caballito", "name": "MVS Kinesiología", "desc": "Consultorio de kinesiología, RPG y osteopatía sobre Av. Rivadavia", "cat": "Salud & Bienestar"}, {"slug": "satyam-yoga", "rubro": "Yoga · Caballito", "name": "Satyam Yoga", "desc": "Yoga para la mujer en grupos de hasta 4 alumnas, prenatal y meditación", "cat": "Salud & Bienestar"}, {"slug": "nocciole-natural", "rubro": "Almacén natural · Parque Chas", "name": "Nocciole Almacén Natural", "desc": "Calidad elegida a mano y 5.0★ en Google, frescos y pedidos keto", "cat": "Comercios de barrio"}, {"slug": "casa-magnifico", "rubro": "Cerrajería · Villa Urquiza", "name": "Cerrajería Casa Magnifico", "desc": "31 años de oficio, urgencias 24 hs y garantía de 30 días en mano de obra", "cat": "Oficios & Servicios"}, {"slug": "tapiceria-alpa", "rubro": "Tapicería · Núñez", "name": "Tapicería Alpa", "desc": "Retapizados que quedan \"como nuevos\", en Manuela Pedraza 2290", "cat": "Oficios & Servicios"}, {"slug": "don-fierro", "rubro": "Ferretería · Villa Urquiza", "name": "Ferretería Don Fierro", "desc": "Ferretería + cerrajería de barrio, abierta los sábados a la tarde", "cat": "Comercios de barrio"}, {"slug": "el-parque-pastas", "rubro": "Pastas frescas · Villa del Parque", "name": "El Parque", "desc": "Fábrica de pastas artesanales desde 1954, 4.7★ en Google", "cat": "Gastronomía"}, {"slug": "la-praderita", "rubro": "Pastas frescas · Villa del Parque", "name": "La Praderita", "desc": "Pastas, tartas y empanadas \"de las de antaño\", hechas a la vista", "cat": "Gastronomía"}, {"slug": "bien-etre-cafe", "rubro": "Café de especialidad · Villa del Parque", "name": "Bien Être Café", "desc": "Casona de 1945 con jardín, cascada y brunch — destacado por Canal 26", "cat": "Gastronomía"}, {"slug": "brote-vivero", "rubro": "Vivero · Florida (Vicente López)", "name": "Brote Vivero", "desc": "Plantas, árboles y frutales con envíos y estacionamiento propio", "cat": "Deco & Verde"}, {"slug": "vivero-el-alamo", "rubro": "Vivero · Olivos", "name": "Vivero El Álamo", "desc": "El vivero clásico del barrio, atención personalizada de lunes a sábado", "cat": "Deco & Verde"}, {"slug": "presente-ceramicas", "rubro": "Cerámica · Villa Ortúzar", "name": "Presente Cerámicas", "desc": "Tienda y taller: piezas hechas a mano, cursos con lista de espera", "cat": "Deco & Verde"}, {"slug": "luna-serena", "rubro": "Cerámica · Floresta", "name": "Luna Serena", "desc": "Alfarería en torno, modelado, escultura y horneadas a terceros", "cat": "Deco & Verde"}, {"slug": "barro-y-arte", "rubro": "Cerámica · Floresta", "name": "Barro y Arte", "desc": "Cerámica prehispánica y urbana, presencial y online", "cat": "Deco & Verde"}, {"slug": "pg-refrigeracion", "rubro": "Refrigeración · Vicente López", "name": "PG Refrigeración", "desc": "Insumos y repuestos para aire, heladeras y lavarropas, con estacionamiento propio", "cat": "Oficios & Servicios"}, {"slug": "marron-glace", "rubro": "Café de especialidad · Villa Real", "name": "Marrón Glacé", "desc": "Pastelería artesanal y café de especialidad en Av. Lope de Vega, take away y delivery", "cat": "Gastronomía"}, {"slug": "sweet-todo-sweet", "rubro": "Cafetería · Villa Crespo", "name": "Sweet Todo Sweet", "desc": "Waffles, tortas caseras y un patio luminoso para la merienda en Av. Warnes 376", "cat": "Gastronomía"}, {"slug": "mucky-helados", "rubro": "Heladería · Monte Castro", "name": "Mucky Helados & Café", "desc": "Helado artesanal de barrio con 4.6★ y +900 reseñas en Google, en Jonte y Gualeguaychú", "cat": "Gastronomía"}, {"slug": "walking-pet", "rubro": "Peluquería canina · Villa Ortúzar", "name": "The Walking Pet", "desc": "Peluquería canina & pet shop en Av. Álvarez Thomas: \"salen lindos, coquetos y contentos\"", "cat": "Mascotas"}, {"slug": "spa-de-snoopy", "rubro": "Spa de mascotas · Palermo", "name": "El Spa de Snoopy", "desc": "Baño, peluquería y mimos en Emilio Ravignani 2376, con turnos por Instagram", "cat": "Mascotas"}, {"slug": "desde-que-te-vi", "rubro": "Peluquería canina · Flores", "name": "Desde Que Te Vi", "desc": "Petshop y pelu canina en Quirno 32, con beneficio SportClub del 15%", "cat": "Mascotas"}, {"slug": "fusshaus-podologia", "rubro": "Podología · Villa del Parque", "name": "Fusshaus Podólogas", "desc": "Podología U.B.A. con dos sedes: Cuenca 2539 y Artigas 4652", "cat": "Salud & Bienestar"}, {"slug": "me-encanta-mi-dentista", "rubro": "Odontología · Villa Urquiza", "name": "Me Encanta Mi Dentista", "desc": "Consultorio integral en Rivera 4946: implantes, ortodoncia y prótesis", "cat": "Salud & Bienestar"}, {"slug": "sparcirte-masajes", "rubro": "Masajes & Reiki · Villa del Parque", "name": "Sparcirte", "desc": "Masajes descontracturantes y Reiki en Nazarre 3325, 4.9★ en Google", "cat": "Salud & Bienestar"}];
+/* Marquee */
+const rubros = [...new Set(DATA.map(d => d.rubro.split('·')[0].trim()))];
+const mq = document.getElementById('mq');
+const seq = rubros.map(r => `<span><i>✦</i>${r}</span>`).join('');
+mq.innerHTML = seq + seq;
+/* Chips + grid */
+const cats = ['Todos', ...[...new Set(DATA.map(d => d.cat))].sort()];
+const chips = document.getElementById('chips');
+const grid = document.getElementById('grid');
+cats.forEach((c, i) => {
+  const b = document.createElement('button');
+  b.className = 'chip' + (i === 0 ? ' on' : '');
+  b.textContent = c === 'Todos' ? `Todos (${DATA.length})` : `${c} (${DATA.filter(d => d.cat === c).length})`;
+  b.dataset.cat = c;
+  chips.appendChild(b);
+});
+DATA.forEach(d => {
+  const a = document.createElement('a');
+  a.className = 'proj';
+  a.href = d.slug + '/';
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.dataset.cat = d.cat;
+  a.innerHTML = `<div class="thumb"><img loading="lazy" src="assets/thumbs/${d.slug}.jpg" alt="${d.name}"><div class="view">Ver demo →</div></div>
+  <div class="proj-body"><div class="r">${d.rubro}</div><h3>${d.name}</h3><p>${d.desc}</p></div>`;
+  grid.appendChild(a);
+});
+chips.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  chips.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  const c = b.dataset.cat;
+  grid.querySelectorAll('.proj').forEach(p => p.classList.toggle('hidden', c !== 'Todos' && p.dataset.cat !== c));
+});
+/* Reveal on scroll */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.rev').forEach(el => io.observe(el));
+/* Counters */
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; cio.unobserve(e.target);
+  const el = e.target, end = +el.dataset.count, t0 = performance.now();
+  const tick = t => { const p = Math.min(1, (t - t0) / 900); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+}), { threshold: .5 });
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+</script>
 </body>
 </html>
