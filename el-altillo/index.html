@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Altillo — Librería, juguetería y Correo Argentino en Adrogué</title>
+<meta name="description" content="El Altillo, en Av. Espora 96, Adrogué: librería escolar y comercial, juguetería, cotillón y unidad postal de Correo Argentino. Todo en un solo local, de lunes a sábado.">
+<meta property="og:title" content="El Altillo — El multiespacio de Espora, Adrogué">
+<meta property="og:description" content="Librería, juguetería, cotillón y Correo Argentino en un solo local de Adrogué. Av. Espora 96, de lunes a sábado.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/el-altillo/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--papel:#FBF6EC;--carta:#F3EBDA;--azul:#234E9D;--noche:#16305F;--lacre:#C8402F;--amarillo:#F2B33D;--tinta:#1F2A44;--mut:#6C7284;--borde:#E6DCC6;--blanco:#FFFFFF;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Gabarito',sans-serif;background:var(--papel);color:var(--tinta);font-weight:400;line-height:1.65}
+h1,h2,h3{color:var(--azul);line-height:1.12;font-weight:700}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:rgba(251,246,236,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-weight:800;font-size:1.25rem;color:var(--azul);text-decoration:none}
+.logo span{color:var(--lacre)}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--tinta);font-size:.9rem}
+.nav-links a:hover{color:var(--lacre)}
+@media(max-width:760px){.nav-links{display:none}}
+.hero{background:linear-gradient(160deg,var(--azul),var(--noche));color:var(--papel);padding:96px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(242,179,61,.32),transparent 65%)}
+.hero::before{content:"";position:absolute;left:0;bottom:0;width:100%;height:14px;background:repeating-linear-gradient(45deg,var(--lacre) 0 26px,var(--blanco) 26px 52px,var(--azul) 52px 78px,var(--blanco) 78px 104px);opacity:.85}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amarillo);font-weight:600;margin-bottom:18px}
+.hero h1{color:var(--blanco);font-size:clamp(2.1rem,5.4vw,3.4rem);max-width:680px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--amarillo)}
+.hero p{max-width:560px;color:#C7D4EC;font-size:1.05rem;margin-bottom:34px}
+.btn{display:inline-block;padding:15px 30px;border-radius:60px;text-decoration:none;font-weight:600;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:1.5px solid rgba(251,246,236,.5);color:var(--papel);margin-left:10px}
+.hero-meta{margin-top:38px;display:flex;gap:28px;flex-wrap:wrap;font-size:.85rem;color:#9DB0D4}
+.hero-meta strong{color:var(--blanco);font-weight:600}
+section{padding:76px 0}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:start}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
+h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:18px}
+.lead{font-size:1.08rem}
+.about p+p{margin-top:14px;color:var(--mut)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--blanco);border:1px solid var(--borde);border-radius:40px;padding:8px 16px;font-size:.82rem;color:var(--azul);font-weight:500}
+.dato-card{background:var(--blanco);border:1px solid var(--borde);border-radius:16px;padding:26px;margin-bottom:16px}
+.dato-card h3{font-size:1.1rem;margin-bottom:6px}
+.dato-card p{font-size:.9rem;color:var(--mut)}
+.dato-card .dato{color:var(--tinta);margin-top:8px}
+.servicios{background:var(--carta)}
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:38px}
+.serv{background:var(--blanco);border-radius:16px;padding:26px;border-top:4px solid var(--azul)}
+.serv:nth-child(2n){border-top-color:var(--lacre)}
+.serv:nth-child(3n){border-top-color:var(--amarillo)}
+.serv h3{font-size:1.05rem;margin-bottom:8px}
+.serv p{font-size:.88rem;color:var(--mut)}
+.serv .ico{font-size:1.5rem;display:block;margin-bottom:12px}
+.metodo{background:var(--azul);color:var(--papel)}
+.metodo h2{color:var(--blanco)}
+.metodo .sub{color:#9DB0D4;max-width:560px}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;margin-top:42px}
+.paso{border-top:1px solid rgba(251,246,236,.25);padding-top:20px}
+.paso .num{font-size:2rem;font-weight:800;color:var(--amarillo)}
+.paso h3{color:var(--blanco);font-size:1.02rem;margin:10px 0 8px}
+.paso p{font-size:.86rem;color:#9DB0D4}
+.opiniones{background:var(--papel);text-align:center}
+.opiniones .box{max-width:640px;margin:0 auto;background:var(--blanco);border:1px solid var(--borde);border-radius:20px;padding:44px 34px}
+.opiniones p{color:var(--mut);margin:14px 0 24px}
+.btn-ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff}
+.contacto{background:var(--carta)}
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:34px}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.cont-card{background:var(--blanco);border:1px solid var(--borde);border-radius:16px;padding:28px}
+.cont-card h3{font-size:1.05rem;margin-bottom:12px}
+.cont-card p{font-size:.92rem;color:var(--mut);margin-bottom:8px}
+.cont-card a{color:var(--azul);font-weight:600;text-decoration:none}
+.mapa{border-radius:16px;overflow:hidden;border:1px solid var(--borde)}
+.mapa iframe{display:block;width:100%;height:280px;border:0}
+footer{background:var(--noche);color:#9DB0D4;padding:44px 0;font-size:.85rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+.foot a{color:var(--papel);text-decoration:none;margin-left:18px}
+.foot a:hover{color:var(--amarillo)}
+.wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;z-index:90;box-shadow:0 8px 22px rgba(0,0,0,.25);animation:ring 2.4s infinite}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">El <span>Altillo</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#rubros">Qué hacemos</a></li>
+      <li><a href="#metodo">Tu visita</a></li>
+      <li><a href="#opiniones">El barrio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Librería · Juguetería · Correo Argentino — Adrogué</span>
+    <h1>Un local de barrio donde <em>siempre resolvés algo</em></h1>
+    <p>Cuaderno para el cole, regalo de último momento, cotillón para el cumple y el paquete que tenías que despachar. En Av. Espora 96, El Altillo junta cuatro mandados en una sola parada.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491137601601?text=Hola%20El%20Altillo!%20Les%20quer%C3%ADa%20hacer%20una%20consulta.">Consultar por WhatsApp</a>
+    <a class="btn btn-ghost" href="#rubros">Ver qué hacemos</a>
+    <div class="hero-meta">
+      <div><strong>Av. Espora 96</strong><br>Adrogué, Alte. Brown</div>
+      <div><strong>Lun a Vie 9–19:30 · Sáb 9–13</strong><br>Domingo cerrado</div>
+      <div><strong>Unidad Postal oficial</strong><br>Correo Argentino</div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap split">
+    <div>
+      <h2>El multiespacio de Espora</h2>
+      <p class="lead">Quedan pocos locales así: librería, juguetería, cotillón y correo conviviendo bajo el mismo techo, con atención de barrio de la de antes.</p>
+      <p>En El Altillo la lista escolar se resuelve completa, el regalo sale envuelto y el trámite del correo lo hacés sin ir hasta el centro. Estamos sobre Av. Espora, a pasos del centro de Adrogué, todos los días de lunes a sábado.</p>
+      <div class="tags">
+        <span class="tag">Artículos escolares</span>
+        <span class="tag">Juguetería</span>
+        <span class="tag">Cotillón</span>
+        <span class="tag">Unidad Postal Correo Argentino</span>
+        <span class="tag">Atención de barrio</span>
+      </div>
+    </div>
+    <div>
+      <div class="dato-card">
+        <h3>📍 Dónde estamos</h3>
+        <p>Av. Espora 96 (B1846), Adrogué — Almirante Brown.</p>
+        <p class="dato">Lun a Vie 9:00–19:30 · Sáb 9:00–13:00</p>
+      </div>
+      <div class="dato-card">
+        <h3>💬 Consultanos</h3>
+        <p>¿Buscás un juguete, un artículo puntual o querés saber si llegó tu paquete?</p>
+        <p class="dato">WhatsApp: 11 3760-1601</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="rubros">
+  <div class="wrap">
+    <h2>Cuatro locales en uno</h2>
+    <!-- Placeholder editable: ajustar rubros y servicios exactos con el cliente -->
+    <div class="serv-grid">
+      <div class="serv"><span class="ico">📚</span><h3>Librería escolar y comercial</h3><p>Cuadernos, carpetas, lapiceras y la lista completa del cole u oficina, todo el año.</p></div>
+      <div class="serv"><span class="ico">🧸</span><h3>Juguetería</h3><p>Juguetes para todas las edades: el regalo de cumple se resuelve acá, envuelto y listo.</p></div>
+      <div class="serv"><span class="ico">🎉</span><h3>Cotillón</h3><p>Globos, velitas, descartables y todo lo que necesita un festejo, en el mismo viaje.</p></div>
+      <div class="serv"><span class="ico">✉️</span><h3>Correo Argentino</h3><p>Unidad postal oficial: cartas, encomiendas nacionales e internacionales y paquetes de tus compras online.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <h2>Tu visita, sin vueltas</h2>
+    <p class="sub">Una parada, varios mandados resueltos.</p>
+    <div class="pasos">
+      <div class="paso"><div class="num">01</div><h3>Consultá antes si querés</h3><p>Por WhatsApp te confirmamos si tenemos lo que buscás o si llegó tu paquete.</p></div>
+      <div class="paso"><div class="num">02</div><h3>Acercate a Espora 96</h3><p>Estamos a pasos del centro de Adrogué, de lunes a sábado.</p></div>
+      <div class="paso"><div class="num">03</div><h3>Resolvé todo junto</h3><p>Lista escolar, regalo, cotillón y trámite de correo: una sola fila, cuatro soluciones.</p></div>
+      <div class="paso"><div class="num">04</div><h3>Volvé cuando quieras</h3><p>Somos del barrio y estamos siempre: el local de confianza de las familias de Adrogué.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="box">
+      <h2>La mejor recomendación es la del barrio</h2>
+      <p>Preferimos no inventar testimonios: en Adrogué nos conocen de toda la vida y nos recomiendan de boca en boca. Mirá el día a día del local, las novedades de la juguetería y los ingresos escolares en nuestro Instagram.</p>
+      <a class="btn btn-ig" href="https://www.instagram.com/libreriaelaltillo7/" target="_blank" rel="noopener">Ver @libreriaelaltillo7 en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <h2>Pasá por El Altillo</h2>
+    <div class="cont-grid">
+      <div>
+        <div class="cont-card">
+          <h3>El Altillo · Adrogué</h3>
+          <p>📍 Av. Espora 96 (B1846), Adrogué — Almirante Brown</p>
+          <p>💬 WhatsApp: <a href="https://wa.me/5491137601601">11 3760-1601</a></p>
+          <p>📸 Instagram: <a href="https://www.instagram.com/libreriaelaltillo7/" target="_blank" rel="noopener">@libreriaelaltillo7</a></p>
+          <p>🕘 Lun a Vie 9:00–19:30 · Sáb 9:00–13:00 · Dom cerrado</p>
+        </div>
+      </div>
+      <div class="mapa"><iframe title="Mapa El Altillo" loading="lazy" src="https://www.google.com/maps?q=Av.+Espora+96,+Adrogu%C3%A9,+Buenos+Aires&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© El Altillo · Av. Espora 96, Adrogué<br>Demo diseñada por AMF Studio</div>
+    <div>
+      <a href="#nosotros">Nosotros</a><a href="#rubros">Qué hacemos</a><a href="#metodo">Tu visita</a><a href="#contacto">Contacto</a><a href="https://www.instagram.com/libreriaelaltillo7/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491137601601?text=Hola%20El%20Altillo!%20Les%20quer%C3%ADa%20hacer%20una%20consulta." aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.2 0-2.4-.3-3.5-.8l-.5-.3-4.9.9 1-4.7-.3-.5c-1-1.6-1.5-3.4-1.5-5.4 0-5.4 4.4-9.8 9.7-9.8 5.4 0 9.8 4.4 9.8 9.8s-4.4 9.8-9.8 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+</body>
+</html>
