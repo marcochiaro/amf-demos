@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Gallegos — Bodegón histórico de Quilmes desde 1948</title>
+<meta name="description" content="El bodegón de Quilmes desde 1948: la legendaria milanesa Los Gallegos para compartir, cocina española y casera, atención de sus dueños. Pres. Perón 358, Quilmes centro.">
+<meta property="og:title" content="Los Gallegos — El bodegón de Quilmes desde 1948">
+<meta property="og:description" content="Más de 75 años de cocina casera y abundante. La milanesa que come una familia entera. 4.6★ en Google con más de 5.400 reseñas.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#F6EFE2;--papel2:#EDE2CC;--vino:#5E1F26;--vino2:#7A2B34;
+  --dorado:#B98A45;--tinta:#2E2118;--tinta-mut:#6F5D4D;--blanco:#FFFDF8;--wa:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Libre Franklin',sans-serif;background:var(--papel);color:var(--tinta);line-height:1.7}
+h1,h2,h3{font-family:'Libre Caslon Display',serif;line-height:1.12;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* Nav */
+nav{position:sticky;top:0;z-index:90;background:rgba(246,239,226,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--papel2)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:15px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Libre Caslon Display',serif;font-size:1.35rem;color:var(--vino);text-decoration:none;letter-spacing:.01em}
+.logo small{display:block;font-family:'Libre Franklin',sans-serif;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--dorado);font-weight:600}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{color:var(--tinta-mut);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--vino)}
+.nav-cta{background:var(--vino);color:var(--papel)!important;padding:10px 20px;border-radius:3px;font-weight:600!important;letter-spacing:.02em}
+.nav-cta:hover{background:var(--vino2)}
+@media(max-width:800px){.nav-links a:not(.nav-cta){display:none}}
+/* Hero */
+.hero{position:relative;padding:96px 0 80px;text-align:center;overflow:hidden}
+.hero::before{content:"1948";position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);font-family:'Libre Caslon Display',serif;font-size:clamp(11rem,34vw,24rem);color:rgba(94,31,38,.055);pointer-events:none;line-height:1}
+.hero .wrap{position:relative}
+.crest{display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:26px}
+.crest .line{width:54px;height:1px;background:var(--dorado)}
+.crest .since{font-size:.75rem;letter-spacing:.34em;text-transform:uppercase;color:var(--dorado);font-weight:600}
+.hero h1{font-size:clamp(2.6rem,7.5vw,4.8rem);color:var(--vino);max-width:820px;margin:0 auto 22px}
+.hero h1 em{font-style:italic}
+.hero p.sub{font-size:1.14rem;color:var(--tinta-mut);max-width:600px;margin:0 auto 36px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:3px;font-weight:600;font-size:.98rem;text-decoration:none;transition:transform .15s,background .15s;letter-spacing:.02em}
+.btn:hover{transform:translateY(-2px)}
+.btn-vino{background:var(--vino);color:var(--papel)}
+.btn-vino:hover{background:var(--vino2)}
+.btn-line{border:1px solid var(--dorado);color:var(--vino);margin-left:12px;background:transparent}
+.hero .datos{margin-top:44px;display:flex;justify-content:center;gap:38px;flex-wrap:wrap}
+.hero .dato{text-align:center}
+.hero .dato .n{font-family:'Libre Caslon Display',serif;font-size:2rem;color:var(--vino)}
+.hero .dato .l{font-size:.8rem;color:var(--tinta-mut);letter-spacing:.06em;text-transform:uppercase}
+/* Secciones */
+section{padding:82px 0}
+.sec-head{max-width:620px;margin-bottom:44px}
+.center .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+.overline{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dorado);font-weight:600}
+.sec-head h2{font-size:clamp(1.9rem,4.8vw,3rem);color:var(--vino);margin-top:12px}
+.sec-head p{color:var(--tinta-mut);margin-top:12px}
+/* Historia */
+.historia{background:var(--blanco);border-top:1px solid var(--papel2);border-bottom:1px solid var(--papel2)}
+.his-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:46px;align-items:center}
+@media(max-width:820px){.his-grid{grid-template-columns:1fr}}
+.lead{font-size:1.32rem;font-family:'Libre Caslon Display',serif;color:var(--tinta);line-height:1.55}
+.lead b{color:var(--vino);font-weight:400;font-style:italic}
+.his-extra{margin-top:18px;color:var(--tinta-mut)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{border:1px solid var(--papel2);background:var(--papel);color:var(--tinta);border-radius:3px;padding:8px 16px;font-size:.84rem;font-weight:500}
+.menu-card{background:var(--papel);border:1px solid var(--dorado);border-radius:4px;padding:38px 32px;text-align:center;position:relative}
+.menu-card::before{content:"";position:absolute;inset:7px;border:1px solid var(--papel2);border-radius:2px;pointer-events:none}
+.menu-card .big{font-family:'Libre Caslon Display',serif;font-size:3.4rem;color:var(--vino)}
+.menu-card .lab{color:var(--tinta-mut);font-size:.9rem}
+.menu-card hr{border:none;border-top:1px solid var(--papel2);margin:20px auto;width:60%}
+/* Especialidades */
+.esp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.esp{background:var(--blanco);border:1px solid var(--papel2);border-radius:4px;padding:30px 26px;transition:transform .18s,border-color .18s;position:relative}
+.esp:hover{transform:translateY(-4px);border-color:var(--dorado)}
+.esp .star-tag{position:absolute;top:14px;right:14px;background:var(--vino);color:var(--papel);font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:2px}
+.esp .ico{font-size:1.8rem;display:block;margin-bottom:14px}
+.esp h3{font-size:1.28rem;color:var(--vino);margin-bottom:8px}
+.esp p{font-size:.9rem;color:var(--tinta-mut)}
+/* Experiencia */
+.exp{background:var(--vino);color:var(--papel)}
+.exp .overline{color:var(--dorado)}
+.exp .sec-head h2{color:var(--papel)}
+.exp .sec-head p{color:#D9BFB4}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:22px}
+.paso{border-top:1px solid var(--dorado);padding-top:20px}
+.paso .num{font-size:.75rem;letter-spacing:.26em;color:var(--dorado);font-weight:600}
+.paso h3{font-size:1.22rem;color:var(--papel);margin:10px 0 8px}
+.paso p{font-size:.88rem;color:#D9BFB4}
+/* Reseñas */
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.res{background:var(--blanco);border:1px solid var(--papel2);border-radius:4px;padding:28px;position:relative}
+.res::before{content:"“";position:absolute;top:8px;right:18px;font-family:'Libre Caslon Display',serif;font-size:3.4rem;color:var(--papel2);line-height:1}
+.res .st{color:var(--dorado);letter-spacing:2px;display:block;margin-bottom:12px}
+.res p{font-size:.95rem;color:var(--tinta);font-style:italic}
+.res .who{margin-top:16px;font-size:.85rem;font-weight:600;color:var(--vino)}
+.res .who span{display:block;font-weight:400;color:var(--tinta-mut)}
+.g-note{margin-top:24px;font-size:.85rem;color:var(--tinta-mut)}
+/* Contacto */
+.contacto{background:var(--blanco);border-top:1px solid var(--papel2)}
+.con-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start}
+@media(max-width:820px){.con-grid{grid-template-columns:1fr}}
+.con-item{margin-bottom:22px}
+.con-item .k{font-weight:600;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--dorado);margin-bottom:4px}
+.con-item .v{color:var(--tinta)}
+.con-item a{color:var(--vino);font-weight:600;text-decoration:none;border-bottom:1px solid var(--dorado)}
+.mapa{border-radius:4px;overflow:hidden;border:1px solid var(--papel2);min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* Footer */
+footer{background:var(--tinta);color:#C8B69F;padding:46px 0 34px;font-size:.9rem}
+.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:22px;align-items:flex-start}
+footer .f-logo{font-family:'Libre Caslon Display',serif;font-size:1.25rem;color:var(--papel)}
+footer .f-logo small{display:block;font-family:'Libre Franklin',sans-serif;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--dorado)}
+footer ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:#C8B69F;text-decoration:none}
+footer a:hover{color:var(--papel)}
+footer .credit{margin-top:26px;font-size:.8rem;color:#8A7A65;border-top:1px solid #4A3B2D;padding-top:18px}
+/* Botón flotante Instagram (canal principal del negocio) */
+.ig-float{position:fixed;bottom:24px;right:24px;z-index:99;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 30% 110%,#FDB755 0%,#D24E71 55%,#8E44AD 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);animation:ring 2.2s infinite}
+.ig-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 0 rgba(210,78,113,.45)}70%{box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 16px rgba(210,78,113,0)}100%{box-shadow:0 6px 18px rgba(0,0,0,.28),0 0 0 0 rgba(210,78,113,0)}}
+/* Reveal */
+.rev{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Los Gallegos<small>Quilmes · desde 1948</small></a>
+    <ul class="nav-links">
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#experiencia">La mesa</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a class="nav-cta" href="https://www.instagram.com/restaurantlosgallegos/" target="_blank" rel="noopener">Seguinos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="crest"><span class="line"></span><span class="since">Desde 1948 · Quilmes</span><span class="line"></span></div>
+    <h1>La milanesa que come <em>una familia entera</em></h1>
+    <p class="sub">Más de 75 años de bodegón: cocina casera y española, porciones que no se terminan y la atención de sus dueños, a metros de la peatonal de Quilmes.</p>
+    <a class="btn btn-vino" href="https://www.instagram.com/restaurantlosgallegos/" target="_blank" rel="noopener">Seguinos en Instagram</a>
+    <a class="btn btn-line" href="#contacto">Cómo llegar</a>
+    <div class="datos">
+      <div class="dato"><div class="n">4.6★</div><div class="l">+5.400 reseñas en Google</div></div>
+      <div class="dato"><div class="n">N°1</div><div class="l">de 151 restaurantes en Quilmes (Tripadvisor)</div></div>
+      <div class="dato"><div class="n">75+</div><div class="l">años sirviendo al barrio</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="historia" id="historia">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="overline">Historia</span>
+      <h2>Un clásico que se hereda de generación en generación</h2>
+    </div>
+    <div class="his-grid">
+      <div class="rev">
+        <p class="lead">Desde 1948, Los Gallegos es <b>el bodegón de Quilmes</b>: el lugar al que te trajeron tus viejos y al que hoy traés a tus hijos.</p>
+        <p class="his-extra">Cocina casera y española, porciones generosas de verdad y los dueños atendiendo la mesa como el primer día. La estrella de la casa es la legendaria milanesa Los Gallegos, tan grande que las reseñas discuten si comen cinco o seis personas de una sola. El que la probó, entiende por qué hay que llegar temprano para conseguir mesa.</p>
+        <div class="tags">
+          <span class="tag">🥘 Cocina española</span>
+          <span class="tag">🍖 Platos abundantes</span>
+          <span class="tag">🏠 Atención de sus dueños</span>
+          <span class="tag">🕰️ Bodegón histórico</span>
+        </div>
+      </div>
+      <div class="menu-card rev">
+        <div class="big">1948</div>
+        <div class="lab">el año en que abrimos las puertas en Quilmes</div>
+        <hr>
+        <div class="big" style="font-size:2.4rem">4.6★</div>
+        <div class="lab">más de 5.400 reseñas en Google lo confirman</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="especialidades">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="overline">Especialidades</span>
+      <h2>Lo que hay que pedir</h2>
+      <p>Los platos que llenan las mesas — y las reseñas — desde hace décadas.</p>
+    </div>
+    <div class="esp-grid">
+      <div class="esp rev"><span class="star-tag">La estrella</span><span class="ico">🍽️</span><h3>La milanesa Los Gallegos</h3><p>La leyenda de la casa: una sola milanesa para compartir entre cinco o seis. Con papas, ni hablar.</p></div>
+      <div class="esp rev"><span class="ico">🦑</span><h3>Sabores de España</h3><p>Platos españoles típicos, como las rabas que los clientes recomiendan una reseña sí y otra también.</p></div>
+      <div class="esp rev"><span class="ico">🥘</span><h3>Cocina casera</h3><p>Comida hecha como en casa, abundante y a buen precio: la fórmula que no cambia desde 1948.</p></div>
+      <div class="esp rev"><span class="ico">🍮</span><h3>Postres de bodegón</h3><p>Dejá lugar: los postres caseros son el broche que las reseñas piden no saltearse.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="exp" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="overline">La mesa</span>
+      <h2>El ritual de comer en Los Gallegos</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso rev"><div class="num">01</div><h3>Llegá temprano</h3><p>El dato que se pasa de boca en boca: vení con tiempo, porque las mesas vuelan.</p></div>
+      <div class="paso rev"><div class="num">02</div><h3>Pedí para compartir</h3><p>Acá las porciones son en serio. Una milanesa Los Gallegos alcanza para toda la mesa.</p></div>
+      <div class="paso rev"><div class="num">03</div><h3>Tomate la sobremesa</h3><p>Bodegón de los de antes: nadie te apura, y los dueños pasan a ver cómo va todo.</p></div>
+      <div class="paso rev"><div class="num">04</div><h3>Volvé con más gente</h3><p>Es lo que pasa siempre: se vuelve, y con refuerzos. Hace 75 años que funciona así.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas" class="center">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="overline">Reseñas</span>
+      <h2>Palabra de comensal</h2>
+    </div>
+    <div class="r-grid">
+      <div class="res rev"><span class="st">★★★★★</span><p>"Lugar típico histórico, muy recomendable para una comida con la familia o amigos. Platos españoles típicos y una muy recomendable milanesa Los Gallegos para compartir (una milanesa, 5 a 6 personas). Hay que estar temprano para conseguir mesa."</p><div class="who">Cliente de Google<span>Reseña de Google</span></div></div>
+      <div class="res rev"><span class="st">★★★★★</span><p>"Típico bodegón. La comida es excelente, abundante y a buen precio. La milanesa Los Gallegos es la estrella del lugar."</p><div class="who">Cliente de Google<span>Reseña de Google</span></div></div>
+      <div class="res rev"><span class="st">★★★★★</span><p>"Comida casera, súper abundante y rica, con la atención de sus dueños."</p><div class="who">Edith Silvia<span>Reseña de Tripadvisor (traducida)</span></div></div>
+      <div class="res rev"><span class="st">★★★★★</span><p>"Las mejores milanesas argentinas de todo Quilmes."</p><div class="who">Gastón B<span>Reseña de Google (traducida)</span></div></div>
+    </div>
+    <p class="g-note">Reseñas reales publicadas en los perfiles de Google y Tripadvisor de Restaurant Los Gallegos.</p>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="overline">Contacto</span>
+      <h2>A metros del centro de Quilmes</h2>
+    </div>
+    <div class="con-grid">
+      <div class="rev">
+        <div class="con-item"><div class="k">Dirección</div><div class="v">Pres. Juan Domingo Perón 358, Quilmes centro</div></div>
+        <div class="con-item"><div class="k">Instagram</div><div class="v"><a href="https://www.instagram.com/restaurantlosgallegos/" target="_blank" rel="noopener">@restaurantlosgallegos</a></div></div>
+        <div class="con-item"><div class="k">Facebook</div><div class="v"><a href="https://www.facebook.com/restaurantlosgallegos/" target="_blank" rel="noopener">Restaurant Los Gallegos (Oficial)</a></div></div>
+        <div class="con-item"><div class="k">Teléfono</div><div class="v">[TELÉFONO — completar]</div></div>
+        <div class="con-item"><div class="k">Horarios</div><div class="v">Mediodía y noche — consultá días y horarios por Instagram.</div></div>
+        <a class="btn btn-vino" style="margin-top:10px" href="https://www.instagram.com/restaurantlosgallegos/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+      </div>
+      <div class="mapa rev">
+        <iframe title="Mapa Los Gallegos" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Restaurant%20Los%20Gallegos%2C%20Pres.%20Juan%20Domingo%20Per%C3%B3n%20358%2C%20Quilmes&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="f-logo">Los Gallegos<small>Quilmes · desde 1948</small></div>
+      <ul>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#experiencia">La mesa</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="credit">© Restaurant Los Gallegos · Pres. Juan Domingo Perón 358, Quilmes — Demo diseñada por AMF Studio</div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/restaurantlosgallegos/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
