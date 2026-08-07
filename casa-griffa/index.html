@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Casa Griffa — Ferretería y pinturería en Caballito · Más de 70 años, 4.8★ en Google</title>
+<meta name="description" content="Casa Griffa, la ferretería y pinturería de Río de Janeiro 702, Caballito. Atendida por sus dueños desde hace más de 70 años. 4.8★ en Google. Lunes a viernes 8 a 18, sábados 9 a 15.">
+<meta property="og:title" content="Casa Griffa — Ferretería y pinturería en Caballito">
+<meta property="og:description" content="«Sin dudas de las mejores ferreterías de Buenos Aires.» Más de 70 años atendida por sus dueños. 4.8★ en Google. Río de Janeiro 702, esq. Rosario.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://marcochiaro.github.io/amf-demos/assets/thumbs/casa-griffa.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Chivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carbon:#23262B;     /* carbón */
+  --papel:#F2EFE7;      /* papel envejecido */
+  --ambar:#F0A626;      /* ámbar taller */
+  --ladrillo:#A8402C;   /* rojo ladrillo */
+  --acero:#667180;      /* gris acero */
+  --blanco:#fff;
+  --sombra:0 18px 44px rgba(35,38,43,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Chivo',sans-serif;background:var(--papel);color:var(--carbon);line-height:1.6}
+h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.1;text-transform:uppercase}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:sticky;top:0;z-index:90;background:rgba(35,38,43,.96);backdrop-filter:blur(8px);color:var(--papel)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:'Anton',sans-serif;font-size:1.3rem;text-decoration:none;letter-spacing:1px;text-transform:uppercase}
+.logo em{font-style:normal;color:var(--ambar)}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-weight:600;font-size:.92rem;opacity:.85}
+.nav-links a:hover{color:var(--ambar);opacity:1}
+.nav-cta{background:var(--ambar);color:var(--carbon)!important;padding:9px 18px;border-radius:6px;opacity:1!important;font-weight:700}
+.nav-cta:hover{background:#FFBE45}
+@media(max-width:760px){.nav-links{display:none}}
+/* HERO */
+.hero{position:relative;background:var(--carbon);color:var(--papel);padding:88px 0 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+ repeating-linear-gradient(45deg,transparent 0 34px,rgba(240,166,38,.05) 34px 36px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(240,166,38,.5);color:var(--ambar);padding:7px 16px;border-radius:6px;font-size:.78rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.hero h1{font-size:clamp(2.5rem,6vw,4rem);margin:20px 0 16px;color:#fff}
+.hero h1 span{color:var(--ambar)}
+.hero p.lead{font-size:1.1rem;max-width:33rem;opacity:.85}
+.cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;border-radius:8px;padding:15px 28px;font-size:1rem;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-call{background:var(--ambar);color:var(--carbon);box-shadow:0 10px 26px rgba(240,166,38,.35)}
+.btn-ghost{border:2px solid rgba(242,239,231,.55);color:var(--papel)}
+.hero-card{position:relative;background:var(--papel);color:var(--carbon);border-radius:14px;padding:34px 30px;box-shadow:var(--sombra);border-top:6px solid var(--ambar)}
+.hero-card .big{font-family:'Anton',sans-serif;font-size:3.6rem;line-height:1}
+.hero-card .big small{font-size:1.5rem;color:var(--ambar)}
+.hero-card>p{margin-top:6px;font-size:.95rem;opacity:.85}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.hstat{border-top:2px solid rgba(35,38,43,.15);padding-top:12px}
+.hstat b{display:block;font-size:1rem}
+.hstat span{font-size:.84rem;opacity:.75}
+@media(max-width:840px){.hero .wrap{grid-template-columns:1fr}.hero{padding:56px 0 52px}}
+/* SECCIONES */
+section{padding:76px 0}
+.sec-k{color:var(--ladrillo);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+h2.sec-t{font-size:clamp(1.8rem,4vw,2.6rem);margin:10px 0 18px}
+/* NOSOTROS */
+.about{background:var(--blanco)}
+.about .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:start}
+.about p.ed{font-size:1.08rem;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{background:var(--papel);border:1px solid rgba(35,38,43,.2);padding:8px 16px;border-radius:6px;font-size:.88rem;font-weight:600}
+.legado{background:var(--carbon);color:var(--papel);border-radius:14px;padding:36px 32px;border-left:6px solid var(--ambar)}
+.legado .anio{font-family:'Anton',sans-serif;font-size:3rem;color:var(--ambar);line-height:1}
+.legado h3{color:#fff;margin:10px 0 10px;font-size:1.3rem}
+.legado p{font-size:.96rem;opacity:.88;margin-bottom:12px}
+@media(max-width:840px){.about .wrap{grid-template-columns:1fr}}
+/* RUBROS */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.serv{background:var(--blanco);border-radius:12px;padding:28px 24px;border:1px solid rgba(35,38,43,.12);border-bottom:4px solid var(--ambar);transition:transform .18s ease}
+.serv:nth-child(2n){border-bottom-color:var(--ladrillo)}
+.serv:hover{transform:translateY(-4px)}
+.serv .ic{width:50px;height:50px;border-radius:10px;background:rgba(240,166,38,.15);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.45rem}
+.serv h3{font-size:1.05rem;margin-bottom:8px}
+.serv p{font-size:.92rem;opacity:.85}
+@media(max-width:840px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
+/* METODO */
+.metodo{background:linear-gradient(180deg,var(--papel),#E9E4D6)}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:38px}
+.paso{background:var(--blanco);border-radius:12px;padding:26px 22px;border:1px solid rgba(35,38,43,.12);position:relative;overflow:hidden}
+.paso .num{font-family:'Anton',sans-serif;font-size:3.4rem;color:rgba(240,166,38,.28);position:absolute;top:2px;right:14px;line-height:1}
+.paso h3{font-size:1rem;margin-bottom:8px;position:relative}
+.paso p{font-size:.88rem;opacity:.85;position:relative}
+@media(max-width:840px){.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+/* RESEÑAS */
+.rev{background:var(--carbon);color:var(--papel)}
+.rev .sec-k{color:var(--ambar)}
+.rev h2{color:#fff}
+.rev-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.score{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px 22px}
+.score .n{font-family:'Anton',sans-serif;font-size:2.6rem;color:#fff}
+.score .stars{color:var(--ambar);font-size:1.05rem;letter-spacing:2px}
+.score p{font-size:.85rem;opacity:.85}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px}
+.rcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:26px;border-left:4px solid var(--ambar)}
+.rcard .stars{color:var(--ambar);letter-spacing:2px;margin-bottom:12px;font-size:.95rem}
+.rcard blockquote{font-size:1.1rem;line-height:1.5;color:#fff;font-weight:500}
+.rcard footer{margin-top:14px;font-size:.85rem;opacity:.7}
+.rev-note{margin-top:26px;font-size:.85rem;opacity:.6}
+@media(max-width:760px){.rev-grid{grid-template-columns:1fr}}
+/* CONTACTO */
+.cont .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:start}
+.cont-item{display:flex;gap:16px;margin-top:24px}
+.cont-item .ic{width:46px;height:46px;flex:none;border-radius:10px;background:rgba(240,166,38,.18);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cont-item b{display:block;font-size:1rem}
+.cont-item span,.cont-item a{font-size:.95rem;opacity:.85;text-decoration:none}
+.cont-item a:hover{color:var(--ladrillo)}
+.mapa{border-radius:14px;overflow:hidden;box-shadow:var(--sombra);border:1px solid rgba(35,38,43,.15)}
+.mapa iframe{width:100%;height:420px;border:0;display:block}
+@media(max-width:840px){.cont .wrap{grid-template-columns:1fr}}
+/* FOOTER */
+footer.site{background:#17191D;color:rgba(242,239,231,.85);padding:46px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+.foot-grid h4{font-family:'Anton',sans-serif;color:#fff;margin-bottom:12px;font-size:1rem;letter-spacing:1px;text-transform:uppercase}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:8px}
+.foot-grid a{text-decoration:none;font-size:.92rem;opacity:.85}
+.foot-grid a:hover{color:var(--ambar);opacity:1}
+.foot-base{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:20px;font-size:.82rem;opacity:.65;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.foot-grid{grid-template-columns:1fr}}
+/* BOTON FLOTANTE LLAMAR (el local se maneja por teléfono) */
+.call-float{position:fixed;right:22px;bottom:22px;z-index:99;width:60px;height:60px;border-radius:50%;background:var(--ambar);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(240,166,38,.5);animation:ring 2.6s ease-out infinite}
+.call-float svg{width:28px;height:28px;fill:var(--carbon)}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(240,166,38,.55),0 12px 28px rgba(240,166,38,.5)}70%{box-shadow:0 0 0 20px rgba(240,166,38,0),0 12px 28px rgba(240,166,38,.5)}100%{box-shadow:0 0 0 0 rgba(240,166,38,0),0 12px 28px rgba(240,166,38,.5)}}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#inicio">Casa <em>Griffa</em></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#rubros">Rubros</a></li>
+      <li><a href="#experiencia">Cómo trabajamos</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="tel:+541149824624">Llamanos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="kicker">🔧 Ferretería & Pinturería · Caballito</span>
+      <h1>Más de <span>70 años</span> resolviendo lo que se rompe, se tapa o se despinta.</h1>
+      <p class="lead">Casa Griffa es la ferretería de Río de Janeiro y Rosario, atendida por sus dueños desde hace más de siete décadas. De las de mostrador, consejo y solución — como dicen sus clientes: «de las mejores ferreterías de Buenos Aires».</p>
+      <div class="cta-row">
+        <a class="btn btn-call" href="tel:+541149824624">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>
+          Llamanos: 4982-4624
+        </a>
+        <a class="btn btn-ghost" href="#contacto">Cómo llegar</a>
+      </div>
+    </div>
+    <aside class="hero-card rv">
+      <div class="big">4.8<small>★</small></div>
+      <p>en Google — los vecinos nos ponen la vara alta hace décadas.</p>
+      <div class="hero-stats">
+        <div class="hstat"><b>+70 años</b><span>atendida por sus dueños</span></div>
+        <div class="hstat"><b>Lun a Vie</b><span>8:00 a 18:00 de corrido</span></div>
+        <div class="hstat"><b>Sábados</b><span>9:00 a 15:00</span></div>
+        <div class="hstat"><b>Esq. Rosario</b><span>Río de Janeiro 702</span></div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <div class="rv">
+      <span class="sec-k">Nosotros</span>
+      <h2 class="sec-t">La ferretería de barrio que no bajó la persiana</h2>
+      <p class="ed">Hay cosas que el barrio no negocia, y una es su ferretería de confianza. Casa Griffa está en la esquina de Río de Janeiro y Rosario desde hace más de 70 años, siempre atendida por sus dueños: la familia Griffa.</p>
+      <p class="ed">Acá no venís a buscar un código de góndola: venís con un problema y te vas con la solución, el repuesto justo y la explicación de cómo usarlo. Por eso las reseñas hablan de atención «impecable» y «de 10» — y por eso los clientes vuelven desde hace generaciones.</p>
+      <div class="tags">
+        <span class="tag">🔩 Ferretería general</span>
+        <span class="tag">🎨 Pinturería</span>
+        <span class="tag">👨‍👩‍👦 Atendida por sus dueños</span>
+        <span class="tag">🏆 4.8★ en Google</span>
+        <span class="tag">📍 Caballito</span>
+      </div>
+    </div>
+    <aside class="legado rv">
+      <div class="anio">70+</div>
+      <h3>Años de mostrador</h3>
+      <p>«Excelente ferretería, gran surtido y atendida por sus dueños desde más de 70 años», escribe Héctor en Google.</p>
+      <p>Tres generaciones de vecinos compraron acá su primera lata de pintura, su primer juego de llaves y el repuesto que salvó el domingo.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="rubros">
+  <div class="wrap">
+    <span class="sec-k">Rubros</span>
+    <h2 class="sec-t">Todo lo que tu casa te pide</h2>
+    <div class="serv-grid">
+      <!-- EDITABLE: ajustar rubros según el surtido real del local -->
+      <div class="serv rv"><div class="ic">🔩</div><h3>Ferretería general</h3><p>Tornillería, herrajes, bulonería y los mil fierritos que salvan una reparación.</p></div>
+      <div class="serv rv"><div class="ic">🎨</div><h3>Pinturería</h3><p>Pinturas, esmaltes y accesorios, con el consejo justo para que quede bien a la primera.</p></div>
+      <div class="serv rv"><div class="ic">🛠️</div><h3>Herramientas</h3><p>De mano y para el hogar: lo que necesitás para encarar el arreglo vos mismo.</p></div>
+      <div class="serv rv"><div class="ic">💡</div><h3>Electricidad</h3><p>Materiales y repuestos para tener la instalación de casa al día.</p></div>
+      <div class="serv rv"><div class="ic">🚿</div><h3>Sanitarios y plomería</h3><p>Cueritos, flexibles y conexiones: el clásico que resolvemos todos los días.</p></div>
+      <div class="serv rv"><div class="ic">🗝️</div><h3>El repuesto difícil</h3><p>Ese que no encontrás en ningún lado — preguntanos, el surtido de 70 años ayuda.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <span class="sec-k">Cómo trabajamos</span>
+    <h2 class="sec-t">El método de siempre, el que funciona</h2>
+    <div class="pasos">
+      <div class="paso rv"><span class="num">1</span><h3>Traé el problema</h3><p>La canilla que gotea, la foto del enchufe, el tornillo viejo. Con eso alcanza.</p></div>
+      <div class="paso rv"><span class="num">2</span><h3>Te escuchamos</h3><p>En el mostrador, con tiempo. Somos los dueños: nos importa que lo resuelvas.</p></div>
+      <div class="paso rv"><span class="num">3</span><h3>Solución justa</h3><p>El producto correcto y la explicación de cómo usarlo. Ni más ni menos.</p></div>
+      <div class="paso rv"><span class="num">4</span><h3>Volvé tranquilo</h3><p>Si algo no salió, lo vemos juntos. Así se atiende hace 70 años.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="resenas">
+  <div class="wrap">
+    <div class="rev-head">
+      <div>
+        <span class="sec-k">Reseñas</span>
+        <h2 class="sec-t">Palabra de vecino</h2>
+      </div>
+      <div class="score rv">
+        <span class="n">4.8</span>
+        <div><div class="stars">★★★★★</div><p>en Google Maps</p></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>«La mejor atención, calidad, y profesionalismo. Sin dudas de las mejores ferreterías de Buenos Aires.»</blockquote>
+        <footer>Guillermo — reseña de Google</footer>
+      </div>
+      <div class="rcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>«Son unos genios! Siempre atienden de 10!»</blockquote>
+        <footer>Malena — reseña de Google</footer>
+      </div>
+      <div class="rcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>«Aquí en esta ferretería compré en diferentes oportunidades. Todas las veces la atención es impecable.»</blockquote>
+        <footer>Andrés — reseña de Google</footer>
+      </div>
+      <div class="rcard rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>«Excelente ferretería, gran surtido y atendida por sus dueños desde más de 70 años.»</blockquote>
+        <footer>Héctor — reseña de Google</footer>
+      </div>
+    </div>
+    <p class="rev-note">Reseñas reales tomadas de Google Maps. Buscá «Casa Griffa» para leerlas todas.</p>
+  </div>
+</section>
+
+<section class="cont" id="contacto">
+  <div class="wrap">
+    <div class="rv">
+      <span class="sec-k">Contacto</span>
+      <h2 class="sec-t">Río de Janeiro, esquina Rosario</h2>
+      <div class="cont-item"><div class="ic">📍</div><div><b>Dirección</b><span>Río de Janeiro 702 (esq. Rosario), Caballito, CABA</span></div></div>
+      <div class="cont-item"><div class="ic">🕗</div><div><b>Horario</b><span>Lunes a viernes 8:00–18:00 · Sábados 9:00–15:00</span></div></div>
+      <div class="cont-item"><div class="ic">📞</div><div><b>Teléfonos</b><span><a href="tel:+541149824624">4982-4624</a> · <a href="tel:+541145150790">4515-0790</a></span></div></div>
+      <div class="cont-item"><div class="ic">🚇</div><div><b>Cómo llegar</b><span>A metros de Av. Rivadavia y de la estación Río de Janeiro (Línea A)</span></div></div>
+      <div class="cta-row">
+        <a class="btn btn-call" href="tel:+541149824624">Llamar ahora</a>
+      </div>
+    </div>
+    <div class="mapa rv">
+      <iframe title="Mapa Casa Griffa" src="https://www.google.com/maps?q=R%C3%ADo+de+Janeiro+702,+Caballito,+CABA&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Casa Griffa</h4>
+        <p style="font-size:.92rem;max-width:26rem">Ferretería y pinturería en Caballito, atendida por sus dueños desde hace más de 70 años. 4.8★ en Google.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#rubros">Rubros</a></li>
+          <li><a href="#experiencia">Cómo trabajamos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visitanos</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps?q=R%C3%ADo+de+Janeiro+702,+CABA" target="_blank" rel="noopener">Río de Janeiro 702</a></li>
+          <li><a href="tel:+541149824624">Tel. 4982-4624</a></li>
+          <li>L a V 8–18 · Sáb 9–15</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Casa Griffa — Caballito, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="call-float" href="tel:+541149824624" aria-label="Llamar a Casa Griffa">
+  <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>
+</a>
+
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
