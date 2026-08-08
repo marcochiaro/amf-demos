@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Glams — Peluquería & Barbershop en Liniers | 5.0★ en Google</title>
+<meta name="description" content="Studio Glams: peluquería y barbershop en Ercilla 6723, Liniers (límite Mataderos). Color, cortes, tratamientos y barbería con calificación perfecta 5.0★ en Google. Turnos por Instagram.">
+<meta name="keywords" content="peluquería Liniers, barbería Mataderos, color balayage Liniers, peluquería barrio Naón, corte de pelo Liniers CABA">
+<meta property="og:title" content="Studio Glams — Peluquería & Barbershop en Liniers">
+<meta property="og:description" content="El salón de Liniers con 5.0★ en Google: color, corte y barbería en Ercilla 6723. Turnos por Instagram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/studio-glams/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#FAF6EF;
+  --crema2:#F2EBDE;
+  --negro:#191512;
+  --negro2:#241E19;
+  --magenta:#C7326E;
+  --magenta-osc:#A02458;
+  --rosa:#F5D8E4;
+  --txt:#3D362F;
+  --mut:#847A6E;
+  --borde:#E6DCCB;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--crema);color:var(--txt);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Syne',sans-serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(1120px,92%);margin:0 auto}
+section{padding:78px 0}
+.kicker{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--magenta);margin-bottom:14px}
+.h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;color:var(--negro);line-height:1.18}
+.lead{margin-top:16px;color:var(--mut);font-size:1.04rem;max-width:620px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-mag{background:var(--magenta);color:#fff;box-shadow:0 10px 26px rgba(199,50,110,.35)}
+.btn-negro{background:var(--negro);color:var(--crema)}
+.btn-linea{border:1.5px solid var(--negro);color:var(--negro)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(250,246,239,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{height:66px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;color:var(--negro);letter-spacing:.02em}
+.logo span{color:var(--magenta)}
+.nav-links{display:none;list-style:none;gap:26px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--txt)}
+.nav-links a:hover{color:var(--magenta)}
+.nav-cta{background:var(--negro);color:var(--crema) !important;padding:10px 22px;border-radius:999px;font-size:.87rem}
+@media(min-width:840px){.nav-links{display:flex}}
+
+/* HERO */
+.hero{padding:150px 0 90px;position:relative;overflow:hidden;background:
+  radial-gradient(700px 340px at 85% -60px,rgba(199,50,110,.10),transparent 70%),var(--crema)}
+.hero-grid{display:grid;gap:46px;align-items:center}
+@media(min-width:920px){.hero-grid{grid-template-columns:1.12fr .88fr}}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);font-weight:800;color:var(--negro);line-height:1.06;letter-spacing:-.01em}
+.hero h1 .mag{color:var(--magenta)}
+.hero p{margin:22px 0 30px;font-size:1.08rem;color:var(--mut);max-width:530px}
+.rating-pill{display:inline-flex;align-items:center;gap:10px;background:var(--negro);color:var(--crema);border-radius:999px;padding:9px 20px;font-size:.9rem;font-weight:600;margin-bottom:26px}
+.rating-pill .st{color:#F5C518;letter-spacing:2px}
+.hero-card{background:var(--negro);border-radius:24px;padding:38px 34px;color:var(--crema);box-shadow:0 28px 64px rgba(25,21,18,.35);position:relative;overflow:hidden}
+.hero-card::after{content:"5.0";position:absolute;right:-16px;bottom:-34px;font-family:'Syne',sans-serif;font-weight:800;font-size:7.5rem;color:rgba(199,50,110,.16)}
+.hero-card .disp{font-size:1.45rem;font-weight:700;line-height:1.3}
+.hero-card>p{color:#B9AFA3;font-size:.95rem;margin:14px 0 20px}
+.hc-item{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid rgba(250,246,239,.14);font-size:.92rem;color:#E8E0D4;position:relative;z-index:1}
+.hc-item b{color:#fff}
+
+/* NOSOTROS */
+.nosotros{background:#fff}
+.dos-col{display:grid;gap:44px}
+@media(min-width:900px){.dos-col{grid-template-columns:1.05fr .95fr;align-items:center}}
+.editorial{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:600;line-height:1.5;color:var(--negro)}
+.editorial strong{color:var(--magenta)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--crema2);color:var(--negro);border-radius:999px;padding:8px 18px;font-size:.85rem;font-weight:600}
+.nos-card{background:var(--crema);border:1px solid var(--borde);border-radius:24px;padding:38px}
+.nos-card h3{color:var(--negro);font-size:1.15rem;margin-bottom:12px}
+.nos-card p{color:var(--mut);font-size:.95rem;margin-bottom:20px}
+.nos-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.nos-stats div{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:18px;text-align:center}
+.nos-stats .num{font-family:'Syne',sans-serif;font-weight:800;font-size:1.6rem;color:var(--magenta)}
+.nos-stats .lbl{font-size:.78rem;color:var(--mut);font-weight:600;margin-top:2px}
+
+/* SERVICIOS */
+.serv-grid{display:grid;gap:18px;margin-top:44px}
+@media(min-width:640px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.serv-grid{grid-template-columns:repeat(3,1fr)}}
+.serv{background:#fff;border:1px solid var(--borde);border-radius:20px;padding:30px 26px;transition:transform .2s,box-shadow .2s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(25,21,18,.10)}
+.serv .ico{width:50px;height:50px;border-radius:14px;background:var(--rosa);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px}
+.serv h3{font-size:1.05rem;color:var(--negro);margin-bottom:8px}
+.serv p{font-size:.88rem;color:var(--mut)}
+
+/* EXPERIENCIA */
+.exp{background:var(--negro);color:var(--crema)}
+.exp .h2{color:var(--crema)}
+.exp .lead{color:#B9AFA3}
+.pasos{display:grid;gap:22px;margin-top:48px}
+@media(min-width:860px){.pasos{grid-template-columns:repeat(4,1fr)}}
+.paso{background:var(--negro2);border:1px solid rgba(250,246,239,.1);border-radius:20px;padding:30px 26px}
+.paso .n{font-family:'Syne',sans-serif;font-weight:800;font-size:2.2rem;color:var(--magenta)}
+.paso h3{font-size:1.03rem;margin:12px 0 8px;color:var(--crema)}
+.paso p{font-size:.88rem;color:#B9AFA3}
+
+/* RESEÑAS */
+.rese{background:#fff}
+.rese-hero{margin-top:44px;background:linear-gradient(135deg,var(--rosa),#fff 70%);border:1px solid var(--borde);border-radius:26px;padding:50px 40px;text-align:center}
+.big-rating{font-family:'Syne',sans-serif;font-weight:800;font-size:4rem;color:var(--negro);line-height:1}
+.big-rating small{font-size:1.4rem;color:var(--magenta)}
+.rese-hero .st{color:#F5C518;font-size:1.5rem;letter-spacing:5px;margin:10px 0}
+.rese-hero p{color:var(--mut);max-width:600px;margin:14px auto 28px;font-size:1rem}
+.rese-hero p b{color:var(--negro)}
+
+/* CONTACTO */
+.contacto{background:var(--crema)}
+.cont-grid{display:grid;gap:36px;margin-top:44px}
+@media(min-width:920px){.cont-grid{grid-template-columns:.95fr 1.05fr}}
+.cont-card{background:#fff;border-radius:22px;padding:36px;border:1px solid var(--borde)}
+.cont-item{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--borde);align-items:flex-start}
+.cont-item:last-child{border-bottom:none}
+.cont-item .ci{width:42px;height:42px;flex:none;border-radius:12px;background:var(--crema2);display:flex;align-items:center;justify-content:center}
+.cont-item h4{font-size:.95rem;color:var(--negro)}
+.cont-item p,.cont-item a{font-size:.92rem;color:var(--mut)}
+.cont-item a:hover{color:var(--magenta)}
+.mapa{border-radius:22px;overflow:hidden;min-height:380px;border:1px solid var(--borde);box-shadow:0 20px 48px rgba(25,21,18,.14)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* FOOTER */
+footer{background:var(--negro);color:#B9AFA3;padding:56px 0 30px}
+.foot-grid{display:grid;gap:36px;padding-bottom:38px;border-bottom:1px solid rgba(250,246,239,.12)}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .logo{color:var(--crema);font-size:1.25rem}
+footer p{font-size:.9rem;margin-top:12px;max-width:320px}
+footer h4{color:var(--crema);font-size:.95rem;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{font-size:.9rem}
+footer a:hover{color:var(--magenta)}
+.foot-base{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding-top:24px;font-size:.8rem;color:#7A7166}
+
+/* FLOAT IG */
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:80;width:62px;height:62px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(188,24,136,.4);animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,.45)}70%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 18px rgba(188,24,136,0)}100%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,0)}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio">STUDIO <span>GLAMS</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">La experiencia</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a class="nav-cta" href="#contacto">Pedir turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Peluquería & Barbershop · Liniers</span>
+      <div class="rating-pill"><span class="st">★★★★★</span> 5.0 en Google · 40 reseñas</div>
+      <h1>Salís del salón como <span class="mag">te querés ver</span></h1>
+      <p>Color, corte y barbería en Ercilla 6723, en el límite de Liniers y Mataderos. Un equipo que te escucha antes de agarrar la tijera — por eso el barrio nos puso calificación perfecta.</p>
+      <a class="btn btn-mag" href="https://www.instagram.com/peluqueriastudioglams/" target="_blank" rel="noopener">Pedí tu turno por Instagram</a>
+      <a class="btn btn-linea" style="margin-left:10px" href="#servicios">Ver servicios</a>
+    </div>
+    <aside class="hero-card">
+      <div class="disp">La pelu del barrio que trabaja como las del centro</div>
+      <p>Sin humo: técnica, buenos productos y turnos que se respetan.</p>
+      <div class="hc-item">📍 <div><b>Ercilla 6723</b> · Liniers, límite Mataderos (zona Naón)</div></div>
+      <div class="hc-item">⭐ <div><b>5.0 de calificación</b> con 40 reseñas en Google</div></div>
+      <div class="hc-item">💬 <div><b>Turnos por Instagram</b> · @peluqueriastudioglams</div></div>
+    </aside>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap dos-col">
+    <div class="rev">
+      <span class="kicker">Nosotros</span>
+      <h2 class="h2">Glam de barrio, en serio</h2>
+      <p class="editorial" style="margin-top:22px">Studio Glams nació para que no tengas que viajar media ciudad por un buen color o un fade prolijo: <strong>peluquería y barbería con oficio</strong>, en la misma cuadra de siempre, con la puerta abierta para todo el barrio.</p>
+      <div class="tags">
+        <span class="tag">Color & Balayage</span>
+        <span class="tag">Cortes</span>
+        <span class="tag">Tratamientos</span>
+        <span class="tag">Barbería</span>
+        <span class="tag">Peinados</span>
+      </div>
+    </div>
+    <div class="nos-card rev">
+      <h3>Por qué el barrio nos elige</h3>
+      <p>Un salón chico tiene una ventaja enorme: acá te atendemos con nombre y apellido, y el resultado se nota en las reseñas.</p>
+      <div class="nos-stats">
+        <div><div class="num">5.0★</div><div class="lbl">Calificación en Google</div></div>
+        <div><div class="num">40</div><div class="lbl">Reseñas de clientes</div></div>
+        <div><div class="num">2</div><div class="lbl">Mundos: pelu & barber</div></div>
+        <div><div class="num">1</div><div class="lbl">Sola cuadra: Ercilla 6723</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="kicker">Servicios</span>
+    <h2 class="h2">Del cambio de look al retoque de siempre</h2>
+    <p class="lead">Peluquería para ellas y ellos, más barbería completa. Consultanos por Instagram qué necesitás y te asesoramos.</p>
+    <div class="serv-grid">
+      <div class="serv rev"><div class="ico">🎨</div><h3>Color & Balayage</h3><p>Global, claritos, mechas y técnicas de color con productos profesionales.</p></div>
+      <div class="serv rev"><div class="ico">✂️</div><h3>Cortes</h3><p>De dama y caballero: asesorado según tu tipo de pelo y tu estilo.</p></div>
+      <div class="serv rev"><div class="ico">💧</div><h3>Tratamientos</h3><p>Nutrición, hidratación y reparación para recuperar el pelo entre colores.</p></div>
+      <div class="serv rev"><div class="ico">💈</div><h3>Barbería</h3><p>Fades, degradés, perfilado de barba y ritual clásico de barbershop.</p></div>
+      <div class="serv rev"><div class="ico">💫</div><h3>Peinados & Brushing</h3><p>Para eventos o para salir del salón lista, con brillo y movimiento.</p></div>
+      <div class="serv rev"><div class="ico">👑</div><h3>Asesoramiento de imagen</h3><p>Te ayudamos a elegir el corte y el color que mejor te quedan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="exp" id="experiencia">
+  <div class="wrap">
+    <span class="kicker">La experiencia</span>
+    <h2 class="h2">Así funciona tu visita</h2>
+    <p class="lead">Simple y sin vueltas, como tiene que ser.</p>
+    <div class="pasos">
+      <div class="paso rev"><div class="n">01</div><h3>Reservá</h3><p>Escribinos por Instagram y coordiná el día y horario que te quede cómodo.</p></div>
+      <div class="paso rev"><div class="n">02</div><h3>Te escuchamos</h3><p>Antes de empezar charlamos qué buscás y qué le va bien a tu pelo.</p></div>
+      <div class="paso rev"><div class="n">03</div><h3>Manos a la obra</h3><p>Técnica, productos profesionales y el tiempo que tu servicio necesita.</p></div>
+      <div class="paso rev"><div class="n">04</div><h3>Salís glam</h3><p>Con el resultado que viniste a buscar y los tips para mantenerlo en casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rese" id="resenas">
+  <div class="wrap">
+    <div style="text-align:center"><span class="kicker">Reseñas</span>
+    <h2 class="h2">La libreta de calificaciones la escribe el barrio</h2></div>
+    <div class="rese-hero rev">
+      <div class="big-rating">5.0<small>/5</small></div>
+      <div class="st">★★★★★</div>
+      <p><b>Calificación perfecta con 40 reseñas en Google.</b> No lo decimos nosotros: lo dicen las clientas y clientes que ya pasaron por el sillón. Mirá sus resultados, antes y después, en nuestro Instagram.</p>
+      <a class="btn btn-negro" href="https://www.instagram.com/peluqueriastudioglams/" target="_blank" rel="noopener">Ver trabajos en @peluqueriastudioglams</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2 class="h2">Vení a conocernos</h2>
+    <p class="lead">Estamos en Ercilla 6723, a pasos del límite entre Liniers y Mataderos. Escribinos por Instagram y reservá tu turno.</p>
+    <div class="cont-grid">
+      <div class="cont-card rev">
+        <div class="cont-item">
+          <div class="ci">📍</div>
+          <div><h4>Dirección</h4><p>Ercilla 6723, Liniers (límite Mataderos), CABA</p></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📷</div>
+          <div><h4>Instagram — turnos</h4><a href="https://www.instagram.com/peluqueriastudioglams/" target="_blank" rel="noopener">@peluqueriastudioglams</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">⭐</div>
+          <div><h4>Reseñas</h4><p>5.0★ con 40 reseñas en Google</p></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">🕐</div>
+          <div><h4>Horarios</h4><p>Consultanos por Instagram — te respondemos en el día.</p></div>
+        </div>
+      </div>
+      <div class="mapa rev">
+        <iframe src="https://www.google.com/maps?q=Ercilla+6723,+CABA,+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Ercilla 6723, Liniers"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">STUDIO <span style="color:var(--magenta)">GLAMS</span></div>
+        <p>Peluquería & Barbershop en Liniers: color, cortes, tratamientos y barbería con calificación perfecta en Google.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">La experiencia</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/peluqueriastudioglams/" target="_blank" rel="noopener">@peluqueriastudioglams</a></li>
+          <li>Ercilla 6723, Liniers, CABA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Studio Glams · Liniers, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/peluqueriastudioglams/" target="_blank" rel="noopener" aria-label="Pedí tu turno por Instagram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="#fff" stroke="none"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

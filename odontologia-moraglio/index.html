@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odontología Moraglio — Dentista en Liniers | Clínica Dental Liniers</title>
+<meta name="description" content="Odontología Moraglio: clínica dental familiar en Liniers, CABA. Implantes, ortodoncia, estética dental y odontología general en Carhué 265, a metros de la estación. Dr. Miguel Ángel Moraglio, M.N. 32412.">
+<meta name="keywords" content="dentista Liniers, odontólogo Liniers, implantes dentales Liniers, ortodoncia Liniers, clínica dental CABA, odontología Mataderos">
+<meta property="og:title" content="Odontología Moraglio — Dentista en Liniers">
+<meta property="og:description" content="La clínica dental de confianza del barrio de Liniers. Implantes, ortodoncia y estética dental, con la trayectoria de una familia de odontólogos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/odontologia-moraglio/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pizarra:#24435C;
+  --pizarra-osc:#18314A;
+  --hielo:#EDF4F8;
+  --niebla:#F8FBFD;
+  --oro:#C8963E;
+  --oro-suave:#E9D3A8;
+  --tinta:#1C2B38;
+  --gris:#5C707F;
+  --blanco:#FFFFFF;
+  --borde:#D9E5EC;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Public Sans',sans-serif;color:var(--tinta);background:var(--niebla);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:'Fraunces',serif}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:0 auto}
+section{padding:76px 0}
+.kicker{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);margin-bottom:14px}
+.h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:600;line-height:1.2;color:var(--pizarra)}
+.lead{font-size:1.06rem;color:var(--gris);max-width:640px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:.98rem;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-oro{background:var(--oro);color:#fff;box-shadow:0 8px 22px rgba(200,150,62,.32)}
+.btn-linea{border:1.5px solid var(--pizarra);color:var(--pizarra)}
+.btn-blanco{background:#fff;color:var(--pizarra)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(248,251,253,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.18rem;color:var(--pizarra)}
+.logo span{color:var(--oro)}
+.nav-links{display:none;gap:28px;list-style:none;align-items:center}
+.nav-links a{font-size:.92rem;font-weight:500;color:var(--gris)}
+.nav-links a:hover{color:var(--pizarra)}
+.nav-cta{background:var(--pizarra);color:#fff !important;padding:10px 20px;border-radius:999px}
+@media(min-width:820px){.nav-links{display:flex}}
+
+/* HERO */
+.hero{padding:150px 0 90px;background:linear-gradient(180deg,var(--hielo) 0%,var(--niebla) 100%);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(200,150,62,.14),transparent 65%)}
+.hero-grid{display:grid;gap:48px;align-items:center;position:relative;z-index:1}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr}}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:600;line-height:1.12;color:var(--pizarra)}
+.hero h1 em{font-style:italic;color:var(--oro)}
+.hero p{margin:20px 0 30px;font-size:1.1rem;color:var(--gris);max-width:540px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.hb{background:#fff;border:1px solid var(--borde);border-radius:999px;padding:7px 16px;font-size:.84rem;font-weight:600;color:var(--pizarra)}
+.hb b{color:var(--oro)}
+.hero-card{background:var(--pizarra);border-radius:22px;padding:38px 34px;color:#fff;box-shadow:0 24px 60px rgba(36,67,92,.28)}
+.hero-card .serif{font-size:1.5rem;line-height:1.3}
+.hero-card p{color:#B9CBD9;font-size:.95rem;margin:14px 0 22px}
+.hero-card .dato{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#DCE7EF}
+.hero-card .dato svg{flex:none;margin-top:3px}
+
+/* NOSOTROS */
+.nosotros{background:var(--blanco)}
+.dos-col{display:grid;gap:44px}
+@media(min-width:900px){.dos-col{grid-template-columns:1fr 1fr;align-items:center}}
+.editorial{font-family:'Fraunces',serif;font-size:1.35rem;line-height:1.5;color:var(--pizarra)}
+.editorial strong{color:var(--oro)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--hielo);color:var(--pizarra);border-radius:999px;padding:8px 18px;font-size:.86rem;font-weight:600}
+.nos-panel{background:var(--hielo);border-radius:20px;padding:36px}
+.nos-panel h3{color:var(--pizarra);font-size:1.15rem;margin-bottom:10px}
+.nos-panel p{color:var(--gris);font-size:.96rem;margin-bottom:18px}
+.nos-panel .mini{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini div{background:#fff;border-radius:14px;padding:18px 16px;text-align:center}
+.mini .num{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--oro)}
+.mini .lbl{font-size:.78rem;color:var(--gris);font-weight:600;margin-top:2px}
+
+/* SERVICIOS */
+.serv-grid{display:grid;gap:18px;margin-top:44px;grid-template-columns:1fr}
+@media(min-width:640px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.serv-grid{grid-template-columns:repeat(4,1fr)}}
+.serv{background:#fff;border:1px solid var(--borde);border-radius:18px;padding:28px 24px;transition:transform .2s ease,box-shadow .2s ease}
+.serv:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(36,67,92,.10)}
+.serv .ico{width:48px;height:48px;border-radius:13px;background:var(--hielo);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.serv h3{font-size:1.04rem;color:var(--pizarra);margin-bottom:8px}
+.serv p{font-size:.88rem;color:var(--gris)}
+
+/* MÉTODO */
+.metodo{background:var(--pizarra);color:#fff}
+.metodo .kicker{color:var(--oro-suave)}
+.metodo .h2{color:#fff}
+.metodo .lead{color:#B9CBD9}
+.pasos{display:grid;gap:22px;margin-top:48px}
+@media(min-width:860px){.pasos{grid-template-columns:repeat(4,1fr)}}
+.paso{background:var(--pizarra-osc);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:30px 26px;position:relative}
+.paso .n{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;color:var(--oro);opacity:.9}
+.paso h3{font-size:1.05rem;margin:12px 0 8px;color:#fff}
+.paso p{font-size:.88rem;color:#B9CBD9}
+
+/* RESEÑAS */
+.rese{background:var(--blanco)}
+.quote-hero{max-width:820px;margin:44px auto 0;text-align:center}
+.stars{color:var(--oro);font-size:1.25rem;letter-spacing:4px}
+.quote-hero blockquote{font-family:'Fraunces',serif;font-size:clamp(1.25rem,2.6vw,1.75rem);font-style:italic;line-height:1.45;color:var(--pizarra);margin:22px 0}
+.quote-hero cite{font-style:normal;font-size:.92rem;color:var(--gris);font-weight:600}
+.rese-nota{margin-top:44px;background:var(--hielo);border-radius:18px;padding:30px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.rese-nota p{color:var(--gris);font-size:.95rem;max-width:560px}
+.rese-nota p b{color:var(--pizarra)}
+
+/* CONTACTO */
+.contacto{background:var(--hielo)}
+.cont-grid{display:grid;gap:36px;margin-top:44px}
+@media(min-width:920px){.cont-grid{grid-template-columns:.95fr 1.05fr}}
+.cont-card{background:#fff;border-radius:20px;padding:36px;border:1px solid var(--borde)}
+.cont-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--borde);align-items:flex-start}
+.cont-item:last-child{border-bottom:none}
+.cont-item .ci{width:42px;height:42px;flex:none;border-radius:12px;background:var(--hielo);display:flex;align-items:center;justify-content:center}
+.cont-item h4{font-size:.95rem;color:var(--pizarra)}
+.cont-item p,.cont-item a{font-size:.92rem;color:var(--gris)}
+.cont-item a:hover{color:var(--oro)}
+.mapa{border-radius:20px;overflow:hidden;min-height:380px;border:1px solid var(--borde);box-shadow:0 18px 44px rgba(36,67,92,.12)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* FOOTER */
+footer{background:var(--pizarra-osc);color:#B9CBD9;padding:56px 0 30px}
+.foot-grid{display:grid;gap:36px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.12)}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .logo{color:#fff;font-size:1.3rem}
+footer p{font-size:.9rem;margin-top:12px;max-width:320px}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{font-size:.9rem}
+footer a:hover{color:var(--oro-suave)}
+.foot-base{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding-top:24px;font-size:.8rem;color:#7E96A8}
+
+/* FLOAT IG */
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:80;width:62px;height:62px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(188,24,136,.4);animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,.45)}70%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 18px rgba(188,24,136,0)}100%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,0)}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio">Odontología <span>Moraglio</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Tratamientos</a></li>
+      <li><a href="#metodo">Cómo trabajamos</a></li>
+      <li><a href="#resenas">Pacientes</a></li>
+      <li><a class="nav-cta" href="#contacto">Pedir turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Clínica Dental Liniers · Carhué 265</span>
+      <h1>Tu sonrisa, en manos de una <em>familia</em> de odontólogos</h1>
+      <p>En pleno barrio de Liniers, a metros de la estación, atendemos con la dedicación de siempre y la odontología de hoy: implantes, ortodoncia y estética dental, sin vueltas y con trato de barrio.</p>
+      <div class="hero-badges">
+        <span class="hb"><b>M.N. 32412</b> · Dr. Miguel Á. Moraglio</span>
+        <span class="hb">Padre e hijo, misma vocación</span>
+        <span class="hb">Liniers · CABA</span>
+      </div>
+      <a class="btn btn-oro" href="tel:+541146415045">📞 Llamar al consultorio</a>
+      <a class="btn btn-linea" style="margin-left:10px" href="https://www.instagram.com/odontologiamoraglio/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+    </div>
+    <aside class="hero-card">
+      <div class="serif">“Excelentes profesionales”</div>
+      <p>Así nos describen los pacientes que nos acompañan hace años. Esa confianza es nuestro mejor diploma.</p>
+      <div class="dato"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8963E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>Carhué 265, Liniers — a 2 cuadras de la estación</div>
+      <div class="dato"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8963E" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Lun a Jue 9:30–12 y 16–20 · Vie y Sáb 9:30–15</div>
+      <div class="dato"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8963E" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>011 4641-5045</div>
+    </aside>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap dos-col">
+    <div class="rev">
+      <span class="kicker">Nosotros</span>
+      <h2 class="h2">Una clínica de barrio, con historia propia</h2>
+      <p class="editorial" style="margin-top:22px">La <strong>Clínica Dental Liniers</strong> es un proyecto familiar: el consultorio donde la experiencia de una generación se encuentra con la formación de la siguiente, y donde cada paciente tiene nombre, apellido e historia clínica que conocemos de memoria.</p>
+      <div class="tags">
+        <span class="tag">Implantes</span>
+        <span class="tag">Ortodoncia</span>
+        <span class="tag">Estética dental</span>
+        <span class="tag">Odontología general</span>
+        <span class="tag">Atención personalizada</span>
+      </div>
+    </div>
+    <div class="nos-panel rev">
+      <h3>Por qué elegirnos</h3>
+      <p>Porque acá no sos un número de turno: te explicamos cada tratamiento antes de empezarlo, trabajamos sin apuro y te acompañamos hasta el último control.</p>
+      <div class="mini">
+        <div><div class="num">2</div><div class="lbl">Generaciones de odontólogos</div></div>
+        <div><div class="num">9</div><div class="lbl">Tratamientos principales</div></div>
+        <div><div class="num">6</div><div class="lbl">Días de atención por semana</div></div>
+        <div><div class="num">100%</div><div class="lbl">Trato de barrio</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="kicker">Tratamientos</span>
+    <h2 class="h2">Todo lo que tu sonrisa necesita, en un solo lugar</h2>
+    <p class="lead">Odontología integral para toda la familia, de la limpieza de rutina al tratamiento más complejo.</p>
+    <div class="serv-grid">
+      <div class="serv rev"><div class="ico">🦷</div><h3>Implantes dentales</h3><p>Recuperá piezas perdidas con una solución fija, estable y de aspecto natural.</p></div>
+      <div class="serv rev"><div class="ico">😁</div><h3>Ortodoncia</h3><p>Alineá tu sonrisa a cualquier edad, con seguimiento en cada control.</p></div>
+      <div class="serv rev"><div class="ico">✨</div><h3>Blanqueamiento</h3><p>Aclarado profesional y seguro, para que tu sonrisa luzca como querés.</p></div>
+      <div class="serv rev"><div class="ico">💎</div><h3>Carillas de porcelana</h3><p>Estética dental de precisión para transformar el frente de tu sonrisa.</p></div>
+      <div class="serv rev"><div class="ico">🔬</div><h3>Endodoncia</h3><p>Tratamientos de conducto que salvan la pieza y eliminan el dolor.</p></div>
+      <div class="serv rev"><div class="ico">👑</div><h3>Coronas y prótesis</h3><p>Fijas o removibles, hechas a medida para que comas y hables tranquilo.</p></div>
+      <div class="serv rev"><div class="ico">🪥</div><h3>Limpieza dental</h3><p>La base de todo: higiene profesional y prevención en cada visita.</p></div>
+      <div class="serv rev"><div class="ico">🩺</div><h3>Extracciones</h3><p>Cuando no queda otra, con cuidado, anestesia adecuada y buen post.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <span class="kicker">Cómo trabajamos</span>
+    <h2 class="h2">Sin sorpresas, paso a paso</h2>
+    <p class="lead">Nuestra forma de atender es la misma desde siempre: primero entender, después explicar y recién ahí tratar.</p>
+    <div class="pasos">
+      <div class="paso rev"><div class="n">01</div><h3>Consulta y diagnóstico</h3><p>Revisamos tu boca a fondo y escuchamos qué te preocupa y qué esperás.</p></div>
+      <div class="paso rev"><div class="n">02</div><h3>Plan claro</h3><p>Te proponemos el tratamiento en lenguaje simple: qué, cómo, cuánto tiempo.</p></div>
+      <div class="paso rev"><div class="n">03</div><h3>Tratamiento sin apuro</h3><p>Trabajamos con la calma que da atender bien, sesión por sesión.</p></div>
+      <div class="paso rev"><div class="n">04</div><h3>Controles y seguimiento</h3><p>Tu sonrisa queda bajo control: revisiones para que dure lo que tiene que durar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rese" id="resenas">
+  <div class="wrap">
+    <div style="text-align:center"><span class="kicker">Lo que dicen los pacientes</span>
+    <h2 class="h2">La opinión que más nos importa</h2></div>
+    <div class="quote-hero rev">
+      <div class="stars">★★★★★</div>
+      <blockquote>“Tengo una opinión excelente de Clínica Dental Liniers, tanto del doctor Adalberto Moraglio como así también de Miguel: padre e hijo, excelentes profesionales.”</blockquote>
+      <cite>— Néstor Ettorre · Reseña pública en Google</cite>
+    </div>
+    <div class="rese-nota rev">
+      <p><b>¿Querés conocer nuestro día a día?</b> En Instagram compartimos casos, consejos de salud bucal y las novedades del consultorio.</p>
+      <a class="btn btn-linea" href="https://www.instagram.com/odontologiamoraglio/" target="_blank" rel="noopener">Seguinos: @odontologiamoraglio</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2 class="h2">Vení a conocernos</h2>
+    <p class="lead">Estamos en el corazón de Liniers, a dos cuadras de la estación. Llamanos o escribinos por Instagram para coordinar tu turno.</p>
+    <div class="cont-grid">
+      <div class="cont-card rev">
+        <div class="cont-item">
+          <div class="ci">📍</div>
+          <div><h4>Dirección</h4><p>Carhué 265, Liniers, CABA</p></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📞</div>
+          <div><h4>Teléfono</h4><a href="tel:+541146415045">011 4641-5045</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📷</div>
+          <div><h4>Instagram</h4><a href="https://www.instagram.com/odontologiamoraglio/" target="_blank" rel="noopener">@odontologiamoraglio</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">🕐</div>
+          <div><h4>Horarios</h4><p>Lun a Jue: 9:30–12:00 y 16:00–20:00<br>Vie y Sáb: 9:30–15:00 · Dom: cerrado</p></div>
+        </div>
+      </div>
+      <div class="mapa rev">
+        <iframe src="https://www.google.com/maps?q=Carhu%C3%A9+265,+Liniers,+CABA,+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Carhué 265, Liniers"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">Odontología <span style="color:var(--oro)">Moraglio</span></div>
+        <p>Clínica Dental Liniers · Dr. Miguel Ángel Moraglio, M.N. 32412. Odontología integral con trato de familia, en el barrio de siempre.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Tratamientos</a></li>
+          <li><a href="#metodo">Cómo trabajamos</a></li>
+          <li><a href="#resenas">Pacientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+541146415045">011 4641-5045</a></li>
+          <li><a href="https://www.instagram.com/odontologiamoraglio/" target="_blank" rel="noopener">@odontologiamoraglio</a></li>
+          <li>Carhué 265, Liniers, CABA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Odontología Moraglio · Liniers, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/odontologiamoraglio/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="#fff" stroke="none"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
