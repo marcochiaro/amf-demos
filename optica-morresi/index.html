@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óptica Morresi — Óptica en Parque Patricios | 5.0★ en Google</title>
+<meta name="description" content="Óptica Morresi: anteojos recetados, lentes de contacto y anteojos de sol en Cátulo Castillo 2995, Parque Patricios. Calificación perfecta 5.0★ en Google. Cuidamos tu visión.">
+<meta name="keywords" content="óptica Parque Patricios, anteojos recetados Parque Patricios, lentes de contacto CABA sur, óptica barrio Cátulo Castillo, óptica cerca de Huracán">
+<meta property="og:title" content="Óptica Morresi — Óptica de barrio en Parque Patricios">
+<meta property="og:description" content="Anteojos recetados, lentes de contacto y asesoramiento de verdad. 5.0★ en Google en Cátulo Castillo 2995.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/optica-morresi/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,700;0,800;1,500&family=Host+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#0E3A3E;
+  --petrol2:#0B2E31;
+  --aqua:#79CFC4;
+  --aqua-osc:#3C9A8E;
+  --arena:#F5F0E6;
+  --arena2:#ECE4D4;
+  --coral:#E2603C;
+  --txt:#33413F;
+  --mut:#6E7D79;
+  --borde:#E0D8C7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Host Grotesk',sans-serif;background:var(--arena);color:var(--txt);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.disp{font-family:'Vollkorn',serif}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1100px,92%);margin:0 auto}
+section{padding:80px 0}
+.kicker{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--aqua-osc);margin-bottom:14px}
+.h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:700;color:var(--petrol);line-height:1.2}
+.lead{margin-top:14px;color:var(--mut);font-size:1.03rem;max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:14px;font-weight:600;font-size:.95rem;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-coral{background:var(--coral);color:#fff;box-shadow:0 12px 28px rgba(226,96,60,.32)}
+.btn-petrol{background:var(--petrol);color:var(--arena)}
+.btn-linea{border:1.5px solid var(--petrol);color:var(--petrol)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(245,240,230,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{height:66px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Vollkorn',serif;font-weight:800;font-size:1.25rem;color:var(--petrol)}
+.logo span{color:var(--coral)}
+.nav-links{display:none;list-style:none;gap:26px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--aqua-osc)}
+.nav-cta{background:var(--petrol);color:var(--arena) !important;padding:10px 22px;border-radius:12px;font-size:.87rem}
+@media(min-width:840px){.nav-links{display:flex}}
+
+/* HERO — centrado con ficha */
+.hero{padding:160px 0 0;text-align:center;background:
+  radial-gradient(640px 320px at 50% -80px,rgba(121,207,196,.22),transparent 70%),var(--arena)}
+.rating-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--borde);border-radius:999px;padding:9px 20px;font-size:.9rem;font-weight:600;color:var(--petrol);margin-bottom:26px;box-shadow:0 6px 18px rgba(14,58,62,.08)}
+.rating-pill .st{color:#E9A23B;letter-spacing:2px}
+.hero h1{font-size:clamp(2.3rem,5.6vw,3.9rem);font-weight:800;color:var(--petrol);line-height:1.08;max-width:820px;margin:0 auto;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--aqua-osc)}
+.hero>.wrap>p{margin:22px auto 32px;font-size:1.1rem;color:var(--mut);max-width:600px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ficha{margin:64px auto 0;transform:translateY(46px);background:var(--petrol);border-radius:24px;padding:34px;display:grid;gap:22px;color:var(--arena);text-align:left;box-shadow:0 30px 60px rgba(14,58,62,.3)}
+@media(min-width:820px){.ficha{grid-template-columns:repeat(3,1fr)}}
+.ficha .fi .n{font-family:'Vollkorn',serif;font-weight:800;font-size:1.9rem;color:var(--aqua)}
+.ficha .fi .l{font-size:.88rem;color:#B8CBC6;margin-top:4px}
+
+/* NOSOTROS */
+.nosotros{background:#fff;padding-top:126px}
+.dos-col{display:grid;gap:44px}
+@media(min-width:900px){.dos-col{grid-template-columns:1.05fr .95fr;align-items:center}}
+.editorial{font-family:'Vollkorn',serif;font-size:1.34rem;font-weight:500;line-height:1.55;color:var(--petrol)}
+.editorial strong{color:var(--coral)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--arena);border:1px solid var(--borde);color:var(--petrol);border-radius:999px;padding:8px 18px;font-size:.85rem;font-weight:600}
+.nos-card{background:var(--arena);border:1px solid var(--borde);border-radius:24px;padding:38px}
+.nos-card h3{color:var(--petrol);font-size:1.18rem;margin-bottom:12px}
+.nos-card p{color:var(--mut);font-size:.95rem;margin-bottom:14px}
+.nos-card p b{color:var(--petrol)}
+
+/* SERVICIOS */
+.serv-grid{display:grid;gap:18px;margin-top:44px}
+@media(min-width:640px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.serv-grid{grid-template-columns:repeat(3,1fr)}}
+.serv{background:#fff;border:1px solid var(--borde);border-radius:20px;padding:30px 26px;transition:transform .2s,box-shadow .2s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(14,58,62,.10)}
+.serv .ico{width:50px;height:50px;border-radius:14px;background:rgba(121,207,196,.25);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px}
+.serv h3{font-size:1.08rem;color:var(--petrol);margin-bottom:8px}
+.serv p{font-size:.89rem;color:var(--mut)}
+
+/* MÉTODO */
+.metodo{background:var(--petrol);color:var(--arena)}
+.metodo .h2{color:var(--arena)}
+.metodo .lead{color:#A9BFBA}
+.pasos{display:grid;gap:22px;margin-top:48px}
+@media(min-width:860px){.pasos{grid-template-columns:repeat(4,1fr)}}
+.paso{background:var(--petrol2);border:1px solid rgba(245,240,230,.12);border-radius:20px;padding:30px 26px}
+.paso .n{font-family:'Vollkorn',serif;font-weight:800;font-size:2.1rem;color:var(--aqua)}
+.paso h3{font-size:1.04rem;margin:12px 0 8px;color:var(--arena)}
+.paso p{font-size:.88rem;color:#A9BFBA}
+
+/* RESEÑAS */
+.rese{background:#fff}
+.rese-hero{margin-top:44px;background:linear-gradient(150deg,rgba(121,207,196,.2),#fff 65%);border:1px solid var(--borde);border-radius:26px;padding:52px 40px;text-align:center}
+.big-rating{font-family:'Vollkorn',serif;font-weight:800;font-size:4.2rem;color:var(--petrol);line-height:1}
+.big-rating small{font-size:1.4rem;color:var(--aqua-osc)}
+.rese-hero .st{color:#E9A23B;font-size:1.5rem;letter-spacing:5px;margin:10px 0}
+.rese-hero p{color:var(--mut);max-width:620px;margin:14px auto 28px;font-size:1rem}
+.rese-hero p b{color:var(--petrol)}
+
+/* CONTACTO */
+.contacto{background:var(--arena)}
+.cont-grid{display:grid;gap:36px;margin-top:44px}
+@media(min-width:920px){.cont-grid{grid-template-columns:.95fr 1.05fr}}
+.cont-card{background:#fff;border-radius:22px;padding:36px;border:1px solid var(--borde)}
+.cont-item{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--borde);align-items:flex-start}
+.cont-item:last-child{border-bottom:none}
+.cont-item .ci{width:42px;height:42px;flex:none;border-radius:12px;background:var(--arena);display:flex;align-items:center;justify-content:center}
+.cont-item h4{font-size:.95rem;color:var(--petrol)}
+.cont-item p,.cont-item a{font-size:.92rem;color:var(--mut)}
+.cont-item a:hover{color:var(--coral)}
+.mapa{border-radius:22px;overflow:hidden;min-height:380px;border:1px solid var(--borde);box-shadow:0 20px 48px rgba(14,58,62,.14)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* FOOTER */
+footer{background:var(--petrol2);color:#A9BFBA;padding:56px 0 30px}
+.foot-grid{display:grid;gap:36px;padding-bottom:38px;border-bottom:1px solid rgba(245,240,230,.12)}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .logo{color:var(--arena);font-size:1.25rem}
+footer p{font-size:.9rem;margin-top:12px;max-width:320px}
+footer h4{color:var(--arena);font-size:.95rem;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{font-size:.9rem}
+footer a:hover{color:var(--aqua)}
+.foot-base{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding-top:24px;font-size:.8rem;color:#7E938E}
+
+/* FLOAT IG */
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:80;width:62px;height:62px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(188,24,136,.4);animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,.45)}70%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 18px rgba(188,24,136,0)}100%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,0)}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio">Óptica <span>Morresi</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#metodo">Cómo trabajamos</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a class="nav-cta" href="#contacto">Visitanos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="rating-pill"><span class="st">★★★★★</span> 5.0 en Google · 80 reseñas</div>
+    <h1>Ver bien, <em>a la vuelta de casa</em></h1>
+    <p>Anteojos recetados, lentes de contacto y el asesoramiento que no encontrás en una cadena: en Cátulo Castillo 2995, el corazón de Parque Patricios.</p>
+    <div class="hero-cta">
+      <a class="btn btn-coral" href="https://www.instagram.com/morresioptica/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+      <a class="btn btn-linea" href="#servicios">Ver servicios</a>
+    </div>
+    <div class="ficha">
+      <div class="fi"><div class="n">5.0★</div><div class="l">Calificación perfecta en Google, con 80 reseñas de vecinos</div></div>
+      <div class="fi"><div class="n">📍</div><div class="l">Cátulo Castillo 2995, Parque Patricios — a metros del subte H</div></div>
+      <div class="fi"><div class="n">👓</div><div class="l">Recetados, contacto y sol: todo el cuidado de tu visión en un solo lugar</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap dos-col">
+    <div class="rev">
+      <span class="kicker">Nosotros</span>
+      <h2 class="h2">La óptica de confianza del barrio</h2>
+      <p class="editorial" style="margin-top:22px">En Morresi cuidamos tu visión como se cuida a un vecino: <strong>con tiempo, con oficio y de frente</strong>. Te explicamos qué necesitás y qué no, y te acompañamos hasta que el anteojo te quede perfecto.</p>
+      <div class="tags">
+        <span class="tag">Anteojos recetados</span>
+        <span class="tag">Lentes de contacto</span>
+        <span class="tag">Anteojos de sol</span>
+        <span class="tag">Asesoramiento</span>
+        <span class="tag">Reparaciones</span>
+      </div>
+    </div>
+    <div class="nos-card rev">
+      <h3>Por qué los vecinos nos califican con 5.0</h3>
+      <p>Una óptica de barrio se elige una vez y se recomienda para siempre. La atención personalizada — mirarte, escucharte, ajustarte el armazón las veces que haga falta — es lo que ninguna sucursal de cadena puede copiar.</p>
+      <p><b>Traé tu receta</b> y te asesoramos con los cristales y armazones que mejor van con tu graduación, tu cara y tu bolsillo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="kicker">Servicios</span>
+    <h2 class="h2">Todo lo que tus ojos necesitan</h2>
+    <p class="lead">Traé tu receta o consultanos: te orientamos sin vueltas.</p>
+    <div class="serv-grid">
+      <div class="serv rev"><div class="ico">👓</div><h3>Anteojos recetados</h3><p>Cristales de cerca, de lejos y multifocales, montados con precisión sobre tu receta.</p></div>
+      <div class="serv rev"><div class="ico">🕶️</div><h3>Anteojos de sol</h3><p>Protección UV real, también con graduación, para manejar, trabajar o pasear.</p></div>
+      <div class="serv rev"><div class="ico">👁️</div><h3>Lentes de contacto</h3><p>Asesoramiento para elegir la lente adecuada y aprender a usarla con seguridad.</p></div>
+      <div class="serv rev"><div class="ico">🔧</div><h3>Reparaciones y ajustes</h3><p>Se te aflojó la patilla o saltó un tornillo: pasá y lo resolvemos en el momento.</p></div>
+      <div class="serv rev"><div class="ico">🧒</div><h3>Anteojos para chicos</h3><p>Armazones resistentes y livianos para que los más chicos los usen de verdad.</p></div>
+      <div class="serv rev"><div class="ico">💳</div><h3>Obras sociales</h3><p>Consultanos por tu cobertura y te decimos al instante cómo usarla. <!-- [EDITABLE: listar obras sociales aceptadas] --></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <span class="kicker">Cómo trabajamos</span>
+    <h2 class="h2">De la receta al anteojo perfecto</h2>
+    <p class="lead">Cuatro pasos, cero apuro.</p>
+    <div class="pasos">
+      <div class="paso rev"><div class="n">01</div><h3>Nos visitás</h3><p>Venís con tu receta o tu consulta. Sin turno: la puerta está abierta.</p></div>
+      <div class="paso rev"><div class="n">02</div><h3>Te asesoramos</h3><p>Elegimos juntos cristales y armazón según tu graduación, tu uso y tu presupuesto.</p></div>
+      <div class="paso rev"><div class="n">03</div><h3>Montamos tus cristales</h3><p>Trabajo de óptica hecho con precisión, controlado antes de entregarte nada.</p></div>
+      <div class="paso rev"><div class="n">04</div><h3>Ajuste final</h3><p>Te lo calzamos, lo ajustamos y te esperamos las veces que necesites retocarlo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rese" id="resenas">
+  <div class="wrap">
+    <div style="text-align:center"><span class="kicker">Reseñas</span>
+    <h2 class="h2">Calificación perfecta, escrita por el barrio</h2></div>
+    <div class="rese-hero rev">
+      <div class="big-rating">5.0<small>/5</small></div>
+      <div class="st">★★★★★</div>
+      <p><b>80 reseñas en Google y ni una estrella menos.</b> No hace falta que te lo contemos nosotros: buscá "Óptica Morresi" en Google y leé lo que dicen los vecinos de Parque Patricios. Después venite, que te esperamos.</p>
+      <a class="btn btn-petrol" href="https://www.google.com/maps/search/%C3%93ptica+Morresi+C%C3%A1tulo+Castillo+2995" target="_blank" rel="noopener">Leer las reseñas en Google</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2 class="h2">Estamos en la esquina de siempre</h2>
+    <p class="lead">Cátulo Castillo 2995, Parque Patricios. Pasá cuando quieras o escribinos.</p>
+    <div class="cont-grid">
+      <div class="cont-card rev">
+        <div class="cont-item">
+          <div class="ci">📍</div>
+          <div><h4>Dirección</h4><p>Cátulo Castillo 2995, Parque Patricios, CABA</p></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📞</div>
+          <div><h4>Teléfono</h4><a href="tel:+541137894963">011 3789-4963</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📷</div>
+          <div><h4>Instagram</h4><a href="https://www.instagram.com/morresioptica/" target="_blank" rel="noopener">@morresioptica</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">🕐</div>
+          <div><h4>Horarios</h4><p>Lun a Vie: 10:00–13:00 y 16:00–19:00 · Sáb: 10:00–13:30</p></div>
+        </div>
+      </div>
+      <div class="mapa rev">
+        <iframe src="https://www.google.com/maps?q=%C3%93ptica+Morresi,+C%C3%A1tulo+Castillo+2995,+CABA,+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Cátulo Castillo 2995, Parque Patricios"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo disp">Óptica <span style="color:var(--coral)">Morresi</span></div>
+        <p>Óptica de barrio en Parque Patricios: anteojos recetados, lentes de contacto y anteojos de sol con calificación perfecta en Google.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#metodo">Cómo trabajamos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/morresioptica/" target="_blank" rel="noopener">@morresioptica</a></li>
+          <li><a href="tel:+541137894963">011 3789-4963</a></li>
+          <li>Cátulo Castillo 2995, CABA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Óptica Morresi · Parque Patricios, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/morresioptica/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="#fff" stroke="none"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

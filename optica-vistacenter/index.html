@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óptica Vistacenter — Óptica y contactología en Palermo | 5.0★ en Google</title>
+<meta name="description" content="Óptica Vistacenter: anteojos recetados, lentes de contacto y anteojos de sol en Cabello 3384, Palermo. Atención personalizada con calificación perfecta en Google y entregas rápidas.">
+<meta name="keywords" content="óptica Palermo, lentes de contacto Palermo, anteojos recetados Palermo, contactología CABA, óptica Cabello Palermo">
+<meta property="og:title" content="Óptica Vistacenter — Óptica y contactología en Palermo">
+<meta property="og:description" content="Atención personalizada y entregas rápidas en Cabello 3384, Palermo. Calificación perfecta en Google.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/optica-vistacenter/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#FBF5EF;
+  --crema2:#F3E9DF;
+  --espresso:#2A211B;
+  --espresso2:#3A2E25;
+  --terra:#C4572E;
+  --terra-osc:#A34423;
+  --salvia:#8FAE8B;
+  --txt:#463A31;
+  --mut:#8A7B6E;
+  --borde:#E8DCCE;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Gantari',sans-serif;background:var(--crema);color:var(--txt);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Gantari',sans-serif;letter-spacing:-.015em}
+.serif-it{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1100px,92%);margin:0 auto}
+section{padding:80px 0}
+.kicker{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:14px}
+.h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:800;color:var(--espresso);line-height:1.16}
+.lead{margin-top:14px;color:var(--mut);font-size:1.03rem;max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font-weight:700;font-size:.95rem;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-terra{background:var(--terra);color:#fff;box-shadow:0 12px 28px rgba(196,87,46,.32)}
+.btn-espresso{background:var(--espresso);color:var(--crema)}
+.btn-linea{border:1.5px solid var(--espresso);color:var(--espresso)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(251,245,239,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{height:66px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.15rem;color:var(--espresso);letter-spacing:.01em}
+.logo span{color:var(--terra)}
+.nav-links{display:none;list-style:none;gap:26px;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--terra)}
+.nav-cta{background:var(--terra);color:#fff !important;padding:10px 22px;border-radius:999px;font-size:.87rem;font-weight:700}
+@media(min-width:840px){.nav-links{display:flex}}
+
+/* HERO — tipografía grande + banda de métricas */
+.hero{padding:158px 0 80px;background:
+  radial-gradient(700px 340px at 90% -60px,rgba(196,87,46,.12),transparent 68%),
+  radial-gradient(500px 300px at -10% 30%,rgba(143,174,139,.16),transparent 65%),var(--crema)}
+.hero .rating-pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--borde);border-radius:999px;padding:9px 20px;font-size:.9rem;font-weight:600;color:var(--espresso);margin-bottom:26px;box-shadow:0 6px 18px rgba(42,33,27,.07)}
+.hero .st{color:#E9A23B;letter-spacing:2px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.3rem);font-weight:800;color:var(--espresso);line-height:1.04;max-width:840px}
+.hero h1 .serif-it{color:var(--terra);font-size:1.05em}
+.hero p.sub{margin:24px 0 32px;font-size:1.1rem;color:var(--mut);max-width:580px}
+.mets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:58px;max-width:760px}
+.met{background:#fff;border:1px solid var(--borde);border-radius:18px;padding:22px 20px}
+.met .n{font-weight:800;font-size:1.7rem;color:var(--terra)}
+.met .l{font-size:.83rem;color:var(--mut);margin-top:3px}
+@media(max-width:640px){.mets{grid-template-columns:1fr}}
+
+/* NOSOTROS */
+.nosotros{background:#fff}
+.dos-col{display:grid;gap:44px}
+@media(min-width:900px){.dos-col{grid-template-columns:1.05fr .95fr;align-items:center}}
+.editorial{font-size:1.35rem;font-weight:500;line-height:1.5;color:var(--espresso)}
+.editorial .serif-it{color:var(--terra);font-size:1.1em}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag{background:var(--crema);border:1px solid var(--borde);color:var(--espresso);border-radius:999px;padding:8px 18px;font-size:.85rem;font-weight:600}
+.nos-card{background:var(--crema);border:1px solid var(--borde);border-radius:24px;padding:38px}
+.nos-card h3{color:var(--espresso);font-size:1.16rem;margin-bottom:12px}
+.nos-card p{color:var(--mut);font-size:.95rem;margin-bottom:14px}
+.nos-card p b{color:var(--espresso)}
+
+/* SERVICIOS */
+.serv-grid{display:grid;gap:18px;margin-top:44px}
+@media(min-width:640px){.serv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.serv-grid{grid-template-columns:repeat(3,1fr)}}
+.serv{background:#fff;border:1px solid var(--borde);border-radius:20px;padding:30px 26px;transition:transform .2s,box-shadow .2s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(42,33,27,.10)}
+.serv .ico{width:50px;height:50px;border-radius:50%;background:rgba(143,174,139,.28);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:18px}
+.serv h3{font-size:1.07rem;color:var(--espresso);margin-bottom:8px}
+.serv p{font-size:.89rem;color:var(--mut)}
+
+/* EXPERIENCIA */
+.metodo{background:var(--espresso);color:var(--crema)}
+.metodo .h2{color:var(--crema)}
+.metodo .lead{color:#BCAE9F}
+.pasos{display:grid;gap:22px;margin-top:48px}
+@media(min-width:860px){.pasos{grid-template-columns:repeat(4,1fr)}}
+.paso{background:var(--espresso2);border:1px solid rgba(251,245,239,.12);border-radius:20px;padding:30px 26px}
+.paso .n{font-weight:800;font-size:2.1rem;color:var(--salvia)}
+.paso h3{font-size:1.04rem;margin:12px 0 8px;color:var(--crema)}
+.paso p{font-size:.88rem;color:#BCAE9F}
+
+/* RESEÑAS */
+.rese{background:#fff}
+.rese-grid{display:grid;gap:22px;margin-top:44px}
+@media(min-width:900px){.rese-grid{grid-template-columns:.9fr 1.1fr;align-items:stretch}}
+.rese-score{background:linear-gradient(160deg,rgba(196,87,46,.10),var(--crema) 70%);border:1px solid var(--borde);border-radius:24px;padding:44px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.big-rating{font-weight:800;font-size:4rem;color:var(--espresso);line-height:1}
+.big-rating small{font-size:1.3rem;color:var(--terra)}
+.rese-score .st{color:#E9A23B;font-size:1.4rem;letter-spacing:5px;margin:10px 0}
+.rese-score p{color:var(--mut);font-size:.95rem}
+.quote{background:var(--crema);border:1px solid var(--borde);border-radius:24px;padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.quote .serif-it{font-size:1.6rem;line-height:1.4;color:var(--espresso)}
+.quote .who{margin-top:18px;font-size:.88rem;font-weight:600;color:var(--mut)}
+.quote .who b{color:var(--terra)}
+.quote p.extra{margin-top:16px;font-size:.95rem;color:var(--mut)}
+
+/* CONTACTO */
+.contacto{background:var(--crema)}
+.cont-grid{display:grid;gap:36px;margin-top:44px}
+@media(min-width:920px){.cont-grid{grid-template-columns:.95fr 1.05fr}}
+.cont-card{background:#fff;border-radius:22px;padding:36px;border:1px solid var(--borde)}
+.cont-item{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--borde);align-items:flex-start}
+.cont-item:last-child{border-bottom:none}
+.cont-item .ci{width:42px;height:42px;flex:none;border-radius:12px;background:var(--crema2);display:flex;align-items:center;justify-content:center}
+.cont-item h4{font-size:.95rem;color:var(--espresso)}
+.cont-item p,.cont-item a{font-size:.92rem;color:var(--mut)}
+.cont-item a:hover{color:var(--terra)}
+.mapa{border-radius:22px;overflow:hidden;min-height:380px;border:1px solid var(--borde);box-shadow:0 20px 48px rgba(42,33,27,.13)}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* FOOTER */
+footer{background:var(--espresso);color:#BCAE9F;padding:56px 0 30px}
+.foot-grid{display:grid;gap:36px;padding-bottom:38px;border-bottom:1px solid rgba(251,245,239,.12)}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+footer .logo{color:var(--crema);font-size:1.2rem}
+footer p{font-size:.9rem;margin-top:12px;max-width:320px}
+footer h4{color:var(--crema);font-size:.95rem;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin-bottom:9px}
+footer a{font-size:.9rem}
+footer a:hover{color:var(--salvia)}
+.foot-base{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding-top:24px;font-size:.8rem;color:#8d7f71}
+
+/* FLOAT IG */
+.float-ig{position:fixed;right:22px;bottom:22px;z-index:80;width:62px;height:62px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(188,24,136,.4);animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,.45)}70%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 18px rgba(188,24,136,0)}100%{box-shadow:0 10px 26px rgba(188,24,136,.4),0 0 0 0 rgba(188,24,136,0)}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio">VISTA<span>CENTER</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">La experiencia</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a class="nav-cta" href="#contacto">Visitanos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="rating-pill"><span class="st">★★★★★</span> Calificación perfecta en Google</div>
+    <h1>Tu mirada, <span class="serif-it">bien atendida</span> en el corazón de Palermo</h1>
+    <p class="sub">Óptica y contactología en Cabello 3384: asesoramiento personalizado, entregas rápidas y ese trato de óptica de barrio que en Palermo ya casi no se consigue.</p>
+    <a class="btn btn-terra" href="https://www.instagram.com/optica_vistacenter_/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+    <a class="btn btn-linea" style="margin-left:10px" href="#servicios">Ver servicios</a>
+    <div class="mets">
+      <div class="met rev"><div class="n">5.0★</div><div class="l">Calificación en Google</div></div>
+      <div class="met rev"><div class="n">48 hs</div><div class="l">Clientes destacan la rapidez de entrega</div></div>
+      <div class="met rev"><div class="n">📍</div><div class="l">Cabello 3384, Palermo — CABA</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap dos-col">
+    <div class="rev">
+      <span class="kicker">Nosotros</span>
+      <h2 class="h2">Óptica de barrio, estándar de primera</h2>
+      <p class="editorial" style="margin-top:22px">En Vistacenter no atendemos números: atendemos <span class="serif-it">miradas</span>. Cada receta se trabaja con precisión y cada cliente se va con el anteojo o la lente que realmente necesita.</p>
+      <div class="tags">
+        <span class="tag">Anteojos recetados</span>
+        <span class="tag">Contactología</span>
+        <span class="tag">Anteojos de sol</span>
+        <span class="tag">Entrega rápida</span>
+        <span class="tag">Asesoramiento</span>
+      </div>
+    </div>
+    <div class="nos-card rev">
+      <h3>Por qué nos eligen en Palermo</h3>
+      <p>Entre tantas vidrieras, los clientes nos encuentran y se quedan por lo mismo: <b>atención personalizada de verdad y cumplimiento.</b></p>
+      <p>Las reseñas en Google lo resumen mejor que nosotros: expectativas cumplidas y entregas más rápidas de lo esperado.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="kicker">Servicios</span>
+    <h2 class="h2">Soluciones para cada mirada</h2>
+    <p class="lead">Traé tu receta y te asesoramos en el momento.</p>
+    <div class="serv-grid">
+      <div class="serv rev"><div class="ico">👓</div><h3>Anteojos recetados</h3><p>Monofocales y multifocales con cristales de calidad, montados con precisión.</p></div>
+      <div class="serv rev"><div class="ico">👁️</div><h3>Contactología</h3><p>Provisión y asesoramiento en lentes de contacto para empezar o renovar.</p></div>
+      <div class="serv rev"><div class="ico">🕶️</div><h3>Anteojos de sol</h3><p>Protección UV con estilo, también con tu graduación.</p></div>
+      <div class="serv rev"><div class="ico">⚡</div><h3>Entrega rápida</h3><p>Trabajamos para que tus anteojos y lentes estén listos lo antes posible.</p></div>
+      <div class="serv rev"><div class="ico">🔧</div><h3>Ajustes y reparaciones</h3><p>Calce, plaquetas y tornillos: pasá por el local y lo resolvemos.</p></div>
+      <div class="serv rev"><div class="ico">💳</div><h3>Obras sociales</h3><p>Consultanos por tu cobertura. <!-- [EDITABLE: listar obras sociales aceptadas] --></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <span class="kicker">La experiencia</span>
+    <h2 class="h2">Así de simple</h2>
+    <div class="pasos">
+      <div class="paso rev"><div class="n">01</div><h3>Vení o escribinos</h3><p>Por Instagram o directo al local de Cabello 3384, de lunes a viernes.</p></div>
+      <div class="paso rev"><div class="n">02</div><h3>Asesoramiento real</h3><p>Escuchamos qué necesitás y te proponemos opciones claras, sin empujarte nada.</p></div>
+      <div class="paso rev"><div class="n">03</div><h3>Manos a la obra</h3><p>Tu pedido se trabaja con precisión y tiempos que se cumplen.</p></div>
+      <div class="paso rev"><div class="n">04</div><h3>Listo para estrenar</h3><p>Retirás, probamos el calce y salís viendo Palermo con otros ojos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rese" id="resenas">
+  <div class="wrap">
+    <div style="text-align:center"><span class="kicker">Reseñas</span>
+    <h2 class="h2">Lo que dicen nuestros clientes</h2></div>
+    <div class="rese-grid">
+      <div class="rese-score rev">
+        <div class="big-rating">5.0<small>/5</small></div>
+        <div class="st">★★★★★</div>
+        <p>Calificación perfecta en Google. Buscá "Óptica Vistacenter" y leé todas las reseñas.</p>
+      </div>
+      <div class="quote rev">
+        <div class="serif-it">"Excelente atención personalizada, cumplieron con mis expectativas."</div>
+        <div class="who">Reseña de Google · <b>★★★★★</b></div>
+        <p class="extra">Otros clientes destacan la rapidez: anteojos y lentes de contacto entregados en 48 horas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="kicker">Contacto</span>
+    <h2 class="h2">Te esperamos en Cabello 3384</h2>
+    <p class="lead">A metros de Av. Scalabrini Ortiz, en pleno Palermo.</p>
+    <div class="cont-grid">
+      <div class="cont-card rev">
+        <div class="cont-item">
+          <div class="ci">📍</div>
+          <div><h4>Dirección</h4><p>Cabello 3384, Palermo, CABA</p></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📞</div>
+          <div><h4>Teléfono</h4><a href="tel:+541155054454">011 5505-4454</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">📷</div>
+          <div><h4>Instagram</h4><a href="https://www.instagram.com/optica_vistacenter_/" target="_blank" rel="noopener">@optica_vistacenter_</a></div>
+        </div>
+        <div class="cont-item">
+          <div class="ci">🕐</div>
+          <div><h4>Horarios</h4><p>Lun a Vie: 10:00–14:00 y 16:00–19:00</p></div>
+        </div>
+      </div>
+      <div class="mapa rev">
+        <iframe src="https://www.google.com/maps?q=%C3%93ptica+Vistacenter,+Cabello+3384,+CABA,+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Cabello 3384, Palermo"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">VISTA<span style="color:var(--terra)">CENTER</span></div>
+        <p>Óptica y contactología en Palermo: atención personalizada, entregas rápidas y calificación perfecta en Google.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">La experiencia</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/optica_vistacenter_/" target="_blank" rel="noopener">@optica_vistacenter_</a></li>
+          <li><a href="tel:+541155054454">011 5505-4454</a></li>
+          <li>Cabello 3384, Palermo, CABA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Óptica Vistacenter · Palermo, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-ig" href="https://www.instagram.com/optica_vistacenter_/" target="_blank" rel="noopener" aria-label="Escribinos por Instagram">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="#fff" stroke="none"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
