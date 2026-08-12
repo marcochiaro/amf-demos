@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Games — Tienda de TCG en Belgrano | Pokémon, Yu-Gi-Oh! y Magic</title>
+<meta name="description" content="Magic Games es la tienda de cartas coleccionables de Belgrano: Pokémon, Yu-Gi-Oh!, Magic, dados, accesorios y torneos. Av. Juramento 2984, CABA. 4.8★ en Google.">
+<meta property="og:title" content="Magic Games — El búnker TCG de Belgrano">
+<meta property="og:description" content="Cartas Pokémon, Yu-Gi-Oh! y Magic, accesorios para gamers y torneos. 4.8★ en Google. Av. Juramento 2984, Belgrano.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0E17;--panel:#131727;--panel2:#181D31;--borde:#232A44;--txt:#EEF0FA;--mut:#96A0BD;--vio:#8B5CF6;--vio2:#A78BFA;--cian:#37E0D8;--amar:#FFC93C;--tel:#37E0D8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--txt);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Bungee',cursive;font-weight:400;line-height:1.12}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+/* Nav */
+nav{position:sticky;top:0;z-index:90;background:rgba(11,14,23,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:14px 22px}
+.logo{font-family:'Bungee',cursive;font-size:1.15rem;color:var(--txt);text-decoration:none;letter-spacing:.01em}
+.logo span{color:var(--vio2)}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--cian)}
+.nav-cta{background:var(--vio);color:#fff!important;padding:9px 18px;border-radius:10px;font-weight:600!important}
+.nav-cta:hover{background:var(--vio2)}
+@media(max-width:780px){.nav-links a:not(.nav-cta){display:none}}
+/* Hero */
+header.hero{position:relative;padding:96px 0 76px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-140px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.22),transparent 62%)}
+.hero::after{content:"";position:absolute;bottom:-260px;left:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(55,224,216,.10),transparent 62%)}
+.hero .wrap{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--borde);background:var(--panel);border-radius:50px;padding:8px 18px;font-size:.82rem;color:var(--mut);margin-bottom:26px}
+.badge b{color:var(--amar);font-weight:700}
+.hero h1{font-size:clamp(2rem,6.4vw,3.7rem);letter-spacing:.005em;max-width:820px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--vio2)}
+.hero p.sub{font-size:1.12rem;color:var(--mut);max-width:600px;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 28px;border-radius:12px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-tel{background:var(--cian);color:#062A28}
+.btn-tel:hover{background:#5BEAE3}
+.btn-fb{border:1px solid var(--borde);background:var(--panel);color:var(--txt);margin-left:10px}
+.btn-fb:hover{border-color:var(--vio2)}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:42px}
+.pill{border:1px solid var(--borde);background:var(--panel);color:var(--mut);border-radius:50px;padding:8px 16px;font-size:.82rem;font-weight:500}
+.pill i{font-style:normal;margin-right:6px}
+/* Secciones */
+section{padding:82px 0}
+.tag{color:var(--cian);font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-family:'Outfit',sans-serif}
+.sec-head{margin-bottom:42px;max-width:640px}
+.sec-head h2{font-size:clamp(1.5rem,3.8vw,2.3rem);margin-top:12px;letter-spacing:.005em}
+.sec-head p{color:var(--mut);margin-top:12px}
+/* Nosotros */
+.nos{background:var(--panel);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.nos-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.nos p.lead{font-size:1.16rem;color:var(--txt);font-weight:300}
+.nos p.lead strong{font-weight:600;color:var(--vio2)}
+.nos p+p{margin-top:16px;color:var(--mut);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{border:1px solid var(--borde);background:var(--bg);border-radius:10px;padding:11px 16px;font-size:.87rem;color:var(--txt);font-weight:500}
+.tags span i{font-style:normal;margin-right:7px}
+/* Servicios */
+.serv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.serv{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:26px 24px;transition:border-color .18s,transform .18s}
+.serv:hover{border-color:var(--vio);transform:translateY(-4px)}
+.serv .ico{width:46px;height:46px;border-radius:12px;background:rgba(139,92,246,.14);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:16px}
+.serv h3{font-size:.98rem;margin-bottom:8px;letter-spacing:.01em}
+.serv p{font-size:.88rem;color:var(--mut)}
+/* Pasos */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.paso{border-top:2px solid var(--borde);padding-top:20px}
+.paso .num{font-family:'Bungee',cursive;font-size:.8rem;color:var(--cian);letter-spacing:.1em}
+.paso h3{font-size:.95rem;margin:10px 0 8px;letter-spacing:.01em}
+.paso p{font-size:.87rem;color:var(--mut)}
+/* Reseñas */
+.rese{background:var(--panel);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.rese-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card-r{background:var(--bg);border:1px solid var(--borde);border-radius:16px;padding:24px}
+.stars{color:var(--amar);letter-spacing:2px;font-size:.95rem;margin-bottom:12px}
+.card-r p{font-size:.93rem;color:var(--txt)}
+.card-r .who{margin-top:14px;font-size:.82rem;color:var(--mut);font-weight:500}
+.g-note{margin-top:26px;font-size:.85rem;color:var(--mut)}
+.g-note b{color:var(--amar)}
+/* Contacto */
+.cont-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+@media(max-width:820px){.cont-grid{grid-template-columns:1fr}}
+.dato{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--borde)}
+.dato .ic{width:40px;height:40px;border-radius:11px;background:rgba(55,224,216,.12);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.dato h3{font-size:.85rem;letter-spacing:.02em;margin-bottom:3px}
+.dato p,.dato a{font-size:.92rem;color:var(--mut);text-decoration:none}
+.dato a:hover{color:var(--cian)}
+.mapa{border:1px solid var(--borde);border-radius:16px;overflow:hidden;min-height:340px}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:grayscale(.25) contrast(1.05)}
+/* Footer */
+footer{border-top:1px solid var(--borde);padding:46px 0 90px;background:var(--panel)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px;align-items:flex-start}
+.foot .cols{display:flex;gap:44px;flex-wrap:wrap}
+.foot h4{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:12px;font-family:'Outfit',sans-serif;font-weight:600}
+.foot ul{list-style:none}
+.foot li{margin-bottom:8px}
+.foot a{color:var(--txt);text-decoration:none;font-size:.9rem}
+.foot a:hover{color:var(--cian)}
+.credit{margin-top:36px;font-size:.78rem;color:var(--mut)}
+/* Botón flotante */
+.float-call{position:fixed;bottom:22px;right:22px;z-index:99;width:60px;height:60px;border-radius:50%;background:var(--cian);display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 8px 22px rgba(55,224,216,.35);animation:ring 2.2s infinite}
+.float-call svg{width:28px;height:28px;fill:#062A28}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(55,224,216,.45)}70%{box-shadow:0 0 0 16px rgba(55,224,216,0)}100%{box-shadow:0 0 0 0 rgba(55,224,216,0)}}
+.rev{opacity:0;transform:translateY(18px);transition:opacity .5s,transform .5s}
+.rev.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">MAGIC<span>GAMES</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Qué hay</a></li>
+      <li><a href="#experiencia">La experiencia</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="tel:+541147063190">Llamanos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">★ <b>4.8 en Google</b>&nbsp;·&nbsp;la tienda TCG de Belgrano</div>
+    <h1>El búnker de <em>cartas</em> que Belgrano conoce de memoria</h1>
+    <p class="sub">Pokémon, Yu-Gi-Oh! y Magic: singles, sellado, dados, accesorios y mesa de torneo. En Av. Juramento 2984, atendido por sus dueños desde siempre.</p>
+    <a class="btn btn-tel" href="tel:+541147063190">📞 Llamanos: 4706-3190</a>
+    <a class="btn btn-fb" href="https://www.facebook.com/people/Magic-Games-II/100063468282632/" target="_blank" rel="noopener">Seguinos en Facebook</a>
+    <div class="pills">
+      <span class="pill"><i>🃏</i>Pokémon TCG</span>
+      <span class="pill"><i>⚔️</i>Yu-Gi-Oh!</span>
+      <span class="pill"><i>🔮</i>Magic: The Gathering</span>
+      <span class="pill"><i>🎲</i>Dados & rol</span>
+      <span class="pill"><i>🏆</i>Torneos</span>
+    </div>
+  </div>
+</header>
+
+<section class="nos" id="nosotros">
+  <div class="wrap nos-grid">
+    <div class="rev">
+      <span class="tag">Nosotros</span>
+      <h2 style="font-size:clamp(1.5rem,3.8vw,2.2rem);margin:12px 0 20px">Una tienda chica con un mundo adentro</h2>
+      <p class="lead">Magic Games es de esos locales que ya no abundan: <strong>los dueños te atienden, te reconocen y se acuerdan de qué jugás</strong>, aunque hayan pasado años desde tu última visita.</p>
+      <p>Especializada en juegos de cartas coleccionables, es punto de encuentro de la comunidad TCG de la zona norte de CABA: se arman torneos, se comparten mazos y siempre hay alguien con quien hablar de la última expansión. Además hay juguetes de licencia, accesorios para gamers y artículos de rol.</p>
+    </div>
+    <div class="tags rev">
+      <span><i>🃏</i>Singles y sellado</span>
+      <span><i>🏆</i>Torneos de Pokémon y Yu-Gi-Oh!</span>
+      <span><i>🎲</i>Dados de rol de buena marca</span>
+      <span><i>📦</i>Carpetas, fundas y protectores</span>
+      <span><i>🧸</i>Juguetes de licencia</span>
+      <span><i>🛒</i>Comprá online y retirá en el local</span>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Qué hay</span>
+      <h2>Todo lo que un jugador busca</h2>
+      <p>Del mazo competitivo al regalo para el sobrino fan de Pikachu.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv rev"><div class="ico">🃏</div><h3>Cartas TCG</h3><p>Pokémon, Yu-Gi-Oh! y Magic: singles, mazos y producto sellado de las principales franquicias.</p></div>
+      <div class="serv rev"><div class="ico">🏆</div><h3>Torneos</h3><p>Mesa de juego y torneos de las comunidades Pokémon, Yu-Gi-Oh! y Magic. Consultá el calendario en el local.</p></div>
+      <div class="serv rev"><div class="ico">🎲</div><h3>Rol y dados</h3><p>Dados de marcas de calidad y accesorios para juegos de rol, de los difíciles de conseguir.</p></div>
+      <div class="serv rev"><div class="ico">📦</div><h3>Accesorios</h3><p>Fundas, carpetas, protectores, deck boxes y todo para cuidar tu colección como se debe.</p></div>
+      <div class="serv rev"><div class="ico">🧸</div><h3>Juguetes & coleccionables</h3><p>Juguetes de licencia e importados: los que los chicos ven en las publicidades.</p></div>
+      <div class="serv rev"><div class="ico">🛒</div><h3>Venta online</h3><p>Comprá por MercadoLibre y retirá en el local, con la misma atención de siempre.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">La experiencia</span>
+      <h2>Así funciona Magic Games</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso rev"><div class="num">PASO 01</div><h3>Caé por el local</h3><p>Av. Juramento 2984, a metros de Av. Cabildo. De lunes a sábado desde las 11.</p></div>
+      <div class="paso rev"><div class="num">PASO 02</div><h3>Contanos qué jugás</h3><p>Pokémon, Yu-Gi-Oh!, Magic o rol: los dueños conocen cada juego y te asesoran sin apuro.</p></div>
+      <div class="paso rev"><div class="num">PASO 03</div><h3>Armá tu mazo</h3><p>Singles, sellado y accesorios a precios que las reseñas describen como de los mejores de Buenos Aires.</p></div>
+      <div class="paso rev"><div class="num">PASO 04</div><h3>Sumate a la mesa</h3><p>Participá de los torneos y conocé a la comunidad que hace años elige este búnker.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rese" id="resenas">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Reseñas reales</span>
+      <h2>Lo que dicen en Google</h2>
+    </div>
+    <div class="rese-grid">
+      <div class="card-r rev"><div class="stars">★★★★★</div><p>"Atención muy buena y detalles como reconocer clientes viejos después de mucho tiempo hacen que te sientas muy cómodo."</p><div class="who">Rodrigo — Google</div></div>
+      <div class="card-r rev"><div class="stars">★★★★★</div><p>"Excelente juguetería especializada en cartas Pokémon, Yu-Gi-Oh, Magic etc. Realizan torneos, la atención es impecable."</p><div class="who">Adrián — Google</div></div>
+      <div class="card-r rev"><div class="stars">★★★★★</div><p>"Voy cada tanto y el trato siempre es excelente, son los mejores precios que he visto en Buenos Aires."</p><div class="who">Ricardo — Google</div></div>
+      <div class="card-r rev"><div class="stars">★★★★★</div><p>"Sus dueños siempre amorosos y gentiles, el único lugar donde consigo dados para rol de buena marca."</p><div class="who">Arielle — Google</div></div>
+    </div>
+    <p class="g-note rev">⭐ Calificación <b>4.8 de 5</b> en Google, sobre 17 reseñas públicas.</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <span class="tag">Contacto</span>
+      <h2>Vení a conocer el búnker</h2>
+    </div>
+    <div class="cont-grid">
+      <div class="rev">
+        <div class="dato"><div class="ic">📍</div><div><h3>DIRECCIÓN</h3><p>Av. Juramento 2984, Belgrano, CABA<br>(a metros de Av. Cabildo)</p></div></div>
+        <div class="dato"><div class="ic">📞</div><div><h3>TELÉFONO</h3><a href="tel:+541147063190">(011) 4706-3190</a></div></div>
+        <div class="dato"><div class="ic">🕐</div><div><h3>HORARIOS</h3><p>Lunes a sábado, 11:00 a 19:00 hs</p></div></div>
+        <div class="dato"><div class="ic">👍</div><div><h3>FACEBOOK</h3><a href="https://www.facebook.com/people/Magic-Games-II/100063468282632/" target="_blank" rel="noopener">Magic Games II</a></div></div>
+      </div>
+      <div class="mapa rev">
+        <iframe src="https://www.google.com/maps?q=Magic+Games,+Av.+Juramento+2984,+Belgrano,+CABA&output=embed" loading="lazy" title="Mapa de Magic Games"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#">MAGIC<span>GAMES</span></a>
+      <p style="color:var(--mut);font-size:.88rem;margin-top:12px;max-width:280px">La tienda de cartas coleccionables de Belgrano. Av. Juramento 2984, CABA.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Qué hay</a></li>
+          <li><a href="#experiencia">La experiencia</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+541147063190">(011) 4706-3190</a></li>
+          <li><a href="https://www.facebook.com/people/Magic-Games-II/100063468282632/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap credit">Demo de diseño — AMF Studio · Datos públicos verificados a agosto 2026</div>
+</footer>
+
+<a class="float-call" href="tel:+541147063190" aria-label="Llamar a Magic Games">
+  <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
+</a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
