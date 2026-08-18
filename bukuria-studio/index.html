@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bukuria Studio — Uñas, cejas y pestañas en Villa Urquiza</title>
+<meta name="description" content="Bukuria Studio: salón de uñas, cejas y pestañas en Villa Urquiza (Blanco Encalada 4880, CABA). Kapping, esculpidas, soft gel, laminado de cejas y lash lifting. Turnos por WhatsApp.">
+<meta property="og:title" content="Bukuria Studio — Uñas, cejas y pestañas en Villa Urquiza">
+<meta property="og:description" content="Manicuría, nail art, cejas y pestañas con estética propia en Villa Urquiza. Reservá tu turno por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --espuma:#eef5f9; --agua:#d3e6f0; --mar:#2a6f97; --mar-deep:#1c4d6e;
+  --coral:#ef7b8b; --coral-deep:#d55f70; --noche:#12303f; --gris:#5d7484; --blanco:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Karla',sans-serif;color:var(--noche);background:var(--espuma);line-height:1.65}
+h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(238,245,249,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--agua)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'DM Serif Display',serif;font-size:1.4rem;text-decoration:none;color:var(--mar-deep)}
+.logo span{color:var(--coral)}
+.nav-links{display:none;gap:26px;list-style:none}
+.nav-links a{text-decoration:none;font-size:.95rem;color:var(--gris);transition:color .2s}
+.nav-links a:hover{color:var(--mar)}
+.nav-cta{background:var(--mar);color:#fff;padding:9px 18px;border-radius:10px;text-decoration:none;font-size:.9rem;font-weight:700;transition:background .2s}
+.nav-cta:hover{background:var(--mar-deep)}
+@media(min-width:820px){.nav-links{display:flex}}
+/* HERO */
+.hero{padding:128px 0 0;background:
+  radial-gradient(900px 420px at 85% -10%, rgba(239,123,139,.16), transparent 60%),
+  linear-gradient(180deg, var(--espuma), var(--agua))}
+.hero-in{display:grid;gap:36px;padding-bottom:70px}
+@media(min-width:860px){.hero-in{grid-template-columns:1.1fr .9fr;align-items:center}}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mar);font-weight:700;margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,3.6rem);color:var(--noche);margin-bottom:16px}
+.hero h1 em{font-style:italic;color:var(--mar)}
+.hero .lead{font-size:1.12rem;color:var(--gris);max-width:520px;margin-bottom:28px}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:12px;text-decoration:none;font-weight:700;font-size:1rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.3)}
+.btn-ig{background:var(--noche);color:#fff}
+.shell-card{background:var(--blanco);border-radius:24px;padding:32px;box-shadow:0 24px 60px rgba(28,77,110,.16)}
+.shell-card h3{color:var(--mar-deep);font-size:1.2rem;margin-bottom:14px}
+.shell-card ul{list-style:none}
+.shell-card li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--agua);font-size:.97rem;color:var(--gris)}
+.shell-card li:last-child{border-bottom:none}
+.shell-card li::before{content:"🐚";font-size:.95rem}
+/* SECTIONS */
+section{padding:76px 0}
+.sec-head{max-width:660px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(1.8rem,3.8vw,2.5rem);margin:8px 0 12px}
+.sec-head p{color:var(--gris)}
+/* NOSOTRAS */
+.about{background:var(--blanco)}
+.about-grid{display:grid;gap:34px}
+@media(min-width:840px){.about-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+.editorial{font-family:'DM Serif Display',serif;font-size:1.4rem;line-height:1.5}
+.editorial strong{color:var(--coral-deep);font-weight:400}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tag{background:var(--espuma);border:1px solid var(--agua);border-radius:10px;padding:8px 15px;font-size:.85rem;color:var(--mar-deep);font-weight:700}
+.about-aside{background:linear-gradient(160deg,var(--mar),var(--mar-deep));border-radius:22px;color:#fff;padding:30px}
+.about-aside h3{font-size:1.15rem;margin-bottom:12px}
+.about-aside p{font-size:.95rem;opacity:.92;margin-bottom:10px}
+/* SERVICIOS */
+.serv-grid{display:grid;gap:18px}
+@media(min-width:640px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.serv-grid{grid-template-columns:repeat(3,1fr)}}
+.serv{background:var(--blanco);border-radius:18px;padding:26px;border:1px solid var(--agua);transition:transform .18s, box-shadow .18s}
+.serv:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(28,77,110,.10)}
+.serv .ico{font-size:1.7rem;display:block;margin-bottom:12px}
+.serv h3{font-size:1.12rem;margin-bottom:8px;color:var(--mar-deep)}
+.serv p{font-size:.93rem;color:var(--gris)}
+/* METODO */
+.metodo{background:var(--noche);color:var(--espuma)}
+.metodo .kicker{color:var(--coral)}
+.metodo .sec-head p{color:#9db3c4}
+.steps{display:grid;gap:20px}
+@media(min-width:820px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:rgba(238,245,249,.05);border:1px solid rgba(211,230,240,.18);border-radius:18px;padding:24px}
+.step .num{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--coral)}
+.step h3{font-size:1.05rem;margin:10px 0 8px}
+.step p{font-size:.9rem;color:#9db3c4}
+/* RESEÑAS honest */
+.resenas{background:var(--blanco)}
+.rev-honest{display:grid;gap:24px}
+@media(min-width:840px){.rev-honest{grid-template-columns:1.05fr .95fr;align-items:center}}
+.rev-copy h3{font-size:1.5rem;margin-bottom:12px}
+.rev-copy p{color:var(--gris);margin-bottom:14px}
+.rev-cta{background:var(--espuma);border:1px solid var(--agua);border-radius:22px;padding:30px;text-align:center}
+.rev-cta .big{font-size:2.2rem;margin-bottom:8px}
+.rev-cta p{color:var(--gris);margin-bottom:18px}
+/* CONTACTO */
+.contacto{background:var(--agua)}
+.cont-grid{display:grid;gap:28px}
+@media(min-width:840px){.cont-grid{grid-template-columns:.9fr 1.1fr}}
+.cont-card{background:var(--blanco);border-radius:22px;padding:30px}
+.cont-card h3{font-size:1.2rem;color:var(--mar-deep);margin-bottom:6px}
+.cont-card>p{color:var(--gris);margin-bottom:16px;font-size:.95rem}
+.cont-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:13px;font-size:.97rem}
+.map-frame{border-radius:22px;overflow:hidden;min-height:320px;box-shadow:0 18px 44px rgba(28,77,110,.18)}
+.map-frame iframe{width:100%;height:100%;min-height:320px;border:0}
+/* FOOTER */
+footer{background:var(--noche);color:#9db3c4;padding:46px 0 30px}
+.foot-grid{display:grid;gap:26px;margin-bottom:30px}
+@media(min-width:820px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+footer .logo{color:var(--espuma)}
+footer h4{color:var(--espuma);font-size:.9rem;margin-bottom:12px;letter-spacing:.08em;text-transform:uppercase}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{text-decoration:none;font-size:.92rem}
+footer a:hover{color:var(--coral)}
+.foot-bottom{border-top:1px solid rgba(211,230,240,.15);padding-top:20px;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+/* WA FLOAT */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.45);text-decoration:none}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ring 1.8s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.75);opacity:0}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#inicio">Bukuria<span>·</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotras">Nosotras</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#resenas">Clientas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/5491123922378?text=Hola%20Bukuria!%20Quiero%20reservar%20un%20turno%20%F0%9F%90%9A" target="_blank" rel="noopener">Reservar</a>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap hero-in">
+    <div>
+      <span class="kicker">Uñas · Cejas · Pestañas — Villa Urquiza</span>
+      <h1>Belleza con <em>identidad de mar</em>, en tu barrio.</h1>
+      <p class="lead">Bukuria es un studio de manicuría, cejas y pestañas en Villa Urquiza: kapping, esculpidas, soft gel, nail art, laminado de cejas y lash lifting, con estética propia y turnos sin espera.</p>
+      <div class="btn-row">
+        <a class="btn btn-wa" href="https://wa.me/5491123922378?text=Hola%20Bukuria!%20Quiero%20reservar%20un%20turno%20%F0%9F%90%9A" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/somosbukuria" target="_blank" rel="noopener">Ver trabajos en IG</a>
+      </div>
+    </div>
+    <aside class="shell-card">
+      <h3>Lo que podés hacerte hoy</h3>
+      <ul>
+        <li>Kapping o esculpidas con terminación de autor</li>
+        <li>Semipermanente + nail art (francesitas, chrome, aura)</li>
+        <li>Laminado de cejas con botox</li>
+        <li>Lash lifting con nutrición</li>
+        <li>Belleza de pies completa</li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<section class="about" id="nosotras">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Nosotras</span>
+      <h2>Un ritual, no un trámite.</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p class="editorial">En Bukuria cada detalle está pensado: desde el diseño que elegís por WhatsApp hasta la terminación de cada uña. Trabajamos <strong>con seña y turnos reservados</strong> para dedicarle a tu set el tiempo que merece — sin apuro y sin sala de espera llena.</p>
+        <div class="tags">
+          <span class="tag">Manicuría</span>
+          <span class="tag">Nail art</span>
+          <span class="tag">Esculpidas</span>
+          <span class="tag">Soft gel</span>
+          <span class="tag">Cejas</span>
+          <span class="tag">Pestañas</span>
+          <span class="tag">Pedicuría</span>
+        </div>
+      </div>
+      <div class="about-aside">
+        <h3>¿Por qué Bukuria?</h3>
+        <p>Diseños personalizados: mandanos tu referencia y lo adaptamos a tus uñas.</p>
+        <p>Descuentos por pago en efectivo o transferencia en varios servicios.</p>
+        <p>Estudio íntimo en Villa Urquiza, a pasos de Blanco Encalada y Av. Triunvirato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Servicios</span>
+      <h2>Manos, pies y mirada.</h2>
+      <p>Consultá valores actualizados y disponibilidad por WhatsApp — algunos servicios requieren seña.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv"><span class="ico">💅</span><h3>Manicuría</h3><p>Kapping, semipermanente o esmaltado tradicional, siempre con prolijidad de studio.</p></div>
+      <div class="serv"><span class="ico">🧜‍♀️</span><h3>Nail art & diseños</h3><p>Efecto matte, francesas, chrome, aura y diseños a pedido para que tu set sea único.</p></div>
+      <div class="serv"><span class="ico">✨</span><h3>Esculpidas</h3><p>Sets de acrílico o gel con estructura, largo y forma a medida, más mantenimiento.</p></div>
+      <div class="serv"><span class="ico">🦶</span><h3>Pedicuría & belleza de pies</h3><p>Tratamiento completo con esmaltado a elección, para pies cuidados de verdad.</p></div>
+      <div class="serv"><span class="ico">🤎</span><h3>Cejas</h3><p>Perfilado y laminado con botox: cejas ordenadas, con forma y naturales.</p></div>
+      <div class="serv"><span class="ico">👁️</span><h3>Lash lifting</h3><p>Curvatura y efecto de pestañas despiertas, con nutrición incluida.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="metodo" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">La experiencia</span>
+      <h2>De tu idea al set terminado.</h2>
+      <p>Cuatro pasos, cero vueltas.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Elegí tu servicio</h3><p>Mirá los trabajos en Instagram y contanos qué te gustaría hacerte.</p></div>
+      <div class="step"><div class="num">02</div><h3>Reservá con seña</h3><p>Coordinamos turno por WhatsApp; la seña asegura tu lugar y tu horario.</p></div>
+      <div class="step"><div class="num">03</div><h3>Sesión en el studio</h3><p>Te recibimos en Blanco Encalada 4880 (timbre 903) y trabajamos tu set con calma.</p></div>
+      <div class="step"><div class="num">04</div><h3>Mantenimiento</h3><p>Te sugerimos la fecha ideal de retoque para que siempre luzca recién hecho.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="resenas" id="resenas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Clientas</span>
+      <h2>Los trabajos hablan solos.</h2>
+    </div>
+    <div class="rev-honest">
+      <div class="rev-copy">
+        <h3>Mirá los resultados reales, no promesas.</h3>
+        <p>Preferimos que juzgues con tus propios ojos: en el Instagram de Bukuria están los sets, cejas y pestañas hechos en el studio, publicados tal cual salen.</p>
+        <p>Ahí también vas a encontrar las historias y comentarios de clientas reales del barrio.</p>
+      </div>
+      <div class="rev-cta">
+        <div class="big">🐚🪸🧜‍♀️</div>
+        <p>Seguinos y mirá los últimos trabajos publicados.</p>
+        <a class="btn btn-ig" href="https://instagram.com/somosbukuria" target="_blank" rel="noopener">@somosbukuria en Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Contacto</span>
+      <h2>Te esperamos en el studio.</h2>
+    </div>
+    <div class="cont-grid">
+      <div class="cont-card">
+        <h3>Bukuria Studio</h3>
+        <p>Atención con turno previo.</p>
+        <div class="cont-item"><span>📍</span><div><strong>Blanco Encalada 4880</strong>, timbre 903<br>Villa Urquiza, CABA</div></div>
+        <div class="cont-item"><span>🕘</span><div>Martes a viernes · 10 a 19:30 hs<br>Sábados · 10 a 17 hs</div></div>
+        <div class="cont-item"><span>💬</span><div><a href="https://wa.me/5491123922378" target="_blank" rel="noopener">+54 11 2392-2378 (WhatsApp)</a></div></div>
+        <div class="cont-item"><span>📷</span><div><a href="https://instagram.com/somosbukuria" target="_blank" rel="noopener">@somosbukuria</a></div></div>
+        <div class="btn-row" style="margin-top:18px">
+          <a class="btn btn-wa" href="https://wa.me/5491123922378?text=Hola%20Bukuria!%20Quiero%20reservar%20un%20turno%20%F0%9F%90%9A" target="_blank" rel="noopener">Reservar turno</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Blanco%20Encalada%204880%2C%20Villa%20Urquiza%2C%20CABA&output=embed" loading="lazy" title="Mapa Bukuria Studio" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#inicio">Bukuria<span>·</span></a>
+        <p style="margin-top:12px;font-size:.92rem">Studio de uñas, cejas y pestañas en Villa Urquiza. Estética propia, turnos reservados.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotras">Nosotras</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#resenas">Clientas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5491123922378" target="_blank" rel="noopener">WhatsApp: +54 11 2392-2378</a></li>
+          <li><a href="https://instagram.com/somosbukuria" target="_blank" rel="noopener">Instagram: @somosbukuria</a></li>
+          <li>Blanco Encalada 4880 · timbre 903</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Bukuria Studio · Villa Urquiza, Buenos Aires</span>
+      <span>Demo web por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491123922378?text=Hola%20Bukuria!%20Quiero%20reservar%20un%20turno%20%F0%9F%90%9A" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 2 6.5L4 29l7.7-2c1.8 1 3.8 1.5 6 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.5l-.4-.2-4.6 1.2 1.2-4.4-.3-.4c-1.1-1.6-1.7-3.5-1.7-5.5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 9.8-10 9.8zm5.5-7.3c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+</body>
+</html>
