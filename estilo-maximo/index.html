@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estilo Máximo — Barbería & Peluquería en Villa Devoto</title>
+<meta name="description" content="Estilo Máximo Barbería & Peluquería en Griveo 3730, Villa Devoto. Cortes, fades y barba con turnos por WhatsApp. Más de 300 opiniones en línea.">
+<meta property="og:title" content="Estilo Máximo — Barbería & Peluquería · Villa Devoto">
+<meta property="og:description" content="Cortes, fades y barba en Griveo 3730. Turnos por WhatsApp, sin vueltas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marcochiaro.github.io/amf-demos/estilo-maximo/">
+<meta property="og:locale" content="es_AR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{--carbon:#141115;--panel:#1D191F;--panel2:#252028;--borde:#332C36;--marfil:#F4F0EA;--mut:#9C939E;--rojo:#F43F2E;--rojo2:#FF6A54;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',sans-serif;background:var(--carbon);color:var(--marfil);line-height:1.65;overflow-x:hidden}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,.nav-logo,.flogo,.num-big{font-family:'Archivo Black',sans-serif;letter-spacing:-.01em}
+h3{font-family:'Archivo',sans-serif;font-weight:700}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:100;background:rgba(20,17,21,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.nav-logo{font-size:1.2rem}.nav-logo span{color:var(--rojo)}
+nav ul{display:flex;gap:22px;list-style:none;align-items:center;font-size:.92rem}
+nav ul a:hover{color:var(--rojo2)}
+.nav-cta{background:var(--rojo);color:#fff;font-weight:700;padding:8px 16px;border-radius:999px}
+.nav-cta:hover{background:var(--rojo2);color:#fff}
+@media(max-width:760px){nav ul li:not(:last-child){display:none}}
+.hero{padding:88px 0 60px;background:radial-gradient(900px 480px at 88% -12%,rgba(244,63,46,.2),transparent 62%),linear-gradient(180deg,var(--carbon),#0F0D10)}
+.chip{display:inline-block;background:var(--panel);border:1px solid var(--borde);border-radius:999px;padding:6px 14px;font-size:.85rem;margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,6.4vw,3.8rem);line-height:1.05;max-width:800px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--rojo)}
+.sub{margin:20px 0 30px;color:var(--mut);font-size:1.08rem;max-width:620px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;font-size:1rem;transition:.2s}
+.btn-wa{background:var(--wa);color:#07120B}
+.btn-wa:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.btn-line{border:1.5px solid var(--borde);color:var(--marfil);margin-left:10px}
+.btn-line:hover{border-color:var(--rojo)}
+.datos{display:flex;gap:34px;margin-top:42px;flex-wrap:wrap}
+.dato .num-big{font-size:1.9rem;color:var(--rojo2)}.dato .num-big span{font-size:1.05rem}
+.dato .l{color:var(--mut);font-size:.86rem}
+section{padding:72px 0}
+.eyebrow{color:var(--rojo);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem}
+.titulo{font-size:clamp(1.6rem,4vw,2.3rem);margin:10px 0 18px;text-transform:uppercase}
+.nosotros{background:#0F0D10}
+.nos-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
+@media(max-width:820px){.nos-grid{grid-template-columns:1fr}}
+.lead{font-size:1.12rem;margin-bottom:14px}
+.cuerpo{color:var(--mut);margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.tag{background:var(--panel);border:1px solid var(--borde);border-radius:999px;padding:7px 14px;font-size:.85rem}
+.nos-card{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:26px}
+.nos-card h3{margin-bottom:14px;color:var(--rojo2)}
+.nos-card ul{list-style:none}
+.nos-card li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--borde);font-size:.92rem}
+.nos-card li:last-child{border-bottom:0}
+.nos-card li span:first-child{color:var(--mut);white-space:nowrap}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+@media(max-width:820px){.serv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr}}
+.serv{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:24px;transition:.2s}
+.serv:hover{transform:translateY(-4px);border-color:var(--rojo)}
+.serv .ic{font-size:1.6rem;margin-bottom:10px}
+.serv h3{font-size:1.05rem;margin-bottom:8px}
+.serv p{color:var(--mut);font-size:.92rem}
+.metodo{background:#0F0D10}
+.intro{color:var(--mut);max-width:560px;margin-bottom:26px}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:820px){.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pasos{grid-template-columns:1fr}}
+.paso{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:22px}
+.paso .num-big{font-size:1.5rem;color:var(--rojo);margin-bottom:8px}
+.paso h3{font-size:1rem;margin-bottom:6px}
+.paso p{color:var(--mut);font-size:.88rem}
+.res-box{background:var(--panel);border:1px solid var(--borde);border-radius:20px;padding:40px 30px;text-align:center;max-width:680px;margin:26px auto 0}
+.res-box .stars{color:var(--rojo2);letter-spacing:4px;font-size:1.4rem;margin-bottom:14px}
+.res-box p{color:var(--mut);max-width:480px;margin:0 auto 22px}
+.res-box .btn{margin:4px 6px}
+.contacto{background:#0F0D10}
+.con-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:38px;margin-top:26px}
+@media(max-width:820px){.con-grid{grid-template-columns:1fr}}
+.con-item{display:flex;gap:14px;margin-bottom:20px}
+.con-item .ci{font-size:1.3rem}
+.con-item h4{font-size:.95rem;margin-bottom:2px}
+.con-item p,.con-item a{color:var(--mut);font-size:.92rem}
+.con-item a:hover{color:var(--rojo2)}
+.mapa{border-radius:16px;overflow:hidden;border:1px solid var(--borde);min-height:320px}
+.mapa iframe{width:100%;height:100%;min-height:320px;border:0}
+footer{background:#0B090C;border-top:1px solid var(--borde);padding:48px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+@media(max-width:680px){.foot-grid{grid-template-columns:1fr}}
+.flogo{font-size:1.3rem}.flogo span{color:var(--rojo)}
+footer ul{list-style:none}
+footer li{margin-bottom:9px;font-size:.92rem}
+footer li a{color:var(--mut)}footer li a:hover{color:var(--rojo2)}
+.foot-base{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:36px;padding-top:20px;border-top:1px solid var(--borde);color:var(--mut);font-size:.82rem}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:200;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.35);animation:ring 2.4s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 0 rgba(37,211,102,0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="nav-logo" href="#">ESTILO<span>MÁXIMO</span></a>
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#metodo">Cómo funciona</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="https://wa.me/5491169794015?text=Hola%2C%20quiero%20pedir%20un%20turno" target="_blank" rel="noopener">Pedir turno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="chip">💈 Barbería & Peluquería · <strong>Villa Devoto, CABA</strong></div>
+    <h1>Salís con <em>otra cara</em>. Turno por WhatsApp, sin vueltas.</h1>
+    <p class="sub">Cortes clásicos y modernos, fades y barba en Griveo 3730. La barbería del barrio que la rompe en Instagram y atiende como en casa.</p>
+    <a class="btn btn-wa" href="https://wa.me/5491169794015?text=Hola%2C%20quiero%20pedir%20un%20turno" target="_blank" rel="noopener">Pedí tu turno por WhatsApp</a>
+    <a class="btn btn-line" href="https://www.instagram.com/estilomaximodevotoo/" target="_blank" rel="noopener">@estilomaximodevotoo</a>
+    <div class="datos">
+      <div class="dato"><div class="num-big">+300</div><div class="l">opiniones de clientes en línea</div></div>
+      <div class="dato"><div class="num-big">2<span> en 1</span></div><div class="l">barbería y peluquería</div></div>
+      <div class="dato"><div class="num-big">100%</div><div class="l">turnos por WhatsApp</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="nosotros" id="nosotros">
+  <div class="wrap nos-grid">
+    <div>
+      <span class="eyebrow">Nosotros</span>
+      <h2 class="titulo">La barbería de Griveo al 3700</h2>
+      <p class="lead">Estilo Máximo es <strong>barbería y peluquería en un mismo lugar</strong>: el punto de Villa Devoto donde el corte se toma en serio y el trato es de barrio.</p>
+      <p class="cuerpo">El día a día del local está en Instagram: cortes, transformaciones y el ambiente que se arma en el sillón. Los turnos se piden por WhatsApp y listo — sin apps, sin registrarte, sin esperar.</p>
+      <p class="cuerpo">Vení como estés, salí como querés.</p>
+      <div class="tags">
+        <span class="tag">Cortes clásicos y modernos</span>
+        <span class="tag">Fades</span>
+        <span class="tag">Barba</span>
+        <span class="tag">Peluquería</span>
+        <span class="tag">Turnos por WhatsApp</span>
+      </div>
+    </div>
+    <aside class="nos-card">
+      <h3>Info rápida</h3>
+      <ul>
+        <li><span>📍 Dirección</span><span>Griveo 3730, Villa Devoto</span></li>
+        <li><span>💬 WhatsApp</span><span>11 6979-4015</span></li>
+        <li><span>📷 Instagram</span><span>@estilomaximodevotoo</span></li>
+        <li><span>🗓 Turnos</span><span>Por WhatsApp</span></li>
+        <li><span>🕗 Horarios</span><span>[Completar horarios]</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <span class="eyebrow">Servicios</span>
+    <h2 class="titulo">Lo que hacemos</h2>
+    <div class="serv-grid">
+      <div class="serv"><div class="ic">✂️</div><h3>Corte clásico</h3><p>El corte de siempre, bien hecho: prolijo, a tu medida y con asesoramiento antes de tocar la tijera.</p></div>
+      <div class="serv"><div class="ic">⚡</div><h3>Fade</h3><p>Degradados marcados y limpios, del taper al skin fade. Lo que más sale — y lo que más se ve en el Instagram.</p></div>
+      <div class="serv"><div class="ic">🧔</div><h3>Barba</h3><p>Perfilado y arreglo completo para que el corte cierre por todos lados.</p></div>
+      <div class="serv"><div class="ic">💈</div><h3>Corte + barba</h3><p>El combo completo en una sola sesión. Salís nuevo, literal.</p></div>
+      <div class="serv"><div class="ic">💇</div><h3>Peluquería</h3><p>Porque somos barbería y peluquería: cortes para todos los largos y estilos.</p></div>
+      <div class="serv"><div class="ic">👦</div><h3>Niños</h3><p>Primeros cortes y cortes de rutina, con la paciencia que hace falta.</p></div>
+    </div>
+    <p style="margin-top:20px;color:var(--mut);font-size:.88rem">Consultá servicios y precios actualizados por <a href="https://wa.me/5491169794015" target="_blank" rel="noopener" style="color:var(--rojo2);text-decoration:underline">WhatsApp</a>.</p>
+  </div>
+</section>
+
+<section class="metodo" id="metodo">
+  <div class="wrap">
+    <span class="eyebrow">Cómo funciona</span>
+    <h2 class="titulo">Del mensaje al espejo</h2>
+    <p class="intro">Cuatro pasos, cero fricción: así se corta en Estilo Máximo.</p>
+    <div class="pasos">
+      <div class="paso"><div class="num-big">01</div><h3>Escribinos</h3><p>Un WhatsApp al 11 6979-4015 y coordinamos día y horario.</p></div>
+      <div class="paso"><div class="num-big">02</div><h3>Contanos qué buscás</h3><p>¿Fade, clásico, cambio total? Si viste algo en nuestro Instagram, mandanos la foto.</p></div>
+      <div class="paso"><div class="num-big">03</div><h3>Sentate y relajá</h3><p>El sillón hace el resto: corte, barba y los detalles que marcan la diferencia.</p></div>
+      <div class="paso"><div class="num-big">04</div><h3>Mostrala</h3><p>Salís con otra cara — y capaz terminás en uno de nuestros reels.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="wrap">
+    <span class="eyebrow">Opiniones</span>
+    <h2 class="titulo">El barrio ya opinó</h2>
+    <div class="res-box">
+      <div class="stars">★★★★★</div>
+      <p>Estilo Máximo acumula <strong style="color:var(--marfil)">más de 300 opiniones de clientes</strong> entre Google y sus redes. No las copiamos acá para que las leas de primera mano — directo de la fuente.</p>
+      <a class="btn btn-line" style="margin-left:0" href="https://www.google.com/maps/search/?api=1&query=Estilo+Maximo+Barberia+Griveo+3730+CABA" target="_blank" rel="noopener">Leer reseñas en Google</a>
+      <a class="btn btn-line" style="margin-left:0" href="https://www.instagram.com/estilomaximodevotoo/" target="_blank" rel="noopener">Ver el trabajo en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h2 class="titulo">Vení a Griveo 3730</h2>
+    <div class="con-grid">
+      <div>
+        <div class="con-item"><div class="ci">📍</div><div><h4>Dirección</h4><p>Griveo 3730, Villa Devoto — CABA</p></div></div>
+        <div class="con-item"><div class="ci">💬</div><div><h4>WhatsApp</h4><a href="https://wa.me/5491169794015" target="_blank" rel="noopener">11 6979-4015</a></div></div>
+        <div class="con-item"><div class="ci">📷</div><div><h4>Instagram</h4><a href="https://www.instagram.com/estilomaximodevotoo/" target="_blank" rel="noopener">@estilomaximodevotoo</a></div></div>
+        <div class="con-item"><div class="ci">👍</div><div><h4>Facebook</h4><a href="https://www.facebook.com/estilomaximodevoto/" target="_blank" rel="noopener">/estilomaximodevoto</a></div></div>
+        <div class="con-item"><div class="ci">🕗</div><div><h4>Horarios</h4><p>[Completar horarios de atención]</p></div></div>
+      </div>
+      <div class="mapa">
+        <iframe loading="lazy" src="https://www.google.com/maps?q=Griveo+3730,+CABA&output=embed" title="Mapa Estilo Máximo Barbería"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="flogo">ESTILO<span>MÁXIMO</span></div>
+        <p style="max-width:270px;margin-top:10px;font-size:.9rem;color:var(--mut)">Barbería & peluquería en Villa Devoto. Cortes, fades y barba con turnos por WhatsApp.</p>
+      </div>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#metodo">Cómo funciona</a></li>
+      </ul>
+      <ul>
+        <li><a href="#resenas">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://www.instagram.com/estilomaximodevotoo/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="foot-base">
+      <span>© Estilo Máximo Barbería & Peluquería — Villa Devoto, Buenos Aires</span>
+      <span>Demo diseñada por AMF Studio</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491169794015?text=Hola%2C%20quiero%20pedir%20un%20turno" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a9.9 9.9 0 0 0-8.5 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.2-.8-.7-1.3-1.5-1.4-1.8-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.7 4.3 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.4z"/></svg>
+</a>
+
+</body>
+</html>
