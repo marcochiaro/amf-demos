@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Don Juan, el Bar — Vermutería y bodegón porteño en La Paternal | Camarones 2702</title>
+<meta name="description" content="Don Juan, el Bar: vermutería y bodegón porteño en la esquina de Camarones 2702, La Paternal. Vermú de otra época, tortilla española y cocina casera. 4.4★ con más de 1.100 reseñas en Google. Abierto de lunes a sábado desde las 18.">
+<meta property="og:title" content="Don Juan, el Bar — Vermutería porteña en La Paternal">
+<meta property="og:description" content="Como cuando todos los barrios tenían un lugar así: vermú, tortilla y cocina de bodegón en una esquina típica de La Paternal. 4.4★ en Google.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥃</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--noche:#10281F;--noche2:#16352A;--panel:#1C4033;--borde:#2C5343;--crema:#F4EAD7;--crema-mut:#C8BCA2;--vermu:#E2793B;--vermu-osc:#C05F24;--vermu-suave:rgba(226,121,59,.14);--dorado:#D9A94E;--ig1:#F58529;--ig2:#DD2A7B;--ig3:#8134AF}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--noche);color:var(--crema);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'EB Garamond',serif;font-weight:600;line-height:1.12}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+/* Guarda */
+.guarda{height:10px;background:repeating-linear-gradient(90deg,var(--vermu) 0 18px,var(--noche) 18px 24px,var(--dorado) 24px 42px,var(--noche) 42px 48px)}
+/* Nav */
+nav{position:sticky;top:0;z-index:100;background:rgba(16,40,31,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:1120px;margin:0 auto}
+.logo{font-family:'EB Garamond',serif;font-weight:700;font-size:1.35rem;color:var(--crema);text-decoration:none}
+.logo span{color:var(--vermu)}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+.nav-links a{color:var(--crema-mut);text-decoration:none;font-size:.9rem;font-weight:500}
+.nav-links a:hover{color:var(--crema)}
+.nav-cta{background:var(--vermu);color:var(--noche)!important;padding:10px 20px;border-radius:50px;font-weight:700!important}
+.nav-cta:hover{background:var(--vermu-osc);color:#fff!important}
+@media(max-width:880px){.nav-links a:not(.nav-cta){display:none}}
+/* Hero */
+.hero{position:relative;padding:100px 0 76px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+ radial-gradient(circle at 88% 6%,rgba(226,121,59,.16),transparent 46%),
+ radial-gradient(circle at 2% 96%,rgba(217,169,78,.1),transparent 44%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;background:var(--noche2);border:1px solid var(--borde);border-radius:50px;padding:8px 18px;font-size:.8rem;color:var(--crema-mut);font-weight:500;margin-bottom:26px}
+.eyebrow .dot{width:9px;height:9px;border-radius:50%;background:var(--vermu);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(226,121,59,.5)}70%{box-shadow:0 0 0 9px rgba(226,121,59,0)}100%{box-shadow:0 0 0 0 rgba(226,121,59,0)}}
+.hero h1{font-size:clamp(2.3rem,6.6vw,4.2rem);color:var(--crema);max-width:880px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--vermu)}
+.hero p.sub{font-size:1.12rem;color:var(--crema-mut);max-width:640px;margin-bottom:34px}
+.btn{display:inline-block;padding:15px 30px;border-radius:50px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-vermu{background:var(--vermu);color:var(--noche)}
+.btn-vermu:hover{background:var(--vermu-osc);color:#fff}
+.btn-line{border:2px solid var(--vermu);color:var(--vermu);margin-left:10px}
+.btn-line:hover{background:var(--vermu-suave)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
+.hb{background:var(--noche2);border:1px solid var(--borde);border-radius:16px;padding:16px 20px;min-width:150px}
+.hb .n{font-family:'EB Garamond',serif;font-weight:700;font-size:1.4rem;color:var(--vermu)}
+.hb .l{font-size:.8rem;color:var(--crema-mut);font-weight:500}
+/* Secciones */
+section{padding:82px 0}
+.tag{color:var(--dorado);font-weight:700;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+.sec-head{max-width:680px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.8rem,4.4vw,2.7rem);color:var(--crema);margin-top:10px}
+.sec-head p{color:var(--crema-mut);margin-top:14px}
+/* Nosotros */
+.nosotros{background:var(--noche2);border-top:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+.nos-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}
+@media(max-width:860px){.nos-grid{grid-template-columns:1fr}}
+.nos-grid .lead{font-size:1.22rem;font-weight:500;color:var(--crema)}
+.nos-grid p+p{margin-top:16px;color:var(--crema-mut)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tags span{background:var(--vermu-suave);color:var(--vermu);border:1px solid rgba(226,121,59,.3);border-radius:50px;padding:8px 16px;font-size:.82rem;font-weight:600}
+.nos-card{background:var(--panel);border:1px solid var(--borde);border-radius:20px;padding:30px 28px}
+.nos-card h3{font-size:1.15rem;color:var(--crema);margin-bottom:12px}
+.nos-card p{font-size:.92rem;color:var(--crema-mut)}
+.nos-card .quote{font-family:'EB Garamond',serif;font-size:1.15rem;color:var(--dorado);margin-top:18px;line-height:1.5}
+/* Carta */
+.carta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:20px}
+.plato{background:var(--noche2);border:1px solid var(--borde);border-radius:18px;padding:26px 24px;transition:transform .18s,border-color .18s}
+.plato:hover{transform:translateY(-4px);border-color:var(--vermu)}
+.plato .ico{width:46px;height:46px;border-radius:13px;background:var(--vermu-suave);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:16px}
+.plato h3{font-size:1.06rem;color:var(--crema);margin-bottom:8px}
+.plato p{font-size:.88rem;color:var(--crema-mut)}
+.plato .nota{display:inline-block;margin-top:12px;background:rgba(217,169,78,.14);color:var(--dorado);border:1px solid rgba(217,169,78,.3);font-size:.72rem;font-weight:700;border-radius:50px;padding:4px 12px;letter-spacing:.05em;text-transform:uppercase}
+/* Ritual */
+.exp{background:var(--crema);color:var(--noche)}
+.exp .tag{color:var(--vermu-osc)}
+.exp .sec-head h2{color:var(--noche)}
+.exp .sec-head p{color:#5C6B54}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.paso{border-top:3px solid var(--vermu);padding-top:20px}
+.paso .num{font-family:'EB Garamond',serif;font-weight:700;color:var(--vermu-osc);font-size:.9rem;letter-spacing:.1em}
+.paso h3{font-size:1.08rem;color:var(--noche);margin:10px 0 8px}
+.paso p{font-size:.88rem;color:#5C6B54}
+/* Reseñas */
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.res{background:var(--noche2);border:1px solid var(--borde);border-radius:18px;padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.res .stars{color:var(--dorado);letter-spacing:2px}
+.res p{font-size:.95rem;color:var(--crema)}
+.res .who{font-size:.8rem;color:var(--crema-mut);font-weight:600;margin-top:auto}
+.res-note{margin-top:26px;font-size:.85rem;color:var(--crema-mut)}
+.res-note a{color:var(--vermu);font-weight:600}
+/* Contacto */
+.contacto{background:var(--noche2);border-top:1px solid var(--borde)}
+.con-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+@media(max-width:860px){.con-grid{grid-template-columns:1fr}}
+.con-item{display:flex;gap:14px;margin-bottom:22px}
+.con-item .ci{width:44px;height:44px;flex:none;border-radius:12px;background:var(--vermu-suave);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.con-item h3{font-size:.95rem;font-family:'Jost',sans-serif;font-weight:600;color:var(--crema)}
+.con-item p{font-size:.9rem;color:var(--crema-mut)}
+.con-item a{color:var(--vermu);font-weight:600;text-decoration:none}
+.mapa{border-radius:20px;overflow:hidden;border:1px solid var(--borde);min-height:340px;filter:saturate(.9)}
+.mapa iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* Footer */
+footer{background:#0B1D16;color:var(--crema-mut);padding:46px 0 30px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px;align-items:flex-start}
+.foot .logo{color:var(--crema);font-size:1.3rem}
+.foot ul{list-style:none;display:flex;flex-wrap:wrap;gap:18px}
+.foot a{color:var(--crema-mut);text-decoration:none;font-size:.88rem;font-weight:500}
+.foot a:hover{color:var(--vermu)}
+.credit{margin-top:30px;padding-top:20px;border-top:1px solid rgba(244,234,215,.12);font-size:.78rem;color:#7E9184}
+/* IG flotante */
+.ig-float{position:fixed;bottom:24px;right:24px;z-index:200;width:60px;height:60px;border-radius:50%;background:linear-gradient(45deg,var(--ig1),var(--ig2),var(--ig3));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35);animation:ring 2.2s infinite}
+.ig-float svg{width:30px;height:30px;fill:#fff}
+@keyframes ring{0%{box-shadow:0 8px 22px rgba(0,0,0,.35),0 0 0 0 rgba(221,42,123,.45)}70%{box-shadow:0 8px 22px rgba(0,0,0,.35),0 0 0 16px rgba(221,42,123,0)}100%{box-shadow:0 8px 22px rgba(0,0,0,.35),0 0 0 0 rgba(221,42,123,0)}}
+</style>
+</head>
+<body>
+<div class="guarda"></div>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#">Don Juan<span>, el Bar</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#carta">Vermú y cocina</a></li>
+      <li><a href="#ritual">El ritual</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="tel:+541145836808">Llamá al 4583-6808</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Vermutería & bodegón · Camarones 2702, La Paternal</div>
+    <h1>El bar de esquina donde el <em>vermú</em> sigue siendo un ritual</h1>
+    <p class="sub">“Como cuando todos los barrios tenían un lugar así.” Vermú de otra época, tortilla española y cocina casera de bodegón, en una esquina típica de La Paternal. De lunes a sábado desde las 18.</p>
+    <a class="btn btn-vermu" href="https://www.instagram.com/donjuan_elbar/" target="_blank" rel="noopener">Escribinos por Instagram</a>
+    <a class="btn btn-line" href="#carta">Ver la propuesta</a>
+    <div class="hero-badges">
+      <div class="hb"><div class="n">4.4★</div><div class="l">más de 1.100 reseñas en Google</div></div>
+      <div class="hb"><div class="n">18 a 24</div><div class="l">de lunes a sábado</div></div>
+      <div class="hb"><div class="n">🥃</div><div class="l">vermús “joya de otra época”</div></div>
+      <div class="hb"><div class="n">🍳</div><div class="l">cocina casera de bodegón</div></div>
+    </div>
+  </div>
+</header>
+<div class="guarda"></div>
+
+<section id="nosotros" class="nosotros">
+  <div class="wrap">
+    <span class="tag">Nosotros</span>
+    <div class="sec-head"><h2>Una esquina que guarda el oficio del bar porteño</h2></div>
+    <div class="nos-grid">
+      <div>
+        <p class="lead">Don Juan es de esos bares que ya casi no quedan: una esquina de barrio con mesas de siempre, botellas detrás de la barra y el vermú servido como manda la tradición.</p>
+        <p>En Camarones 2702, La Paternal conserva su bar de cabecera. La ambientación típica porteña, la atención de casa y una cocina casera que va de la tortilla española a los platos de bodegón hicieron que los vecinos — y los que cruzan la ciudad para conocerlo — lo llenen de elogios en Google.</p>
+        <div class="tags">
+          <span>Vermutería</span><span>Cocina casera</span><span>Esquina histórica</span><span>Ambiente porteño</span><span>Noches de barrio</span>
+        </div>
+      </div>
+      <div class="nos-card">
+        <h3>Dicen los clientes</h3>
+        <p>La escena vermutera de La Paternal ya es parada obligada del mapa foodie de la zona.</p>
+        <p class="quote">“Los vermuts son una joya de otra época.”</p>
+        <p style="margin-top:8px;font-size:.8rem">— Reseña real de Google · Bar destacado en el mapa foodie de Vinómanos</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="carta">
+  <div class="wrap">
+    <span class="tag">Vermú y cocina</span>
+    <div class="sec-head"><h2>La propuesta de la casa</h2><p>Para picar, para brindar y para quedarse: los clásicos que nombran las reseñas.</p></div>
+    <div class="carta-grid">
+      <div class="plato"><div class="ico">🥃</div><h3>Vermú de la casa</h3><p>Servido a la vieja usanza, con sifón y picada. La especialidad que le da nombre a la noche.</p><span class="nota">El ritual</span></div>
+      <div class="plato"><div class="ico">🍳</div><h3>Tortilla española</h3><p>La recomendada número uno de los clientes: alta, jugosa y casera.</p></div>
+      <div class="plato"><div class="ico">🧀</div><h3>Picadas</h3><p>Tablas para acompañar el vermú, como pide la tradición de bar de esquina.</p></div>
+      <div class="plato"><div class="ico">🍝</div><h3>Cocina de bodegón</h3><p>Platos caseros y abundantes, “tipo bodegón”, como dicen las reseñas.</p></div>
+      <div class="plato"><div class="ico">🍺</div><h3>Birra y vinos</h3><p>Para el que no toma vermú, la barra acompaña igual.</p></div>
+      <div class="plato"><div class="ico">🌙</div><h3>Noches de barrio</h3><p>El plan de después de las seis: mesa, charla y esquina con historia.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ritual" class="exp">
+  <div class="wrap">
+    <span class="tag">El ritual</span>
+    <div class="sec-head"><h2>Cómo se toma un vermú en Don Juan</h2><p>Cuatro pasos que acá se respetan desde siempre.</p></div>
+    <div class="pasos">
+      <div class="paso"><div class="num">PASO 01</div><h3>Caé por la esquina</h3><p>Camarones 2702, desde las 18. Sin vueltas: el bar se vive en persona.</p></div>
+      <div class="paso"><div class="num">PASO 02</div><h3>Pedí el vermú</h3><p>Con sifón, hielo y la picada que corresponde. Una joya de otra época.</p></div>
+      <div class="paso"><div class="num">PASO 03</div><h3>Sumá la tortilla</h3><p>La española de la casa, la que recomiendan todas las reseñas.</p></div>
+      <div class="paso"><div class="num">PASO 04</div><h3>Estirá la sobremesa</h3><p>El bar de barrio invita a quedarse: charla larga y otra vuelta de vermú.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="resenas">
+  <div class="wrap">
+    <span class="tag">Reseñas</span>
+    <div class="sec-head"><h2>Lo que dicen los clientes</h2><p>Opiniones reales de Google de quienes ya brindaron en la esquina.</p></div>
+    <div class="res-grid">
+      <div class="res"><div class="stars">★★★★★</div><p>“Como cuando todos los barrios tenían un lugar así… Los vermuts son una joya de otra época.”</p><div class="who">José · Reseña de Google</div></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“Se come muy rico. Recomiendo el vermouth y la tortilla española. La comida es tipo bodegón, muy casera y rica.”</p><div class="who">Pablo · Reseña de Google</div></div>
+      <div class="res"><div class="stars">★★★★★</div><p>“Hermoso típico bar porteño. Bella ambientación. Muy bien atendido.”</p><div class="who">Recorridos del Alma · Reseña de Google</div></div>
+    </div>
+    <p class="res-note">4.4★ con más de 1.100 reseñas en Google · Seguí la esquina en <a href="https://www.instagram.com/donjuan_elbar/" target="_blank" rel="noopener">@donjuan_elbar</a></p>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <div class="wrap">
+    <span class="tag">Contacto</span>
+    <div class="sec-head"><h2>La esquina de Camarones al 2700</h2></div>
+    <div class="con-grid">
+      <div>
+        <div class="con-item"><div class="ci">📍</div><div><h3>Dirección</h3><p>Camarones 2702, La Paternal, CABA</p></div></div>
+        <div class="con-item"><div class="ci">🕗</div><div><h3>Horarios</h3><p>Lunes a sábado, de 18 a 24 · Domingo cerrado</p></div></div>
+        <div class="con-item"><div class="ci">📞</div><div><h3>Teléfono</h3><p><a href="tel:+541145836808">11 4583-6808</a></p></div></div>
+        <div class="con-item"><div class="ci">📸</div><div><h3>Redes</h3><p><a href="https://www.instagram.com/donjuan_elbar/" target="_blank" rel="noopener">@donjuan_elbar</a> en Instagram</p></div></div>
+        <div class="con-item"><div class="ci">🥃</div><div><h3>Bueno saberlo</h3><p>Mesas en la vereda · Ideal vermú de tarde-noche · Ambientación de bar histórico</p></div></div>
+      </div>
+      <div class="mapa"><iframe src="https://www.google.com/maps?q=Camarones+2702,+CABA&output=embed" loading="lazy" title="Mapa Don Juan el Bar"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><a class="logo" href="#">Don Juan<span style="color:var(--vermu)">, el Bar</span></a><p style="font-size:.85rem;margin-top:8px">Vermutería y bodegón porteño en La Paternal.</p></div>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#carta">Vermú y cocina</a></li>
+        <li><a href="#ritual">El ritual</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="credit">© 2026 Don Juan, el Bar · Camarones 2702, La Paternal, CABA · Demo diseñada por AMF Studio</div>
+  </div>
+</footer>
+
+<a class="ig-float" href="https://www.instagram.com/donjuan_elbar/" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.4.2-1.7.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.6-.3 1.7-.1 1.2-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.4.3 1.7.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.6.3 1.7.3 1.2.1 1.6.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.4-.2 1.7-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.6.3-1.7.1-1.2.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.4-.3-1.7-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.6-.3-1.7-.3-1.2-.1-1.6-.1-4.8-.1zm0 3.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 2a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8zm5.6-2.2a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0z"/></svg>
+</a>
+</body>
+</html>
